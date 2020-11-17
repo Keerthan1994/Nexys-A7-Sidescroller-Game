@@ -1,0 +1,507 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:40:23 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 13872
+License: Customer
+
+Current time: 	Mon Nov 16 19:40:20 PST 2020
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 3
+Available disk space: 43 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	ryanp
+User home directory: C:/Users/ryanp
+User working directory: C:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/project_1
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2019.2
+RDI_DATADIR: C:/Xilinx/Vivado/2019.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2019.2/bin
+
+Vivado preferences file location: C:/Users/ryanp/AppData/Roaming/Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: C:/Users/ryanp/AppData/Roaming/Xilinx/Vivado/2019.2/
+Vivado layouts directory: C:/Users/ryanp/AppData/Roaming/Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/project_1/vivado.log
+Vivado journal file location: 	C:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/project_1/vivado.jou
+Engine tmp dir: 	C:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/project_1/.Xil/Vivado-13872-DESKTOP-NP6R9M2
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2019.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2019.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2019.2
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 695 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bB (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\ryanp\Documents\Grad-School\ECE-540-SoC-Progammable-Logic-FPGAs\Projects\proj2-rojobot-new\proj2-rojobot-new\project_1\project_1.xpr. Version: Vivado v2019.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/project_1/project_1.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/project_1' 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 69 MB (+70246kb) [00:00:10]
+// [Engine Memory]: 744 MB (+628795kb) [00:00:10]
+// [GUI Memory]: 140 MB (+70208kb) [00:00:11]
+// [Engine Memory]: 798 MB (+17263kb) [00:00:11]
+// WARNING: HEventQueue.dispatchEvent() is taking  3696 ms.
+// Tcl Message: open_project C:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/project_1/project_1.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/project_1' INFO: [Project 1-313] Project file moved from 'C:/RVfpga/proj2-rojobot-prof_brian_test/project_1' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/fpga_code/ece540_ip_repo/rojobot31'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 846 MB. GUI used memory: 62 MB. Current time: 11/16/20, 7:40:25 PM PST
+// [Engine Memory]: 846 MB (+8378kb) [00:00:13]
+// WARNING: HEventQueue.dispatchEvent() is taking  1056 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 876.883 ; gain = 239.652 
+// [Engine Memory]: 969 MB (+84817kb) [00:00:15]
+// Project name: project_1; location: C:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/project_1; part: xc7a100tcsg324-1
+// [Engine Memory]: 1,019 MB (+2074kb) [00:00:16]
+dismissDialog("Open Project"); // bB (cr)
+// a (cr): Critical Messages: addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv)]", 4); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), swervolf : swervolf_core (swervolf_core.v)]", 9); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), swervolf : swervolf_core (swervolf_core.v), rojobot_control : rojobot_controller (rojobot_controller.v)]", 61); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), swervolf : swervolf_core (swervolf_core.v), rojobot_control : rojobot_controller (rojobot_controller.v), world_map : world_map (world_map.ngc)]", 63, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, Popup.HeavyWeightWindow)
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ai (ao, Popup.HeavyWeightWindow)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// [Engine Memory]: 1,076 MB (+5822kb) [00:00:37]
+// aE (cr): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cr)
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/fpga_code/world_maps/world_map_part1/world_map.ngc] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  C:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/fpga_code/world_maps/world_map_part1/world_map.ngc 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,076 MB. GUI used memory: 81 MB. Current time: 11/16/20, 7:40:52 PM PST
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), swervolf : swervolf_core (swervolf_core.v), rojobot_control : rojobot_controller (rojobot_controller.v), world_map_lr : world_map_lr (world_map_lr.ngc)]", 64, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), swervolf : swervolf_core (swervolf_core.v), rojobot_control : rojobot_controller (rojobot_controller.v), world_map_lr : world_map_lr (world_map_lr.ngc)]", 64, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ai (ao, Popup.HeavyWeightWindow)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cr): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cr)
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/fpga_code/world_maps/world_maps_modified/world_map_lr.ngc] -no_script -reset -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// aE (cr): Remove Sources: addNotify
+// bB (aE):  Remove Sources : addNotify
+// Tcl Message: remove_files  C:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/fpga_code/world_maps/world_maps_modified/world_map_lr.ngc 
+dismissDialog("Remove Sources"); // bB (aE)
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), swervolf : swervolf_core (swervolf_core.v), rojobot_control : rojobot_controller (rojobot_controller.v), world_map : world_map (world_map.ngc)]", 63, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), swervolf : swervolf_core (swervolf_core.v), rojobot_control : rojobot_controller (rojobot_controller.v), world_map : world_map (world_map.ngc)]", 63, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, Popup.HeavyWeightWindow)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, Popup.HeavyWeightWindow)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, Popup.HeavyWeightWindow)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), swervolf : swervolf_core (swervolf_core.v), rojobot_control : rojobot_controller (rojobot_controller.v), world_map : world_map (world_map.ngc)]", 63, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), swervolf : swervolf_core (swervolf_core.v), rojobot_control : rojobot_controller (rojobot_controller.v), world_map_lr : xil_defaultlib.world_map_lr]", 64, false, true, false, false, false, false); // B (F, cr) - Shift Key
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), swervolf : swervolf_core (swervolf_core.v), rojobot_control : rojobot_controller (rojobot_controller.v), world_map_lr : xil_defaultlib.world_map_lr]", 64, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, Popup.HeavyWeightWindow)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, Popup.HeavyWeightWindow)
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ai (ao, Popup.HeavyWeightWindow)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cr): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cr)
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/fpga_code/world_maps/world_map_lr/world_map.ngc] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  C:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/fpga_code/world_maps/world_map_lr/world_map.ngc 
+// [GUI Memory]: 154 MB (+7344kb) [00:01:09]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 163 MB (+1089kb) [00:01:17]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), swervolf : swervolf_core (swervolf_core.v), rojobot_control : rojobot_controller (rojobot_controller.v), world_map : world_map (world_map.ngc)]", 63, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), swervolf : swervolf_core (swervolf_core.v), rojobot_control : rojobot_controller (rojobot_controller.v), world_map : world_map (world_map.ngc)]", 63, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ai (ao, Popup.HeavyWeightWindow)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cr): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cr)
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/fpga_code/world_maps/world_map_loop/world_map.ngc] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  C:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/fpga_code/world_maps/world_map_loop/world_map.ngc 
+// [GUI Memory]: 173 MB (+2783kb) [00:01:23]
+// Elapsed time: 51 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), swervolf : swervolf_core (swervolf_core.v), rojobot_control : rojobot_controller (rojobot_controller.v), world_map : world_map (world_map.ngc)]", 63, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ai (ao, Popup.HeavyWeightWindow)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cr): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cr)
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/fpga_code/hdl_part1/world_maps_part1/world_map.ngc] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  C:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/fpga_code/hdl_part1/world_maps_part1/world_map.ngc 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), swervolf : swervolf_core (swervolf_core.v), rojobot_control : rojobot_controller (rojobot_controller.v), world_map_lr : xil_defaultlib.world_map_lr]", 64, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), swervolf : swervolf_core (swervolf_core.v), rojobot_control : rojobot_controller (rojobot_controller.v), world_map_lr : xil_defaultlib.world_map_lr]", 64, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cr)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), swervolf : swervolf_core (swervolf_core.v), rojobot_control : rojobot_controller (rojobot_controller.v), world_map : xil_defaultlib.world_map]", 63, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), swervolf : swervolf_core (swervolf_core.v), rojobot_control : rojobot_controller (rojobot_controller.v), world_map_lr : xil_defaultlib.world_map_lr]", 64, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), swervolf : swervolf_core (swervolf_core.v), rojobot_control : rojobot_controller (rojobot_controller.v), world_map : xil_defaultlib.world_map]", 63, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), swervolf : swervolf_core (swervolf_core.v), rojobot_control : rojobot_controller (rojobot_controller.v), world_map : xil_defaultlib.world_map]", 63, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), swervolf : swervolf_core (swervolf_core.v), rojobot_control : rojobot_controller (rojobot_controller.v), world_map_lr : xil_defaultlib.world_map_lr]", 64, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), swervolf : swervolf_core (swervolf_core.v), rojobot_control : rojobot_controller (rojobot_controller.v), world_map_lr : xil_defaultlib.world_map_lr]", 64, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), swervolf : swervolf_core (swervolf_core.v), rojobot_control : rojobot_controller (rojobot_controller.v), world_map_lr : xil_defaultlib.world_map_lr]", 64, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), swervolf : swervolf_core (swervolf_core.v), rojobot_control : rojobot_controller (rojobot_controller.v), world_map : xil_defaultlib.world_map]", 63, false); // B (F, cr)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // i (N, cr)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // i (N, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+// Elapsed time: 46 seconds
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "ram"); // OverlayTextField (ay, cr)
+applyEnter(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, (String) null); // L (O, cr)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Block Memory Generator ; AXI4 ; Production ; Included ; xilinx.com:ip:blk_mem_gen:8.4", 12, "Block Memory Generator", 0, false); // L (O, cr)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Block Memory Generator ; AXI4 ; Production ; Included ; xilinx.com:ip:blk_mem_gen:8.4", 12); // L (O, cr)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Block Memory Generator ; AXI4 ; Production ; Included ; xilinx.com:ip:blk_mem_gen:8.4", 12, "Block Memory Generator", 0, false, false, false, false, false, true); // L (O, cr) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// TclEventType: LOAD_FEATURE
+// l (cr):  Customize IP : addNotify
+// r (cr): Customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1267 ms.
+dismissDialog("Customize IP"); // l (cr)
+setText("Component Name", "world_map"); // D (V, r)
+selectComboBox("Memory Type (Memory_Type)", "Dual Port ROM", 4); // E (E, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bh (E, r)
+setText("Defines the PortA Write Width(DINA)", "2"); // D (bi, r)
+setText("Write Depth", "16384"); // D (bi, r)
+selectComboBox("Enable Port Type (Enable_A)", "Always Enabled", 0); // E (E, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port B Options", 2); // bh (E, r)
+selectComboBox("Enable Port Type (Enable_B)", "Always Enabled", 0); // E (E, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 3); // bh (E, r)
+selectCheckBox((HResource) null, "Load Init File", true); // g (o, r): TRUE
+selectButton(PAResourceEtoH.HACGCCoeFileWidget_BROWSE, "Browse"); // a (E, r)
+// Elapsed time: 15 seconds
+setFileChooser("C:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/fpga_code/world_maps/bandicoot_maps/world_map_pt1.coe");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+// TclEventType: CREATE_IP_CORE
+dismissDialog("Customize IP"); // r (cr)
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name world_map -dir c:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/project_1/project_1.srcs/sources_1/ip 
+// TclEventType: FILE_SET_CHANGE
+// bB (cr):  Customize IP : addNotify
+// Tcl Message: set_property -dict [list CONFIG.Component_Name {world_map} CONFIG.Memory_Type {Dual_Port_ROM} CONFIG.Write_Width_A {2} CONFIG.Write_Depth_A {16384} CONFIG.Read_Width_A {2} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {2} CONFIG.Read_Width_B {2} CONFIG.Enable_B {Always_Enabled} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/fpga_code/world_maps/bandicoot_maps/world_map_pt1.coe} CONFIG.Port_A_Write_Rate {0} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Enable_Rate {100}] [get_ips world_map] 
+// Tcl Message: INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/fpga_code/world_maps/bandicoot_maps/world_map_pt1.coe' provided. It will be converted relative to IP Instance files '../../../../../fpga_code/world_maps/bandicoot_maps/world_map_pt1.coe' 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target {instantiation_template} [get_files c:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/project_1/project_1.srcs/sources_1/ip/world_map/world_map.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'world_map'... 
+// aI (cr): Generate Output Products: addNotify
+dismissDialog("Customize IP"); // bB (cr)
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+selectButton("OptionPane.button", "OK"); // JButton (A, H)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bB (cr):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  c:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/project_1/project_1.srcs/sources_1/ip/world_map/world_map.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'world_map'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'world_map'... INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'world_map'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'world_map'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all world_map] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files c:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/project_1/project_1.srcs/sources_1/ip/world_map/world_map.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/project_1/project_1.srcs/sources_1/ip/world_map/world_map.xci] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs -jobs 6 world_map_synth_1 
+// Tcl Message: [Mon Nov 16 19:44:48 2020] Launched world_map_synth_1... Run output will be captured here: C:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/project_1/project_1.runs/world_map_synth_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+// Elapsed time: 19 seconds
+selectButton(RDIResource.AbstractSearchablePanel_SHOW_SEARCH, "Sources_search"); // x (f, cr): TRUE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), swervolf : swervolf_core (swervolf_core.v), rojobot_control : rojobot_controller (rojobot_controller.v)]", 61, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), swervolf : swervolf_core (swervolf_core.v), rojobot_control : rojobot_controller (rojobot_controller.v)]", 61, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IP Catalog", 1); // i (h, cr)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Block Memory Generator ; AXI4 ; Production ; Included ; xilinx.com:ip:blk_mem_gen:8.4", 12, "Block Memory Generator", 0, false); // L (O, cr)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Block Memory Generator ; AXI4 ; Production ; Included ; xilinx.com:ip:blk_mem_gen:8.4", 12, "Block Memory Generator", 0, false, false, false, false, false, true); // L (O, cr) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// r (cr): Customize IP: addNotify
+setText("Component Name", "world"); // D (V, r)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (r)
+// [GUI Memory]: 198 MB (+16297kb) [00:05:32]
+dismissDialog("Customize IP"); // r (cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rojobot_controller.v", 2); // i (h, cr)
+selectCodeEditor("rojobot_controller.v", 204, 215); // ch (w, cr)
+typeControlKey((HResource) null, "rojobot_controller.v", 'c'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IP Catalog", 1); // i (h, cr)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Block Memory Generator ; AXI4 ; Production ; Included ; xilinx.com:ip:blk_mem_gen:8.4", 12, "Block Memory Generator", 0, false); // L (O, cr)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Block Memory Generator ; AXI4 ; Production ; Included ; xilinx.com:ip:blk_mem_gen:8.4", 12, "Block Memory Generator", 0, false, false, false, false, false, true); // L (O, cr) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// r (cr): Customize IP: addNotify
+setText("Component Name", "world_map_lr"); // D (V, r)
+selectComboBox("Memory Type (Memory_Type)", "Dual Port ROM", 4); // E (E, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bh (E, r)
+// TclEventType: FILE_SET_CHANGE
+setText("Defines the PortA Write Width(DINA)", "2"); // D (bi, r)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+setText("Write Depth", "16384"); // D (bi, r)
+selectComboBox("Enable Port Type (Enable_A)", "Always Enabled", 0); // E (E, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port B Options", 2); // bh (E, r)
+selectComboBox("Enable Port Type (Enable_B)", "Always Enabled", 0); // E (E, r)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,111 MB. GUI used memory: 98 MB. Current time: 11/16/20, 7:46:12 PM PST
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 3); // bh (E, r)
+selectCheckBox((HResource) null, "Load Init File", true); // g (o, r): TRUE
+selectButton(PAResourceEtoH.HACGCCoeFileWidget_BROWSE, "Browse"); // a (E, r)
+// Elapsed time: 13 seconds
+setFileChooser("C:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/fpga_code/world_maps/bandicoot_maps/world_map_pt2.coe");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+// TclEventType: CREATE_IP_CORE
+dismissDialog("Customize IP"); // r (cr)
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name world_map_lr -dir c:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/project_1/project_1.srcs/sources_1/ip 
+// bB (cr):  Customize IP : addNotify
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property -dict [list CONFIG.Component_Name {world_map_lr} CONFIG.Memory_Type {Dual_Port_ROM} CONFIG.Write_Width_A {2} CONFIG.Write_Depth_A {16384} CONFIG.Read_Width_A {2} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {2} CONFIG.Read_Width_B {2} CONFIG.Enable_B {Always_Enabled} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/fpga_code/world_maps/bandicoot_maps/world_map_pt2.coe} CONFIG.Port_A_Write_Rate {0} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Enable_Rate {100}] [get_ips world_map_lr] 
+// Tcl Message: INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/fpga_code/world_maps/bandicoot_maps/world_map_pt2.coe' provided. It will be converted relative to IP Instance files '../../../../../fpga_code/world_maps/bandicoot_maps/world_map_pt2.coe' 
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target {instantiation_template} [get_files c:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/project_1/project_1.srcs/sources_1/ip/world_map_lr/world_map_lr.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'world_map_lr'... 
+// aI (cr): Generate Output Products: addNotify
+dismissDialog("Customize IP"); // bB (cr)
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bB (cr):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  c:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/project_1/project_1.srcs/sources_1/ip/world_map_lr/world_map_lr.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'world_map_lr'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'world_map_lr'... INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'world_map_lr'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'world_map_lr'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all world_map_lr] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files c:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/project_1/project_1.srcs/sources_1/ip/world_map_lr/world_map_lr.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/project_1/project_1.srcs/sources_1/ip/world_map_lr/world_map_lr.xci] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs -jobs 6 world_map_lr_synth_1 
+// Tcl Message: [Mon Nov 16 19:46:37 2020] Launched world_map_lr_synth_1... Run output will be captured here: C:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/project_1/project_1.runs/world_map_lr_synth_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rojobot_controller.v", 2); // i (h, cr)
+selectCodeEditor("rojobot_controller.v", 286, 190); // ch (w, cr)
+setText("PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE_SEARCH_FIELD", "world", true); // OverlayTextField (C, cr)
+// WARNING: HEventQueue.dispatchEvent() is taking  2081 ms.
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files, world_map.v]", 24, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files, world_map_lr.v]", 25, false, true, false, false, false, false); // B (F, cr) - Shift Key
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files, world_map_lr.v]", 25, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ai (ao, Popup.HeavyWeightWindow)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cr): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cr)
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/fpga_code/hdl_part1/world_maps_part1/world_map.v] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/fpga_code/world_maps/world_maps_modified/world_map_lr.v] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  {C:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/fpga_code/hdl_part1/world_maps_part1/world_map.v C:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/fpga_code/world_maps/world_maps_modified/world_map_lr.v} 
+// WARNING: HEventQueue.dispatchEvent() is taking  1963 ms.
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 76 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (cr): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Run Synthesis"); // A (cr)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bB (cr):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs synth_1 -jobs 6 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Nov 16 19:48:38 2020] Launched synth_1... Run output will be captured here: C:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/project_1/project_1.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 6 seconds
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Synthesis Completed: addNotify
+// Elapsed time: 648 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bB (cr):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: launch_runs impl_1 -jobs 6 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Nov 16 19:59:27 2020] Launched impl_1... Run output will be captured here: C:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/project_1/project_1.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Implementation Completed: addNotify
+// Elapsed time: 757 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, aj)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+dismissDialog("Implementation Completed"); // aj (cr)
+// TclEventType: RUN_LAUNCH
+// bB (cr):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// Tcl Message: [Mon Nov 16 20:12:06 2020] Launched impl_1... Run output will be captured here: C:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/project_1/project_1.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 95 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (aj)
+dismissDialog("Bitstream Generation Completed"); // aj (cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,128 MB. GUI used memory: 111 MB. Current time: 11/16/20, 8:16:12 PM PST
