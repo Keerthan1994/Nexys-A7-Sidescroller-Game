@@ -1,7 +1,6 @@
 +--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
 |       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
 +--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
-|                 clk_core |                 clk_core |          swervolf/swerv_eh1/mem/Gen_dccm_enable.dccm/mem_bank[2].dccm_bank/ram_core_reg_0/ADDRARDADDR[12]|
-|                 clk_core |                 clk_core |                             swervolf/swerv_eh1/swerv/lsu/lsu_lsc_ctl/lsu_result_corr_dc4ff/dout_reg[16]/D|
-|                 clk_core |                 clk_core |                             swervolf/swerv_eh1/swerv/lsu/lsu_lsc_ctl/lsu_result_corr_dc4ff/dout_reg[28]/D|
+|                 clk_core |                 clk_core |                            swervolf/swerv_eh1/swerv/lsu/clkdomain/lsu_freeze_c2dc1_cgc/clkhdr/en_ff_reg/D|
+|                 clk_core |                 clk_core |                                    swervolf/swerv_eh1/swerv/lsu/clkdomain/lsu_free_cgc/clkhdr/en_ff_reg/D|
 +--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+

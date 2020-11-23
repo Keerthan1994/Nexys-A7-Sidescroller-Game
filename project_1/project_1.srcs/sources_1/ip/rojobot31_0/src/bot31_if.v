@@ -190,7 +190,12 @@ always @(posedge clk or posedge reset) begin
 		BotInfo <= 0;
 	end
 	else if (load_sys_regs) begin  // copy holding registers to system interface registers
-			LocX <= LocX_int;
+            if (LocX_int == 12'h07D) begin  // Sidescroller change
+                LocX <= 0;
+            end
+                else begin
+                LocX <= LocX_int;
+            end
 			LocY <= LocY_int;
 			Sensors <= Sensors_int;
 			BotInfo <= BotInfo_int;
