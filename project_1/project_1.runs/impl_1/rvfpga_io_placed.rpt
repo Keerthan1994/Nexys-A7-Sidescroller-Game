@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date                      : Sun Nov 22 14:53:20 2020
-| Host                      : DESKTOP-NP6R9M2 running 64-bit major release  (build 9200)
+| Date                      : Sun Nov 22 18:03:12 2020
+| Host                      : Ragnorak running 64-bit major release  (build 9200)
 | Command                   : report_io -file rvfpga_io_placed.rpt
 | Design                    : rvfpga
 | Device                    : xc7a100t

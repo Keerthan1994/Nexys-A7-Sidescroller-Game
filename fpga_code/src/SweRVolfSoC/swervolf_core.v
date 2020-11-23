@@ -356,7 +356,7 @@ module swervolf_core
 
    // GPIO - Leds and Switches
    wire [31:0] en_gpio;
-   wire        gpio_irq, gpio2_irq;
+   wire        gpio_irq;
    wire [31:0] i_gpio_temp;
    wire [31:0] o_gpio_temp;
    wire [31:0] io_data;

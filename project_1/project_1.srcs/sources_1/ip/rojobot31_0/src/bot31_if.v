@@ -93,6 +93,17 @@ reg [7:0]	LocX_int,			// X-coordinate of rojobot's location
 			LocY_int,			// Y-coordinate of rojobot's location
 			BotInfo_int,		// Rojobot orientation and movement
 			Sensors_int;		// Sensor readings
+
+// Sidescroller Edit (If LocX has reached the end reset it):
+reg [7:0]   LocX_int_set;
+always @(LocX_int) begin
+    if (LocX_int == 12'h07D) begin
+        LocX_int_set <= 0;
+    end
+    else begin
+        LocX_int_set <= LocX_int;
+    end
+end
 					
 // read registers and store in the internal BOT state registers
 always @(posedge clk) begin
@@ -101,7 +112,7 @@ always @(posedge clk) begin
 		// Picoblaze should only read MotCtl and MapVal but
 		// this code returns internal register values if asked
 		4'b0000 :	DataOut = MotCtl;
-		4'b0001 :	DataOut = LocX_int;
+		4'b0001 :	DataOut = LocX_int_set;     // Modified for Sidescroller
 		4'b0010 :	DataOut = LocY_int;
 		4'b0011 :	DataOut = BotInfo_int;
 		4'b0100 :	DataOut = Sensors_int;
