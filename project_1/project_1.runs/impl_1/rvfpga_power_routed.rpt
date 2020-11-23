@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Sun Nov 22 15:00:47 2020
+| Date             : Mon Nov 23 13:00:16 2020
 | Host             : DESKTOP-NP6R9M2 running 64-bit major release  (build 9200)
 | Command          : report_power -file rvfpga_power_routed.rpt -pb rvfpga_power_summary_routed.pb -rpx rvfpga_power_routed.rpx
 | Design           : rvfpga
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.242        |
+| Total On-Chip Power (W)  | 1.243        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 1.130        |
@@ -52,23 +52,23 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.051 |       17 |       --- |             --- |
-| Slice Logic              |     0.026 |    63444 |       --- |             --- |
-|   LUT as Logic           |     0.024 |    34802 |     63400 |           54.89 |
+| Clocks                   |     0.053 |       17 |       --- |             --- |
+| Slice Logic              |     0.026 |    63470 |       --- |             --- |
+|   LUT as Logic           |     0.024 |    34786 |     63400 |           54.87 |
 |   CARRY4                 |     0.001 |     1024 |     15850 |            6.46 |
 |   LUT as Distributed RAM |    <0.001 |      228 |     19000 |            1.20 |
-|   Register               |    <0.001 |    19804 |    126800 |           15.62 |
-|   F7/F8 Muxes            |    <0.001 |      648 |     63400 |            1.02 |
+|   Register               |    <0.001 |    19808 |    126800 |           15.62 |
+|   F7/F8 Muxes            |    <0.001 |      673 |     63400 |            1.06 |
 |   LUT as Shift Register  |    <0.001 |        3 |     19000 |            0.02 |
 |   Others                 |     0.000 |     1369 |       --- |             --- |
-| Signals                  |     0.037 |    51548 |       --- |             --- |
+| Signals                  |     0.037 |    51618 |       --- |             --- |
 | Block RAM                |     0.075 |     69.5 |       135 |           51.48 |
 | MMCM                     |     0.122 |        1 |         6 |           16.67 |
 | PLL                      |     0.428 |        3 |         6 |           50.00 |
 | DSPs                     |     0.002 |        7 |       240 |            2.92 |
 | I/O                      |     0.387 |      124 |       210 |           59.05 |
 | Static Power             |     0.112 |          |           |                 |
-| Total                    |     1.242 |          |           |                 |
+| Total                    |     1.243 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -78,7 +78,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.259 |       0.238 |      0.021 |
+| Vccint    |       1.000 |     0.259 |       0.239 |      0.021 |
 | Vccaux    |       1.800 |     0.335 |       0.317 |      0.018 |
 | Vcco33    |       3.300 |     0.006 |       0.002 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -170,7 +170,7 @@ Table of Contents
 |   clock_divider         |     0.122 |
 |     inst                |     0.122 |
 |   ddr2                  |     0.545 |
-|     ldc                 |     0.544 |
+|     ldc                 |     0.545 |
 |       IOBUF             |     0.007 |
 |       IOBUFDS           |     0.005 |
 |       IOBUFDS_1         |     0.005 |
@@ -204,9 +204,9 @@ Table of Contents
 |       title_colorizer   |     0.003 |
 |       world_map         |     0.001 |
 |       world_map_lr      |     0.001 |
-|     swerv_eh1           |     0.089 |
+|     swerv_eh1           |     0.090 |
 |       mem               |     0.046 |
-|       swerv             |     0.043 |
+|       swerv             |     0.044 |
 |     syscon              |     0.001 |
 |     vga_controller      |     0.002 |
 |       vga_dtg_inst      |     0.002 |

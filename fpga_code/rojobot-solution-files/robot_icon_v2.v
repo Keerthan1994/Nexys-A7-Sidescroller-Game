@@ -63,7 +63,7 @@ module robot_icon_v2 #(
   
   // init the ram
   ram_block #(
-    .INIT_FILE("pikachu_02.mem")
+    .INIT_FILE("crash_bandicoot.mem")
   )ram_pikachu(
     .read_addr(read_addr),
     .clk(clk),
@@ -154,13 +154,13 @@ module robot_icon_v2 #(
     case (BotInfo_reg[2:0])
       3'h0: frame_row = 1;
       3'h1: frame_row = 7;
-      3'h2: frame_row = 3;
+      3'h2: frame_row = 3;  //facing E
       3'h3: frame_row = 5;
       3'h4: frame_row = 0;
       3'h5: frame_row = 4;
       3'h6: frame_row = 2;
       3'h7: frame_row = 6;
-      default: frame_row = 3;
+      default: frame_row = 3; //assuming this is for facing E 
     endcase
     
     // pixel color

@@ -42,7 +42,7 @@ module title_colorizer
   // store title as block RAM
   ram_block 
   #(
-    .INIT_FILE("title_04.mem"),
+    .INIT_FILE("crash_title.mem"),
     .ADDR_WIDTH(TITLE_ADDR_WIDTH)
   )
     ram_title(

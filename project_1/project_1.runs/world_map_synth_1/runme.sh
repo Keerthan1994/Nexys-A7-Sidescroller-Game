@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/project_1/project_1.runs/world_map_synth_1'
+HD_PWD='C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/world_map_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

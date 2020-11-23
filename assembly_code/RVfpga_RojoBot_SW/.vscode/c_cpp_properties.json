@@ -6,8 +6,8 @@
         {
             "name": "Win32",
             "includePath": [
-                "c:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/assembly_code/RVfpga_RojoBot_SW/include",
-                "c:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/assembly_code/RVfpga_RojoBot_SW/src",
+                "c:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/assembly_code/RVfpga_RojoBot_SW/include",
+                "c:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/assembly_code/RVfpga_RojoBot_SW/src",
                 "C:/Users/ryanp/.platformio/packages/framework-wd-riscv-sdk/common/api_inc",
                 "C:/Users/ryanp/.platformio/packages/framework-wd-riscv-sdk/psp/api_inc",
                 "C:/Users/ryanp/.platformio/packages/framework-wd-riscv-sdk/board/nexys_a7_eh1",
@@ -18,8 +18,8 @@
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "c:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/assembly_code/RVfpga_RojoBot_SW/include",
-                    "c:/Users/ryanp/Documents/Grad-School/ECE-540-SoC-Progammable-Logic-FPGAs/Projects/proj2-rojobot-new/proj2-rojobot-new/assembly_code/RVfpga_RojoBot_SW/src",
+                    "c:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/assembly_code/RVfpga_RojoBot_SW/include",
+                    "c:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/assembly_code/RVfpga_RojoBot_SW/src",
                     "C:/Users/ryanp/.platformio/packages/framework-wd-riscv-sdk/common/api_inc",
                     "C:/Users/ryanp/.platformio/packages/framework-wd-riscv-sdk/psp/api_inc",
                     "C:/Users/ryanp/.platformio/packages/framework-wd-riscv-sdk/board/nexys_a7_eh1",
