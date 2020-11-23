@@ -96,17 +96,16 @@ reg [7:0]	LocX_int,			// X-coordinate of rojobot's location
 
 // Sidescroller Edit (If LocX has reached the end reset it):
 reg [7:0]   LocX_int_set;
-always @(LocX_int) begin
-    if (LocX_int == 12'h07D) begin
+					
+// read registers and store in the internal BOT state registers
+always @(posedge clk) begin
+    if (LocX_int == 8'h7D) begin
         LocX_int_set <= 0;
     end
     else begin
         LocX_int_set <= LocX_int;
     end
-end
-					
-// read registers and store in the internal BOT state registers
-always @(posedge clk) begin
+
 	case (AddrIn[3:0])
 		// I/O registers BOT hardware interface
 		// Picoblaze should only read MotCtl and MapVal but
@@ -190,7 +189,7 @@ always @(posedge clk or posedge reset) begin
 		BotInfo <= 0;
 	end
 	else if (load_sys_regs) begin  // copy holding registers to system interface registers
-            if (LocX_int == 12'h07D) begin  // Sidescroller change
+            if (LocX_int == 8'h7D) begin  // Sidescroller change
                 LocX <= 0;
             end
                 else begin

@@ -2,8 +2,8 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Sun Nov 22 18:40:16 2020
-# Process ID: 28712
+# Start of session at: Sun Nov 22 23:00:57 2020
+# Process ID: 22000
 # Current directory: C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/synth_1
 # Command line: vivado.exe -log rvfpga.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rvfpga.tcl
 # Log file: C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/synth_1/rvfpga.vds
@@ -21,7 +21,7 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 32900 
+INFO: Helper process launched with PID 23968 
 WARNING: [Synth 8-1921] elaboration system task error violates IEEE 1800 syntax [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/beh_lib.sv:162]
 WARNING: [Synth 8-2507] parameter declaration becomes local in axi2wb with formal parameter declaration list [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Interconnect/AxiToWb/axi2wb.v:71]
 WARNING: [Synth 8-2507] parameter declaration becomes local in axi2wb with formal parameter declaration list [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Interconnect/AxiToWb/axi2wb.v:81]
@@ -36,7 +36,7 @@ WARNING: [Synth 8-2369] multiple packed dimensions are not allowed in this mode 
 WARNING: [Synth 8-2369] multiple packed dimensions are not allowed in this mode of verilog [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/SystemController/swervolf_syscon.v:316]
 WARNING: [Synth 8-2507] parameter declaration becomes local in wb_mux with formal parameter declaration list [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_intercon_1.2.2/wb_mux.v:87]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 872.961 ; gain = 242.953
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 873.141 ; gain = 241.648
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'rvfpga' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/rvfpga.sv:25]
 	Parameter bootrom_file bound to: (null) - type: string 
@@ -1787,6 +1787,8 @@ WARNING: [Synth 8-3848] Net wb_dat_o in module/entity vga_control does not have 
 WARNING: [Synth 8-3848] Net wb_err_o in module/entity vga_control does not have driver. [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/rojobot-solution-files/vga_control.v:39]
 WARNING: [Synth 8-3848] Net wb_rtry_o in module/entity vga_control does not have driver. [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/rojobot-solution-files/vga_control.v:40]
 WARNING: [Synth 8-689] width (16) of port connection 'Bot_Config_reg' does not match port width (8) of module 'rojobot31_0' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/rojobot-solution-files/rojobot_controller.v:121]
+WARNING: [Synth 8-567] referenced signal 'reset' should be on the sensitivity list [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/Sidescroller/ss_map_muxer.sv:70]
+WARNING: [Synth 8-567] referenced signal 'current_map' should be on the sensitivity list [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/Sidescroller/ss_map_muxer.sv:70]
 WARNING: [Synth 8-689] width (1) of port connection 'worldmap_data' does not match port width (2) of module 'ss_map_muxer' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/rojobot-solution-files/rojobot_controller.v:143]
 	Parameter SCREEN_TO_WORLD_RATIO_COL bound to: 6 - type: integer 
 	Parameter SCREEN_TO_WORLD_RATIO_ROW bound to: 6 - type: integer 
@@ -1831,7 +1833,6 @@ INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/rrom
 INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/rojobot-solution-files/rojobot_controller.v:261]
 WARNING: [Synth 8-3848] Net wb_err_o in module/entity rojobot_controller does not have driver. [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/rojobot-solution-files/rojobot_controller.v:42]
 WARNING: [Synth 8-3848] Net wb_rtry_o in module/entity rojobot_controller does not have driver. [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/rojobot-solution-files/rojobot_controller.v:43]
-WARNING: [Synth 8-3848] Net LocX in module/entity rojobot_controller does not have driver. [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/rojobot-solution-files/rojobot_controller.v:140]
 WARNING: [Synth 8-3848] Net io_bresp in module/entity swervolf_core does not have driver. [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Interconnect/AxiInterconnect/axi_intercon.vh:129]
 WARNING: [Synth 8-3848] Net io_rresp in module/entity swervolf_core does not have driver. [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Interconnect/AxiInterconnect/axi_intercon.vh:134]
 WARNING: [Synth 8-3848] Net wb_m2s_io_cti in module/entity swervolf_core does not have driver. [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_intercon.vh:7]
@@ -1872,7 +1873,6 @@ WARNING: [Synth 8-3331] design map_colorizer has unconnected port pixel_column[6
 WARNING: [Synth 8-3331] design map_colorizer has unconnected port pixel_column[5]
 WARNING: [Synth 8-3331] design map_colorizer has unconnected port pixel_column[4]
 WARNING: [Synth 8-3331] design robot_icon_v2 has unconnected port BotInfo_reg[3]
-WARNING: [Synth 8-3331] design ss_map_muxer has unconnected port reset
 WARNING: [Synth 8-3331] design ss_map_muxer has unconnected port debounced_SW_75[15]
 WARNING: [Synth 8-3331] design ss_map_muxer has unconnected port debounced_SW_75[14]
 WARNING: [Synth 8-3331] design ss_map_muxer has unconnected port debounced_SW_75[13]
@@ -1955,9 +1955,10 @@ WARNING: [Synth 8-3331] design vga_colorizer has unconnected port icon[7]
 WARNING: [Synth 8-3331] design vga_colorizer has unconnected port icon[6]
 WARNING: [Synth 8-3331] design vga_colorizer has unconnected port icon[5]
 WARNING: [Synth 8-3331] design vga_colorizer has unconnected port icon[4]
+WARNING: [Synth 8-3331] design vga_colorizer has unconnected port icon[3]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1419.789 ; gain = 789.781
+Finished RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1420.004 ; gain = 788.512
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1970,14 +1971,14 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1419.789 ; gain = 789.781
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1420.004 ; gain = 788.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1419.789 ; gain = 789.781
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1420.004 ; gain = 788.512
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1419.789 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1420.004 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 57 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -2006,7 +2007,7 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/rvfpga_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 1682.008 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1686.031 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 20 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 16 instances
@@ -2014,11 +2015,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 1 instance 
   PLLE2_BASE => PLLE2_ADV: 1 instance 
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.373 . Memory (MB): peak = 1682.008 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.367 . Memory (MB): peak = 1686.031 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'swervolf/rojobot_control/map_muxer/world_map' at clock pin 'clka' is different from the actual clock period '13.333', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'swervolf/rojobot_control/map_muxer/world_map_lr' at clock pin 'clka' is different from the actual clock period '13.333', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:55 ; elapsed = 00:00:54 . Memory (MB): peak = 1682.008 ; gain = 1052.000
+Finished Constraint Validation : Time (s): cpu = 00:00:56 ; elapsed = 00:00:54 . Memory (MB): peak = 1686.031 ; gain = 1054.539
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
 ---------------------------------------------------------------------------------
@@ -2026,7 +2027,7 @@ Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:55 ; elapsed = 00:00:54 . Memory (MB): peak = 1682.008 ; gain = 1052.000
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:56 ; elapsed = 00:00:54 . Memory (MB): peak = 1686.031 ; gain = 1054.539
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -2038,7 +2039,7 @@ Applied set_property DONT_TOUCH = true for swervolf/rojobot_control/map_muxer/wo
 Applied set_property DONT_TOUCH = true for swervolf/rojobot_control/map_muxer/world_map_lr. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for swervolf/rojobot_control/robot. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:56 ; elapsed = 00:00:54 . Memory (MB): peak = 1682.008 ; gain = 1052.000
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:56 ; elapsed = 00:00:54 . Memory (MB): peak = 1686.031 ; gain = 1054.539
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/litedram_core.v:4591]
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/litedram_core.v:7071]
@@ -2174,8 +2175,9 @@ INFO: [Synth 8-3354] encoded FSM with state register 'tstate_reg' using encoding
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'sequential' in module 'uart_receiver'
 WARNING: [Synth 8-327] inferring latch for variable 'en_ff_reg' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/beh_lib.sv:94]
+WARNING: [Synth 8-327] inferring latch for variable 'current_map_reg' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/Sidescroller/ss_map_muxer.sv:72]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:21 ; elapsed = 00:01:21 . Memory (MB): peak = 1682.008 ; gain = 1052.000
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:21 ; elapsed = 00:01:21 . Memory (MB): peak = 1686.031 ; gain = 1054.539
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance 'swervolf/swerv_eh1/swerv/dbg/axi_bready_ff' (rvdffs) to 'swervolf/swerv_eh1/swerv/dbg/axi_rready_ff'
 INFO: [Synth 8-223] decloning instance 'swervolf/swerv_eh1/swerv/exu/div_e1/dividend_c' (rvtwoscomp) to 'swervolf/swerv_eh1/swerv/exu/div_e1/q_ff_c'
@@ -2196,7 +2198,7 @@ Report RTL Partitions:
 |8     |exu                     |           1|     22017|
 |9     |mem                     |           1|      3303|
 |10    |rojobot_controller__GB0 |           1|     37138|
-|11    |rojobot_controller__GB1 |           1|      8973|
+|11    |rojobot_controller__GB1 |           1|      8952|
 |12    |swervolf_core__GCB0     |           1|     30578|
 |13    |swervolf_core__GCB1     |           1|     23464|
 |14    |rvfpga__GC0             |           1|      2980|
@@ -2236,7 +2238,7 @@ Detailed RTL Component Info :
 	   4 Input      3 Bit       Adders := 1     
 	   3 Input      3 Bit       Adders := 3     
 	   3 Input      2 Bit       Adders := 5     
-	   2 Input      2 Bit       Adders := 60    
+	   2 Input      2 Bit       Adders := 61    
 	   2 Input      1 Bit       Adders := 14    
 +---XORs : 
 	   2 Input     39 Bit         XORs := 2     
@@ -2387,7 +2389,7 @@ Detailed RTL Component Info :
 	   2 Input      5 Bit        Muxes := 332   
 	   4 Input      5 Bit        Muxes := 1     
 	   6 Input      5 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 237   
+	   2 Input      4 Bit        Muxes := 238   
 	   6 Input      4 Bit        Muxes := 2     
 	  11 Input      4 Bit        Muxes := 4     
 	   4 Input      4 Bit        Muxes := 8     
@@ -2410,7 +2412,7 @@ Detailed RTL Component Info :
 	  26 Input      2 Bit        Muxes := 1     
 	   6 Input      2 Bit        Muxes := 96    
 	   7 Input      2 Bit        Muxes := 3     
-	   2 Input      1 Bit        Muxes := 2022  
+	   2 Input      1 Bit        Muxes := 2023  
 	   4 Input      1 Bit        Muxes := 39    
 	  11 Input      1 Bit        Muxes := 20    
 	   3 Input      1 Bit        Muxes := 75    
@@ -13666,6 +13668,13 @@ Detailed RTL Component Info :
 	   2 Input      3 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 2     
 	   3 Input      2 Bit        Muxes := 1     
+Module ss_map_muxer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
 Module rojobot_controller 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -16285,7 +16294,7 @@ WARNING: [Synth 8-3332] Sequential element (i_atop_filter/FSM_sequential_w_state
 WARNING: [Synth 8-3332] Sequential element (i_atop_filter/FSM_sequential_w_state_q_reg[1]) is unused and will be removed from module axi_err_slv__1.
 WARNING: [Synth 8-3332] Sequential element (i_atop_filter/FSM_sequential_w_state_q_reg[0]) is unused and will be removed from module axi_err_slv__1.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:37 ; elapsed = 00:04:16 . Memory (MB): peak = 1682.008 ; gain = 1052.000
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:52 ; elapsed = 00:04:35 . Memory (MB): peak = 1686.031 ; gain = 1054.539
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -16401,7 +16410,7 @@ Report RTL Partitions:
 |8     |exu                     |           1|     18127|
 |9     |mem                     |           1|      3266|
 |10    |rojobot_controller__GB0 |           1|      1380|
-|11    |rojobot_controller__GB1 |           1|      1658|
+|11    |rojobot_controller__GB1 |           1|      1676|
 |12    |swervolf_core__GCB0     |           1|      6839|
 |13    |swervolf_core__GCB1     |           1|     10209|
 |14    |rvfpga__GC0             |           1|      2959|
@@ -16411,7 +16420,7 @@ Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-3321] set_false_path : Empty from list for constraint at line 8 of C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/rvfpga.xdc. [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/rvfpga.xdc:8]
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:51 ; elapsed = 00:04:30 . Memory (MB): peak = 1682.008 ; gain = 1052.000
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:06 ; elapsed = 00:04:50 . Memory (MB): peak = 1686.031 ; gain = 1054.539
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
@@ -16419,7 +16428,7 @@ Start Timing Optimization
 WARNING: [Synth 8-3332] Sequential element (axi_clk/clkhdr/en_ff_reg) is unused and will be removed from module ifu_mem_ctl.
 WARNING: [Synth 8-3332] Sequential element (dma_bus_cgc/clkhdr/en_ff_reg) is unused and will be removed from module dma_ctrl.
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:04:48 ; elapsed = 00:05:27 . Memory (MB): peak = 1682.008 ; gain = 1052.000
+Finished Timing Optimization : Time (s): cpu = 00:05:06 ; elapsed = 00:05:49 . Memory (MB): peak = 1686.031 ; gain = 1054.539
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -16461,9 +16470,9 @@ Block RAM: Final Mapping	Report
 |\swervolf/swerv_eh1/mem  | icm/ic_data_inst/WAYS[3].SUBBANKS[1].ic_bank_sb_way_data/ram_core_reg | 256 x 34(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
 |\swervolf/swerv_eh1/mem  | icm/ic_data_inst/WAYS[3].SUBBANKS[2].ic_bank_sb_way_data/ram_core_reg | 256 x 34(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
 |\swervolf/swerv_eh1/mem  | icm/ic_data_inst/WAYS[3].SUBBANKS[3].ic_bank_sb_way_data/ram_core_reg | 256 x 34(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|rvfpga                   | robot_icon_v2/ram_pikachu/ram_reg                                     | 32 K x 12(READ_FIRST)  | W |   | 32 K x 12(WRITE_FIRST) |   | R | Port A and B     | 0      | 12     | 
 |rojobot_controller__GB0  | title_colorizer/ram_title/ram_reg                                     | 32 K x 12(READ_FIRST)  | W |   | 32 K x 12(WRITE_FIRST) |   | R | Port A and B     | 0      | 12     | 
 |bootrom                  | ram/mem_reg                                                           | 512 x 64(READ_FIRST)   | W | R |                        |   |   | Port A           | 0      | 1      | 
-|rvfpga                   | robot_icon_v2/ram_pikachu/ram_reg                                     | 32 K x 12(READ_FIRST)  | W |   | 32 K x 12(WRITE_FIRST) |   | R | Port A and B     | 0      | 12     | 
 +-------------------------+-----------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
 
 
@@ -16509,7 +16518,7 @@ Report RTL Partitions:
 |8     |exu                 |           1|     17849|
 |9     |mem                 |           1|      3266|
 |10    |swervolf_core__GCB1 |           1|      8447|
-|11    |rvfpga_GT0          |           1|     12577|
+|11    |rvfpga_GT0          |           1|     12595|
 +------+--------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
@@ -16601,6 +16610,18 @@ INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM bloc
 INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/beh_lib.sv:37]
 INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/beh_lib.sv:37]
 INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/beh_lib.sv:37]
+INFO: [Synth 8-7053] The timing for the instance i_0/swervolf/rojobot_control/robot_icon_v2/ram_pikachu/ram_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance i_0/swervolf/rojobot_control/robot_icon_v2/ram_pikachu/ram_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance i_0/swervolf/rojobot_control/robot_icon_v2/ram_pikachu/ram_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance i_0/swervolf/rojobot_control/robot_icon_v2/ram_pikachu/ram_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance i_0/swervolf/rojobot_control/robot_icon_v2/ram_pikachu/ram_reg_0_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance i_0/swervolf/rojobot_control/robot_icon_v2/ram_pikachu/ram_reg_0_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance i_0/swervolf/rojobot_control/robot_icon_v2/ram_pikachu/ram_reg_0_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance i_0/swervolf/rojobot_control/robot_icon_v2/ram_pikachu/ram_reg_0_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance i_0/swervolf/rojobot_control/robot_icon_v2/ram_pikachu/ram_reg_0_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance i_0/swervolf/rojobot_control/robot_icon_v2/ram_pikachu/ram_reg_0_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance i_0/swervolf/rojobot_control/robot_icon_v2/ram_pikachu/ram_reg_0_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance i_0/swervolf/rojobot_control/robot_icon_v2/ram_pikachu/ram_reg_0_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7053] The timing for the instance i_0/swervolf/rojobot_control/title_colorizer/ram_title/ram_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7053] The timing for the instance i_0/swervolf/rojobot_control/title_colorizer/ram_title/ram_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7053] The timing for the instance i_0/swervolf/rojobot_control/title_colorizer/ram_title/ram_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
@@ -16612,21 +16633,9 @@ INFO: [Synth 8-7053] The timing for the instance i_0/swervolf/rojobot_control/ti
 INFO: [Synth 8-7053] The timing for the instance i_0/swervolf/rojobot_control/title_colorizer/ram_title/ram_reg_0_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7053] The timing for the instance i_0/swervolf/rojobot_control/title_colorizer/ram_title/ram_reg_0_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7053] The timing for the instance i_0/swervolf/rojobot_control/title_colorizer/ram_title/ram_reg_0_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance i_0/swervolf/rojobot_control/title_colorizer/ram_title/ram_reg_0_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance i_0/swervolf/bootrom/ram/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance i_0/swervolf/bootrom/ram/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance i_0/swervolf/rojobot_control/robot_icon_v2/ram_pikachu/ram_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance i_0/swervolf/rojobot_control/robot_icon_v2/ram_pikachu/ram_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance i_0/swervolf/rojobot_control/robot_icon_v2/ram_pikachu/ram_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance i_0/swervolf/rojobot_control/robot_icon_v2/ram_pikachu/ram_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance i_0/swervolf/rojobot_control/robot_icon_v2/ram_pikachu/ram_reg_0_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance i_0/swervolf/rojobot_control/robot_icon_v2/ram_pikachu/ram_reg_0_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance i_0/swervolf/rojobot_control/robot_icon_v2/ram_pikachu/ram_reg_0_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance i_0/swervolf/rojobot_control/robot_icon_v2/ram_pikachu/ram_reg_0_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance i_0/swervolf/rojobot_control/robot_icon_v2/ram_pikachu/ram_reg_0_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Common 17-14] Message 'Synth 8-7053' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:05:10 ; elapsed = 00:06:02 . Memory (MB): peak = 1682.008 ; gain = 1052.000
+Finished Technology Mapping : Time (s): cpu = 00:05:31 ; elapsed = 00:06:27 . Memory (MB): peak = 1686.031 ; gain = 1054.539
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -16643,7 +16652,7 @@ Report RTL Partitions:
 |8     |exu                 |           1|      6412|
 |9     |mem                 |           1|      1059|
 |10    |swervolf_core__GCB1 |           1|      4181|
-|11    |rvfpga_GT0          |           1|      6616|
+|11    |rvfpga_GT0          |           1|      6625|
 +------+--------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -16669,40 +16678,40 @@ INFO: [Synth 8-4649] Removing BlackBox instance \swervolf/rojobot_control/map_mu
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3295] tying undriven pin i_38305:a to constant 0
-WARNING: [Synth 8-3295] tying undriven pin i_38306:a to constant 0
-WARNING: [Synth 8-3295] tying undriven pin i_38307:a to constant 0
-WARNING: [Synth 8-3295] tying undriven pin i_38308:a to constant 0
-WARNING: [Synth 8-3295] tying undriven pin i_38309:a to constant 0
-WARNING: [Synth 8-3295] tying undriven pin i_38310:a to constant 0
-WARNING: [Synth 8-3295] tying undriven pin i_38311:a to constant 0
-WARNING: [Synth 8-3295] tying undriven pin i_38312:a to constant 0
-WARNING: [Synth 8-3295] tying undriven pin i_38313:a to constant 0
-WARNING: [Synth 8-3295] tying undriven pin i_38314:a to constant 0
-WARNING: [Synth 8-3295] tying undriven pin i_38315:a to constant 0
-WARNING: [Synth 8-3295] tying undriven pin i_38316:a to constant 0
-WARNING: [Synth 8-3295] tying undriven pin i_38317:a to constant 0
-WARNING: [Synth 8-3295] tying undriven pin i_38318:a to constant 0
-WARNING: [Synth 8-3295] tying undriven pin i_38319:a to constant 0
-WARNING: [Synth 8-3295] tying undriven pin i_38320:a to constant 0
-WARNING: [Synth 8-3295] tying undriven pin i_38321:a to constant 0
-WARNING: [Synth 8-3295] tying undriven pin i_38321:en to constant 0
-WARNING: [Synth 8-3295] tying undriven pin i_38322:a to constant 0
-WARNING: [Synth 8-3295] tying undriven pin i_38322:en to constant 0
-WARNING: [Synth 8-3295] tying undriven pin i_38323:a to constant 0
-WARNING: [Synth 8-3295] tying undriven pin i_38323:en to constant 0
-WARNING: [Synth 8-3295] tying undriven pin i_38324:a to constant 0
-WARNING: [Synth 8-3295] tying undriven pin i_38324:en to constant 0
-WARNING: [Synth 8-3295] tying undriven pin i_38325:a to constant 0
-WARNING: [Synth 8-3295] tying undriven pin i_38325:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_38805:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_38806:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_38807:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_38808:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_38809:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_38810:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_38811:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_38812:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_38813:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_38814:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_38815:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_38816:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_38817:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_38818:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_38819:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_38820:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_38821:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_38821:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_38822:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_38822:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_38823:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_38823:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_38824:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_38824:en to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_38825:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_38825:en to constant 0
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:05:21 ; elapsed = 00:06:13 . Memory (MB): peak = 1682.008 ; gain = 1052.000
+Finished IO Insertion : Time (s): cpu = 00:05:42 ; elapsed = 00:06:39 . Memory (MB): peak = 1686.031 ; gain = 1054.539
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:05:21 ; elapsed = 00:06:13 . Memory (MB): peak = 1682.008 ; gain = 1052.000
+Finished Renaming Generated Instances : Time (s): cpu = 00:05:42 ; elapsed = 00:06:39 . Memory (MB): peak = 1686.031 ; gain = 1054.539
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -16721,25 +16730,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:34 ; elapsed = 00:06:26 . Memory (MB): peak = 1682.008 ; gain = 1052.000
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:56 ; elapsed = 00:06:52 . Memory (MB): peak = 1686.031 ; gain = 1054.539
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:05:35 ; elapsed = 00:06:27 . Memory (MB): peak = 1682.008 ; gain = 1052.000
+Finished Renaming Generated Ports : Time (s): cpu = 00:05:57 ; elapsed = 00:06:54 . Memory (MB): peak = 1686.031 ; gain = 1054.539
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:05:36 ; elapsed = 00:06:28 . Memory (MB): peak = 1682.008 ; gain = 1052.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:05:58 ; elapsed = 00:06:55 . Memory (MB): peak = 1686.031 ; gain = 1054.539
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:05:36 ; elapsed = 00:06:29 . Memory (MB): peak = 1682.008 ; gain = 1052.000
+Finished Renaming Generated Nets : Time (s): cpu = 00:05:59 ; elapsed = 00:06:55 . Memory (MB): peak = 1686.031 ; gain = 1054.539
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -16790,12 +16799,12 @@ Report Cell Usage:
 |13    |IDELAYE2     |     2|
 |14    |IDELAYE2_1   |    16|
 |15    |ISERDESE2    |    16|
-|16    |LUT1         |   687|
-|17    |LUT2         |  2590|
-|18    |LUT3         |  5017|
-|19    |LUT4         |  6654|
+|16    |LUT1         |   688|
+|17    |LUT2         |  2591|
+|18    |LUT3         |  5018|
+|19    |LUT4         |  6657|
 |20    |LUT5         |  7743|
-|21    |LUT6         | 17397|
+|21    |LUT6         | 17398|
 |22    |MUXF7        |   576|
 |23    |MUXF8        |    72|
 |24    |OSERDESE2    |    44|
@@ -16850,18 +16859,19 @@ Report Cell Usage:
 |73    |FDRE         |  3311|
 |74    |FDSE         |   144|
 |75    |LD           |    49|
-|76    |IBUF         |     9|
-|77    |IOBUF        |    32|
-|78    |IOBUFDS      |     2|
-|79    |OBUF         |    76|
-|80    |OBUFDS       |     1|
+|76    |LDC          |     2|
+|77    |IBUF         |     9|
+|78    |IOBUF        |    32|
+|79    |IOBUFDS      |     2|
+|80    |OBUF         |    76|
+|81    |OBUFDS       |     1|
 +------+-------------+------+
 
 Report Instance Areas: 
 +------+----------------------------------------------------------------------+------------------------------------+------+
 |      |Instance                                                              |Module                              |Cells |
 +------+----------------------------------------------------------------------+------------------------------------+------+
-|1     |top                                                                   |                                    | 61804|
+|1     |top                                                                   |                                    | 61813|
 |2     |  cdc                                                                 |axi_cdc_intf                        |  1536|
 |3     |    i_axi_cdc                                                         |axi_cdc                             |  1536|
 |4     |      i_cdc_fifo_gray_ar                                              |cdc_fifo_gray__parameterized1       |   239|
@@ -16919,7 +16929,7 @@ Report Instance Areas:
 |56    |          state                                                       |serv_state                          |    72|
 |57    |        rf_ram                                                        |serv_rf_ram                         |     1|
 |58    |        rf_ram_if                                                     |serv_rf_ram_if                      |    46|
-|59    |  swervolf                                                            |swervolf_core                       | 54719|
+|59    |  swervolf                                                            |swervolf_core                       | 54728|
 |60    |    bootrom                                                           |wb_mem_wrapper                      |     2|
 |61    |      ram                                                             |dpram64                             |     1|
 |62    |    axi2wb                                                            |axi2wb                              |   634|
@@ -17068,10 +17078,10 @@ Report Instance Areas:
 |205   |    gpio2_module                                                      |gpio_top                            |   455|
 |206   |    gpio_debouncer                                                    |gpio_debounce                       |   176|
 |207   |    gpio_module                                                       |gpio_top_0                          |   574|
-|208   |    rojobot_control                                                   |rojobot_controller                  |  1289|
-|209   |      map_colorizer                                                   |map_colorizer                       |   142|
-|210   |      map_muxer                                                       |ss_map_muxer                        |     8|
-|211   |      robot_icon_v2                                                   |robot_icon_v2                       |   878|
+|208   |    rojobot_control                                                   |rojobot_controller                  |  1401|
+|209   |      map_colorizer                                                   |map_colorizer                       |   238|
+|210   |      map_muxer                                                       |ss_map_muxer                        |    26|
+|211   |      robot_icon_v2                                                   |robot_icon_v2                       |   876|
 |212   |        ram_pikachu                                                   |ram_block                           |    28|
 |213   |      title_colorizer                                                 |title_colorizer                     |    88|
 |214   |        ram_title                                                     |ram_block__parameterized0           |    27|
@@ -19979,43 +19989,44 @@ Report Instance Areas:
 |3116  |          fifo_tx                                                     |uart_tfifo                          |    46|
 |3117  |            tfifo                                                     |raminfr                             |    10|
 |3118  |      wb_interface                                                    |uart_wb                             |    53|
-|3119  |    vga_controller                                                    |vga_control                         |   291|
-|3120  |      vga_dtg_inst                                                    |dtg                                 |   290|
+|3119  |    vga_controller                                                    |vga_control                         |   188|
+|3120  |      vga_dtg_inst                                                    |dtg                                 |   187|
 |3121  |    wb_intercon0                                                      |wb_intercon                         |   134|
 |3122  |      wb_mux_io                                                       |wb_mux                              |   134|
 |3123  |  tap                                                                 |bscan_tap                           |   229|
 +------+----------------------------------------------------------------------+------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:05:37 ; elapsed = 00:06:29 . Memory (MB): peak = 1682.008 ; gain = 1052.000
+Finished Writing Synthesis Report : Time (s): cpu = 00:05:59 ; elapsed = 00:06:56 . Memory (MB): peak = 1686.031 ; gain = 1054.539
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 262 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:04:47 ; elapsed = 00:06:07 . Memory (MB): peak = 1682.008 ; gain = 789.781
-Synthesis Optimization Complete : Time (s): cpu = 00:05:37 ; elapsed = 00:06:30 . Memory (MB): peak = 1682.008 ; gain = 1052.000
+Synthesis finished with 0 errors, 0 critical warnings and 263 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:05:09 ; elapsed = 00:06:33 . Memory (MB): peak = 1686.031 ; gain = 788.512
+Synthesis Optimization Complete : Time (s): cpu = 00:05:59 ; elapsed = 00:06:57 . Memory (MB): peak = 1686.031 ; gain = 1054.539
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1682.008 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 1924 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1686.031 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1926 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 4 inverter(s) to 83 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.047 . Memory (MB): peak = 1682.008 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 1686.031 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 136 instances were transformed.
+  A total of 138 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 32 instances
   IOBUFDS => IOBUFDS (IBUFDS, INV, OBUFTDS(x2)): 2 instances
   LD => LDCE (inverted pins: G): 49 instances
+  LDC => LDCE: 2 instances
   OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 1 instance 
   PLLE2_BASE => PLLE2_ADV: 1 instance 
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 51 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-723 Infos, 439 Warnings, 0 Critical Warnings and 0 Errors encountered.
+723 Infos, 441 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:06:02 ; elapsed = 00:06:55 . Memory (MB): peak = 1682.008 ; gain = 1341.965
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1682.008 ; gain = 0.000
+synth_design: Time (s): cpu = 00:06:23 ; elapsed = 00:07:22 . Memory (MB): peak = 1686.031 ; gain = 1345.438
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1686.031 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/synth_1/rvfpga.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 1682.008 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 1686.031 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file rvfpga_utilization_synth.rpt -pb rvfpga_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Nov 22 18:47:26 2020...
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 22 23:08:34 2020...

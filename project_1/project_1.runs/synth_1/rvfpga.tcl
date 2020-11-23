@@ -17,6 +17,9 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param chipscope.maxJobs 4
+set_param xicom.use_bs_reader 1
+set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config  -id {Common 17-1649}  -string {{CRITICAL WARNING: [Common 17-1649] The Vivado message database 'C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/synth_1/vivado.pb' contains 20125 messages. Restoring all messages from this message database will impact Vivado performance, so only WARNING, CRITICAL WARNING, and ERROR messages will be restored. To restore all messages from this file use the tcl command 'set_param messaging.loadPbLimit 20126' and re-open the project.}}  -suppress 
 set_msg_config  -id {Common 17-1649}  -string {{CRITICAL WARNING: [Common 17-1649] The Vivado message database 'C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/synth_1/vivado.pb' contains 20143 messages. Restoring all messages from this message database will impact Vivado performance, so only WARNING, CRITICAL WARNING, and ERROR messages will be restored. To restore all messages from this file use the tcl command 'set_param messaging.loadPbLimit 20144' and re-open the project.}}  -suppress 
 create_project -in_memory -part xc7a100tcsg324-1

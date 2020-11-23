@@ -1,7 +1,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-// Date        : Sun Nov 22 18:40:14 2020
+// Date        : Sun Nov 22 21:46:08 2020
 // Host        : Ragnorak running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/rojobot31_0/rojobot31_0_sim_netlist.v
@@ -69,20 +69,15 @@ endmodule
 module rojobot31_0_bot31_if
    (E,
     upd_sysregs,
-    \LocX_int_reg[0]_0 ,
-    Q,
-    \LocY_int_reg[2]_0 ,
-    \LocY_int_reg[5]_0 ,
-    \BotInfo_int_reg[5]_0 ,
-    \LocY_int_reg[6]_0 ,
-    \LocX_int_reg[2]_0 ,
-    \LocX_int_reg[1]_0 ,
-    \LocX_int_reg[0]_1 ,
-    \LocX_int_reg[0]_2 ,
-    \LocX_int_reg[0]_3 ,
-    \BotInfo_int_reg[7]_0 ,
+    \BotInfo_int_reg[0]_0 ,
     \BotInfo_int_reg[1]_0 ,
-    \Sensors_int_reg[7]_0 ,
+    \BotInfo_int_reg[2]_0 ,
+    \BotInfo_int_reg[3]_0 ,
+    \BotInfo_int_reg[4]_0 ,
+    \BotInfo_int_reg[5]_0 ,
+    \BotInfo_int_reg[6]_0 ,
+    \BotInfo_int_reg[7]_0 ,
+    Q,
     \DataOut_reg[7]_0 ,
     LocX_reg,
     LocY_reg,
@@ -93,32 +88,27 @@ module rojobot31_0_bot31_if
     clk_in,
     reset,
     upd_sysregs_reg_0,
+    \DataOut_reg[0]_0 ,
     MotCtl_in,
-    \DataOut_reg[2]_0 ,
-    \LocX_int_reg[0]_4 ,
+    \LocX_int_reg[7]_0 ,
     D,
     \LocY_int_reg[7]_0 ,
     \BotInfo_int_reg[7]_1 ,
-    \Sensors_int_reg[7]_1 ,
+    \Sensors_int_reg[7]_0 ,
     \DataOut_reg[7]_1 ,
     \MapX_reg[6]_0 ,
     \MapY_reg[6]_0 );
   output [0:0]E;
   output upd_sysregs;
-  output \LocX_int_reg[0]_0 ;
-  output [0:0]Q;
-  output \LocY_int_reg[2]_0 ;
-  output [3:0]\LocY_int_reg[5]_0 ;
-  output [3:0]\BotInfo_int_reg[5]_0 ;
-  output \LocY_int_reg[6]_0 ;
-  output \LocX_int_reg[2]_0 ;
-  output \LocX_int_reg[1]_0 ;
-  output \LocX_int_reg[0]_1 ;
-  output \LocX_int_reg[0]_2 ;
-  output \LocX_int_reg[0]_3 ;
-  output \BotInfo_int_reg[7]_0 ;
+  output \BotInfo_int_reg[0]_0 ;
   output \BotInfo_int_reg[1]_0 ;
-  output [7:0]\Sensors_int_reg[7]_0 ;
+  output \BotInfo_int_reg[2]_0 ;
+  output \BotInfo_int_reg[3]_0 ;
+  output \BotInfo_int_reg[4]_0 ;
+  output \BotInfo_int_reg[5]_0 ;
+  output \BotInfo_int_reg[6]_0 ;
+  output \BotInfo_int_reg[7]_0 ;
+  output [7:0]Q;
   output [7:0]\DataOut_reg[7]_0 ;
   output [7:0]LocX_reg;
   output [7:0]LocY_reg;
@@ -129,51 +119,48 @@ module rojobot31_0_bot31_if
   input clk_in;
   input reset;
   input upd_sysregs_reg_0;
-  input [3:0]MotCtl_in;
-  input [1:0]\DataOut_reg[2]_0 ;
-  input [0:0]\LocX_int_reg[0]_4 ;
+  input [1:0]\DataOut_reg[0]_0 ;
+  input [7:0]MotCtl_in;
+  input [0:0]\LocX_int_reg[7]_0 ;
   input [7:0]D;
   input [0:0]\LocY_int_reg[7]_0 ;
   input [0:0]\BotInfo_int_reg[7]_1 ;
-  input [0:0]\Sensors_int_reg[7]_1 ;
+  input [0:0]\Sensors_int_reg[7]_0 ;
   input [7:0]\DataOut_reg[7]_1 ;
   input [0:0]\MapX_reg[6]_0 ;
   input [0:0]\MapY_reg[6]_0 ;
 
-  wire [7:1]BotInfo_int;
+  wire [7:0]BotInfo_int;
+  wire \BotInfo_int_reg[0]_0 ;
   wire \BotInfo_int_reg[1]_0 ;
-  wire [3:0]\BotInfo_int_reg[5]_0 ;
+  wire \BotInfo_int_reg[2]_0 ;
+  wire \BotInfo_int_reg[3]_0 ;
+  wire \BotInfo_int_reg[4]_0 ;
+  wire \BotInfo_int_reg[5]_0 ;
+  wire \BotInfo_int_reg[6]_0 ;
   wire \BotInfo_int_reg[7]_0 ;
   wire [0:0]\BotInfo_int_reg[7]_1 ;
   wire [7:0]BotInfo_reg;
   wire [7:0]D;
-  wire [1:0]\DataOut_reg[2]_0 ;
+  wire [1:0]\DataOut_reg[0]_0 ;
   wire [7:0]\DataOut_reg[7]_0 ;
   wire [7:0]\DataOut_reg[7]_1 ;
   wire [0:0]E;
-  wire \LocX[0]_i_2_n_0 ;
+  wire \LocX[6]_i_2_n_0 ;
   wire [7:0]LocX_int;
-  wire \LocX_int_reg[0]_0 ;
-  wire \LocX_int_reg[0]_1 ;
-  wire \LocX_int_reg[0]_2 ;
-  wire \LocX_int_reg[0]_3 ;
-  wire [0:0]\LocX_int_reg[0]_4 ;
-  wire \LocX_int_reg[1]_0 ;
-  wire \LocX_int_reg[2]_0 ;
-  wire [6:0]LocX_int_set;
+  wire [0:0]\LocX_int_reg[7]_0 ;
+  wire [7:0]LocX_int_set;
+  wire \LocX_int_set[6]_i_1_n_0 ;
+  wire [6:0]LocX_int_set_0;
   wire [7:0]LocX_reg;
-  wire [7:1]LocY_int;
-  wire \LocY_int_reg[2]_0 ;
-  wire [3:0]\LocY_int_reg[5]_0 ;
-  wire \LocY_int_reg[6]_0 ;
+  wire [7:0]LocY_int;
   wire [0:0]\LocY_int_reg[7]_0 ;
   wire [7:0]LocY_reg;
   wire [0:0]\MapX_reg[6]_0 ;
   wire [0:0]\MapY_reg[6]_0 ;
-  wire [3:0]MotCtl_in;
-  wire [0:0]Q;
-  wire [7:0]\Sensors_int_reg[7]_0 ;
-  wire [0:0]\Sensors_int_reg[7]_1 ;
+  wire [7:0]MotCtl_in;
+  wire [7:0]Q;
+  wire [0:0]\Sensors_int_reg[7]_0 ;
   wire [7:0]Sensors_reg;
   wire clk_in;
   wire load_sys_regs_reg_0;
@@ -187,7 +174,7 @@ module rojobot31_0_bot31_if
         .CE(\BotInfo_int_reg[7]_1 ),
         .CLR(reset),
         .D(D[0]),
-        .Q(\BotInfo_int_reg[5]_0 [0]));
+        .Q(BotInfo_int[0]));
   FDCE \BotInfo_int_reg[1] 
        (.C(clk_in),
         .CE(\BotInfo_int_reg[7]_1 ),
@@ -205,19 +192,19 @@ module rojobot31_0_bot31_if
         .CE(\BotInfo_int_reg[7]_1 ),
         .CLR(reset),
         .D(D[3]),
-        .Q(\BotInfo_int_reg[5]_0 [1]));
+        .Q(BotInfo_int[3]));
   FDCE \BotInfo_int_reg[4] 
        (.C(clk_in),
         .CE(\BotInfo_int_reg[7]_1 ),
         .CLR(reset),
         .D(D[4]),
-        .Q(\BotInfo_int_reg[5]_0 [2]));
+        .Q(BotInfo_int[4]));
   FDCE \BotInfo_int_reg[5] 
        (.C(clk_in),
         .CE(\BotInfo_int_reg[7]_1 ),
         .CLR(reset),
         .D(D[5]),
-        .Q(\BotInfo_int_reg[5]_0 [3]));
+        .Q(BotInfo_int[5]));
   FDCE \BotInfo_int_reg[6] 
        (.C(clk_in),
         .CE(\BotInfo_int_reg[7]_1 ),
@@ -234,7 +221,7 @@ module rojobot31_0_bot31_if
        (.C(clk_in),
         .CE(E),
         .CLR(reset),
-        .D(\BotInfo_int_reg[5]_0 [0]),
+        .D(BotInfo_int[0]),
         .Q(BotInfo_reg[0]));
   FDCE \BotInfo_reg[1] 
        (.C(clk_in),
@@ -252,19 +239,19 @@ module rojobot31_0_bot31_if
        (.C(clk_in),
         .CE(E),
         .CLR(reset),
-        .D(\BotInfo_int_reg[5]_0 [1]),
+        .D(BotInfo_int[3]),
         .Q(BotInfo_reg[3]));
   FDCE \BotInfo_reg[4] 
        (.C(clk_in),
         .CE(E),
         .CLR(reset),
-        .D(\BotInfo_int_reg[5]_0 [2]),
+        .D(BotInfo_int[4]),
         .Q(BotInfo_reg[4]));
   FDCE \BotInfo_reg[5] 
        (.C(clk_in),
         .CE(E),
         .CLR(reset),
-        .D(\BotInfo_int_reg[5]_0 [3]),
+        .D(BotInfo_int[5]),
         .Q(BotInfo_reg[5]));
   FDCE \BotInfo_reg[6] 
        (.C(clk_in),
@@ -278,93 +265,85 @@ module rojobot31_0_bot31_if
         .CLR(reset),
         .D(BotInfo_int[7]),
         .Q(BotInfo_reg[7]));
-  (* SOFT_HLUTNM = "soft_lutpair7" *) 
-  LUT5 #(
-    .INIT(32'h2000FFFF)) 
-    \DataOut[0]_i_3 
-       (.I0(LocX_int[2]),
-        .I1(LocX_int[1]),
-        .I2(LocX_int[6]),
-        .I3(\LocX[0]_i_2_n_0 ),
-        .I4(LocX_int[0]),
-        .O(\LocX_int_reg[2]_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
-    \DataOut[1]_i_3 
+    \DataOut[0]_i_4 
+       (.I0(BotInfo_int[0]),
+        .I1(LocY_int[0]),
+        .I2(\DataOut_reg[0]_0 [1]),
+        .I3(LocX_int_set[0]),
+        .I4(\DataOut_reg[0]_0 [0]),
+        .I5(MotCtl_in[0]),
+        .O(\BotInfo_int_reg[0]_0 ));
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+    \DataOut[1]_i_4 
        (.I0(BotInfo_int[1]),
         .I1(LocY_int[1]),
-        .I2(\DataOut_reg[2]_0 [1]),
-        .I3(LocX_int[1]),
-        .I4(\DataOut_reg[2]_0 [0]),
-        .I5(MotCtl_in[0]),
+        .I2(\DataOut_reg[0]_0 [1]),
+        .I3(LocX_int_set[1]),
+        .I4(\DataOut_reg[0]_0 [0]),
+        .I5(MotCtl_in[1]),
         .O(\BotInfo_int_reg[1]_0 ));
-  LUT5 #(
-    .INIT(32'hFA0C0A0C)) 
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \DataOut[2]_i_2 
-       (.I0(LocY_int[2]),
-        .I1(MotCtl_in[1]),
-        .I2(\DataOut_reg[2]_0 [0]),
-        .I3(\DataOut_reg[2]_0 [1]),
-        .I4(BotInfo_int[2]),
-        .O(\LocY_int_reg[2]_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair7" *) 
-  LUT5 #(
-    .INIT(32'h0800FFFF)) 
-    \DataOut[2]_i_3 
-       (.I0(LocX_int[0]),
-        .I1(LocX_int[6]),
-        .I2(LocX_int[1]),
-        .I3(\LocX[0]_i_2_n_0 ),
-        .I4(LocX_int[2]),
-        .O(\LocX_int_reg[0]_1 ));
+       (.I0(BotInfo_int[2]),
+        .I1(LocY_int[2]),
+        .I2(\DataOut_reg[0]_0 [1]),
+        .I3(LocX_int_set[2]),
+        .I4(\DataOut_reg[0]_0 [0]),
+        .I5(MotCtl_in[2]),
+        .O(\BotInfo_int_reg[2]_0 ));
   LUT6 #(
-    .INIT(64'h00800000FFFFFFFF)) 
-    \DataOut[3]_i_4 
-       (.I0(LocX_int[0]),
-        .I1(LocX_int[6]),
-        .I2(LocX_int[2]),
-        .I3(LocX_int[1]),
-        .I4(\LocX[0]_i_2_n_0 ),
-        .I5(LocX_int[3]),
-        .O(\LocX_int_reg[0]_2 ));
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+    \DataOut[3]_i_3 
+       (.I0(BotInfo_int[3]),
+        .I1(LocY_int[3]),
+        .I2(\DataOut_reg[0]_0 [1]),
+        .I3(LocX_int_set[3]),
+        .I4(\DataOut_reg[0]_0 [0]),
+        .I5(MotCtl_in[3]),
+        .O(\BotInfo_int_reg[3]_0 ));
   LUT6 #(
-    .INIT(64'h00800000FFFFFFFF)) 
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+    \DataOut[4]_i_3 
+       (.I0(BotInfo_int[4]),
+        .I1(LocY_int[4]),
+        .I2(\DataOut_reg[0]_0 [1]),
+        .I3(LocX_int_set[4]),
+        .I4(\DataOut_reg[0]_0 [0]),
+        .I5(MotCtl_in[4]),
+        .O(\BotInfo_int_reg[4]_0 ));
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \DataOut[5]_i_3 
-       (.I0(LocX_int[0]),
-        .I1(LocX_int[6]),
-        .I2(LocX_int[2]),
-        .I3(LocX_int[1]),
-        .I4(\LocX[0]_i_2_n_0 ),
-        .I5(LocX_int[5]),
-        .O(\LocX_int_reg[0]_3 ));
-  LUT5 #(
-    .INIT(32'hFA0C0A0C)) 
+       (.I0(BotInfo_int[5]),
+        .I1(LocY_int[5]),
+        .I2(\DataOut_reg[0]_0 [1]),
+        .I3(LocX_int_set[5]),
+        .I4(\DataOut_reg[0]_0 [0]),
+        .I5(MotCtl_in[5]),
+        .O(\BotInfo_int_reg[5]_0 ));
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \DataOut[6]_i_2 
-       (.I0(LocY_int[6]),
-        .I1(MotCtl_in[2]),
-        .I2(\DataOut_reg[2]_0 [0]),
-        .I3(\DataOut_reg[2]_0 [1]),
-        .I4(BotInfo_int[6]),
-        .O(\LocY_int_reg[6]_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair6" *) 
-  LUT5 #(
-    .INIT(32'h0800FFFF)) 
-    \DataOut[6]_i_3 
-       (.I0(LocX_int[0]),
-        .I1(LocX_int[2]),
-        .I2(LocX_int[1]),
-        .I3(\LocX[0]_i_2_n_0 ),
-        .I4(LocX_int[6]),
-        .O(\LocX_int_reg[0]_0 ));
+       (.I0(BotInfo_int[6]),
+        .I1(LocY_int[6]),
+        .I2(\DataOut_reg[0]_0 [1]),
+        .I3(LocX_int_set[6]),
+        .I4(\DataOut_reg[0]_0 [0]),
+        .I5(MotCtl_in[6]),
+        .O(\BotInfo_int_reg[6]_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \DataOut[7]_i_3 
        (.I0(BotInfo_int[7]),
         .I1(LocY_int[7]),
-        .I2(\DataOut_reg[2]_0 [1]),
-        .I3(LocX_int[7]),
-        .I4(\DataOut_reg[2]_0 [0]),
-        .I5(MotCtl_in[3]),
+        .I2(\DataOut_reg[0]_0 [1]),
+        .I3(LocX_int_set[7]),
+        .I4(\DataOut_reg[0]_0 [0]),
+        .I5(MotCtl_in[7]),
         .O(\BotInfo_int_reg[7]_0 ));
   FDRE \DataOut_reg[0] 
        (.C(clk_in),
@@ -414,122 +393,183 @@ module rojobot31_0_bot31_if
         .D(\DataOut_reg[7]_1 [7]),
         .Q(\DataOut_reg[7]_0 [7]),
         .R(1'b0));
-  (* SOFT_HLUTNM = "soft_lutpair6" *) 
+  (* SOFT_HLUTNM = "soft_lutpair4" *) 
   LUT5 #(
-    .INIT(32'hAA2AAAAA)) 
+    .INIT(32'hA2AAAAAA)) 
     \LocX[0]_i_1 
        (.I0(LocX_int[0]),
-        .I1(\LocX[0]_i_2_n_0 ),
-        .I2(LocX_int[6]),
-        .I3(LocX_int[1]),
-        .I4(LocX_int[2]),
-        .O(LocX_int_set[0]));
-  (* SOFT_HLUTNM = "soft_lutpair8" *) 
-  LUT4 #(
-    .INIT(16'h0080)) 
-    \LocX[0]_i_2 
-       (.I0(LocX_int[5]),
-        .I1(Q),
-        .I2(LocX_int[3]),
-        .I3(LocX_int[7]),
-        .O(\LocX[0]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair9" *) 
-  LUT2 #(
-    .INIT(4'h2)) 
+        .I1(LocX_int[2]),
+        .I2(LocX_int[1]),
+        .I3(LocX_int[6]),
+        .I4(\LocX[6]_i_2_n_0 ),
+        .O(LocX_int_set_0[0]));
+  (* SOFT_HLUTNM = "soft_lutpair4" *) 
+  LUT5 #(
+    .INIT(32'hF070F0F0)) 
     \LocX[2]_i_1 
-       (.I0(LocX_int[2]),
-        .I1(\LocX_int_reg[1]_0 ),
-        .O(LocX_int_set[2]));
-  (* SOFT_HLUTNM = "soft_lutpair10" *) 
-  LUT2 #(
-    .INIT(4'h2)) 
+       (.I0(LocX_int[0]),
+        .I1(LocX_int[6]),
+        .I2(LocX_int[2]),
+        .I3(LocX_int[1]),
+        .I4(\LocX[6]_i_2_n_0 ),
+        .O(LocX_int_set_0[2]));
+  LUT6 #(
+    .INIT(64'hAAAA2AAAAAAAAAAA)) 
     \LocX[3]_i_1 
        (.I0(LocX_int[3]),
-        .I1(\LocX_int_reg[1]_0 ),
-        .O(LocX_int_set[3]));
-  (* SOFT_HLUTNM = "soft_lutpair10" *) 
-  LUT2 #(
-    .INIT(4'h2)) 
+        .I1(LocX_int[0]),
+        .I2(LocX_int[6]),
+        .I3(LocX_int[2]),
+        .I4(LocX_int[1]),
+        .I5(\LocX[6]_i_2_n_0 ),
+        .O(LocX_int_set_0[3]));
+  LUT6 #(
+    .INIT(64'hAAAA2AAAAAAAAAAA)) 
     \LocX[4]_i_1 
-       (.I0(Q),
-        .I1(\LocX_int_reg[1]_0 ),
-        .O(LocX_int_set[4]));
-  (* SOFT_HLUTNM = "soft_lutpair8" *) 
-  LUT2 #(
-    .INIT(4'h2)) 
+       (.I0(LocX_int[4]),
+        .I1(LocX_int[0]),
+        .I2(LocX_int[6]),
+        .I3(LocX_int[2]),
+        .I4(LocX_int[1]),
+        .I5(\LocX[6]_i_2_n_0 ),
+        .O(LocX_int_set_0[4]));
+  LUT6 #(
+    .INIT(64'hAAAA2AAAAAAAAAAA)) 
     \LocX[5]_i_1 
        (.I0(LocX_int[5]),
-        .I1(\LocX_int_reg[1]_0 ),
-        .O(LocX_int_set[5]));
-  (* SOFT_HLUTNM = "soft_lutpair9" *) 
-  LUT2 #(
-    .INIT(4'h2)) 
-    \LocX[6]_i_1 
-       (.I0(LocX_int[6]),
-        .I1(\LocX_int_reg[1]_0 ),
-        .O(LocX_int_set[6]));
+        .I1(LocX_int[0]),
+        .I2(LocX_int[6]),
+        .I3(LocX_int[2]),
+        .I4(LocX_int[1]),
+        .I5(\LocX[6]_i_2_n_0 ),
+        .O(LocX_int_set_0[5]));
   LUT5 #(
-    .INIT(32'h20000000)) 
-    \LocX[6]_i_2 
-       (.I0(\LocX[0]_i_2_n_0 ),
-        .I1(LocX_int[1]),
+    .INIT(32'hCC4CCCCC)) 
+    \LocX[6]_i_1 
+       (.I0(LocX_int[0]),
+        .I1(LocX_int[6]),
         .I2(LocX_int[2]),
-        .I3(LocX_int[6]),
-        .I4(LocX_int[0]),
-        .O(\LocX_int_reg[1]_0 ));
+        .I3(LocX_int[1]),
+        .I4(\LocX[6]_i_2_n_0 ),
+        .O(LocX_int_set_0[6]));
+  LUT4 #(
+    .INIT(16'h0080)) 
+    \LocX[6]_i_2 
+       (.I0(LocX_int[5]),
+        .I1(LocX_int[4]),
+        .I2(LocX_int[3]),
+        .I3(LocX_int[7]),
+        .O(\LocX[6]_i_2_n_0 ));
   FDCE \LocX_int_reg[0] 
        (.C(clk_in),
-        .CE(\LocX_int_reg[0]_4 ),
+        .CE(\LocX_int_reg[7]_0 ),
         .CLR(reset),
         .D(D[0]),
         .Q(LocX_int[0]));
   FDCE \LocX_int_reg[1] 
        (.C(clk_in),
-        .CE(\LocX_int_reg[0]_4 ),
+        .CE(\LocX_int_reg[7]_0 ),
         .CLR(reset),
         .D(D[1]),
         .Q(LocX_int[1]));
   FDCE \LocX_int_reg[2] 
        (.C(clk_in),
-        .CE(\LocX_int_reg[0]_4 ),
+        .CE(\LocX_int_reg[7]_0 ),
         .CLR(reset),
         .D(D[2]),
         .Q(LocX_int[2]));
   FDCE \LocX_int_reg[3] 
        (.C(clk_in),
-        .CE(\LocX_int_reg[0]_4 ),
+        .CE(\LocX_int_reg[7]_0 ),
         .CLR(reset),
         .D(D[3]),
         .Q(LocX_int[3]));
   FDCE \LocX_int_reg[4] 
        (.C(clk_in),
-        .CE(\LocX_int_reg[0]_4 ),
+        .CE(\LocX_int_reg[7]_0 ),
         .CLR(reset),
         .D(D[4]),
-        .Q(Q));
+        .Q(LocX_int[4]));
   FDCE \LocX_int_reg[5] 
        (.C(clk_in),
-        .CE(\LocX_int_reg[0]_4 ),
+        .CE(\LocX_int_reg[7]_0 ),
         .CLR(reset),
         .D(D[5]),
         .Q(LocX_int[5]));
   FDCE \LocX_int_reg[6] 
        (.C(clk_in),
-        .CE(\LocX_int_reg[0]_4 ),
+        .CE(\LocX_int_reg[7]_0 ),
         .CLR(reset),
         .D(D[6]),
         .Q(LocX_int[6]));
   FDCE \LocX_int_reg[7] 
        (.C(clk_in),
-        .CE(\LocX_int_reg[0]_4 ),
+        .CE(\LocX_int_reg[7]_0 ),
         .CLR(reset),
         .D(D[7]),
         .Q(LocX_int[7]));
+  LUT5 #(
+    .INIT(32'h20000000)) 
+    \LocX_int_set[6]_i_1 
+       (.I0(\LocX[6]_i_2_n_0 ),
+        .I1(LocX_int[1]),
+        .I2(LocX_int[2]),
+        .I3(LocX_int[6]),
+        .I4(LocX_int[0]),
+        .O(\LocX_int_set[6]_i_1_n_0 ));
+  FDRE \LocX_int_set_reg[0] 
+       (.C(clk_in),
+        .CE(1'b1),
+        .D(LocX_int_set_0[0]),
+        .Q(LocX_int_set[0]),
+        .R(1'b0));
+  FDRE \LocX_int_set_reg[1] 
+       (.C(clk_in),
+        .CE(1'b1),
+        .D(LocX_int[1]),
+        .Q(LocX_int_set[1]),
+        .R(1'b0));
+  FDRE \LocX_int_set_reg[2] 
+       (.C(clk_in),
+        .CE(1'b1),
+        .D(LocX_int[2]),
+        .Q(LocX_int_set[2]),
+        .R(\LocX_int_set[6]_i_1_n_0 ));
+  FDRE \LocX_int_set_reg[3] 
+       (.C(clk_in),
+        .CE(1'b1),
+        .D(LocX_int[3]),
+        .Q(LocX_int_set[3]),
+        .R(\LocX_int_set[6]_i_1_n_0 ));
+  FDRE \LocX_int_set_reg[4] 
+       (.C(clk_in),
+        .CE(1'b1),
+        .D(LocX_int[4]),
+        .Q(LocX_int_set[4]),
+        .R(\LocX_int_set[6]_i_1_n_0 ));
+  FDRE \LocX_int_set_reg[5] 
+       (.C(clk_in),
+        .CE(1'b1),
+        .D(LocX_int[5]),
+        .Q(LocX_int_set[5]),
+        .R(\LocX_int_set[6]_i_1_n_0 ));
+  FDRE \LocX_int_set_reg[6] 
+       (.C(clk_in),
+        .CE(1'b1),
+        .D(LocX_int[6]),
+        .Q(LocX_int_set[6]),
+        .R(\LocX_int_set[6]_i_1_n_0 ));
+  FDRE \LocX_int_set_reg[7] 
+       (.C(clk_in),
+        .CE(1'b1),
+        .D(LocX_int[7]),
+        .Q(LocX_int_set[7]),
+        .R(1'b0));
   FDCE \LocX_reg[0] 
        (.C(clk_in),
         .CE(E),
         .CLR(reset),
-        .D(LocX_int_set[0]),
+        .D(LocX_int_set_0[0]),
         .Q(LocX_reg[0]));
   FDCE \LocX_reg[1] 
        (.C(clk_in),
@@ -541,31 +581,31 @@ module rojobot31_0_bot31_if
        (.C(clk_in),
         .CE(E),
         .CLR(reset),
-        .D(LocX_int_set[2]),
+        .D(LocX_int_set_0[2]),
         .Q(LocX_reg[2]));
   FDCE \LocX_reg[3] 
        (.C(clk_in),
         .CE(E),
         .CLR(reset),
-        .D(LocX_int_set[3]),
+        .D(LocX_int_set_0[3]),
         .Q(LocX_reg[3]));
   FDCE \LocX_reg[4] 
        (.C(clk_in),
         .CE(E),
         .CLR(reset),
-        .D(LocX_int_set[4]),
+        .D(LocX_int_set_0[4]),
         .Q(LocX_reg[4]));
   FDCE \LocX_reg[5] 
        (.C(clk_in),
         .CE(E),
         .CLR(reset),
-        .D(LocX_int_set[5]),
+        .D(LocX_int_set_0[5]),
         .Q(LocX_reg[5]));
   FDCE \LocX_reg[6] 
        (.C(clk_in),
         .CE(E),
         .CLR(reset),
-        .D(LocX_int_set[6]),
+        .D(LocX_int_set_0[6]),
         .Q(LocX_reg[6]));
   FDCE \LocX_reg[7] 
        (.C(clk_in),
@@ -578,7 +618,7 @@ module rojobot31_0_bot31_if
         .CE(\LocY_int_reg[7]_0 ),
         .CLR(reset),
         .D(D[0]),
-        .Q(\LocY_int_reg[5]_0 [0]));
+        .Q(LocY_int[0]));
   FDCE \LocY_int_reg[1] 
        (.C(clk_in),
         .CE(\LocY_int_reg[7]_0 ),
@@ -596,19 +636,19 @@ module rojobot31_0_bot31_if
         .CE(\LocY_int_reg[7]_0 ),
         .CLR(reset),
         .D(D[3]),
-        .Q(\LocY_int_reg[5]_0 [1]));
+        .Q(LocY_int[3]));
   FDCE \LocY_int_reg[4] 
        (.C(clk_in),
         .CE(\LocY_int_reg[7]_0 ),
         .CLR(reset),
         .D(D[4]),
-        .Q(\LocY_int_reg[5]_0 [2]));
+        .Q(LocY_int[4]));
   FDCE \LocY_int_reg[5] 
        (.C(clk_in),
         .CE(\LocY_int_reg[7]_0 ),
         .CLR(reset),
         .D(D[5]),
-        .Q(\LocY_int_reg[5]_0 [3]));
+        .Q(LocY_int[5]));
   FDCE \LocY_int_reg[6] 
        (.C(clk_in),
         .CE(\LocY_int_reg[7]_0 ),
@@ -625,7 +665,7 @@ module rojobot31_0_bot31_if
        (.C(clk_in),
         .CE(E),
         .CLR(reset),
-        .D(\LocY_int_reg[5]_0 [0]),
+        .D(LocY_int[0]),
         .Q(LocY_reg[0]));
   FDCE \LocY_reg[1] 
        (.C(clk_in),
@@ -643,19 +683,19 @@ module rojobot31_0_bot31_if
        (.C(clk_in),
         .CE(E),
         .CLR(reset),
-        .D(\LocY_int_reg[5]_0 [1]),
+        .D(LocY_int[3]),
         .Q(LocY_reg[3]));
   FDCE \LocY_reg[4] 
        (.C(clk_in),
         .CE(E),
         .CLR(reset),
-        .D(\LocY_int_reg[5]_0 [2]),
+        .D(LocY_int[4]),
         .Q(LocY_reg[4]));
   FDCE \LocY_reg[5] 
        (.C(clk_in),
         .CE(E),
         .CLR(reset),
-        .D(\LocY_int_reg[5]_0 [3]),
+        .D(LocY_int[5]),
         .Q(LocY_reg[5]));
   FDCE \LocY_reg[6] 
        (.C(clk_in),
@@ -755,99 +795,99 @@ module rojobot31_0_bot31_if
         .Q(worldmap_addr[13]));
   FDCE \Sensors_int_reg[0] 
        (.C(clk_in),
-        .CE(\Sensors_int_reg[7]_1 ),
+        .CE(\Sensors_int_reg[7]_0 ),
         .CLR(reset),
         .D(D[0]),
-        .Q(\Sensors_int_reg[7]_0 [0]));
+        .Q(Q[0]));
   FDCE \Sensors_int_reg[1] 
        (.C(clk_in),
-        .CE(\Sensors_int_reg[7]_1 ),
+        .CE(\Sensors_int_reg[7]_0 ),
         .CLR(reset),
         .D(D[1]),
-        .Q(\Sensors_int_reg[7]_0 [1]));
+        .Q(Q[1]));
   FDCE \Sensors_int_reg[2] 
        (.C(clk_in),
-        .CE(\Sensors_int_reg[7]_1 ),
+        .CE(\Sensors_int_reg[7]_0 ),
         .CLR(reset),
         .D(D[2]),
-        .Q(\Sensors_int_reg[7]_0 [2]));
+        .Q(Q[2]));
   FDCE \Sensors_int_reg[3] 
        (.C(clk_in),
-        .CE(\Sensors_int_reg[7]_1 ),
+        .CE(\Sensors_int_reg[7]_0 ),
         .CLR(reset),
         .D(D[3]),
-        .Q(\Sensors_int_reg[7]_0 [3]));
+        .Q(Q[3]));
   FDCE \Sensors_int_reg[4] 
        (.C(clk_in),
-        .CE(\Sensors_int_reg[7]_1 ),
+        .CE(\Sensors_int_reg[7]_0 ),
         .CLR(reset),
         .D(D[4]),
-        .Q(\Sensors_int_reg[7]_0 [4]));
+        .Q(Q[4]));
   FDCE \Sensors_int_reg[5] 
        (.C(clk_in),
-        .CE(\Sensors_int_reg[7]_1 ),
+        .CE(\Sensors_int_reg[7]_0 ),
         .CLR(reset),
         .D(D[5]),
-        .Q(\Sensors_int_reg[7]_0 [5]));
+        .Q(Q[5]));
   FDCE \Sensors_int_reg[6] 
        (.C(clk_in),
-        .CE(\Sensors_int_reg[7]_1 ),
+        .CE(\Sensors_int_reg[7]_0 ),
         .CLR(reset),
         .D(D[6]),
-        .Q(\Sensors_int_reg[7]_0 [6]));
+        .Q(Q[6]));
   FDCE \Sensors_int_reg[7] 
        (.C(clk_in),
-        .CE(\Sensors_int_reg[7]_1 ),
+        .CE(\Sensors_int_reg[7]_0 ),
         .CLR(reset),
         .D(D[7]),
-        .Q(\Sensors_int_reg[7]_0 [7]));
+        .Q(Q[7]));
   FDCE \Sensors_reg[0] 
        (.C(clk_in),
         .CE(E),
         .CLR(reset),
-        .D(\Sensors_int_reg[7]_0 [0]),
+        .D(Q[0]),
         .Q(Sensors_reg[0]));
   FDCE \Sensors_reg[1] 
        (.C(clk_in),
         .CE(E),
         .CLR(reset),
-        .D(\Sensors_int_reg[7]_0 [1]),
+        .D(Q[1]),
         .Q(Sensors_reg[1]));
   FDCE \Sensors_reg[2] 
        (.C(clk_in),
         .CE(E),
         .CLR(reset),
-        .D(\Sensors_int_reg[7]_0 [2]),
+        .D(Q[2]),
         .Q(Sensors_reg[2]));
   FDCE \Sensors_reg[3] 
        (.C(clk_in),
         .CE(E),
         .CLR(reset),
-        .D(\Sensors_int_reg[7]_0 [3]),
+        .D(Q[3]),
         .Q(Sensors_reg[3]));
   FDCE \Sensors_reg[4] 
        (.C(clk_in),
         .CE(E),
         .CLR(reset),
-        .D(\Sensors_int_reg[7]_0 [4]),
+        .D(Q[4]),
         .Q(Sensors_reg[4]));
   FDCE \Sensors_reg[5] 
        (.C(clk_in),
         .CE(E),
         .CLR(reset),
-        .D(\Sensors_int_reg[7]_0 [5]),
+        .D(Q[5]),
         .Q(Sensors_reg[5]));
   FDCE \Sensors_reg[6] 
        (.C(clk_in),
         .CE(E),
         .CLR(reset),
-        .D(\Sensors_int_reg[7]_0 [6]),
+        .D(Q[6]),
         .Q(Sensors_reg[6]));
   FDCE \Sensors_reg[7] 
        (.C(clk_in),
         .CE(E),
         .CLR(reset),
-        .D(\Sensors_int_reg[7]_0 [7]),
+        .D(Q[7]),
         .Q(Sensors_reg[7]));
   FDCE load_sys_regs_reg
        (.C(clk_in),
@@ -884,47 +924,47 @@ module rojobot31_0_bot31_pgm
   RAMB18E1 #(
     .DOA_REG(0),
     .DOB_REG(0),
-    .INITP_00(256'h5A18618618618280A18618618618218957452AAAA220A008082D748A22802AAA),
-    .INITP_01(256'h820D82099D67766759DD8025508A1861861861822820DA0DA083683636363428),
-    .INITP_02(256'h552289249768924976892497689249768924976892497689249768924974820A),
-    .INITP_03(256'h00B42D8B62D8B62D8B62D25513744DD01555540880A82236222201548D34D345),
-    .INITP_04(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INITP_00(256'h1861861860A0286186186186086255D14AAAAAAA220A008082D74A288A802AAA),
+    .INITP_01(256'h0826759DD99D6776000954228618618618608A0836836820DA0D8D8D8D0A1686),
+    .INITP_02(256'h24925DA24925DA24925DA24925DA24925DA24925DA24925DA24925D2082A0836),
+    .INITP_03(256'hB62D8B62D8B62D8B49544DD137405555502202A088D88888055234D34D15548A),
+    .INITP_04(256'h00000000000000000000000000000000000000000000000000000000000002D0),
     .INITP_05(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INITP_06(256'h00000000000000000000000000000000000000000000000000000002AAA91800),
+    .INITP_06(256'h00000000000000000000000000000000000000000000000000002AAA96A91800),
     .INITP_07(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_00(256'h90000199900701AC00281C401D401E001F0200B1006500472004200420042004),
-    .INIT_01(256'h01F00F00008302E001F02026E01BC800D031E01BC900B03000280E00006001B2),
-    .INIT_02(256'hDC02DD010A0001900B00010502C001D0200D01E3180019000C100D0000D302E0),
-    .INIT_03(256'h400E400E400EE042410EA0200200400E00105000D00ED00ED00CD00CDA03DB04),
-    .INIT_04(256'hE10011CE1001E10011001001E100110010205000A02002105000300F5000400E),
-    .INIT_05(256'h5000E100114F1001E10011D81001E10011EE1001E10011CC1001E10011CE1001),
-    .INIT_06(256'h11421001E10011311001E10011201001E10011171000500000371220310F0100),
-    .INIT_07(256'h013041065000E10011061001E10011751001E10011641001E10011531001E100),
-    .INIT_08(256'h00406091D50820B00040608DD50420B000406089D50005200410500000371200),
-    .INIT_09(256'h20B0007E13000100007E1300014060A0D50D20B0007E130001406097D50C20B0),
-    .INIT_0A(256'h004020B0007E13010100007E1301014060AFD50F20B0007E1301014060A6D50E),
-    .INIT_0B(256'hE10011011001E10011111001E10011101001E100111F1001E100110F10105000),
-    .INIT_0C(256'h400E400E310F0100004412105000E10011FF1001E10011F01001E10011F11001),
-    .INIT_0D(256'hD10F060020DF960160DED00F60E5D40400CA07C006D0051004205000400E400E),
-    .INIT_0E(256'h20F5170160F0D10F860020EC160160EBD00F60F2D40820F5071020F5970160E3),
-    .INIT_0F(256'h500001700060500001C000D060FDD00201000270016050000170006020F58710),
-    .INIT_10(256'h110104000100920191016117DF000700010002C001D05000900A0000D209D108),
-    .INIT_11(256'h05000100120104000100920211016125DF015000017B06000100110105000100),
-    .INIT_12(256'h0100120105000100120104000100920111016133DF025000017B060001001101),
-    .INIT_13(256'h017B06000100120105000100910104000100120111026141DF035000017B0600),
-    .INIT_14(256'hDF055000017B0600010091010500010091010400010012011101614FDF045000),
-    .INIT_15(256'h9101616BDF065000017B0600010091010500010092010400010012029101615D),
-    .INIT_16(256'h0100920191026179DF075000017B060001009201050001009201040001001201),
-    .INIT_17(256'h40064006400640060070500010FF5000017B0600010092010500010011010400),
-    .INIT_18(256'h50005008618FD6025010618CD40250186189D50230F86186D701500740064006),
-    .INIT_19(256'h1105F1301105F1321101F133110050004010310701F0400640064006400600E0),
-    .INIT_1A(256'h01901B00180019005000F131F130311F0100F1321107F1331101D000400EF131),
-    .INIT_1B(256'hB332400E400E4008420E4008410E420E420E420E420E0200310F010050000A00),
-    .INIT_1C(256'h508009200210E1CEC21021D0D200504008100120E1C7C12021C9D10022302130),
-    .INIT_1D(256'h01D91219500061DA910101D51128500061D6900110115000400E400E400E400E),
-    .INIT_1E(256'h930101DE13C8500061E9930101DE1364500061E4930101DE1332500061DF9201),
-    .INIT_1F(256'h0000000000000000500061F893010330130A500061F3940101ED1405500061EE),
-    .INIT_20(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_00(256'h01A29007003901B5002A1C401D011E001F0200B8006C004E2004200420042004),
+    .INIT_01(256'h008A02E001F02028E01DC800D031E01DC900B030002A00390E00006701BB9000),
+    .INIT_02(256'h0A0001990B00010E02C001D0200E01EC180019000C100D0000DA02E001F00F00),
+    .INIT_03(256'h400E00105000D00DD00DD806D9055000D00ED00ED00CD00CDA03DB04DC02DD01),
+    .INIT_04(256'h110010205000A02002105000300F5000400E400E400E400EE049410EA0200200),
+    .INIT_05(256'hE10011EE1001E10011CC1001E10011CE1001E10011CE1001E10011001001E100),
+    .INIT_06(256'h1001E100111710005000003E1220310F01005000E100114F1001E10011D81001),
+    .INIT_07(256'h11751001E10011641001E10011531001E10011421001E10011311001E1001120),
+    .INIT_08(256'h20B700406090D500052004105000003E1200013041065000E10011061001E100),
+    .INIT_09(256'h60A7D50D20B7008513000140609ED50C20B700406098D50820B700406094D504),
+    .INIT_0A(256'h014060B6D50F20B700851301014060ADD50E20B7008513000100008513000140),
+    .INIT_0B(256'h11101001E100111F1001E100110F10105000004020B700851301010000851301),
+    .INIT_0C(256'hE10011FF1001E10011F01001E10011F11001E10011011001E10011111001E100),
+    .INIT_0D(256'h07C006D09C029D01051004205000400E400E400E400E310F0100004B12105000),
+    .INIT_0E(256'h60FBD40820FE071020FE970160ECD10F060020E8960160E7D00F60EED40400D1),
+    .INIT_0F(256'h0270016050000170006020FE871020FE170160F9D10F860020F5160160F4D00F),
+    .INIT_10(256'h02C001D05000900A0000D209D108500001700060500001C000D06106D0020109),
+    .INIT_11(256'h5000018406000109110105000109110104000109920191016120DF0007000109),
+    .INIT_12(256'h613CDF02500001840600010911010500010912010400010992021101612EDF01),
+    .INIT_13(256'h12011102614ADF03500001840600010912010500010912010400010992011101),
+    .INIT_14(256'h04000109120111016158DF045000018406000109120105000109910104000109),
+    .INIT_15(256'h0109920104000109120291016166DF0550000184060001099101050001099101),
+    .INIT_16(256'h920105000109920104000109120191016174DF06500001840600010991010500),
+    .INIT_17(256'h06000109920105000109110104000109920191026182DF075000018406000109),
+    .INIT_18(256'hD50230F8618FD70150074006400640064006400640060070500010FF50000184),
+    .INIT_19(256'h310701F0400640064006400600E0500050086198D60250106195D40250186192),
+    .INIT_1A(256'hF1321107F1331101D000400EF1311102F1301102F1321101F133110050004010),
+    .INIT_1B(256'h420E420E0200310F010050000A0001991B00180019005000F131F130311F0100),
+    .INIT_1C(256'h0120E1D0C12021D2D10022302130B332400E400E4008420E4008410E420E420E),
+    .INIT_1D(256'h900110185000400E400E400E400E508009200210E1D7C21021D9D20050400810),
+    .INIT_1E(256'h61ED930101E71332500061E8920101E21219500061E3910101DE1128500061DF),
+    .INIT_1F(256'h500061FC940101F61405500061F7930101E713C8500061F2930101E713645000),
+    .INIT_20(256'h000000000000000000000000000000000000000000005000620193010330130A),
     .INIT_21(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_22(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_23(256'h0000000000000000000000000000000000000000000000000000000000000000),
@@ -940,8 +980,8 @@ module rojobot31_0_bot31_pgm
     .INIT_2D(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_2E(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_2F(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_30(256'hD00ED00E01EDD00CD00CDC02DD014C060CD01D01D004900018FF19FF1C001D00),
-    .INIT_31(256'h0000000000000000000000000000000000000000000000000000000000002304),
+    .INIT_30(256'hD90598049902D00CD00CDC02DD014C060CD01D01D004900018FF19FF1C001D00),
+    .INIT_31(256'h0000000000000000000000000000000000002304D00ED00E01F6D00DD00DD806),
     .INIT_32(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_33(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_34(256'h0000000000000000000000000000000000000000000000000000000000000000),
@@ -1008,9 +1048,9 @@ endmodule
 
 (* ORIG_REF_NAME = "kcpsm6" *) 
 module rojobot31_0_kcpsm6
-   (E,
+   (D,
     kcpsm6_rom,
-    D,
+    E,
     write_strobe_flop_0,
     write_strobe_flop_1,
     write_strobe_flop_2,
@@ -1021,32 +1061,26 @@ module rojobot31_0_kcpsm6
     bram_enable,
     address,
     out_port,
-    \DataOut_reg[6] ,
-    \DataOut_reg[6]_0 ,
     \DataOut_reg[2] ,
-    \DataOut_reg[2]_0 ,
+    \DataOut_reg[6] ,
     \DataOut_reg[0] ,
-    \DataOut_reg[3] ,
-    \DataOut_reg[4] ,
-    Q,
-    \DataOut_reg[5] ,
-    \DataOut_reg[5]_0 ,
-    MotCtl_in,
-    \DataOut_reg[5]_1 ,
-    \DataOut_reg[7] ,
     Bot_Config_reg,
-    \DataOut_reg[7]_0 ,
+    Q,
     worldmap_data,
+    \DataOut_reg[5] ,
+    \DataOut_reg[7] ,
+    \DataOut_reg[3] ,
     \DataOut_reg[1] ,
-    upd_sysregs,
+    \DataOut_reg[4] ,
     load_sys_regs_reg,
+    upd_sysregs,
     reset,
     clk_in,
     instruction,
     upper_reg_banks_0);
-  output [0:0]E;
-  output [1:0]kcpsm6_rom;
   output [7:0]D;
+  output [1:0]kcpsm6_rom;
+  output [0:0]E;
   output [0:0]write_strobe_flop_0;
   output [0:0]write_strobe_flop_1;
   output [0:0]write_strobe_flop_2;
@@ -1057,25 +1091,19 @@ module rojobot31_0_kcpsm6
   output bram_enable;
   output [11:0]address;
   output [7:0]out_port;
-  input \DataOut_reg[6] ;
-  input \DataOut_reg[6]_0 ;
   input \DataOut_reg[2] ;
-  input \DataOut_reg[2]_0 ;
+  input \DataOut_reg[6] ;
   input \DataOut_reg[0] ;
-  input \DataOut_reg[3] ;
-  input \DataOut_reg[4] ;
-  input [0:0]Q;
-  input \DataOut_reg[5] ;
-  input [3:0]\DataOut_reg[5]_0 ;
-  input [3:0]MotCtl_in;
-  input [3:0]\DataOut_reg[5]_1 ;
-  input \DataOut_reg[7] ;
   input [7:0]Bot_Config_reg;
-  input [7:0]\DataOut_reg[7]_0 ;
+  input [7:0]Q;
   input [1:0]worldmap_data;
+  input \DataOut_reg[5] ;
+  input \DataOut_reg[7] ;
+  input \DataOut_reg[3] ;
   input \DataOut_reg[1] ;
-  input upd_sysregs;
+  input \DataOut_reg[4] ;
   input [0:0]load_sys_regs_reg;
+  input upd_sysregs;
   input reset;
   input clk_in;
   input [17:0]instruction;
@@ -1084,37 +1112,25 @@ module rojobot31_0_kcpsm6
   wire [7:0]Bot_Config_reg;
   wire [7:0]D;
   wire \DataOut[0]_i_2_n_0 ;
-  wire \DataOut[0]_i_4_n_0 ;
-  wire \DataOut[0]_i_5_n_0 ;
+  wire \DataOut[0]_i_3_n_0 ;
   wire \DataOut[1]_i_2_n_0 ;
-  wire \DataOut[2]_i_4_n_0 ;
+  wire \DataOut[1]_i_3_n_0 ;
+  wire \DataOut[2]_i_3_n_0 ;
   wire \DataOut[3]_i_2_n_0 ;
-  wire \DataOut[3]_i_3_n_0 ;
-  wire \DataOut[3]_i_5_n_0 ;
   wire \DataOut[4]_i_2_n_0 ;
-  wire \DataOut[4]_i_3_n_0 ;
-  wire \DataOut[4]_i_4_n_0 ;
   wire \DataOut[5]_i_2_n_0 ;
-  wire \DataOut[5]_i_4_n_0 ;
-  wire \DataOut[6]_i_4_n_0 ;
-  wire \DataOut[6]_i_5_n_0 ;
+  wire \DataOut[6]_i_3_n_0 ;
   wire \DataOut[7]_i_2_n_0 ;
   wire \DataOut_reg[0] ;
   wire \DataOut_reg[1] ;
   wire \DataOut_reg[2] ;
-  wire \DataOut_reg[2]_0 ;
   wire \DataOut_reg[3] ;
   wire \DataOut_reg[4] ;
   wire \DataOut_reg[5] ;
-  wire [3:0]\DataOut_reg[5]_0 ;
-  wire [3:0]\DataOut_reg[5]_1 ;
   wire \DataOut_reg[6] ;
-  wire \DataOut_reg[6]_0 ;
   wire \DataOut_reg[7] ;
-  wire [7:0]\DataOut_reg[7]_0 ;
   wire [0:0]E;
-  wire [3:0]MotCtl_in;
-  wire [0:0]Q;
+  wire [7:0]Q;
   wire active_interrupt;
   wire active_interrupt_value;
   wire [11:0]address;
@@ -1397,226 +1413,153 @@ module rojobot31_0_kcpsm6
   wire [3:1]\NLW_stack_loop[4].upper_stack.stack_muxcy_CARRY4_O_UNCONNECTED ;
   wire [3:1]\NLW_stack_loop[4].upper_stack.stack_muxcy_CARRY4_S_UNCONNECTED ;
 
-  (* SOFT_HLUTNM = "soft_lutpair2" *) 
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
   LUT5 #(
-    .INIT(32'h04000000)) 
+    .INIT(32'h00000080)) 
     \BotInfo_int[7]_i_1 
-       (.I0(port_id[3]),
-        .I1(write_strobe),
-        .I2(port_id[2]),
-        .I3(kcpsm6_rom[0]),
-        .I4(kcpsm6_rom[1]),
+       (.I0(write_strobe),
+        .I1(kcpsm6_rom[1]),
+        .I2(kcpsm6_rom[0]),
+        .I3(port_id[2]),
+        .I4(port_id[3]),
         .O(write_strobe_flop_1));
-  LUT6 #(
-    .INIT(64'hFFFFFFFF55550010)) 
+  LUT5 #(
+    .INIT(32'hB8BBB888)) 
     \DataOut[0]_i_1 
        (.I0(\DataOut[0]_i_2_n_0 ),
-        .I1(\DataOut_reg[0] ),
-        .I2(kcpsm6_rom[0]),
-        .I3(kcpsm6_rom[1]),
-        .I4(\DataOut[0]_i_4_n_0 ),
-        .I5(\DataOut[0]_i_5_n_0 ),
+        .I1(port_id[3]),
+        .I2(\DataOut[0]_i_3_n_0 ),
+        .I3(port_id[2]),
+        .I4(\DataOut_reg[0] ),
         .O(D[0]));
-  LUT6 #(
-    .INIT(64'hBAFABAFFAAAAAAAA)) 
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  LUT4 #(
+    .INIT(16'h00F8)) 
     \DataOut[0]_i_2 
-       (.I0(port_id[3]),
-        .I1(Bot_Config_reg[0]),
-        .I2(kcpsm6_rom[1]),
-        .I3(kcpsm6_rom[0]),
-        .I4(\DataOut_reg[7]_0 [0]),
-        .I5(port_id[2]),
-        .O(\DataOut[0]_i_2_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFEECCFCCCEECCFC)) 
-    \DataOut[0]_i_4 
-       (.I0(\DataOut_reg[5]_0 [0]),
-        .I1(port_id[2]),
-        .I2(MotCtl_in[0]),
-        .I3(kcpsm6_rom[0]),
-        .I4(kcpsm6_rom[1]),
-        .I5(\DataOut_reg[5]_1 [0]),
-        .O(\DataOut[0]_i_4_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair4" *) 
-  LUT5 #(
-    .INIT(32'h32220000)) 
-    \DataOut[0]_i_5 
-       (.I0(kcpsm6_rom[0]),
-        .I1(port_id[2]),
-        .I2(worldmap_data[0]),
-        .I3(kcpsm6_rom[1]),
-        .I4(port_id[3]),
-        .O(\DataOut[0]_i_5_n_0 ));
-  LUT6 #(
-    .INIT(64'hC4C0FFFFC4C00000)) 
-    \DataOut[1]_i_1 
-       (.I0(port_id[2]),
+       (.I0(worldmap_data[0]),
         .I1(kcpsm6_rom[1]),
         .I2(kcpsm6_rom[0]),
-        .I3(worldmap_data[1]),
-        .I4(port_id[3]),
-        .I5(\DataOut[1]_i_2_n_0 ),
+        .I3(port_id[2]),
+        .O(\DataOut[0]_i_2_n_0 ));
+  LUT4 #(
+    .INIT(16'hB3B0)) 
+    \DataOut[0]_i_3 
+       (.I0(Bot_Config_reg[0]),
+        .I1(kcpsm6_rom[1]),
+        .I2(kcpsm6_rom[0]),
+        .I3(Q[0]),
+        .O(\DataOut[0]_i_3_n_0 ));
+  LUT5 #(
+    .INIT(32'hB8BBB888)) 
+    \DataOut[1]_i_1 
+       (.I0(\DataOut[1]_i_2_n_0 ),
+        .I1(port_id[3]),
+        .I2(\DataOut[1]_i_3_n_0 ),
+        .I3(port_id[2]),
+        .I4(\DataOut_reg[1] ),
         .O(D[1]));
-  LUT6 #(
-    .INIT(64'h88FCFFFF88FC0000)) 
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  LUT4 #(
+    .INIT(16'hCC08)) 
     \DataOut[1]_i_2 
+       (.I0(worldmap_data[1]),
+        .I1(kcpsm6_rom[1]),
+        .I2(port_id[2]),
+        .I3(kcpsm6_rom[0]),
+        .O(\DataOut[1]_i_2_n_0 ));
+  LUT4 #(
+    .INIT(16'h88FC)) 
+    \DataOut[1]_i_3 
        (.I0(Bot_Config_reg[1]),
         .I1(kcpsm6_rom[1]),
-        .I2(\DataOut_reg[7]_0 [1]),
+        .I2(Q[1]),
         .I3(kcpsm6_rom[0]),
-        .I4(port_id[2]),
-        .I5(\DataOut_reg[1] ),
-        .O(\DataOut[1]_i_2_n_0 ));
-  LUT6 #(
-    .INIT(64'h0000454455554544)) 
+        .O(\DataOut[1]_i_3_n_0 ));
+  LUT4 #(
+    .INIT(16'h00E2)) 
     \DataOut[2]_i_1 
-       (.I0(port_id[3]),
-        .I1(\DataOut_reg[2] ),
-        .I2(\DataOut_reg[2]_0 ),
-        .I3(\DataOut[6]_i_4_n_0 ),
-        .I4(port_id[2]),
-        .I5(\DataOut[2]_i_4_n_0 ),
+       (.I0(\DataOut_reg[2] ),
+        .I1(port_id[2]),
+        .I2(\DataOut[2]_i_3_n_0 ),
+        .I3(port_id[3]),
         .O(D[2]));
   LUT4 #(
-    .INIT(16'h4043)) 
-    \DataOut[2]_i_4 
+    .INIT(16'hBFBC)) 
+    \DataOut[2]_i_3 
        (.I0(Bot_Config_reg[2]),
         .I1(kcpsm6_rom[1]),
         .I2(kcpsm6_rom[0]),
-        .I3(\DataOut_reg[7]_0 [2]),
-        .O(\DataOut[2]_i_4_n_0 ));
+        .I3(Q[2]),
+        .O(\DataOut[2]_i_3_n_0 ));
   LUT6 #(
-    .INIT(64'h88888888B8B8BBB8)) 
+    .INIT(64'h8F80DFDF8F80D0D0)) 
     \DataOut[3]_i_1 
-       (.I0(\DataOut[3]_i_2_n_0 ),
-        .I1(port_id[3]),
-        .I2(\DataOut[3]_i_3_n_0 ),
-        .I3(\DataOut[6]_i_4_n_0 ),
-        .I4(\DataOut_reg[3] ),
-        .I5(\DataOut[3]_i_5_n_0 ),
-        .O(D[3]));
-  (* SOFT_HLUTNM = "soft_lutpair0" *) 
-  LUT3 #(
-    .INIT(8'h8D)) 
-    \DataOut[3]_i_2 
        (.I0(kcpsm6_rom[1]),
         .I1(kcpsm6_rom[0]),
-        .I2(port_id[2]),
-        .O(\DataOut[3]_i_2_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFEECCFCCCEECCFC)) 
-    \DataOut[3]_i_3 
-       (.I0(\DataOut_reg[5]_0 [1]),
-        .I1(port_id[2]),
-        .I2(MotCtl_in[1]),
+        .I2(port_id[3]),
+        .I3(\DataOut[3]_i_2_n_0 ),
+        .I4(port_id[2]),
+        .I5(\DataOut_reg[3] ),
+        .O(D[3]));
+  LUT4 #(
+    .INIT(16'h8830)) 
+    \DataOut[3]_i_2 
+       (.I0(Bot_Config_reg[3]),
+        .I1(kcpsm6_rom[1]),
+        .I2(Q[3]),
         .I3(kcpsm6_rom[0]),
-        .I4(kcpsm6_rom[1]),
-        .I5(\DataOut_reg[5]_1 [1]),
-        .O(\DataOut[3]_i_3_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+        .O(\DataOut[3]_i_2_n_0 ));
   LUT5 #(
-    .INIT(32'h2AA02AAA)) 
-    \DataOut[3]_i_5 
-       (.I0(port_id[2]),
-        .I1(Bot_Config_reg[3]),
-        .I2(kcpsm6_rom[0]),
-        .I3(kcpsm6_rom[1]),
-        .I4(\DataOut_reg[7]_0 [3]),
-        .O(\DataOut[3]_i_5_n_0 ));
-  LUT6 #(
-    .INIT(64'hBBBBBBBBABAAAAAA)) 
+    .INIT(32'h30BB3088)) 
     \DataOut[4]_i_1 
-       (.I0(\DataOut[4]_i_2_n_0 ),
-        .I1(\DataOut[4]_i_3_n_0 ),
-        .I2(\DataOut_reg[4] ),
-        .I3(Q),
-        .I4(\DataOut[6]_i_4_n_0 ),
-        .I5(\DataOut[4]_i_4_n_0 ),
-        .O(D[4]));
-  (* SOFT_HLUTNM = "soft_lutpair4" *) 
-  LUT3 #(
-    .INIT(8'h40)) 
-    \DataOut[4]_i_2 
-       (.I0(port_id[2]),
+       (.I0(kcpsm6_rom[0]),
         .I1(port_id[3]),
+        .I2(\DataOut[4]_i_2_n_0 ),
+        .I3(port_id[2]),
+        .I4(\DataOut_reg[4] ),
+        .O(D[4]));
+  LUT4 #(
+    .INIT(16'hB3B0)) 
+    \DataOut[4]_i_2 
+       (.I0(Bot_Config_reg[4]),
+        .I1(kcpsm6_rom[1]),
         .I2(kcpsm6_rom[0]),
+        .I3(Q[4]),
         .O(\DataOut[4]_i_2_n_0 ));
   LUT6 #(
-    .INIT(64'hBAFABAFFAAAAAAAA)) 
-    \DataOut[4]_i_3 
-       (.I0(port_id[3]),
-        .I1(Bot_Config_reg[4]),
-        .I2(kcpsm6_rom[1]),
-        .I3(kcpsm6_rom[0]),
-        .I4(\DataOut_reg[7]_0 [4]),
-        .I5(port_id[2]),
-        .O(\DataOut[4]_i_3_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFEECCFCCCEECCFC)) 
-    \DataOut[4]_i_4 
-       (.I0(\DataOut_reg[5]_0 [2]),
-        .I1(port_id[2]),
-        .I2(MotCtl_in[2]),
-        .I3(kcpsm6_rom[0]),
-        .I4(kcpsm6_rom[1]),
-        .I5(\DataOut_reg[5]_1 [2]),
-        .O(\DataOut[4]_i_4_n_0 ));
-  LUT6 #(
-    .INIT(64'hBB333333AA000300)) 
+    .INIT(64'h8F808F8F8F808080)) 
     \DataOut[5]_i_1 
-       (.I0(port_id[3]),
-        .I1(\DataOut[5]_i_2_n_0 ),
-        .I2(\DataOut_reg[5] ),
-        .I3(kcpsm6_rom[0]),
-        .I4(kcpsm6_rom[1]),
-        .I5(\DataOut[5]_i_4_n_0 ),
-        .O(D[5]));
-  LUT6 #(
-    .INIT(64'hBBAAFFAFAAAAAAAA)) 
-    \DataOut[5]_i_2 
-       (.I0(port_id[3]),
-        .I1(Bot_Config_reg[5]),
-        .I2(\DataOut_reg[7]_0 [5]),
-        .I3(kcpsm6_rom[0]),
-        .I4(kcpsm6_rom[1]),
-        .I5(port_id[2]),
-        .O(\DataOut[5]_i_2_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFEECCFCCCEECCFC)) 
-    \DataOut[5]_i_4 
-       (.I0(\DataOut_reg[5]_0 [3]),
-        .I1(port_id[2]),
-        .I2(MotCtl_in[3]),
-        .I3(kcpsm6_rom[0]),
-        .I4(kcpsm6_rom[1]),
-        .I5(\DataOut_reg[5]_1 [3]),
-        .O(\DataOut[5]_i_4_n_0 ));
-  LUT6 #(
-    .INIT(64'h0000454455554544)) 
-    \DataOut[6]_i_1 
-       (.I0(port_id[3]),
-        .I1(\DataOut_reg[6] ),
-        .I2(\DataOut_reg[6]_0 ),
-        .I3(\DataOut[6]_i_4_n_0 ),
+       (.I0(kcpsm6_rom[1]),
+        .I1(kcpsm6_rom[0]),
+        .I2(port_id[3]),
+        .I3(\DataOut[5]_i_2_n_0 ),
         .I4(port_id[2]),
-        .I5(\DataOut[6]_i_5_n_0 ),
-        .O(D[6]));
-  (* SOFT_HLUTNM = "soft_lutpair5" *) 
-  LUT2 #(
-    .INIT(4'h2)) 
-    \DataOut[6]_i_4 
-       (.I0(kcpsm6_rom[0]),
-        .I1(kcpsm6_rom[1]),
-        .O(\DataOut[6]_i_4_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair5" *) 
+        .I5(\DataOut_reg[5] ),
+        .O(D[5]));
   LUT4 #(
-    .INIT(16'h4043)) 
-    \DataOut[6]_i_5 
+    .INIT(16'h88FC)) 
+    \DataOut[5]_i_2 
+       (.I0(Bot_Config_reg[5]),
+        .I1(kcpsm6_rom[1]),
+        .I2(Q[5]),
+        .I3(kcpsm6_rom[0]),
+        .O(\DataOut[5]_i_2_n_0 ));
+  LUT4 #(
+    .INIT(16'h00E2)) 
+    \DataOut[6]_i_1 
+       (.I0(\DataOut_reg[6] ),
+        .I1(port_id[2]),
+        .I2(\DataOut[6]_i_3_n_0 ),
+        .I3(port_id[3]),
+        .O(D[6]));
+  LUT4 #(
+    .INIT(16'hBFBC)) 
+    \DataOut[6]_i_3 
        (.I0(Bot_Config_reg[6]),
         .I1(kcpsm6_rom[1]),
         .I2(kcpsm6_rom[0]),
-        .I3(\DataOut_reg[7]_0 [6]),
-        .O(\DataOut[6]_i_5_n_0 ));
+        .I3(Q[6]),
+        .O(\DataOut[6]_i_3_n_0 ));
   LUT6 #(
     .INIT(64'h8F80DFDF8F80D0D0)) 
     \DataOut[7]_i_1 
@@ -1628,62 +1571,62 @@ module rojobot31_0_kcpsm6
         .I5(\DataOut_reg[7] ),
         .O(D[7]));
   LUT4 #(
-    .INIT(16'hC202)) 
+    .INIT(16'h8830)) 
     \DataOut[7]_i_2 
-       (.I0(\DataOut_reg[7]_0 [7]),
+       (.I0(Bot_Config_reg[7]),
+        .I1(kcpsm6_rom[1]),
+        .I2(Q[7]),
+        .I3(kcpsm6_rom[0]),
+        .O(\DataOut[7]_i_2_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  LUT5 #(
+    .INIT(32'h00000020)) 
+    \LocX_int[7]_i_1 
+       (.I0(write_strobe),
         .I1(kcpsm6_rom[1]),
         .I2(kcpsm6_rom[0]),
-        .I3(Bot_Config_reg[7]),
-        .O(\DataOut[7]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair1" *) 
-  LUT5 #(
-    .INIT(32'h00040000)) 
-    \LocX_int[7]_i_1 
-       (.I0(port_id[3]),
-        .I1(write_strobe),
-        .I2(port_id[2]),
-        .I3(kcpsm6_rom[1]),
-        .I4(kcpsm6_rom[0]),
+        .I3(port_id[2]),
+        .I4(port_id[3]),
         .O(E));
   (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT5 #(
-    .INIT(32'h00000400)) 
+    .INIT(32'h00000020)) 
     \LocY_int[7]_i_1 
-       (.I0(port_id[3]),
-        .I1(write_strobe),
-        .I2(port_id[2]),
-        .I3(kcpsm6_rom[1]),
-        .I4(kcpsm6_rom[0]),
+       (.I0(write_strobe),
+        .I1(kcpsm6_rom[0]),
+        .I2(kcpsm6_rom[1]),
+        .I3(port_id[2]),
+        .I4(port_id[3]),
         .O(write_strobe_flop_0));
-  (* SOFT_HLUTNM = "soft_lutpair3" *) 
-  LUT5 #(
-    .INIT(32'h00000040)) 
-    \MapX[6]_i_1 
-       (.I0(port_id[2]),
-        .I1(port_id[3]),
-        .I2(write_strobe),
-        .I3(kcpsm6_rom[1]),
-        .I4(kcpsm6_rom[0]),
-        .O(write_strobe_flop_3));
-  (* SOFT_HLUTNM = "soft_lutpair3" *) 
-  LUT5 #(
-    .INIT(32'h00004000)) 
-    \MapY[6]_i_1 
-       (.I0(kcpsm6_rom[1]),
-        .I1(write_strobe),
-        .I2(kcpsm6_rom[0]),
-        .I3(port_id[3]),
-        .I4(port_id[2]),
-        .O(write_strobe_flop_4));
   (* SOFT_HLUTNM = "soft_lutpair2" *) 
   LUT5 #(
-    .INIT(32'h00100000)) 
+    .INIT(32'h00000020)) 
+    \MapX[6]_i_1 
+       (.I0(write_strobe),
+        .I1(kcpsm6_rom[1]),
+        .I2(port_id[3]),
+        .I3(port_id[2]),
+        .I4(kcpsm6_rom[0]),
+        .O(write_strobe_flop_3));
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
+  LUT5 #(
+    .INIT(32'h00000080)) 
+    \MapY[6]_i_1 
+       (.I0(write_strobe),
+        .I1(port_id[3]),
+        .I2(kcpsm6_rom[0]),
+        .I3(port_id[2]),
+        .I4(kcpsm6_rom[1]),
+        .O(write_strobe_flop_4));
+  (* SOFT_HLUTNM = "soft_lutpair1" *) 
+  LUT5 #(
+    .INIT(32'h00000020)) 
     \Sensors_int[7]_i_1 
-       (.I0(kcpsm6_rom[0]),
+       (.I0(write_strobe),
         .I1(kcpsm6_rom[1]),
         .I2(port_id[2]),
-        .I3(port_id[3]),
-        .I4(write_strobe),
+        .I3(kcpsm6_rom[0]),
+        .I4(port_id[3]),
         .O(write_strobe_flop_2));
   (* BOX_TYPE = "PRIMITIVE" *) 
   (* HBLKNM = "kcpsm6_control" *) 
@@ -3152,15 +3095,15 @@ module rojobot31_0_kcpsm6
         .I5(internal_reset),
         .O(interrupt_enable_value));
   LUT6 #(
-    .INIT(64'hFFFFDFFF00002000)) 
+    .INIT(64'hEFFFFFFF10000000)) 
     load_sys_regs_i_1
-       (.I0(port_id[3]),
-        .I1(kcpsm6_rom[0]),
-        .I2(port_id[2]),
-        .I3(write_strobe),
-        .I4(kcpsm6_rom[1]),
+       (.I0(kcpsm6_rom[0]),
+        .I1(kcpsm6_rom[1]),
+        .I2(port_id[3]),
+        .I3(port_id[2]),
+        .I4(write_strobe),
         .I5(load_sys_regs_reg),
-        .O(write_strobe_flop_6));
+        .O(write_strobe_flop_5));
   (* BOX_TYPE = "PRIMITIVE" *) 
   (* HBLKNM = "kcpsm6_decode2" *) 
   LUT6_2 #(
@@ -3720,15 +3663,15 @@ module rojobot31_0_kcpsm6
         .O5(t_state_value_0),
         .O6(t_state_value_1));
   LUT6 #(
-    .INIT(64'hFFFF7FFF00008000)) 
+    .INIT(64'hDFFFFFFF20000000)) 
     upd_sysregs_i_1
-       (.I0(write_strobe),
-        .I1(port_id[3]),
-        .I2(kcpsm6_rom[1]),
-        .I3(port_id[2]),
-        .I4(kcpsm6_rom[0]),
+       (.I0(port_id[2]),
+        .I1(kcpsm6_rom[0]),
+        .I2(port_id[3]),
+        .I3(kcpsm6_rom[1]),
+        .I4(write_strobe),
         .I5(upd_sysregs),
-        .O(write_strobe_flop_5));
+        .O(write_strobe_flop_6));
   (* BOX_TYPE = "PRIMITIVE" *) 
   (* HBLKNM = "kcpsm6_decode2" *) 
   LUT6 #(
@@ -3851,32 +3794,27 @@ module rojobot31_0_rojobot31
   input [7:0]Bot_Config_reg;
   input [1:0]worldmap_data;
 
-  wire BOTCPU_n_0;
+  wire BOTCPU_n_1;
   wire BOTCPU_n_14;
   wire BOTCPU_n_15;
   wire BOTCPU_n_16;
   wire BOTCPU_n_17;
-  wire BOTCPU_n_4;
-  wire BOTCPU_n_8;
-  wire BOTREGIF_n_13;
-  wire BOTREGIF_n_14;
-  wire BOTREGIF_n_15;
-  wire BOTREGIF_n_16;
-  wire BOTREGIF_n_17;
-  wire BOTREGIF_n_18;
-  wire BOTREGIF_n_19;
+  wire BOTCPU_n_5;
   wire BOTREGIF_n_2;
-  wire BOTREGIF_n_20;
+  wire BOTREGIF_n_3;
   wire BOTREGIF_n_4;
-  wire [5:0]BotInfo_int;
-  wire BotInfo_int_1;
+  wire BOTREGIF_n_5;
+  wire BOTREGIF_n_6;
+  wire BOTREGIF_n_7;
+  wire BOTREGIF_n_8;
+  wire BOTREGIF_n_9;
+  wire BotInfo_int;
   wire [7:0]BotInfo_reg;
   wire [7:0]Bot_Config_reg;
   wire [7:0]DataOut;
-  wire [4:4]LocX_int;
+  wire LocX_int;
   wire [7:0]LocX_reg;
-  wire [5:0]LocY_int;
-  wire LocY_int_2;
+  wire LocY_int;
   wire [7:0]LocY_reg;
   wire [7:0]MotCtl_in;
   wire [7:0]Sensors_int;
@@ -3897,23 +3835,17 @@ module rojobot31_0_rojobot31
 
   rojobot31_0_kcpsm6 BOTCPU
        (.Bot_Config_reg(Bot_Config_reg),
-        .D({DataOut[7],BOTCPU_n_4,DataOut[5:3],BOTCPU_n_8,DataOut[1:0]}),
-        .\DataOut_reg[0] (BOTREGIF_n_14),
-        .\DataOut_reg[1] (BOTREGIF_n_20),
+        .D({DataOut[7],BOTCPU_n_1,DataOut[5:3],BOTCPU_n_5,DataOut[1:0]}),
+        .\DataOut_reg[0] (BOTREGIF_n_2),
+        .\DataOut_reg[1] (BOTREGIF_n_3),
         .\DataOut_reg[2] (BOTREGIF_n_4),
-        .\DataOut_reg[2]_0 (BOTREGIF_n_16),
-        .\DataOut_reg[3] (BOTREGIF_n_17),
-        .\DataOut_reg[4] (BOTREGIF_n_15),
-        .\DataOut_reg[5] (BOTREGIF_n_18),
-        .\DataOut_reg[5]_0 ({LocY_int[5:3],LocY_int[0]}),
-        .\DataOut_reg[5]_1 ({BotInfo_int[5:3],BotInfo_int[0]}),
-        .\DataOut_reg[6] (BOTREGIF_n_13),
-        .\DataOut_reg[6]_0 (BOTREGIF_n_2),
-        .\DataOut_reg[7] (BOTREGIF_n_19),
-        .\DataOut_reg[7]_0 (Sensors_int),
-        .E(BOTCPU_n_0),
-        .MotCtl_in({MotCtl_in[5:3],MotCtl_in[0]}),
-        .Q(LocX_int),
+        .\DataOut_reg[3] (BOTREGIF_n_5),
+        .\DataOut_reg[4] (BOTREGIF_n_6),
+        .\DataOut_reg[5] (BOTREGIF_n_7),
+        .\DataOut_reg[6] (BOTREGIF_n_8),
+        .\DataOut_reg[7] (BOTREGIF_n_9),
+        .E(LocX_int),
+        .Q(Sensors_int),
         .address(address),
         .bram_enable(bram_enable),
         .clk_in(clk_in),
@@ -3925,49 +3857,44 @@ module rojobot31_0_rojobot31
         .upd_sysregs(upd_sysregs),
         .upper_reg_banks_0(in_port),
         .worldmap_data(worldmap_data),
-        .write_strobe_flop_0(LocY_int_2),
-        .write_strobe_flop_1(BotInfo_int_1),
+        .write_strobe_flop_0(LocY_int),
+        .write_strobe_flop_1(BotInfo_int),
         .write_strobe_flop_2(Sensors_int_0),
         .write_strobe_flop_3(BOTCPU_n_14),
         .write_strobe_flop_4(BOTCPU_n_15),
         .write_strobe_flop_5(BOTCPU_n_16),
         .write_strobe_flop_6(BOTCPU_n_17));
   rojobot31_0_bot31_if BOTREGIF
-       (.\BotInfo_int_reg[1]_0 (BOTREGIF_n_20),
-        .\BotInfo_int_reg[5]_0 ({BotInfo_int[5:3],BotInfo_int[0]}),
-        .\BotInfo_int_reg[7]_0 (BOTREGIF_n_19),
-        .\BotInfo_int_reg[7]_1 (BotInfo_int_1),
+       (.\BotInfo_int_reg[0]_0 (BOTREGIF_n_2),
+        .\BotInfo_int_reg[1]_0 (BOTREGIF_n_3),
+        .\BotInfo_int_reg[2]_0 (BOTREGIF_n_4),
+        .\BotInfo_int_reg[3]_0 (BOTREGIF_n_5),
+        .\BotInfo_int_reg[4]_0 (BOTREGIF_n_6),
+        .\BotInfo_int_reg[5]_0 (BOTREGIF_n_7),
+        .\BotInfo_int_reg[6]_0 (BOTREGIF_n_8),
+        .\BotInfo_int_reg[7]_0 (BOTREGIF_n_9),
+        .\BotInfo_int_reg[7]_1 (BotInfo_int),
         .BotInfo_reg(BotInfo_reg),
         .D(out_port),
-        .\DataOut_reg[2]_0 (port_id),
+        .\DataOut_reg[0]_0 (port_id),
         .\DataOut_reg[7]_0 (in_port),
-        .\DataOut_reg[7]_1 ({DataOut[7],BOTCPU_n_4,DataOut[5:3],BOTCPU_n_8,DataOut[1:0]}),
+        .\DataOut_reg[7]_1 ({DataOut[7],BOTCPU_n_1,DataOut[5:3],BOTCPU_n_5,DataOut[1:0]}),
         .E(load_sys_regs),
-        .\LocX_int_reg[0]_0 (BOTREGIF_n_2),
-        .\LocX_int_reg[0]_1 (BOTREGIF_n_16),
-        .\LocX_int_reg[0]_2 (BOTREGIF_n_17),
-        .\LocX_int_reg[0]_3 (BOTREGIF_n_18),
-        .\LocX_int_reg[0]_4 (BOTCPU_n_0),
-        .\LocX_int_reg[1]_0 (BOTREGIF_n_15),
-        .\LocX_int_reg[2]_0 (BOTREGIF_n_14),
+        .\LocX_int_reg[7]_0 (LocX_int),
         .LocX_reg(LocX_reg),
-        .\LocY_int_reg[2]_0 (BOTREGIF_n_4),
-        .\LocY_int_reg[5]_0 ({LocY_int[5:3],LocY_int[0]}),
-        .\LocY_int_reg[6]_0 (BOTREGIF_n_13),
-        .\LocY_int_reg[7]_0 (LocY_int_2),
+        .\LocY_int_reg[7]_0 (LocY_int),
         .LocY_reg(LocY_reg),
         .\MapX_reg[6]_0 (BOTCPU_n_14),
         .\MapY_reg[6]_0 (BOTCPU_n_15),
-        .MotCtl_in({MotCtl_in[7:6],MotCtl_in[2:1]}),
-        .Q(LocX_int),
-        .\Sensors_int_reg[7]_0 (Sensors_int),
-        .\Sensors_int_reg[7]_1 (Sensors_int_0),
+        .MotCtl_in(MotCtl_in),
+        .Q(Sensors_int),
+        .\Sensors_int_reg[7]_0 (Sensors_int_0),
         .Sensors_reg(Sensors_reg),
         .clk_in(clk_in),
-        .load_sys_regs_reg_0(BOTCPU_n_17),
+        .load_sys_regs_reg_0(BOTCPU_n_16),
         .reset(reset),
         .upd_sysregs(upd_sysregs),
-        .upd_sysregs_reg_0(BOTCPU_n_16),
+        .upd_sysregs_reg_0(BOTCPU_n_17),
         .worldmap_addr(worldmap_addr));
   rojobot31_0_bot31_pgm BOTSIMPGM
        (.address(address),

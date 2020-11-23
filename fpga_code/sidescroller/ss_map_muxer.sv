@@ -34,6 +34,8 @@ module ss_map_muxer(
     wire [1:0]  worldmap_data_part_1, worldmap_data_lr, worldmap_data_loop;
     wire [1:0]  world_pixel_part_1, world_pixel_lr, world_pixel_loop;
     
+    reg [1:0] current_map;
+    
     // world map part 1
     world_map world_map(
         .clka(clk_75),
@@ -63,10 +65,24 @@ module ss_map_muxer(
         .addrb(vid_addr),
         .doutb(world_pixel_loop)
     );
-    
-    // mux to select map based on the SW
-    assign {worldmap_data, world_pixel} =
-        LocX == 8'h7C ? {worldmap_data_lr, world_pixel_lr} : {worldmap_data_part_1, world_pixel_part_1};
 
+    // Should only trigger on a change in LocX
+    always @(LocX) begin
+        if (reset) begin
+            current_map <= 0;
+        end
+        else begin 
+            if (LocX == 8'h7C) begin
+                current_map <= current_map + 1;
+            end
+            else begin
+                current_map <= current_map;
+            end
+        end
+    end
     
+    // mux to select map based on the SW (Will need to be updated once we have more maps.)
+    assign {worldmap_data, world_pixel} =
+        current_map >= 1 ? {worldmap_data_lr, world_pixel_lr} : {worldmap_data_part_1, world_pixel_part_1};
+  
 endmodule

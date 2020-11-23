@@ -137,7 +137,7 @@ module rojobot_controller(
         .clk_75(clk_75),
         .reset(rstn_75),
         .debounced_SW_75(debounced_SW_75),
-        .LocX(LocX),
+        .LocX(LocX_reg),
         .vid_addr(vid_addr),
         .worldmap_addr(worldmap_addr),
         .worldmap_data(worldmap_data),

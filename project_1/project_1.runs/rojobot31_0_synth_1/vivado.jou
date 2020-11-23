@@ -2,8 +2,8 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Sun Nov 22 18:39:41 2020
-# Process ID: 30476
+# Start of session at: Sun Nov 22 21:45:36 2020
+# Process ID: 26908
 # Current directory: C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/rojobot31_0_synth_1
 # Command line: vivado.exe -log rojobot31_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rojobot31_0.tcl
 # Log file: C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/rojobot31_0_synth_1/rojobot31_0.vds
