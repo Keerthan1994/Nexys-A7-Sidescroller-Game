@@ -1,0 +1,15 @@
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|                 clk_core |                 clk_core |           swervolf/swerv_eh1/mem/Gen_dccm_enable.dccm/mem_bank[7].dccm_bank/ram_core_reg_1/ADDRARDADDR[7]|
+|                 clk_core |                 clk_core |           swervolf/swerv_eh1/mem/Gen_dccm_enable.dccm/mem_bank[7].dccm_bank/ram_core_reg_1/ADDRARDADDR[5]|
+|                 clk_core |                 clk_core |           swervolf/swerv_eh1/mem/Gen_dccm_enable.dccm/mem_bank[7].dccm_bank/ram_core_reg_1/ADDRARDADDR[9]|
+|                 clk_core |                 clk_core |           swervolf/swerv_eh1/mem/Gen_dccm_enable.dccm/mem_bank[7].dccm_bank/ram_core_reg_2/ADDRARDADDR[6]|
+|                 clk_core |                 clk_core |          swervolf/swerv_eh1/mem/Gen_dccm_enable.dccm/mem_bank[7].dccm_bank/ram_core_reg_1/ADDRARDADDR[13]|
+|                 clk_core |                 clk_core |           swervolf/swerv_eh1/mem/Gen_dccm_enable.dccm/mem_bank[7].dccm_bank/ram_core_reg_0/ADDRARDADDR[7]|
+|                 clk_core |                 clk_core |           swervolf/swerv_eh1/mem/Gen_dccm_enable.dccm/mem_bank[7].dccm_bank/ram_core_reg_1/ADDRARDADDR[4]|
+|                 clk_core |                 clk_core |          swervolf/swerv_eh1/mem/Gen_dccm_enable.dccm/mem_bank[7].dccm_bank/ram_core_reg_1/ADDRARDADDR[14]|
+|                 clk_core |                 clk_core |                         swervolf/swerv_eh1/swerv/lsu/lsu_lsc_ctl/sddc1ff/genblock.dff/dffs/dout_reg[58]/D|
+|                 clk_core |                 clk_core |                         swervolf/swerv_eh1/swerv/lsu/lsu_lsc_ctl/sddc1ff/genblock.dff/dffs/dout_reg[63]/D|
+|                 clk_core |                 clk_core |           swervolf/swerv_eh1/mem/Gen_dccm_enable.dccm/mem_bank[7].dccm_bank/ram_core_reg_2/ADDRARDADDR[4]|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+

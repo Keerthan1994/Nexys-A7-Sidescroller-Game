@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Sun Nov 22 23:20:01 2020
+| Date         : Mon Nov 23 13:32:33 2020
 | Host         : Ragnorak running 64-bit major release  (build 9200)
 | Command      : report_methodology -file rvfpga_methodology_drc_routed.rpt -pb rvfpga_methodology_drc_routed.pb -rpx rvfpga_methodology_drc_routed.rpx
 | Design       : rvfpga
@@ -23,7 +23,7 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 273
+             Violations found: 291
 +-----------+------------------+------------------------------------------------------+------------+
 | Rule      | Severity         | Description                                          | Violations |
 +-----------+------------------+------------------------------------------------------+------------+
@@ -31,16 +31,16 @@ Table of Contents
 | TIMING-6  | Critical Warning | No common primary clock between related clocks       | 2          |
 | TIMING-7  | Critical Warning | No common node between related clocks                | 2          |
 | TIMING-14 | Critical Warning | LUT on the clock tree                                | 52         |
+| TIMING-17 | Critical Warning | Non-clocked sequential cell                          | 1          |
 | TIMING-27 | Critical Warning | Invalid primary clock on hierarchical pin            | 1          |
 | DPIR-1    | Warning          | Asynchronous driver check                            | 152        |
 | LUTAR-1   | Warning          | LUT drives async reset alert                         | 5          |
-| SYNTH-6   | Warning          | Timing of a block RAM might be sub-optimal           | 14         |
+| SYNTH-6   | Warning          | Timing of a block RAM might be sub-optimal           | 33         |
 | SYNTH-9   | Warning          | Small multiplier                                     | 7          |
 | SYNTH-10  | Warning          | Wide multiplier                                      | 4          |
 | SYNTH-11  | Warning          | DSP output not registered                            | 3          |
 | TIMING-9  | Warning          | Unknown CDC Logic                                    | 1          |
 | TIMING-18 | Warning          | Missing input or output delay                        | 22         |
-| TIMING-20 | Warning          | Non-clocked latch                                    | 2          |
 | TIMING-28 | Warning          | Auto-derived clock referenced by a timing constraint | 5          |
 +-----------+------------------+------------------------------------------------------+------------+
 
@@ -329,6 +329,11 @@ Related violations: <none>
 TIMING-14#52 Critical Warning
 LUT on the clock tree  
 The LUT swervolf/timer_ptc/rptc_lrc[31]_i_3 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-17#1 Critical Warning
+Non-clocked sequential cell  
+The clock pin swervolf/rojobot_control/map_muxer/current_map_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-27#1 Critical Warning
@@ -1108,7 +1113,7 @@ Related violations: <none>
 
 LUTAR-1#3 Warning
 LUT drives async reset alert  
-LUT cell clk_gen/dout[36]_i_3__6, with 2 or more inputs, drives asynchronous preset/clear pin(s) swervolf/swerv_eh1/swerv/lsu/stbuf/GenStBuf[0].stbuf_addr_in_picff/dffs/dout_reg[0]/CLR, swervolf/swerv_eh1/swerv/lsu/stbuf/GenStBuf[0].stbuf_addrff/genblock.dff/dffs/dout_reg[0]/CLR, swervolf/swerv_eh1/swerv/lsu/stbuf/GenStBuf[0].stbuf_addrff/genblock.dff/dffs/dout_reg[10]/CLR, swervolf/swerv_eh1/swerv/lsu/stbuf/GenStBuf[0].stbuf_addrff/genblock.dff/dffs/dout_reg[11]/CLR, swervolf/swerv_eh1/swerv/lsu/stbuf/GenStBuf[0].stbuf_addrff/genblock.dff/dffs/dout_reg[12]/CLR, swervolf/swerv_eh1/swerv/lsu/stbuf/GenStBuf[0].stbuf_addrff/genblock.dff/dffs/dout_reg[13]/CLR, swervolf/swerv_eh1/swerv/lsu/stbuf/GenStBuf[0].stbuf_addrff/genblock.dff/dffs/dout_reg[14]/CLR, swervolf/swerv_eh1/swerv/lsu/stbuf/GenStBuf[0].stbuf_addrff/genblock.dff/dffs/dout_reg[15]/CLR, swervolf/swerv_eh1/swerv/lsu/stbuf/GenStBuf[0].stbuf_addrff/genblock.dff/dffs/dout_reg[1]/CLR, swervolf/swerv_eh1/swerv/lsu/stbuf/GenStBuf[0].stbuf_addrff/genblock.dff/dffs/dout_reg[2]/CLR, swervolf/swerv_eh1/swerv/lsu/stbuf/GenStBuf[0].stbuf_addrff/genblock.dff/dffs/dout_reg[3]/CLR, swervolf/swerv_eh1/swerv/lsu/stbuf/GenStBuf[0].stbuf_addrff/genblock.dff/dffs/dout_reg[4]/CLR, swervolf/swerv_eh1/swerv/lsu/stbuf/GenStBuf[0].stbuf_addrff/genblock.dff/dffs/dout_reg[5]/CLR, swervolf/swerv_eh1/swerv/lsu/stbuf/GenStBuf[0].stbuf_addrff/genblock.dff/dffs/dout_reg[6]/CLR, swervolf/swerv_eh1/swerv/lsu/stbuf/GenStBuf[0].stbuf_addrff/genblock.dff/dffs/dout_reg[7]/CLR (the first 15 of 8986 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell clk_gen/dout[36]_i_3__6, with 2 or more inputs, drives asynchronous preset/clear pin(s) swervolf/swerv_eh1/swerv/lsu/stbuf/GenStBuf[0].stbuf_addr_in_picff/dffs/dout_reg[0]/CLR, swervolf/swerv_eh1/swerv/lsu/stbuf/GenStBuf[0].stbuf_addrff/genblock.dff/dffs/dout_reg[0]/CLR, swervolf/swerv_eh1/swerv/lsu/stbuf/GenStBuf[0].stbuf_addrff/genblock.dff/dffs/dout_reg[10]/CLR, swervolf/swerv_eh1/swerv/lsu/stbuf/GenStBuf[0].stbuf_addrff/genblock.dff/dffs/dout_reg[11]/CLR, swervolf/swerv_eh1/swerv/lsu/stbuf/GenStBuf[0].stbuf_addrff/genblock.dff/dffs/dout_reg[12]/CLR, swervolf/swerv_eh1/swerv/lsu/stbuf/GenStBuf[0].stbuf_addrff/genblock.dff/dffs/dout_reg[13]/CLR, swervolf/swerv_eh1/swerv/lsu/stbuf/GenStBuf[0].stbuf_addrff/genblock.dff/dffs/dout_reg[14]/CLR, swervolf/swerv_eh1/swerv/lsu/stbuf/GenStBuf[0].stbuf_addrff/genblock.dff/dffs/dout_reg[15]/CLR, swervolf/swerv_eh1/swerv/lsu/stbuf/GenStBuf[0].stbuf_addrff/genblock.dff/dffs/dout_reg[1]/CLR, swervolf/swerv_eh1/swerv/lsu/stbuf/GenStBuf[0].stbuf_addrff/genblock.dff/dffs/dout_reg[2]/CLR, swervolf/swerv_eh1/swerv/lsu/stbuf/GenStBuf[0].stbuf_addrff/genblock.dff/dffs/dout_reg[3]/CLR, swervolf/swerv_eh1/swerv/lsu/stbuf/GenStBuf[0].stbuf_addrff/genblock.dff/dffs/dout_reg[4]/CLR, swervolf/swerv_eh1/swerv/lsu/stbuf/GenStBuf[0].stbuf_addrff/genblock.dff/dffs/dout_reg[5]/CLR, swervolf/swerv_eh1/swerv/lsu/stbuf/GenStBuf[0].stbuf_addrff/genblock.dff/dffs/dout_reg[6]/CLR, swervolf/swerv_eh1/swerv/lsu/stbuf/GenStBuf[0].stbuf_addrff/genblock.dff/dffs/dout_reg[7]/CLR (the first 15 of 8985 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#4 Warning
@@ -1133,7 +1138,7 @@ Related violations: <none>
 
 SYNTH-6#3 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance swervolf/rojobot_control/robot_icon_v2/ram_pikachu/ram_reg_0_11, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance swervolf/rojobot_control/robot_icon_v2/ram_pikachu/ram_reg_0_10, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#4 Warning
@@ -1153,12 +1158,12 @@ Related violations: <none>
 
 SYNTH-6#7 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance swervolf/rojobot_control/robot_icon_v2/ram_pikachu/ram_reg_0_7, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance swervolf/rojobot_control/robot_icon_v2/ram_pikachu/ram_reg_0_6, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#8 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance swervolf/rojobot_control/robot_icon_v2/ram_pikachu/ram_reg_0_8, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance swervolf/rojobot_control/robot_icon_v2/ram_pikachu/ram_reg_0_7, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#9 Warning
@@ -1168,27 +1173,122 @@ Related violations: <none>
 
 SYNTH-6#10 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance swervolf/swerv_eh1/mem/Gen_dccm_enable.dccm/mem_bank[2].dccm_bank/ram_core_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance swervolf/swerv_eh1/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm_bank/ram_core_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#11 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance swervolf/swerv_eh1/mem/Gen_dccm_enable.dccm/mem_bank[2].dccm_bank/ram_core_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance swervolf/swerv_eh1/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm_bank/ram_core_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#12 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance swervolf/swerv_eh1/mem/Gen_dccm_enable.dccm/mem_bank[4].dccm_bank/ram_core_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance swervolf/swerv_eh1/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm_bank/ram_core_reg_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#13 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance swervolf/swerv_eh1/mem/Gen_dccm_enable.dccm/mem_bank[4].dccm_bank/ram_core_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance swervolf/swerv_eh1/mem/Gen_dccm_enable.dccm/mem_bank[1].dccm_bank/ram_core_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#14 Warning
 Timing of a block RAM might be sub-optimal  
+The timing for the instance swervolf/swerv_eh1/mem/Gen_dccm_enable.dccm/mem_bank[1].dccm_bank/ram_core_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#15 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance swervolf/swerv_eh1/mem/Gen_dccm_enable.dccm/mem_bank[1].dccm_bank/ram_core_reg_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#16 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance swervolf/swerv_eh1/mem/Gen_dccm_enable.dccm/mem_bank[2].dccm_bank/ram_core_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#17 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance swervolf/swerv_eh1/mem/Gen_dccm_enable.dccm/mem_bank[2].dccm_bank/ram_core_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#18 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance swervolf/swerv_eh1/mem/Gen_dccm_enable.dccm/mem_bank[2].dccm_bank/ram_core_reg_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#19 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance swervolf/swerv_eh1/mem/Gen_dccm_enable.dccm/mem_bank[3].dccm_bank/ram_core_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#20 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance swervolf/swerv_eh1/mem/Gen_dccm_enable.dccm/mem_bank[3].dccm_bank/ram_core_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#21 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance swervolf/swerv_eh1/mem/Gen_dccm_enable.dccm/mem_bank[3].dccm_bank/ram_core_reg_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#22 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance swervolf/swerv_eh1/mem/Gen_dccm_enable.dccm/mem_bank[4].dccm_bank/ram_core_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#23 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance swervolf/swerv_eh1/mem/Gen_dccm_enable.dccm/mem_bank[4].dccm_bank/ram_core_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#24 Warning
+Timing of a block RAM might be sub-optimal  
 The timing for the instance swervolf/swerv_eh1/mem/Gen_dccm_enable.dccm/mem_bank[4].dccm_bank/ram_core_reg_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#25 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance swervolf/swerv_eh1/mem/Gen_dccm_enable.dccm/mem_bank[5].dccm_bank/ram_core_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#26 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance swervolf/swerv_eh1/mem/Gen_dccm_enable.dccm/mem_bank[5].dccm_bank/ram_core_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#27 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance swervolf/swerv_eh1/mem/Gen_dccm_enable.dccm/mem_bank[5].dccm_bank/ram_core_reg_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#28 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance swervolf/swerv_eh1/mem/Gen_dccm_enable.dccm/mem_bank[6].dccm_bank/ram_core_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#29 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance swervolf/swerv_eh1/mem/Gen_dccm_enable.dccm/mem_bank[6].dccm_bank/ram_core_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#30 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance swervolf/swerv_eh1/mem/Gen_dccm_enable.dccm/mem_bank[6].dccm_bank/ram_core_reg_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#31 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance swervolf/swerv_eh1/mem/Gen_dccm_enable.dccm/mem_bank[7].dccm_bank/ram_core_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#32 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance swervolf/swerv_eh1/mem/Gen_dccm_enable.dccm/mem_bank[7].dccm_bank/ram_core_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#33 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance swervolf/swerv_eh1/mem/Gen_dccm_enable.dccm/mem_bank[7].dccm_bank/ram_core_reg_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-9#1 Warning
@@ -1374,16 +1474,6 @@ Related violations: <none>
 TIMING-18#22 Warning
 Missing input or output delay  
 An input delay is missing on rstn relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-20#1 Warning
-Non-clocked latch  
-The latch swervolf/rojobot_control/map_muxer/current_map_reg[0] cannot be properly analyzed as its control pin swervolf/rojobot_control/map_muxer/current_map_reg[0]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#2 Warning
-Non-clocked latch  
-The latch swervolf/rojobot_control/map_muxer/current_map_reg[1] cannot be properly analyzed as its control pin swervolf/rojobot_control/map_muxer/current_map_reg[1]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-28#1 Warning
