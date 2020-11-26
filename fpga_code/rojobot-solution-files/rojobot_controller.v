@@ -135,7 +135,7 @@ module rojobot_controller(
     // Sidescroller Map Muxer:
     ss_map_muxer map_muxer(
         .clk_75(clk_75),
-        .reset(rstn_75),
+        .reset(~rstn_75), //changed from rstn_75 to ~rstn_75
         .debounced_SW_75(debounced_SW_75),
         .LocX(LocX_reg),
         .vid_addr(vid_addr),

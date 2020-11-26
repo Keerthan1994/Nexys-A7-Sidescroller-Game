@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Wed Nov 25 18:59:16 2020
+| Date             : Wed Nov 25 22:00:22 2020
 | Host             : DESKTOP-NP6R9M2 running 64-bit major release  (build 9200)
 | Command          : report_power -file rvfpga_power_routed.rpt -pb rvfpga_power_summary_routed.pb -rpx rvfpga_power_routed.rpx
 | Design           : rvfpga
@@ -52,16 +52,16 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.051 |       17 |       --- |             --- |
-| Slice Logic              |     0.027 |    63491 |       --- |             --- |
-|   LUT as Logic           |     0.024 |    34798 |     63400 |           54.89 |
+| Clocks                   |     0.052 |       17 |       --- |             --- |
+| Slice Logic              |     0.027 |    63481 |       --- |             --- |
+|   LUT as Logic           |     0.024 |    34778 |     63400 |           54.85 |
 |   CARRY4                 |     0.001 |     1024 |     15850 |            6.46 |
 |   LUT as Distributed RAM |    <0.001 |      228 |     19000 |            1.20 |
 |   Register               |    <0.001 |    19816 |    126800 |           15.63 |
 |   F7/F8 Muxes            |    <0.001 |      683 |     63400 |            1.08 |
 |   LUT as Shift Register  |    <0.001 |        3 |     19000 |            0.02 |
 |   Others                 |     0.000 |     1369 |       --- |             --- |
-| Signals                  |     0.039 |    51520 |       --- |             --- |
+| Signals                  |     0.038 |    51499 |       --- |             --- |
 | Block RAM                |     0.075 |     69.5 |       135 |           51.48 |
 | MMCM                     |     0.122 |        1 |         6 |           16.67 |
 | PLL                      |     0.428 |        3 |         6 |           50.00 |
@@ -166,7 +166,7 @@ Table of Contents
 |     i_axi_cdc           |     0.006 |
 |       i_cdc_fifo_gray_r |     0.004 |
 |       i_cdc_fifo_gray_w |     0.001 |
-|   clk_gen               |     0.147 |
+|   clk_gen               |     0.146 |
 |   clock_divider         |     0.122 |
 |     inst                |     0.122 |
 |   ddr2                  |     0.545 |
@@ -193,19 +193,19 @@ Table of Contents
 |       serv_rf_top       |     0.004 |
 |   swervolf              |     0.131 |
 |     axi2wb              |     0.001 |
-|     axi_intercon        |     0.003 |
-|       axi_xbar          |     0.003 |
+|     axi_intercon        |     0.004 |
+|       axi_xbar          |     0.004 |
 |     bootrom             |     0.002 |
 |       ram               |     0.002 |
-|     rojobot_control     |     0.026 |
+|     rojobot_control     |     0.025 |
 |       map_colorizer     |     0.004 |
 |       map_muxer         |     0.003 |
 |       robot             |     0.004 |
 |       robot_icon_v2     |     0.011 |
-|       title_colorizer   |     0.002 |
+|       title_colorizer   |     0.003 |
 |     swerv_eh1           |     0.091 |
 |       mem               |     0.047 |
-|       swerv             |     0.044 |
+|       swerv             |     0.045 |
 |     syscon              |     0.001 |
 |     vga_controller      |     0.002 |
 |       vga_dtg_inst      |     0.002 |

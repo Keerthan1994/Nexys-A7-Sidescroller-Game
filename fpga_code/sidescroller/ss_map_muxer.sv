@@ -67,14 +67,14 @@ module ss_map_muxer(
     );
 
     // Should only trigger on a change in LocX
-    always @(negedge LocX or negedge reset) begin
+    always @(posedge clk_75 or negedge reset) begin
         if (reset) begin
             current_map <= 0;
         end
-        else if (LocX == 8'h7C) begin
+        else if (LocX == 8'h7C & worldmap_data == worldmap_data_part_1) begin
             current_map <= 2;
         end
-        else if (LocX == 8'h00) begin
+        else if (LocX == 8'h00 & worldmap_data == worldmap_data_part_1) begin
             current_map <= 0;
         end
     end

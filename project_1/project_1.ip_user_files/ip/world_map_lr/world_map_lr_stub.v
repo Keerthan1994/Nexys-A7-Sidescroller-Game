@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
 // Date        : Wed Nov 25 18:39:35 2020
 // Host        : DESKTOP-NP6R9M2 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/world_map_lr/world_map_lr_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top world_map_lr -prefix
+//               world_map_lr_ world_map_lr_stub.v
 // Design      : world_map_lr
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a100tcsg324-1
