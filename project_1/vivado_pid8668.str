@@ -1,0 +1,474 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:40:23 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 8668
+License: Customer
+
+Current time: 	Wed Nov 25 18:19:43 PST 2020
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 3
+Available disk space: 42 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	ryanp
+User home directory: C:/Users/ryanp
+User working directory: C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2019.2
+RDI_DATADIR: C:/Xilinx/Vivado/2019.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2019.2/bin
+
+Vivado preferences file location: C:/Users/ryanp/AppData/Roaming/Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: C:/Users/ryanp/AppData/Roaming/Xilinx/Vivado/2019.2/
+Vivado layouts directory: C:/Users/ryanp/AppData/Roaming/Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/vivado.log
+Vivado journal file location: 	C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/vivado.jou
+Engine tmp dir: 	C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/.Xil/Vivado-8668-DESKTOP-NP6R9M2
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2019.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2019.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2019.2
+
+
+GUI allocated memory:	185 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 738 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bB (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\ryanp\Documents\GitHub\Nexys-A7-Sidescroller-Game\project_1\project_1.xpr. Version: Vivado v2019.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 64 MB (+64717kb) [00:00:09]
+// [Engine Memory]: 766 MB (+651262kb) [00:00:09]
+// [GUI Memory]: 70 MB (+2797kb) [00:00:09]
+// [GUI Memory]: 93 MB (+20204kb) [00:00:10]
+// [GUI Memory]: 98 MB (+819kb) [00:00:11]
+// [GUI Memory]: 109 MB (+6358kb) [00:00:11]
+// [GUI Memory]: 117 MB (+2636kb) [00:00:11]
+// [Engine Memory]: 809 MB (+5716kb) [00:00:11]
+// WARNING: HEventQueue.dispatchEvent() is taking  3553 ms.
+// Tcl Message: open_project C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/ece540_ip_repo/rojobot31'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 819 MB. GUI used memory: 62 MB. Current time: 11/25/20, 6:19:48 PM PST
+// Tcl Message: open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 852.027 ; gain = 178.438 
+// [Engine Memory]: 1,007 MB (+165148kb) [00:00:14]
+// Project name: project_1; location: C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bB (cr)
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 18 seconds
+selectButton(RDIResource.AbstractSearchablePanel_SHOW_SEARCH, "Sources_search"); // x (f, cr): TRUE
+setText("PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE_SEARCH_FIELD", "icon", true); // OverlayTextField (C, cr)
+// [GUI Memory]: 124 MB (+429kb) [00:00:37]
+// [GUI Memory]: 131 MB (+838kb) [00:00:37]
+// WARNING: HEventQueue.dispatchEvent() is taking  2068 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,035 MB. GUI used memory: 78 MB. Current time: 11/25/20, 6:20:15 PM PST
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), swervolf : swervolf_core (swervolf_core.v), rojobot_control : rojobot_controller (rojobot_controller.v), robot_icon_v2 : robot_icon_v2 (robot_icon_v2.v)]", 4, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), swervolf : swervolf_core (swervolf_core.v), rojobot_control : rojobot_controller (rojobot_controller.v), robot_icon_v2 : robot_icon_v2 (robot_icon_v2.v)]", 4, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectCodeEditor("robot_icon_v2.v", 183, 94); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 34 seconds
+setText("PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE_SEARCH_FIELD", "title", true); // OverlayTextField (C, cr)
+// [GUI Memory]: 138 MB (+1031kb) [00:01:20]
+// WARNING: HEventQueue.dispatchEvent() is taking  1773 ms.
+// [GUI Memory]: 146 MB (+896kb) [00:01:25]
+// WARNING: HEventQueue.dispatchEvent() is taking  1672 ms.
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), swervolf : swervolf_core (swervolf_core.v), rojobot_control : rojobot_controller (rojobot_controller.v), title_colorizer : title_colorizer (title_colorizer.v)]", 4, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), swervolf : swervolf_core (swervolf_core.v), rojobot_control : rojobot_controller (rojobot_controller.v), title_colorizer : title_colorizer (title_colorizer.v)]", 4, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectCodeEditor("title_colorizer.v", 164, 97); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), swervolf : swervolf_core (swervolf_core.v), rojobot_control : rojobot_controller (rojobot_controller.v)]", 3, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), swervolf : swervolf_core (swervolf_core.v), rojobot_control : rojobot_controller (rojobot_controller.v)]", 3, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+setText("PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE_SEARCH_FIELD", "color", true); // OverlayTextField (C, cr)
+// [GUI Memory]: 154 MB (+804kb) [00:01:55]
+// WARNING: HEventQueue.dispatchEvent() is taking  1661 ms.
+// [GUI Memory]: 162 MB (+389kb) [00:01:59]
+// WARNING: HEventQueue.dispatchEvent() is taking  1638 ms.
+// Elapsed time: 53 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), swervolf : swervolf_core (swervolf_core.v), rojobot_control : rojobot_controller (rojobot_controller.v), map_colorizer : map_colorizer (map_colorizer.sv)]", 6, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), swervolf : swervolf_core (swervolf_core.v), rojobot_control : rojobot_controller (rojobot_controller.v), map_colorizer : map_colorizer (map_colorizer.sv)]", 6, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectCodeEditor("map_colorizer.sv", 111, 72); // ch (w, cr)
+// Elapsed time: 69 seconds
+selectCodeEditor("map_colorizer.sv", 42, 111); // ch (w, cr)
+selectButton(RDIResource.CodeView_TOGGLE_COLUMN_SELECTION_MODE, (String) null); // x (f, cr): TRUE
+selectCodeEditor("map_colorizer.sv", 42, 110); // ch (w, cr)
+typeControlKey((HResource) null, "map_colorizer.sv", 'v'); // ch (w, cr)
+// Elapsed time: 11 seconds
+selectCodeEditor("map_colorizer.sv", 430, 86); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("map_colorizer.sv", 43, 162); // ch (w, cr)
+// [GUI Memory]: 171 MB (+1101kb) [00:04:34]
+// WARNING: HEventQueue.dispatchEvent() is taking  1652 ms.
+// Elapsed time: 13 seconds
+typeControlKey((HResource) null, "map_colorizer.sv", 'v'); // ch (w, cr)
+// WARNING: HEventQueue.dispatchEvent() is taking  2204 ms.
+// Elapsed time: 208 seconds
+selectCodeEditor("map_colorizer.sv", 150, 182); // ch (w, cr)
+selectCodeEditor("map_colorizer.sv", 120, 248); // ch (w, cr)
+// Elapsed time: 26 seconds
+selectCodeEditor("map_colorizer.sv", 41, 114); // ch (w, cr)
+typeControlKey((HResource) null, "map_colorizer.sv", 'v'); // ch (w, cr)
+selectCodeEditor("map_colorizer.sv", 275, 107); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1694 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,085 MB. GUI used memory: 82 MB. Current time: 11/25/20, 6:29:50 PM PST
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 1,085 MB (+28816kb) [00:10:29]
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 544 seconds
+setText("PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE_SEARCH_FIELD", "world", true); // OverlayTextField (C, cr)
+// WARNING: HEventQueue.dispatchEvent() is taking  1671 ms.
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), swervolf : swervolf_core (swervolf_core.v), rojobot_control : rojobot_controller (rojobot_controller.v), map_muxer : ss_map_muxer (ss_map_muxer.sv), world_map : world_map (world_map.xci)]", 5, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), swervolf : swervolf_core (swervolf_core.v), rojobot_control : rojobot_controller (rojobot_controller.v), map_muxer : ss_map_muxer (ss_map_muxer.sv), world_map : world_map (world_map.xci)]", 5, false, false, false, false, false, true); // B (F, cr) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// TclEventType: LOAD_FEATURE
+// r (cr): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1227 ms.
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 3); // bh (E, r)
+selectButton(PAResourceEtoH.HACGCCoeFileWidget_BROWSE, "Browse"); // a (E, r)
+// Elapsed time: 11 seconds
+setFileChooser("C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/world_maps/bandicoot_maps/world_map_pt1.coe");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (cr)
+// r (cr): Re-customize IP: addNotify
+// bB (r):  Re-customize IP : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.Coe_File {C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/world_maps/bandicoot_maps/world_map_pt1.coe}] [get_ips world_map] 
+// Tcl Message: INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/world_maps/bandicoot_maps/world_map_pt1.coe' provided. It will be converted relative to IP Instance files '../../../../../fpga_code/world_maps/bandicoot_maps/world_map_pt1.coe' 
+// aI (cr): Generate Output Products: addNotify
+dismissDialog("Re-customize IP"); // bB (r)
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bB (cr):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/world_map/world_map.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'world_map'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'world_map'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'world_map'... INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'world_map'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'world_map'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all world_map] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/world_map/world_map.xci] -no_script -sync -force -quiet 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run world_map_synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs -jobs 6 world_map_synth_1 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Nov 25 18:37:55 2020] Launched world_map_synth_1... Run output will be captured here: C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/world_map_synth_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), swervolf : swervolf_core (swervolf_core.v), rojobot_control : rojobot_controller (rojobot_controller.v), map_muxer : ss_map_muxer (ss_map_muxer.sv), world_map_lr : world_map_lr (world_map_lr.xci)]", 6, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), swervolf : swervolf_core (swervolf_core.v), rojobot_control : rojobot_controller (rojobot_controller.v), map_muxer : ss_map_muxer (ss_map_muxer.sv), world_map_lr : world_map_lr (world_map_lr.xci)]", 6, false, false, false, false, false, true); // B (F, cr) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// r (cr): Re-customize IP: addNotify
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 3); // bh (E, r)
+selectButton(PAResourceEtoH.HACGCCoeFileWidget_BROWSE, "Browse"); // a (E, r)
+// Elapsed time: 10 seconds
+setFileChooser("C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/world_maps/bandicoot_maps/world_map_pt2.coe");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (cr)
+// Tcl Message: set_property -dict [list CONFIG.Coe_File {C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/world_maps/bandicoot_maps/world_map_pt2.coe}] [get_ips world_map_lr] 
+// Tcl Message: INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/world_maps/bandicoot_maps/world_map_pt2.coe' provided. It will be converted relative to IP Instance files '../../../../../fpga_code/world_maps/bandicoot_maps/world_map_pt2.coe' 
+// TclEventType: DG_GRAPH_STALE
+// r (cr): Re-customize IP: addNotify
+// bB (r):  Re-customize IP : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// aI (cr): Generate Output Products: addNotify
+dismissDialog("Re-customize IP"); // bB (r)
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bB (cr):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/world_map_lr/world_map_lr.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'world_map_lr'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'world_map_lr'... 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'world_map_lr'... INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'world_map_lr'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'world_map_lr'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all world_map_lr] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/world_map_lr/world_map_lr.xci] -no_script -sync -force -quiet 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run world_map_lr_synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs -jobs 6 world_map_lr_synth_1 
+// Tcl Message: [Wed Nov 25 18:38:22 2020] Launched world_map_lr_synth_1... Run output will be captured here: C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/world_map_lr_synth_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Elapsed time: 10 seconds
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+// WARNING: HEventQueue.dispatchEvent() is taking  2025 ms.
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (cr): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Run Synthesis"); // A (cr)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bB (cr):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 6 
+// Tcl Message: [Wed Nov 25 18:38:41 2020] Launched world_map_synth_1, world_map_lr_synth_1... Run output will be captured here: world_map_synth_1: C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/world_map_synth_1/runme.log world_map_lr_synth_1: C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/world_map_lr_synth_1/runme.log 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Nov 25 18:38:41 2020] Launched synth_1... Run output will be captured here: C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,108 MB. GUI used memory: 96 MB. Current time: 11/25/20, 6:39:15 PM PST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 81 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rojobot_controller.v", 3); // i (h, cr)
+// Elapsed time: 20 seconds
+setText("PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE_SEARCH_FIELD", "mux", true); // OverlayTextField (C, cr)
+// WARNING: HEventQueue.dispatchEvent() is taking  1772 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1998 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1956 ms.
+// Elapsed time: 31 seconds
+setText("PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE_SEARCH_FIELD", "ss mux"); // OverlayTextField (C, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), swervolf : swervolf_core (swervolf_core.v), rojobot_control : rojobot_controller (rojobot_controller.v), map_muxer : ss_map_muxer (ss_map_muxer.sv)]", 4, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), swervolf : swervolf_core (swervolf_core.v), rojobot_control : rojobot_controller (rojobot_controller.v), map_muxer : ss_map_muxer (ss_map_muxer.sv)]", 4, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+// Elapsed time: 73 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rojobot_controller.v", 3); // i (h, cr)
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ss_map_muxer.sv", 5); // i (h, cr)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Synthesis Completed: addNotify
+// Elapsed time: 352 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bB (cr):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: launch_runs impl_1 -jobs 6 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Nov 25 18:48:22 2020] Launched impl_1... Run output will be captured here: C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Implementation Completed: addNotify
+// Elapsed time: 810 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, aj)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+dismissDialog("Implementation Completed"); // aj (cr)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// bB (cr):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Nov 25 19:01:54 2020] Launched impl_1... Run output will be captured here: C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 95 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (aj)
+dismissDialog("Bitstream Generation Completed"); // aj (cr)
+// Elapsed time: 195 seconds
+setText("PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE_SEARCH_FIELD", "world", true); // OverlayTextField (C, cr)
+// [GUI Memory]: 181 MB (+1796kb) [00:47:09]
+// WARNING: HEventQueue.dispatchEvent() is taking  1796 ms.
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), swervolf : swervolf_core (swervolf_core.v), rojobot_control : rojobot_controller (rojobot_controller.v), map_muxer : ss_map_muxer (ss_map_muxer.sv), world_map : world_map (world_map.xci)]", 5, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), swervolf : swervolf_core (swervolf_core.v), rojobot_control : rojobot_controller (rojobot_controller.v), map_muxer : ss_map_muxer (ss_map_muxer.sv), world_map : world_map (world_map.xci)]", 5, false, false, false, false, false, true); // B (F, cr) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// r (cr): Re-customize IP: addNotify
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 3); // bh (E, r)
+dismissDialog("Re-customize IP"); // r (cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), swervolf : swervolf_core (swervolf_core.v), rojobot_control : rojobot_controller (rojobot_controller.v), map_muxer : ss_map_muxer (ss_map_muxer.sv), world_map_lr : world_map_lr (world_map_lr.xci)]", 6, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), swervolf : swervolf_core (swervolf_core.v), rojobot_control : rojobot_controller (rojobot_controller.v), map_muxer : ss_map_muxer (ss_map_muxer.sv), world_map_lr : world_map_lr (world_map_lr.xci)]", 6, false, false, false, false, false, true); // B (F, cr) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// r (cr): Re-customize IP: addNotify
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 3); // bh (E, r)
+dismissDialog("Re-customize IP"); // r (cr)
+// Elapsed time: 58 seconds
+selectCodeEditor("ss_map_muxer.sv", 304, 232); // ch (w, cr)
+// Elapsed time: 17 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("ss_map_muxer.sv", 262, 272); // ch (w, cr)
+selectCodeEditor("ss_map_muxer.sv", 89, 229); // ch (w, cr)
+selectCodeEditor("ss_map_muxer.sv", 108, 157); // ch (w, cr)
+typeControlKey((HResource) null, "ss_map_muxer.sv", 'v'); // ch (w, cr)
+selectCodeEditor("ss_map_muxer.sv", 404, 230); // ch (w, cr)
+selectCodeEditor("ss_map_muxer.sv", 191, 230); // ch (w, cr)
+typeControlKey((HResource) null, "ss_map_muxer.sv", 'v'); // ch (w, cr)
+selectCodeEditor("ss_map_muxer.sv", 286, 162); // ch (w, cr)
+selectCodeEditor("ss_map_muxer.sv", 48, 162); // ch (w, cr)
+selectCodeEditor("ss_map_muxer.sv", 51, 162); // ch (w, cr)
+selectCodeEditor("ss_map_muxer.sv", 313, 151); // ch (w, cr)
+selectCodeEditor("ss_map_muxer.sv", 284, 168); // ch (w, cr)
+selectCodeEditor("ss_map_muxer.sv", 504, 229); // ch (w, cr)
+typeControlKey((HResource) null, "ss_map_muxer.sv", 'v'); // ch (w, cr)
+selectCodeEditor("ss_map_muxer.sv", 545, 255); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 191 MB (+810kb) [00:49:35]
+// WARNING: HEventQueue.dispatchEvent() is taking  1700 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,108 MB. GUI used memory: 109 MB. Current time: 11/25/20, 7:09:15 PM PST

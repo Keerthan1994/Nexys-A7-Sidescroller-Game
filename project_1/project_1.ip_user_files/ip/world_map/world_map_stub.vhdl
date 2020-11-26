@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Mon Nov 16 19:46:01 2020
+-- Date        : Wed Nov 25 18:39:09 2020
 -- Host        : DESKTOP-NP6R9M2 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub -rename_top world_map -prefix
---               world_map_ world_map_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub
+--               C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/world_map/world_map_stub.vhdl
 -- Design      : world_map
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7a100tcsg324-1

@@ -81,6 +81,6 @@ module ss_map_muxer(
     
     // mux to select map based on the SW (Will need to be updated once we have more maps.)
     assign {worldmap_data, world_pixel} =
-        current_map < 1 ? {worldmap_data_lr, world_pixel_lr} : {worldmap_data_part_1, world_pixel_part_1};
+        current_map < 1 ? {worldmap_data_part_1, world_pixel_part_1} : {worldmap_data_lr, world_pixel_lr};
   
 endmodule
