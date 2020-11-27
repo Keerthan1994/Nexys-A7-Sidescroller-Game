@@ -33,8 +33,7 @@ module ss_map_muxer(
 
     wire [1:0]  worldmap_data_part_1, worldmap_data_lr, worldmap_data_loop;
     wire [1:0]  world_pixel_part_1, world_pixel_lr, world_pixel_loop;
-    
-    reg [3:0] current_map;
+   
     
     // world map part 1
     world_map world_map(
@@ -65,18 +64,27 @@ module ss_map_muxer(
         .addrb(vid_addr),
         .doutb(world_pixel_loop)
     );
-
+     //try making a previous state register to save when second map state is up
     // Should only trigger on a change in LocX
+    reg [3:0] current_map;
+    reg [3:0] prev_state;   //stores previous map state 
+    
     always @(posedge clk_75 or negedge reset) begin
         if (reset) begin
             current_map <= 0;
         end
-        else if (LocX == 8'h7C & worldmap_data == worldmap_data_part_1) begin
+        else if (LocX == 8'h7C && worldmap_data == worldmap_data_part_1) begin
+            current_map <= 2;
+            prev_state = current_map;
+        end
+        else if (LocX == 8'h00 && prev_state == 2) begin
             current_map <= 2;
         end
-        else if (LocX == 8'h00 & worldmap_data == worldmap_data_part_1) begin
+        else if (LocX == 8'h00 && worldmap_data == worldmap_data_part_1) begin
             current_map <= 0;
-        end
+        end   
+        else begin //added this "do nothing" else state to prevent "invisible" latch 
+        end 
     end
     
     // mux to select map based on the SW (Will need to be updated once we have more maps.)
