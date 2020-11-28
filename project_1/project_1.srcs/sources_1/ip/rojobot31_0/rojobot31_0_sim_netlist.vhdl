@@ -1,7 +1,7 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Sun Nov 22 21:46:08 2020
+-- Date        : Fri Nov 27 23:13:06 2020
 -- Host        : Ragnorak running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/rojobot31_0/rojobot31_0_sim_netlist.vhdl
@@ -56,15 +56,17 @@ architecture STRUCTURE of rojobot31_0_bot31_if is
   signal BotInfo_int : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal \^e\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \LocX[6]_i_2_n_0\ : STD_LOGIC;
+  signal \LocX[6]_i_3_n_0\ : STD_LOGIC;
+  signal \LocX[6]_i_4_n_0\ : STD_LOGIC;
+  signal \LocX[6]_i_5_n_0\ : STD_LOGIC;
   signal LocX_int : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal LocX_int_set : STD_LOGIC_VECTOR ( 7 downto 0 );
-  signal \LocX_int_set[6]_i_1_n_0\ : STD_LOGIC;
-  signal LocX_int_set_0 : STD_LOGIC_VECTOR ( 6 downto 0 );
   signal LocY_int : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal \^q\ : STD_LOGIC_VECTOR ( 7 downto 0 );
+  signal p_0_in : STD_LOGIC_VECTOR ( 6 downto 0 );
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \LocX[0]_i_1\ : label is "soft_lutpair4";
-  attribute SOFT_HLUTNM of \LocX[2]_i_1\ : label is "soft_lutpair4";
+  attribute SOFT_HLUTNM of \LocX[6]_i_2\ : label is "soft_lutpair4";
+  attribute SOFT_HLUTNM of \LocX[6]_i_4\ : label is "soft_lutpair4";
 begin
   E(0) <= \^e\(0);
   Q(7 downto 0) <= \^q\(7 downto 0);
@@ -364,91 +366,127 @@ begin
       Q => \DataOut_reg[7]_0\(7),
       R => '0'
     );
-\LocX[0]_i_1\: unisim.vcomponents.LUT5
+\LocX[0]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"A2AAAAAA"
+      INIT => X"CCCDCCCDCCCDCCC8"
     )
         port map (
-      I0 => LocX_int(0),
-      I1 => LocX_int(2),
-      I2 => LocX_int(1),
-      I3 => LocX_int(6),
-      I4 => \LocX[6]_i_2_n_0\,
-      O => LocX_int_set_0(0)
+      I0 => LocX_int(7),
+      I1 => LocX_int(0),
+      I2 => \LocX[6]_i_2_n_0\,
+      I3 => \LocX[6]_i_3_n_0\,
+      I4 => \LocX[6]_i_5_n_0\,
+      I5 => \LocX[6]_i_4_n_0\,
+      O => p_0_in(0)
     );
-\LocX[2]_i_1\: unisim.vcomponents.LUT5
+\LocX[2]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"F070F0F0"
+      INIT => X"CCC8CCC8CCC8CCCD"
     )
         port map (
-      I0 => LocX_int(0),
-      I1 => LocX_int(6),
-      I2 => LocX_int(2),
-      I3 => LocX_int(1),
-      I4 => \LocX[6]_i_2_n_0\,
-      O => LocX_int_set_0(2)
+      I0 => LocX_int(7),
+      I1 => LocX_int(2),
+      I2 => \LocX[6]_i_2_n_0\,
+      I3 => \LocX[6]_i_3_n_0\,
+      I4 => \LocX[6]_i_4_n_0\,
+      I5 => \LocX[6]_i_5_n_0\,
+      O => p_0_in(2)
     );
 \LocX[3]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"AAAA2AAAAAAAAAAA"
+      INIT => X"CCC8CCC8CCC8CCCD"
     )
         port map (
-      I0 => LocX_int(3),
-      I1 => LocX_int(0),
-      I2 => LocX_int(6),
-      I3 => LocX_int(2),
-      I4 => LocX_int(1),
-      I5 => \LocX[6]_i_2_n_0\,
-      O => LocX_int_set_0(3)
+      I0 => LocX_int(7),
+      I1 => LocX_int(3),
+      I2 => \LocX[6]_i_2_n_0\,
+      I3 => \LocX[6]_i_3_n_0\,
+      I4 => \LocX[6]_i_4_n_0\,
+      I5 => \LocX[6]_i_5_n_0\,
+      O => p_0_in(3)
     );
 \LocX[4]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"AAAA2AAAAAAAAAAA"
+      INIT => X"CCC8CCC8CCC8CCCD"
     )
         port map (
-      I0 => LocX_int(4),
-      I1 => LocX_int(0),
-      I2 => LocX_int(6),
-      I3 => LocX_int(2),
-      I4 => LocX_int(1),
-      I5 => \LocX[6]_i_2_n_0\,
-      O => LocX_int_set_0(4)
+      I0 => LocX_int(7),
+      I1 => LocX_int(4),
+      I2 => \LocX[6]_i_2_n_0\,
+      I3 => \LocX[6]_i_3_n_0\,
+      I4 => \LocX[6]_i_4_n_0\,
+      I5 => \LocX[6]_i_5_n_0\,
+      O => p_0_in(4)
     );
 \LocX[5]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"AAAA2AAAAAAAAAAA"
+      INIT => X"CCC8CCC8CCC8CCCD"
     )
         port map (
-      I0 => LocX_int(5),
-      I1 => LocX_int(0),
-      I2 => LocX_int(6),
-      I3 => LocX_int(2),
-      I4 => LocX_int(1),
-      I5 => \LocX[6]_i_2_n_0\,
-      O => LocX_int_set_0(5)
+      I0 => LocX_int(7),
+      I1 => LocX_int(5),
+      I2 => \LocX[6]_i_2_n_0\,
+      I3 => \LocX[6]_i_3_n_0\,
+      I4 => \LocX[6]_i_4_n_0\,
+      I5 => \LocX[6]_i_5_n_0\,
+      O => p_0_in(5)
     );
-\LocX[6]_i_1\: unisim.vcomponents.LUT5
+\LocX[6]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"CC4CCCCC"
+      INIT => X"CCC8CCC8CCC8CCCD"
     )
         port map (
-      I0 => LocX_int(0),
+      I0 => LocX_int(7),
       I1 => LocX_int(6),
-      I2 => LocX_int(2),
-      I3 => LocX_int(1),
-      I4 => \LocX[6]_i_2_n_0\,
-      O => LocX_int_set_0(6)
+      I2 => \LocX[6]_i_2_n_0\,
+      I3 => \LocX[6]_i_3_n_0\,
+      I4 => \LocX[6]_i_4_n_0\,
+      I5 => \LocX[6]_i_5_n_0\,
+      O => p_0_in(6)
     );
-\LocX[6]_i_2\: unisim.vcomponents.LUT4
+\LocX[6]_i_2\: unisim.vcomponents.LUT3
     generic map(
-      INIT => X"0080"
+      INIT => X"BE"
+    )
+        port map (
+      I0 => LocX_int(1),
+      I1 => LocX_int(5),
+      I2 => LocX_int(4),
+      O => \LocX[6]_i_2_n_0\
+    );
+\LocX[6]_i_3\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"7FFEFFFFFFFF7FFE"
+    )
+        port map (
+      I0 => LocX_int(3),
+      I1 => LocX_int(4),
+      I2 => LocX_int(0),
+      I3 => LocX_int(2),
+      I4 => LocX_int(5),
+      I5 => LocX_int(6),
+      O => \LocX[6]_i_3_n_0\
+    );
+\LocX[6]_i_4\: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"FE"
     )
         port map (
       I0 => LocX_int(5),
       I1 => LocX_int(4),
-      I2 => LocX_int(3),
-      I3 => LocX_int(7),
-      O => \LocX[6]_i_2_n_0\
+      I2 => LocX_int(6),
+      O => \LocX[6]_i_4_n_0\
+    );
+\LocX[6]_i_5\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"FFFE"
+    )
+        port map (
+      I0 => LocX_int(2),
+      I1 => LocX_int(3),
+      I2 => LocX_int(0),
+      I3 => LocX_int(1),
+      O => \LocX[6]_i_5_n_0\
     );
 \LocX_int_reg[0]\: unisim.vcomponents.FDCE
      port map (
@@ -514,23 +552,11 @@ begin
       D => D(7),
       Q => LocX_int(7)
     );
-\LocX_int_set[6]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"20000000"
-    )
-        port map (
-      I0 => \LocX[6]_i_2_n_0\,
-      I1 => LocX_int(1),
-      I2 => LocX_int(2),
-      I3 => LocX_int(6),
-      I4 => LocX_int(0),
-      O => \LocX_int_set[6]_i_1_n_0\
-    );
 \LocX_int_set_reg[0]\: unisim.vcomponents.FDRE
      port map (
       C => clk_in,
       CE => '1',
-      D => LocX_int_set_0(0),
+      D => p_0_in(0),
       Q => LocX_int_set(0),
       R => '0'
     );
@@ -546,41 +572,41 @@ begin
      port map (
       C => clk_in,
       CE => '1',
-      D => LocX_int(2),
+      D => p_0_in(2),
       Q => LocX_int_set(2),
-      R => \LocX_int_set[6]_i_1_n_0\
+      R => '0'
     );
 \LocX_int_set_reg[3]\: unisim.vcomponents.FDRE
      port map (
       C => clk_in,
       CE => '1',
-      D => LocX_int(3),
+      D => p_0_in(3),
       Q => LocX_int_set(3),
-      R => \LocX_int_set[6]_i_1_n_0\
+      R => '0'
     );
 \LocX_int_set_reg[4]\: unisim.vcomponents.FDRE
      port map (
       C => clk_in,
       CE => '1',
-      D => LocX_int(4),
+      D => p_0_in(4),
       Q => LocX_int_set(4),
-      R => \LocX_int_set[6]_i_1_n_0\
+      R => '0'
     );
 \LocX_int_set_reg[5]\: unisim.vcomponents.FDRE
      port map (
       C => clk_in,
       CE => '1',
-      D => LocX_int(5),
+      D => p_0_in(5),
       Q => LocX_int_set(5),
-      R => \LocX_int_set[6]_i_1_n_0\
+      R => '0'
     );
 \LocX_int_set_reg[6]\: unisim.vcomponents.FDRE
      port map (
       C => clk_in,
       CE => '1',
-      D => LocX_int(6),
+      D => p_0_in(6),
       Q => LocX_int_set(6),
-      R => \LocX_int_set[6]_i_1_n_0\
+      R => '0'
     );
 \LocX_int_set_reg[7]\: unisim.vcomponents.FDRE
      port map (
@@ -595,7 +621,7 @@ begin
       C => clk_in,
       CE => \^e\(0),
       CLR => reset,
-      D => LocX_int_set_0(0),
+      D => p_0_in(0),
       Q => LocX_reg(0)
     );
 \LocX_reg[1]\: unisim.vcomponents.FDCE
@@ -611,7 +637,7 @@ begin
       C => clk_in,
       CE => \^e\(0),
       CLR => reset,
-      D => LocX_int_set_0(2),
+      D => p_0_in(2),
       Q => LocX_reg(2)
     );
 \LocX_reg[3]\: unisim.vcomponents.FDCE
@@ -619,7 +645,7 @@ begin
       C => clk_in,
       CE => \^e\(0),
       CLR => reset,
-      D => LocX_int_set_0(3),
+      D => p_0_in(3),
       Q => LocX_reg(3)
     );
 \LocX_reg[4]\: unisim.vcomponents.FDCE
@@ -627,7 +653,7 @@ begin
       C => clk_in,
       CE => \^e\(0),
       CLR => reset,
-      D => LocX_int_set_0(4),
+      D => p_0_in(4),
       Q => LocX_reg(4)
     );
 \LocX_reg[5]\: unisim.vcomponents.FDCE
@@ -635,7 +661,7 @@ begin
       C => clk_in,
       CE => \^e\(0),
       CLR => reset,
-      D => LocX_int_set_0(5),
+      D => p_0_in(5),
       Q => LocX_reg(5)
     );
 \LocX_reg[6]\: unisim.vcomponents.FDCE
@@ -643,7 +669,7 @@ begin
       C => clk_in,
       CE => \^e\(0),
       CLR => reset,
-      D => LocX_int_set_0(6),
+      D => p_0_in(6),
       Q => LocX_reg(6)
     );
 \LocX_reg[7]\: unisim.vcomponents.FDCE

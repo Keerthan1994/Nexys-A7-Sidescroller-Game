@@ -6,25 +6,25 @@
         {
             "name": "Win32",
             "includePath": [
-                "c:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/assembly_code/RVfpga_RojoBot_SW/include",
-                "c:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/assembly_code/RVfpga_RojoBot_SW/src",
-                "C:/Users/ryanp/.platformio/packages/framework-wd-riscv-sdk/common/api_inc",
-                "C:/Users/ryanp/.platformio/packages/framework-wd-riscv-sdk/psp/api_inc",
-                "C:/Users/ryanp/.platformio/packages/framework-wd-riscv-sdk/board/nexys_a7_eh1",
-                "C:/Users/ryanp/.platformio/packages/framework-wd-riscv-sdk/board/nexys_a7_eh1/bsp",
-                "C:/Users/ryanp/.platformio/packages/tool-unity",
+                "c:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/assembly_code/RVfpga_RojoBot_SW/include",
+                "c:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/assembly_code/RVfpga_RojoBot_SW/src",
+                "C:/Users/rromano/.platformio/packages/framework-wd-riscv-sdk/common/api_inc",
+                "C:/Users/rromano/.platformio/packages/framework-wd-riscv-sdk/psp/api_inc",
+                "C:/Users/rromano/.platformio/packages/framework-wd-riscv-sdk/board/nexys_a7_eh1",
+                "C:/Users/rromano/.platformio/packages/framework-wd-riscv-sdk/board/nexys_a7_eh1/bsp",
+                "C:/Users/rromano/.platformio/packages/tool-unity",
                 ""
             ],
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "c:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/assembly_code/RVfpga_RojoBot_SW/include",
-                    "c:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/assembly_code/RVfpga_RojoBot_SW/src",
-                    "C:/Users/ryanp/.platformio/packages/framework-wd-riscv-sdk/common/api_inc",
-                    "C:/Users/ryanp/.platformio/packages/framework-wd-riscv-sdk/psp/api_inc",
-                    "C:/Users/ryanp/.platformio/packages/framework-wd-riscv-sdk/board/nexys_a7_eh1",
-                    "C:/Users/ryanp/.platformio/packages/framework-wd-riscv-sdk/board/nexys_a7_eh1/bsp",
-                    "C:/Users/ryanp/.platformio/packages/tool-unity",
+                    "c:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/assembly_code/RVfpga_RojoBot_SW/include",
+                    "c:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/assembly_code/RVfpga_RojoBot_SW/src",
+                    "C:/Users/rromano/.platformio/packages/framework-wd-riscv-sdk/common/api_inc",
+                    "C:/Users/rromano/.platformio/packages/framework-wd-riscv-sdk/psp/api_inc",
+                    "C:/Users/rromano/.platformio/packages/framework-wd-riscv-sdk/board/nexys_a7_eh1",
+                    "C:/Users/rromano/.platformio/packages/framework-wd-riscv-sdk/board/nexys_a7_eh1/bsp",
+                    "C:/Users/rromano/.platformio/packages/tool-unity",
                     ""
                 ]
             },
@@ -53,7 +53,7 @@
                 "sys/cdefs.h",
                 ""
             ],
-            "compilerPath": "C:/Users/ryanp/.platformio/packages/toolchain-riscv/bin/riscv64-unknown-elf-gcc.exe",
+            "compilerPath": "C:/Users/rromano/.platformio/packages/toolchain-riscv/bin/riscv64-unknown-elf-gcc.exe",
             "compilerArgs": [
                 "-march=rv32imac",
                 "-mabi=ilp32",

@@ -99,8 +99,11 @@ reg [7:0]   LocX_int_set;
 					
 // read registers and store in the internal BOT state registers
 always @(posedge clk) begin
-    if (LocX_int == 8'h7D) begin
-        LocX_int_set <= 0;
+    if (LocX_int == 8'h7D) begin    // Sidescroller teleport to beginning.
+        LocX_int_set <= 8'h01;
+    end
+    else if (LocX_int == 8'h00) begin   // Sidescroller teleport to ending.
+        LocX_int_set <= 8'h7C;
     end
     else begin
         LocX_int_set <= LocX_int;
@@ -189,10 +192,13 @@ always @(posedge clk or posedge reset) begin
 		BotInfo <= 0;
 	end
 	else if (load_sys_regs) begin  // copy holding registers to system interface registers
-            if (LocX_int == 8'h7D) begin  // Sidescroller change
-                LocX <= 0;
+            if (LocX_int == 8'h7D) begin   // Sidescroller teleport to beginning.
+                LocX <= 8'h01;
             end
-                else begin
+            else if (LocX_int == 8'h00) begin   // Sidescroller teleport to ending.
+                LocX <= 8'h7C;
+            end
+            else begin
                 LocX <= LocX_int;
             end
 			LocY <= LocY_int;
@@ -209,5 +215,3 @@ end // always - synchronized system register interface
 
 endmodule
 		
-				
-

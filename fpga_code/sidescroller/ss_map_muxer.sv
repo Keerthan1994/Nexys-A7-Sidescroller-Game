@@ -72,15 +72,16 @@ module ss_map_muxer(
     always @(posedge clk_75 or negedge reset) begin
         if (reset) begin
             current_map <= 0;
+            prev_state <= 0;
         end
         else if (LocX == 8'h7C && worldmap_data == worldmap_data_part_1) begin
             current_map <= 2;
             prev_state = current_map;
         end
-        else if (LocX == 8'h00 && prev_state == 2) begin
+        else if (LocX == 8'h01 && prev_state == 2) begin
             current_map <= 2;
         end
-        else if (LocX == 8'h00 && worldmap_data == worldmap_data_part_1) begin
+        else if (LocX == 8'h01 && worldmap_data == worldmap_data_part_1) begin
             current_map <= 0;
         end   
         else begin //added this "do nothing" else state to prevent "invisible" latch 
