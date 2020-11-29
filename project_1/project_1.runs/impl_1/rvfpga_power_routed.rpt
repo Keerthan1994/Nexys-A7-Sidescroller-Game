@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Fri Nov 27 23:32:17 2020
-| Host             : Ragnorak running 64-bit major release  (build 9200)
+| Date             : Sat Nov 28 19:47:32 2020
+| Host             : DESKTOP-NP6R9M2 running 64-bit major release  (build 9200)
 | Command          : report_power -file rvfpga_power_routed.rpt -pb rvfpga_power_summary_routed.pb -rpx rvfpga_power_routed.rpx
 | Design           : rvfpga
 | Device           : xc7a100tcsg324-1
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.244        |
+| Total On-Chip Power (W)  | 1.245        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.131        |
+| Dynamic (W)              | 1.133        |
 | Device Static (W)        | 0.112        |
 | Effective TJA (C/W)      | 4.6          |
 | Max Ambient (C)          | 79.3         |
@@ -52,23 +52,23 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.051 |       17 |       --- |             --- |
-| Slice Logic              |     0.027 |    63487 |       --- |             --- |
-|   LUT as Logic           |     0.024 |    34814 |     63400 |           54.91 |
+| Clocks                   |     0.052 |       17 |       --- |             --- |
+| Slice Logic              |     0.027 |    63509 |       --- |             --- |
+|   LUT as Logic           |     0.024 |    34801 |     63400 |           54.89 |
 |   CARRY4                 |     0.001 |     1024 |     15850 |            6.46 |
 |   LUT as Distributed RAM |    <0.001 |      228 |     19000 |            1.20 |
-|   Register               |    <0.001 |    19817 |    126800 |           15.63 |
+|   Register               |    <0.001 |    19819 |    126800 |           15.63 |
 |   F7/F8 Muxes            |    <0.001 |      683 |     63400 |            1.08 |
 |   LUT as Shift Register  |    <0.001 |        3 |     19000 |            0.02 |
-|   Others                 |     0.000 |     1369 |       --- |             --- |
-| Signals                  |     0.039 |    51510 |       --- |             --- |
-| Block RAM                |     0.075 |     69.5 |       135 |           51.48 |
+|   Others                 |     0.000 |     1371 |       --- |             --- |
+| Signals                  |     0.038 |    51529 |       --- |             --- |
+| Block RAM                |     0.077 |     70.5 |       135 |           52.22 |
 | MMCM                     |     0.122 |        1 |         6 |           16.67 |
 | PLL                      |     0.428 |        3 |         6 |           50.00 |
 | DSPs                     |     0.002 |        7 |       240 |            2.92 |
 | I/O                      |     0.387 |      124 |       210 |           59.05 |
 | Static Power             |     0.112 |          |           |                 |
-| Total                    |     1.244 |          |           |                 |
+| Total                    |     1.245 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -78,7 +78,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.260 |       0.240 |      0.021 |
+| Vccint    |       1.000 |     0.262 |       0.241 |      0.021 |
 | Vccaux    |       1.800 |     0.335 |       0.317 |      0.018 |
 | Vcco33    |       3.300 |     0.006 |       0.002 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -161,15 +161,16 @@ Table of Contents
 +-------------------------+-----------+
 | Name                    | Power (W) |
 +-------------------------+-----------+
-| rvfpga                  |     1.131 |
+| rvfpga                  |     1.133 |
 |   cdc                   |     0.006 |
 |     i_axi_cdc           |     0.006 |
 |       i_cdc_fifo_gray_r |     0.004 |
+|       i_cdc_fifo_gray_w |     0.001 |
 |   clk_gen               |     0.146 |
 |   clock_divider         |     0.122 |
 |     inst                |     0.122 |
-|   ddr2                  |     0.545 |
-|     ldc                 |     0.545 |
+|   ddr2                  |     0.544 |
+|     ldc                 |     0.544 |
 |       IOBUF             |     0.007 |
 |       IOBUFDS           |     0.005 |
 |       IOBUFDS_1         |     0.005 |
@@ -189,22 +190,22 @@ Table of Contents
 |       IOBUF_8           |     0.007 |
 |       IOBUF_9           |     0.009 |
 |       OBUFDS            |     0.008 |
-|       serv_rf_top       |     0.005 |
-|   swervolf              |     0.131 |
+|       serv_rf_top       |     0.004 |
+|   swervolf              |     0.133 |
 |     axi2wb              |     0.001 |
 |     axi_intercon        |     0.004 |
 |       axi_xbar          |     0.004 |
 |     bootrom             |     0.002 |
 |       ram               |     0.002 |
-|     rojobot_control     |     0.025 |
+|     rojobot_control     |     0.027 |
 |       map_colorizer     |     0.004 |
-|       map_muxer         |     0.003 |
+|       map_muxer         |     0.005 |
 |       robot             |     0.004 |
 |       robot_icon_v2     |     0.011 |
-|       title_colorizer   |     0.003 |
-|     swerv_eh1           |     0.091 |
+|       title_colorizer   |     0.002 |
+|     swerv_eh1           |     0.092 |
 |       mem               |     0.047 |
-|       swerv             |     0.045 |
+|       swerv             |     0.046 |
 |     syscon              |     0.001 |
 |     vga_controller      |     0.002 |
 |       vga_dtg_inst      |     0.002 |

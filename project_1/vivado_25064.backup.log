@@ -1,0 +1,69 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Nov 25 19:24:30 2020
+# Process ID: 25064
+# Current directory: C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23448 C:\Users\ryanp\Documents\GitHub\Nexys-A7-Sidescroller-Game\project_1\project_1.xpr
+# Log file: C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/vivado.log
+# Journal file: C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/ece540_ip_repo/rojobot31'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 865.781 ; gain = 213.219
+update_compile_order -fileset sources_1
+reset_run world_map_lr_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+WARNING: [HDL 9-3756] overwriting previous definition of module 'debounce' [C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/rojobot-solution-files/debounce.v:26]
+WARNING: [filemgmt 20-644] Circular Reference Found: '.xil_defaultlib.popcount' [C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/popcount.sv:0] -->> '.xil_defaultlib.popcount' [C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/popcount.sv:19]
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'debounce()' found in library 'xil_defaultlib'
+Duplicate found at line 26 of file C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/debounce/debounce.v
+	(Active) Duplicate found at line 26 of file C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/rojobot-solution-files/debounce.v
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'world_map_lr'...
+[Wed Nov 25 20:34:38 2020] Launched world_map_lr_synth_1...
+Run output will be captured here: C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/world_map_lr_synth_1/runme.log
+[Wed Nov 25 20:34:38 2020] Launched synth_1...
+Run output will be captured here: C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Wed Nov 25 20:44:11 2020] Launched impl_1...
+Run output will be captured here: C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Nov 25 20:57:21 2020] Launched impl_1...
+Run output will be captured here: C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+WARNING: [HDL 9-3756] overwriting previous definition of module 'debounce' [C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/rojobot-solution-files/debounce.v:26]
+WARNING: [filemgmt 20-644] Circular Reference Found: '.xil_defaultlib.popcount' [C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/popcount.sv:0] -->> '.xil_defaultlib.popcount' [C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/popcount.sv:19]
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'debounce()' found in library 'xil_defaultlib'
+Duplicate found at line 26 of file C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/debounce/debounce.v
+	(Active) Duplicate found at line 26 of file C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/rojobot-solution-files/debounce.v
+[Wed Nov 25 21:05:34 2020] Launched synth_1...
+Run output will be captured here: C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Wed Nov 25 21:15:10 2020] Launched impl_1...
+Run output will be captured here: C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Nov 25 21:30:31 2020] Launched impl_1...
+Run output will be captured here: C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+WARNING: [HDL 9-3756] overwriting previous definition of module 'debounce' [C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/rojobot-solution-files/debounce.v:26]
+WARNING: [filemgmt 20-644] Circular Reference Found: '.xil_defaultlib.popcount' [C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/popcount.sv:0] -->> '.xil_defaultlib.popcount' [C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/popcount.sv:19]
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'debounce()' found in library 'xil_defaultlib'
+Duplicate found at line 26 of file C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/debounce/debounce.v
+	(Active) Duplicate found at line 26 of file C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/rojobot-solution-files/debounce.v
+[Wed Nov 25 21:36:38 2020] Launched synth_1...
+Run output will be captured here: C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Wed Nov 25 21:45:35 2020] Launched impl_1...
+Run output will be captured here: C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Nov 25 22:01:35 2020] Launched impl_1...
+Run output will be captured here: C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/impl_1/runme.log
