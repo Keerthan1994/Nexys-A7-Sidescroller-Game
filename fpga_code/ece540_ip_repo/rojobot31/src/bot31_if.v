@@ -103,7 +103,7 @@ always @(posedge clk) begin
         LocX_int_set <= 8'h01;
     end
     else if (LocX_int == 8'h00) begin   // Sidescroller teleport to ending.
-        LocX_int_set <= 8'h7C;
+        LocX_int_set <= 8'h7B;
     end
     else begin
         LocX_int_set <= LocX_int;
@@ -196,7 +196,7 @@ always @(posedge clk or posedge reset) begin
                 LocX <= 8'h01;
             end
             else if (LocX_int == 8'h00) begin   // Sidescroller teleport to ending.
-                LocX <= 8'h7C;
+                LocX <= 8'h7B;
             end
             else begin
                 LocX <= LocX_int;

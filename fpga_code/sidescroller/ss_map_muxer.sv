@@ -68,7 +68,8 @@ module ss_map_muxer(
      //try making a previous state register to save when second map state is up
     // Should only trigger on a change in LocX
     reg [3:0] current_map;
-    reg [3:0] next_state;   //stores previous map state 
+    reg [3:0] next_state;   //stores next map state for teleporting to next map 
+    reg [3:0] prev_state; //stores previous map state for teleporting to previous map
     
     always @(posedge clk or negedge reset) begin
         if (reset) begin
@@ -77,42 +78,63 @@ module ss_map_muxer(
         end
         //checks conditions at right end of map screen
         else if (LocX == 8'h7C) begin
-             //switches into second map and stores that value in previous state
+             //switches into second map
             if (next_state == 2 && current_map == 0) begin
             current_map <= 2;
             end
-            //switches into third map and stores that value in previous state
+            //switches into third map
             else if (next_state == 3 && current_map == 2) begin
             current_map <= 3;
-           // prev_state <= 3;
             end
             else begin
             end
         end
         //checks condition at left end of map screen 
         else if (LocX == 8'h01) begin
-            //sustains map 2 when teleporting back to loc 00 on switch from map 1 to 2
+            //sustains map 2 when teleporting back to loc 01 on switch from map 1 to 2
             if (next_state == 2 && current_map == 2) begin 
             current_map <= 2;
             next_state <= 3;
+            prev_state <= 2; //loads in current_map value for map 2 in the event player is moving E to telport from 00 to 7B of 1st map 
             end
-            //sustains map 3 when teleporting back to loc 00 on switch from map 2 to 3
+            //sustains map 3 when teleporting back to loc 01 on switch from map 2 to 3
             else if (next_state == 3 && current_map == 3) begin
             current_map <= 3;
+            prev_state <= 3;
             end
             //sets current map to 1 when starting go or when traversing back to starting point 
             else if (current_map == 0) begin
             current_map <= 0;
             next_state <= 2;
+            prev_state <= 0;
             end    
+            //enables return to 1st map from 2nd map 
+            else if (next_state == 3 && current_map == 2) begin
+            prev_state <= 2;
+            end
+            else begin
+            end    
+        end
+        //This is to clear out prev_state after teleportation from 00 to 7B so it can be set again at 01 
+        else if (LocX == 8'h7A) begin
+            prev_state <= 0;
+        end
+        //checks / sets conditions for returning to the previous map screen - moving W 
+        else if (LocX == 8'h7B) begin
+            //returns to 1st map from 2nd map 
+            if (prev_state == 2) begin
+                //these values are carried through so player can turn E and return to screen they came from 
+                current_map <= 0; 
+                next_state <= 2;    
+            end   
+            //returns to 2nd map from 3rd map 
+            else if (prev_state == 3) begin
+                current_map <= 2;
+                next_state <= 3;
+            end
             else begin
             end
-            
         end
-        //sets current map to map 1 when starting game or when traversing back to the starting point
-      //  else if (LocX == 8'h01 && worldmap_data == worldmap_data_part_1) begin
-      //      current_map <= 0;
-      //  end   
         else begin //added this "do nothing" else state to prevent "invisible" latch 
         current_map <= current_map;
         next_state <= next_state;

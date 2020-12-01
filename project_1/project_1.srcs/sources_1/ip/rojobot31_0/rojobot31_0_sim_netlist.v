@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-// Date        : Fri Nov 27 23:13:06 2020
-// Host        : Ragnorak running 64-bit major release  (build 9200)
+// Date        : Mon Nov 30 17:52:13 2020
+// Host        : DESKTOP-NP6R9M2 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/rojobot31_0/rojobot31_0_sim_netlist.v
+//               C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/rojobot31_0/rojobot31_0_sim_netlist.v
 // Design      : rojobot31_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -396,24 +396,34 @@ module rojobot31_0_bot31_if
         .Q(\DataOut_reg[7]_0 [7]),
         .R(1'b0));
   LUT6 #(
-    .INIT(64'hCCCDCCCDCCCDCCC8)) 
+    .INIT(64'hCCCDCCCCCCCCCCCD)) 
     \LocX[0]_i_1 
        (.I0(LocX_int[7]),
         .I1(LocX_int[0]),
-        .I2(\LocX[6]_i_2_n_0 ),
-        .I3(\LocX[6]_i_3_n_0 ),
-        .I4(\LocX[6]_i_5_n_0 ),
-        .I5(\LocX[6]_i_4_n_0 ),
+        .I2(\LocX[6]_i_3_n_0 ),
+        .I3(LocX_int[1]),
+        .I4(LocX_int[5]),
+        .I5(LocX_int[4]),
         .O(p_0_in[0]));
   LUT6 #(
     .INIT(64'hCCC8CCC8CCC8CCCD)) 
-    \LocX[2]_i_1 
+    \LocX[1]_i_1 
        (.I0(LocX_int[7]),
-        .I1(LocX_int[2]),
+        .I1(LocX_int[1]),
         .I2(\LocX[6]_i_2_n_0 ),
         .I3(\LocX[6]_i_3_n_0 ),
         .I4(\LocX[6]_i_4_n_0 ),
         .I5(\LocX[6]_i_5_n_0 ),
+        .O(p_0_in[1]));
+  LUT6 #(
+    .INIT(64'hFEFFFFFE00000000)) 
+    \LocX[2]_i_1 
+       (.I0(LocX_int[7]),
+        .I1(\LocX[6]_i_3_n_0 ),
+        .I2(LocX_int[1]),
+        .I3(LocX_int[5]),
+        .I4(LocX_int[4]),
+        .I5(LocX_int[2]),
         .O(p_0_in[2]));
   LUT6 #(
     .INIT(64'hCCC8CCC8CCC8CCCD)) 
@@ -546,7 +556,7 @@ module rojobot31_0_bot31_if
   FDRE \LocX_int_set_reg[1] 
        (.C(clk_in),
         .CE(1'b1),
-        .D(LocX_int[1]),
+        .D(p_0_in[1]),
         .Q(LocX_int_set[1]),
         .R(1'b0));
   FDRE \LocX_int_set_reg[2] 
@@ -595,7 +605,7 @@ module rojobot31_0_bot31_if
        (.C(clk_in),
         .CE(E),
         .CLR(reset),
-        .D(LocX_int[1]),
+        .D(p_0_in[1]),
         .Q(LocX_reg[1]));
   FDCE \LocX_reg[2] 
        (.C(clk_in),

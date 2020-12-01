@@ -18,9 +18,7 @@ proc create_report { reportName command } {
   }
 }
 set_param chipscope.maxJobs 3
-set_param synth.incrementalSynthesisCache C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/.Xil/Vivado-22008-DESKTOP-NP6R9M2/incrSyn
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
+set_param project.hsv.suppressChildGraphs 0
 set_msg_config  -id {Common 17-1649}  -string {{CRITICAL WARNING: [Common 17-1649] The Vivado message database 'C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/synth_1/vivado.pb' contains 20125 messages. Restoring all messages from this message database will impact Vivado performance, so only WARNING, CRITICAL WARNING, and ERROR messages will be restored. To restore all messages from this file use the tcl command 'set_param messaging.loadPbLimit 20126' and re-open the project.}}  -suppress 
 set_msg_config  -id {Common 17-1649}  -string {{CRITICAL WARNING: [Common 17-1649] The Vivado message database 'C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/synth_1/vivado.pb' contains 20143 messages. Restoring all messages from this message database will impact Vivado performance, so only WARNING, CRITICAL WARNING, and ERROR messages will be restored. To restore all messages from this file use the tcl command 'set_param messaging.loadPbLimit 20144' and re-open the project.}}  -suppress 
 create_project -in_memory -part xc7a100tcsg324-1
@@ -41,7 +39,7 @@ set_property ip_output_repo c:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescrolle
 set_property ip_cache_permissions {read write} [current_project]
 add_files C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/world_maps/bandicoot_maps/world_map_pt1.coe
 add_files C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/world_maps/bandicoot_maps/world_map_pt2.coe
-add_files c:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/world_maps/bandicoot_maps/world_map_pt3.coe
+add_files C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/world_maps/bandicoot_maps/world_map_pt3.coe
 read_verilog {
   C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/OtherSources/swervolf-swerv_default_config_0.7/configs/snapshots/default/common_defines.vh
   C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/gpio/gpio_defines.v
@@ -190,11 +188,11 @@ set_property used_in_implementation false [get_files -all c:/Users/ryanp/Documen
 read_ip -quiet C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/world_map_lr/world_map_lr.xci
 set_property used_in_implementation false [get_files -all c:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/world_map_lr/world_map_lr_ooc.xdc]
 
+read_ip -quiet C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/world_map_loop/world_map_loop.xci
+set_property used_in_implementation false [get_files -all c:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/world_map_loop/world_map_loop_ooc.xdc]
+
 read_ip -quiet C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/rojobot31_0/rojobot31_0.xci
 set_property is_enabled true [get_files -all C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/rojobot31_0/src/bot31_if.v]
-
-read_ip -quiet c:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/world_map_loop/world_map_loop.xci
-set_property used_in_implementation false [get_files -all c:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/world_map_loop/world_map_loop_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

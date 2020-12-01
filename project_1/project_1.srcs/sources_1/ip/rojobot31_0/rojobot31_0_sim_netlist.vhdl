@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Fri Nov 27 23:13:06 2020
--- Host        : Ragnorak running 64-bit major release  (build 9200)
+-- Date        : Mon Nov 30 17:52:13 2020
+-- Host        : DESKTOP-NP6R9M2 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/rojobot31_0/rojobot31_0_sim_netlist.vhdl
+--               C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/rojobot31_0/rojobot31_0_sim_netlist.vhdl
 -- Design      : rojobot31_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -368,28 +368,41 @@ begin
     );
 \LocX[0]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"CCCDCCCDCCCDCCC8"
+      INIT => X"CCCDCCCCCCCCCCCD"
     )
         port map (
       I0 => LocX_int(7),
       I1 => LocX_int(0),
-      I2 => \LocX[6]_i_2_n_0\,
-      I3 => \LocX[6]_i_3_n_0\,
-      I4 => \LocX[6]_i_5_n_0\,
-      I5 => \LocX[6]_i_4_n_0\,
+      I2 => \LocX[6]_i_3_n_0\,
+      I3 => LocX_int(1),
+      I4 => LocX_int(5),
+      I5 => LocX_int(4),
       O => p_0_in(0)
     );
-\LocX[2]_i_1\: unisim.vcomponents.LUT6
+\LocX[1]_i_1\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"CCC8CCC8CCC8CCCD"
     )
         port map (
       I0 => LocX_int(7),
-      I1 => LocX_int(2),
+      I1 => LocX_int(1),
       I2 => \LocX[6]_i_2_n_0\,
       I3 => \LocX[6]_i_3_n_0\,
       I4 => \LocX[6]_i_4_n_0\,
       I5 => \LocX[6]_i_5_n_0\,
+      O => p_0_in(1)
+    );
+\LocX[2]_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"FEFFFFFE00000000"
+    )
+        port map (
+      I0 => LocX_int(7),
+      I1 => \LocX[6]_i_3_n_0\,
+      I2 => LocX_int(1),
+      I3 => LocX_int(5),
+      I4 => LocX_int(4),
+      I5 => LocX_int(2),
       O => p_0_in(2)
     );
 \LocX[3]_i_1\: unisim.vcomponents.LUT6
@@ -564,7 +577,7 @@ begin
      port map (
       C => clk_in,
       CE => '1',
-      D => LocX_int(1),
+      D => p_0_in(1),
       Q => LocX_int_set(1),
       R => '0'
     );
@@ -629,7 +642,7 @@ begin
       C => clk_in,
       CE => \^e\(0),
       CLR => reset,
-      D => LocX_int(1),
+      D => p_0_in(1),
       Q => LocX_reg(1)
     );
 \LocX_reg[2]\: unisim.vcomponents.FDCE
