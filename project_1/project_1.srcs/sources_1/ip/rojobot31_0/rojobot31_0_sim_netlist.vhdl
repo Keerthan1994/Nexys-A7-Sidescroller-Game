@@ -1,7 +1,7 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Mon Nov 30 17:52:13 2020
+-- Date        : Thu Dec  3 19:42:19 2020
 -- Host        : DESKTOP-NP6R9M2 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/rojobot31_0/rojobot31_0_sim_netlist.vhdl
@@ -41,8 +41,8 @@ entity rojobot31_0_bot31_if is
     MotCtl_in : in STD_LOGIC_VECTOR ( 7 downto 0 );
     \LocX_int_reg[7]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     D : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    \LocY_int_reg[7]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \BotInfo_int_reg[7]_1\ : in STD_LOGIC_VECTOR ( 0 to 0 );
+    \LocY_int_reg[7]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \Sensors_int_reg[7]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \DataOut_reg[7]_1\ : in STD_LOGIC_VECTOR ( 7 downto 0 );
     \MapX_reg[6]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
@@ -53,17 +53,47 @@ entity rojobot31_0_bot31_if is
 end rojobot31_0_bot31_if;
 
 architecture STRUCTURE of rojobot31_0_bot31_if is
-  signal BotInfo_int : STD_LOGIC_VECTOR ( 7 downto 0 );
+  signal \BotInfo_int_reg_n_0_[0]\ : STD_LOGIC;
+  signal \BotInfo_int_reg_n_0_[1]\ : STD_LOGIC;
+  signal \BotInfo_int_reg_n_0_[2]\ : STD_LOGIC;
+  signal \BotInfo_int_reg_n_0_[3]\ : STD_LOGIC;
+  signal \BotInfo_int_reg_n_0_[4]\ : STD_LOGIC;
+  signal \BotInfo_int_reg_n_0_[5]\ : STD_LOGIC;
+  signal \BotInfo_int_reg_n_0_[6]\ : STD_LOGIC;
+  signal \BotInfo_int_reg_n_0_[7]\ : STD_LOGIC;
   signal \^e\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \LocX[6]_i_2_n_0\ : STD_LOGIC;
   signal \LocX[6]_i_3_n_0\ : STD_LOGIC;
   signal \LocX[6]_i_4_n_0\ : STD_LOGIC;
   signal \LocX[6]_i_5_n_0\ : STD_LOGIC;
-  signal LocX_int : STD_LOGIC_VECTOR ( 7 downto 0 );
+  signal LocX_int : STD_LOGIC_VECTOR ( 6 downto 0 );
   signal LocX_int_set : STD_LOGIC_VECTOR ( 7 downto 0 );
+  signal \LocY[2]_i_1_n_0\ : STD_LOGIC;
+  signal \LocY[2]_i_2_n_0\ : STD_LOGIC;
+  signal \LocY[7]_i_1_n_0\ : STD_LOGIC;
   signal LocY_int : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal \^q\ : STD_LOGIC_VECTOR ( 7 downto 0 );
-  signal p_0_in : STD_LOGIC_VECTOR ( 6 downto 0 );
+  signal \_inferred__0/i__carry__0_n_3\ : STD_LOGIC;
+  signal \_inferred__0/i__carry__0_n_6\ : STD_LOGIC;
+  signal \_inferred__0/i__carry__0_n_7\ : STD_LOGIC;
+  signal \_inferred__0/i__carry_n_0\ : STD_LOGIC;
+  signal \_inferred__0/i__carry_n_1\ : STD_LOGIC;
+  signal \_inferred__0/i__carry_n_2\ : STD_LOGIC;
+  signal \_inferred__0/i__carry_n_3\ : STD_LOGIC;
+  signal \_inferred__0/i__carry_n_4\ : STD_LOGIC;
+  signal \_inferred__0/i__carry_n_5\ : STD_LOGIC;
+  signal \_inferred__0/i__carry_n_6\ : STD_LOGIC;
+  signal \i__carry__0_i_1_n_0\ : STD_LOGIC;
+  signal \i__carry__0_i_2_n_0\ : STD_LOGIC;
+  signal \i__carry_i_1_n_0\ : STD_LOGIC;
+  signal \i__carry_i_2_n_0\ : STD_LOGIC;
+  signal \i__carry_i_3_n_0\ : STD_LOGIC;
+  signal \i__carry_i_4_n_0\ : STD_LOGIC;
+  signal \i__carry_i_5_n_0\ : STD_LOGIC;
+  signal p_0_in : STD_LOGIC_VECTOR ( 7 downto 0 );
+  signal \NLW__inferred__0/i__carry_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal \NLW__inferred__0/i__carry__0_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 1 );
+  signal \NLW__inferred__0/i__carry__0_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 2 );
   attribute SOFT_HLUTNM : string;
   attribute SOFT_HLUTNM of \LocX[6]_i_2\ : label is "soft_lutpair4";
   attribute SOFT_HLUTNM of \LocX[6]_i_4\ : label is "soft_lutpair4";
@@ -76,7 +106,7 @@ begin
       CE => \BotInfo_int_reg[7]_1\(0),
       CLR => reset,
       D => D(0),
-      Q => BotInfo_int(0)
+      Q => \BotInfo_int_reg_n_0_[0]\
     );
 \BotInfo_int_reg[1]\: unisim.vcomponents.FDCE
      port map (
@@ -84,7 +114,7 @@ begin
       CE => \BotInfo_int_reg[7]_1\(0),
       CLR => reset,
       D => D(1),
-      Q => BotInfo_int(1)
+      Q => \BotInfo_int_reg_n_0_[1]\
     );
 \BotInfo_int_reg[2]\: unisim.vcomponents.FDCE
      port map (
@@ -92,7 +122,7 @@ begin
       CE => \BotInfo_int_reg[7]_1\(0),
       CLR => reset,
       D => D(2),
-      Q => BotInfo_int(2)
+      Q => \BotInfo_int_reg_n_0_[2]\
     );
 \BotInfo_int_reg[3]\: unisim.vcomponents.FDCE
      port map (
@@ -100,7 +130,7 @@ begin
       CE => \BotInfo_int_reg[7]_1\(0),
       CLR => reset,
       D => D(3),
-      Q => BotInfo_int(3)
+      Q => \BotInfo_int_reg_n_0_[3]\
     );
 \BotInfo_int_reg[4]\: unisim.vcomponents.FDCE
      port map (
@@ -108,7 +138,7 @@ begin
       CE => \BotInfo_int_reg[7]_1\(0),
       CLR => reset,
       D => D(4),
-      Q => BotInfo_int(4)
+      Q => \BotInfo_int_reg_n_0_[4]\
     );
 \BotInfo_int_reg[5]\: unisim.vcomponents.FDCE
      port map (
@@ -116,7 +146,7 @@ begin
       CE => \BotInfo_int_reg[7]_1\(0),
       CLR => reset,
       D => D(5),
-      Q => BotInfo_int(5)
+      Q => \BotInfo_int_reg_n_0_[5]\
     );
 \BotInfo_int_reg[6]\: unisim.vcomponents.FDCE
      port map (
@@ -124,7 +154,7 @@ begin
       CE => \BotInfo_int_reg[7]_1\(0),
       CLR => reset,
       D => D(6),
-      Q => BotInfo_int(6)
+      Q => \BotInfo_int_reg_n_0_[6]\
     );
 \BotInfo_int_reg[7]\: unisim.vcomponents.FDCE
      port map (
@@ -132,14 +162,14 @@ begin
       CE => \BotInfo_int_reg[7]_1\(0),
       CLR => reset,
       D => D(7),
-      Q => BotInfo_int(7)
+      Q => \BotInfo_int_reg_n_0_[7]\
     );
 \BotInfo_reg[0]\: unisim.vcomponents.FDCE
      port map (
       C => clk_in,
       CE => \^e\(0),
       CLR => reset,
-      D => BotInfo_int(0),
+      D => \BotInfo_int_reg_n_0_[0]\,
       Q => BotInfo_reg(0)
     );
 \BotInfo_reg[1]\: unisim.vcomponents.FDCE
@@ -147,7 +177,7 @@ begin
       C => clk_in,
       CE => \^e\(0),
       CLR => reset,
-      D => BotInfo_int(1),
+      D => \BotInfo_int_reg_n_0_[1]\,
       Q => BotInfo_reg(1)
     );
 \BotInfo_reg[2]\: unisim.vcomponents.FDCE
@@ -155,7 +185,7 @@ begin
       C => clk_in,
       CE => \^e\(0),
       CLR => reset,
-      D => BotInfo_int(2),
+      D => \BotInfo_int_reg_n_0_[2]\,
       Q => BotInfo_reg(2)
     );
 \BotInfo_reg[3]\: unisim.vcomponents.FDCE
@@ -163,7 +193,7 @@ begin
       C => clk_in,
       CE => \^e\(0),
       CLR => reset,
-      D => BotInfo_int(3),
+      D => \BotInfo_int_reg_n_0_[3]\,
       Q => BotInfo_reg(3)
     );
 \BotInfo_reg[4]\: unisim.vcomponents.FDCE
@@ -171,7 +201,7 @@ begin
       C => clk_in,
       CE => \^e\(0),
       CLR => reset,
-      D => BotInfo_int(4),
+      D => \BotInfo_int_reg_n_0_[4]\,
       Q => BotInfo_reg(4)
     );
 \BotInfo_reg[5]\: unisim.vcomponents.FDCE
@@ -179,7 +209,7 @@ begin
       C => clk_in,
       CE => \^e\(0),
       CLR => reset,
-      D => BotInfo_int(5),
+      D => \BotInfo_int_reg_n_0_[5]\,
       Q => BotInfo_reg(5)
     );
 \BotInfo_reg[6]\: unisim.vcomponents.FDCE
@@ -187,7 +217,7 @@ begin
       C => clk_in,
       CE => \^e\(0),
       CLR => reset,
-      D => BotInfo_int(6),
+      D => \BotInfo_int_reg_n_0_[6]\,
       Q => BotInfo_reg(6)
     );
 \BotInfo_reg[7]\: unisim.vcomponents.FDCE
@@ -195,7 +225,7 @@ begin
       C => clk_in,
       CE => \^e\(0),
       CLR => reset,
-      D => BotInfo_int(7),
+      D => \BotInfo_int_reg_n_0_[7]\,
       Q => BotInfo_reg(7)
     );
 \DataOut[0]_i_4\: unisim.vcomponents.LUT6
@@ -203,7 +233,7 @@ begin
       INIT => X"AFA0CFCFAFA0C0C0"
     )
         port map (
-      I0 => BotInfo_int(0),
+      I0 => \BotInfo_int_reg_n_0_[0]\,
       I1 => LocY_int(0),
       I2 => \DataOut_reg[0]_0\(1),
       I3 => LocX_int_set(0),
@@ -216,7 +246,7 @@ begin
       INIT => X"AFA0CFCFAFA0C0C0"
     )
         port map (
-      I0 => BotInfo_int(1),
+      I0 => \BotInfo_int_reg_n_0_[1]\,
       I1 => LocY_int(1),
       I2 => \DataOut_reg[0]_0\(1),
       I3 => LocX_int_set(1),
@@ -229,7 +259,7 @@ begin
       INIT => X"AFA0CFCFAFA0C0C0"
     )
         port map (
-      I0 => BotInfo_int(2),
+      I0 => \BotInfo_int_reg_n_0_[2]\,
       I1 => LocY_int(2),
       I2 => \DataOut_reg[0]_0\(1),
       I3 => LocX_int_set(2),
@@ -242,7 +272,7 @@ begin
       INIT => X"AFA0CFCFAFA0C0C0"
     )
         port map (
-      I0 => BotInfo_int(3),
+      I0 => \BotInfo_int_reg_n_0_[3]\,
       I1 => LocY_int(3),
       I2 => \DataOut_reg[0]_0\(1),
       I3 => LocX_int_set(3),
@@ -255,7 +285,7 @@ begin
       INIT => X"AFA0CFCFAFA0C0C0"
     )
         port map (
-      I0 => BotInfo_int(4),
+      I0 => \BotInfo_int_reg_n_0_[4]\,
       I1 => LocY_int(4),
       I2 => \DataOut_reg[0]_0\(1),
       I3 => LocX_int_set(4),
@@ -268,7 +298,7 @@ begin
       INIT => X"AFA0CFCFAFA0C0C0"
     )
         port map (
-      I0 => BotInfo_int(5),
+      I0 => \BotInfo_int_reg_n_0_[5]\,
       I1 => LocY_int(5),
       I2 => \DataOut_reg[0]_0\(1),
       I3 => LocX_int_set(5),
@@ -281,7 +311,7 @@ begin
       INIT => X"AFA0CFCFAFA0C0C0"
     )
         port map (
-      I0 => BotInfo_int(6),
+      I0 => \BotInfo_int_reg_n_0_[6]\,
       I1 => LocY_int(6),
       I2 => \DataOut_reg[0]_0\(1),
       I3 => LocX_int_set(6),
@@ -294,7 +324,7 @@ begin
       INIT => X"AFA0CFCFAFA0C0C0"
     )
         port map (
-      I0 => BotInfo_int(7),
+      I0 => \BotInfo_int_reg_n_0_[7]\,
       I1 => LocY_int(7),
       I2 => \DataOut_reg[0]_0\(1),
       I3 => LocX_int_set(7),
@@ -371,7 +401,7 @@ begin
       INIT => X"CCCDCCCCCCCCCCCD"
     )
         port map (
-      I0 => LocX_int(7),
+      I0 => p_0_in(7),
       I1 => LocX_int(0),
       I2 => \LocX[6]_i_3_n_0\,
       I3 => LocX_int(1),
@@ -384,7 +414,7 @@ begin
       INIT => X"CCC8CCC8CCC8CCCD"
     )
         port map (
-      I0 => LocX_int(7),
+      I0 => p_0_in(7),
       I1 => LocX_int(1),
       I2 => \LocX[6]_i_2_n_0\,
       I3 => \LocX[6]_i_3_n_0\,
@@ -397,7 +427,7 @@ begin
       INIT => X"FEFFFFFE00000000"
     )
         port map (
-      I0 => LocX_int(7),
+      I0 => p_0_in(7),
       I1 => \LocX[6]_i_3_n_0\,
       I2 => LocX_int(1),
       I3 => LocX_int(5),
@@ -410,7 +440,7 @@ begin
       INIT => X"CCC8CCC8CCC8CCCD"
     )
         port map (
-      I0 => LocX_int(7),
+      I0 => p_0_in(7),
       I1 => LocX_int(3),
       I2 => \LocX[6]_i_2_n_0\,
       I3 => \LocX[6]_i_3_n_0\,
@@ -423,7 +453,7 @@ begin
       INIT => X"CCC8CCC8CCC8CCCD"
     )
         port map (
-      I0 => LocX_int(7),
+      I0 => p_0_in(7),
       I1 => LocX_int(4),
       I2 => \LocX[6]_i_2_n_0\,
       I3 => \LocX[6]_i_3_n_0\,
@@ -436,7 +466,7 @@ begin
       INIT => X"CCC8CCC8CCC8CCCD"
     )
         port map (
-      I0 => LocX_int(7),
+      I0 => p_0_in(7),
       I1 => LocX_int(5),
       I2 => \LocX[6]_i_2_n_0\,
       I3 => \LocX[6]_i_3_n_0\,
@@ -449,7 +479,7 @@ begin
       INIT => X"CCC8CCC8CCC8CCCD"
     )
         port map (
-      I0 => LocX_int(7),
+      I0 => p_0_in(7),
       I1 => LocX_int(6),
       I2 => \LocX[6]_i_2_n_0\,
       I3 => \LocX[6]_i_3_n_0\,
@@ -563,7 +593,7 @@ begin
       CE => \LocX_int_reg[7]_0\(0),
       CLR => reset,
       D => D(7),
-      Q => LocX_int(7)
+      Q => p_0_in(7)
     );
 \LocX_int_set_reg[0]\: unisim.vcomponents.FDRE
      port map (
@@ -625,7 +655,7 @@ begin
      port map (
       C => clk_in,
       CE => '1',
-      D => LocX_int(7),
+      D => p_0_in(7),
       Q => LocX_int_set(7),
       R => '0'
     );
@@ -690,8 +720,45 @@ begin
       C => clk_in,
       CE => \^e\(0),
       CLR => reset,
-      D => LocX_int(7),
+      D => p_0_in(7),
       Q => LocX_reg(7)
+    );
+\LocY[2]_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"AAAAAAAAAAAAAAA9"
+    )
+        port map (
+      I0 => LocY_int(2),
+      I1 => \LocY[2]_i_2_n_0\,
+      I2 => \BotInfo_int_reg_n_0_[7]\,
+      I3 => \BotInfo_int_reg_n_0_[0]\,
+      I4 => \BotInfo_int_reg_n_0_[4]\,
+      I5 => \BotInfo_int_reg_n_0_[5]\,
+      O => \LocY[2]_i_1_n_0\
+    );
+\LocY[2]_i_2\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"FFEF"
+    )
+        port map (
+      I0 => \BotInfo_int_reg_n_0_[2]\,
+      I1 => \BotInfo_int_reg_n_0_[3]\,
+      I2 => \BotInfo_int_reg_n_0_[6]\,
+      I3 => \BotInfo_int_reg_n_0_[1]\,
+      O => \LocY[2]_i_2_n_0\
+    );
+\LocY[7]_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"AAAAAAAAAAAAAA28"
+    )
+        port map (
+      I0 => \^e\(0),
+      I1 => LocX_int(4),
+      I2 => LocX_int(5),
+      I3 => LocX_int(1),
+      I4 => \LocX[6]_i_3_n_0\,
+      I5 => p_0_in(7),
+      O => \LocY[7]_i_1_n_0\
     );
 \LocY_int_reg[0]\: unisim.vcomponents.FDCE
      port map (
@@ -760,7 +827,7 @@ begin
 \LocY_reg[0]\: unisim.vcomponents.FDCE
      port map (
       C => clk_in,
-      CE => \^e\(0),
+      CE => \LocY[7]_i_1_n_0\,
       CLR => reset,
       D => LocY_int(0),
       Q => LocY_reg(0)
@@ -768,7 +835,7 @@ begin
 \LocY_reg[1]\: unisim.vcomponents.FDCE
      port map (
       C => clk_in,
-      CE => \^e\(0),
+      CE => \LocY[7]_i_1_n_0\,
       CLR => reset,
       D => LocY_int(1),
       Q => LocY_reg(1)
@@ -776,49 +843,49 @@ begin
 \LocY_reg[2]\: unisim.vcomponents.FDCE
      port map (
       C => clk_in,
-      CE => \^e\(0),
+      CE => \LocY[7]_i_1_n_0\,
       CLR => reset,
-      D => LocY_int(2),
+      D => \LocY[2]_i_1_n_0\,
       Q => LocY_reg(2)
     );
 \LocY_reg[3]\: unisim.vcomponents.FDCE
      port map (
       C => clk_in,
-      CE => \^e\(0),
+      CE => \LocY[7]_i_1_n_0\,
       CLR => reset,
-      D => LocY_int(3),
+      D => \_inferred__0/i__carry_n_6\,
       Q => LocY_reg(3)
     );
 \LocY_reg[4]\: unisim.vcomponents.FDCE
      port map (
       C => clk_in,
-      CE => \^e\(0),
+      CE => \LocY[7]_i_1_n_0\,
       CLR => reset,
-      D => LocY_int(4),
+      D => \_inferred__0/i__carry_n_5\,
       Q => LocY_reg(4)
     );
 \LocY_reg[5]\: unisim.vcomponents.FDCE
      port map (
       C => clk_in,
-      CE => \^e\(0),
+      CE => \LocY[7]_i_1_n_0\,
       CLR => reset,
-      D => LocY_int(5),
+      D => \_inferred__0/i__carry_n_4\,
       Q => LocY_reg(5)
     );
 \LocY_reg[6]\: unisim.vcomponents.FDCE
      port map (
       C => clk_in,
-      CE => \^e\(0),
+      CE => \LocY[7]_i_1_n_0\,
       CLR => reset,
-      D => LocY_int(6),
+      D => \_inferred__0/i__carry__0_n_7\,
       Q => LocY_reg(6)
     );
 \LocY_reg[7]\: unisim.vcomponents.FDCE
      port map (
       C => clk_in,
-      CE => \^e\(0),
+      CE => \LocY[7]_i_1_n_0\,
       CLR => reset,
-      D => LocY_int(7),
+      D => \_inferred__0/i__carry__0_n_6\,
       Q => LocY_reg(7)
     );
 \MapX_reg[0]\: unisim.vcomponents.FDCE
@@ -1060,6 +1127,106 @@ begin
       CLR => reset,
       D => \^q\(7),
       Q => Sensors_reg(7)
+    );
+\_inferred__0/i__carry\: unisim.vcomponents.CARRY4
+     port map (
+      CI => '0',
+      CO(3) => \_inferred__0/i__carry_n_0\,
+      CO(2) => \_inferred__0/i__carry_n_1\,
+      CO(1) => \_inferred__0/i__carry_n_2\,
+      CO(0) => \_inferred__0/i__carry_n_3\,
+      CYINIT => '0',
+      DI(3 downto 1) => LocY_int(4 downto 2),
+      DI(0) => \i__carry_i_1_n_0\,
+      O(3) => \_inferred__0/i__carry_n_4\,
+      O(2) => \_inferred__0/i__carry_n_5\,
+      O(1) => \_inferred__0/i__carry_n_6\,
+      O(0) => \NLW__inferred__0/i__carry_O_UNCONNECTED\(0),
+      S(3) => \i__carry_i_2_n_0\,
+      S(2) => \i__carry_i_3_n_0\,
+      S(1) => \i__carry_i_4_n_0\,
+      S(0) => \i__carry_i_5_n_0\
+    );
+\_inferred__0/i__carry__0\: unisim.vcomponents.CARRY4
+     port map (
+      CI => \_inferred__0/i__carry_n_0\,
+      CO(3 downto 1) => \NLW__inferred__0/i__carry__0_CO_UNCONNECTED\(3 downto 1),
+      CO(0) => \_inferred__0/i__carry__0_n_3\,
+      CYINIT => '0',
+      DI(3 downto 1) => B"000",
+      DI(0) => LocY_int(5),
+      O(3 downto 2) => \NLW__inferred__0/i__carry__0_O_UNCONNECTED\(3 downto 2),
+      O(1) => \_inferred__0/i__carry__0_n_6\,
+      O(0) => \_inferred__0/i__carry__0_n_7\,
+      S(3 downto 2) => B"00",
+      S(1) => \i__carry__0_i_1_n_0\,
+      S(0) => \i__carry__0_i_2_n_0\
+    );
+\i__carry__0_i_1\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"9"
+    )
+        port map (
+      I0 => LocY_int(6),
+      I1 => LocY_int(7),
+      O => \i__carry__0_i_1_n_0\
+    );
+\i__carry__0_i_2\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"9"
+    )
+        port map (
+      I0 => LocY_int(5),
+      I1 => LocY_int(6),
+      O => \i__carry__0_i_2_n_0\
+    );
+\i__carry_i_1\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => LocY_int(2),
+      O => \i__carry_i_1_n_0\
+    );
+\i__carry_i_2\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"9"
+    )
+        port map (
+      I0 => LocY_int(4),
+      I1 => LocY_int(5),
+      O => \i__carry_i_2_n_0\
+    );
+\i__carry_i_3\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"9"
+    )
+        port map (
+      I0 => LocY_int(3),
+      I1 => LocY_int(4),
+      O => \i__carry_i_3_n_0\
+    );
+\i__carry_i_4\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"9"
+    )
+        port map (
+      I0 => LocY_int(2),
+      I1 => LocY_int(3),
+      O => \i__carry_i_4_n_0\
+    );
+\i__carry_i_5\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"AAAAAAAAAAAAAAA9"
+    )
+        port map (
+      I0 => LocY_int(2),
+      I1 => \LocY[2]_i_2_n_0\,
+      I2 => \BotInfo_int_reg_n_0_[7]\,
+      I3 => \BotInfo_int_reg_n_0_[0]\,
+      I4 => \BotInfo_int_reg_n_0_[4]\,
+      I5 => \BotInfo_int_reg_n_0_[5]\,
+      O => \i__carry_i_5_n_0\
     );
 load_sys_regs_reg: unisim.vcomponents.FDCE
      port map (
@@ -4638,6 +4805,7 @@ architecture STRUCTURE of rojobot31_0_rojobot31 is
   signal BOTCPU_n_16 : STD_LOGIC;
   signal BOTCPU_n_17 : STD_LOGIC;
   signal BOTCPU_n_5 : STD_LOGIC;
+  signal BOTREGIF_n_0 : STD_LOGIC;
   signal BOTREGIF_n_2 : STD_LOGIC;
   signal BOTREGIF_n_3 : STD_LOGIC;
   signal BOTREGIF_n_4 : STD_LOGIC;
@@ -4656,7 +4824,6 @@ architecture STRUCTURE of rojobot31_0_rojobot31 is
   signal bram_enable : STD_LOGIC;
   signal in_port : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal instruction : STD_LOGIC_VECTOR ( 17 downto 0 );
-  signal load_sys_regs : STD_LOGIC;
   signal out_port : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal port_id : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal \^upd_sysregs\ : STD_LOGIC;
@@ -4685,7 +4852,7 @@ BOTCPU: entity work.rojobot31_0_kcpsm6
       clk_in => clk_in,
       instruction(17 downto 0) => instruction(17 downto 0),
       kcpsm6_rom(1 downto 0) => port_id(1 downto 0),
-      load_sys_regs_reg(0) => load_sys_regs,
+      load_sys_regs_reg(0) => BOTREGIF_n_0,
       out_port(7 downto 0) => out_port(7 downto 0),
       reset => reset,
       upd_sysregs => \^upd_sysregs\,
@@ -4719,7 +4886,7 @@ BOTREGIF: entity work.rojobot31_0_bot31_if
       \DataOut_reg[7]_1\(5 downto 3) => DataOut(5 downto 3),
       \DataOut_reg[7]_1\(2) => BOTCPU_n_5,
       \DataOut_reg[7]_1\(1 downto 0) => DataOut(1 downto 0),
-      E(0) => load_sys_regs,
+      E(0) => BOTREGIF_n_0,
       \LocX_int_reg[7]_0\(0) => LocX_int,
       LocX_reg(7 downto 0) => LocX_reg(7 downto 0),
       \LocY_int_reg[7]_0\(0) => LocY_int,

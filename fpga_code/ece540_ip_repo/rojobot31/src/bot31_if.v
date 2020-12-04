@@ -180,7 +180,34 @@ always @(posedge clk or posedge reset) begin
 		end
 	end
 end // always - write registers
+ 
+ //Registers used for bot jumping/falling 
+  reg [31:0] falling_timer; //timer for falling 
+  reg [7:0] falling_count;  //count for how many times the timer has reached zero
+  reg [1:0] falling_flag = 0; //flag for if falling is still in effect 
+  reg [31:0] timer_val = 800_000_000;
+  reg [7:0] LocY_int_set;
 
+ 
+            //-------------------------------------------------------
+            //          Bot Jumping
+            //-------------------------------------------------------
+          always @ (posedge clk) begin
+            if (falling_count == 5) begin
+                falling_flag <= 0;
+                falling_timer <= timer_val;
+                falling_count <= 0;
+            end 
+            //while the falling flag is set, the falling timer decrements by 1 
+            else if (falling_flag == 1) begin
+               falling_timer <= falling_timer - 1;
+             end
+             else begin
+               falling_timer <= timer_val;
+             end
+          end
+
+	
 	
 // synchronized system register interface
 // creates the user visible BOT state registers
@@ -190,6 +217,9 @@ always @(posedge clk or posedge reset) begin
 		LocY <= 0;
 		Sensors <= 0;
 		BotInfo <= 0;
+		falling_timer <= timer_val;
+        falling_flag <= 0;
+        falling_count <= 0;
 	end
 	else if (load_sys_regs) begin  // copy holding registers to system interface registers
             if (LocX_int == 8'h7D) begin   // Sidescroller teleport to beginning.
@@ -198,10 +228,27 @@ always @(posedge clk or posedge reset) begin
             else if (LocX_int == 8'h00) begin   // Sidescroller teleport to ending.
                 LocX <= 8'h7B;
             end
-            else begin
+            else if (BotInfo_int == 8'h40 && falling_flag == 0) begin
+                LocY <= LocY_int - 4;
+                LocX <= LocX_int;
+                falling_timer <= timer_val - 1;  //starts falling timer
+                falling_flag <= 1; //sets falling flag 
+            end
+            else if (falling_timer == 0 && falling_count < 5) begin
+                LocY <= LocY_int + 1;
+                LocX <= LocX_int;
+                falling_timer <= timer_val - 1;
+                falling_count <= falling_count + 1;
+            end
+            else if (falling_count == 5) begin
+                LocY <= LocY_int + 1;
                 LocX <= LocX_int;
             end
-			LocY <= LocY_int;
+            else begin   
+               LocX <= LocX_int;   
+               LocY <= LocY_int;
+            end
+			 
 			Sensors <= Sensors_int;
 			BotInfo <= BotInfo_int;
 	end

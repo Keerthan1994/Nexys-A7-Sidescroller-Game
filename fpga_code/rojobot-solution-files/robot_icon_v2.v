@@ -9,6 +9,7 @@ module robot_icon_v2 #(
     parameter ANIMATION_COUNTDOWN = 8_000_000,
     parameter SPRITE_COLS = 34,
     parameter SPRITE_ROWS = 34,
+
     
     localparam MARGIN_ROW = SPRITE_ROWS / 2 - 9,
     localparam MEM_ROWS = SPRITE_ROWS*8,
@@ -180,5 +181,7 @@ module robot_icon_v2 #(
     end
     
   end
+  
+
   
 endmodule

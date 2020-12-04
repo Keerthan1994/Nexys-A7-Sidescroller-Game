@@ -2,8 +2,8 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Mon Nov 30 17:52:16 2020
-# Process ID: 27560
+# Start of session at: Thu Dec  3 19:42:21 2020
+# Process ID: 5460
 # Current directory: C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/synth_1
 # Command line: vivado.exe -log rvfpga.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rvfpga.tcl
 # Log file: C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/synth_1/rvfpga.vds
@@ -21,7 +21,7 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 26708 
+INFO: Helper process launched with PID 5620 
 WARNING: [Synth 8-1921] elaboration system task error violates IEEE 1800 syntax [C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/beh_lib.sv:162]
 WARNING: [Synth 8-2507] parameter declaration becomes local in axi2wb with formal parameter declaration list [C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Interconnect/AxiToWb/axi2wb.v:71]
 WARNING: [Synth 8-2507] parameter declaration becomes local in axi2wb with formal parameter declaration list [C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Interconnect/AxiToWb/axi2wb.v:81]
@@ -36,7 +36,7 @@ WARNING: [Synth 8-2369] multiple packed dimensions are not allowed in this mode 
 WARNING: [Synth 8-2369] multiple packed dimensions are not allowed in this mode of verilog [C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/SystemController/swervolf_syscon.v:316]
 WARNING: [Synth 8-2507] parameter declaration becomes local in wb_mux with formal parameter declaration list [C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_intercon_1.2.2/wb_mux.v:87]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 894.836 ; gain = 241.504
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 894.188 ; gain = 240.105
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'rvfpga' [C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/rvfpga.sv:25]
 	Parameter bootrom_file bound to: (null) - type: string 
@@ -1810,8 +1810,8 @@ WARNING: [Synth 8-689] width (1) of port connection 'worldmap_data' does not mat
 	Parameter ADDR_WIDTH bound to: 15 - type: integer 
 	Parameter INIT_FILE bound to: crash-motion.mem - type: string 
 INFO: [Synth 8-3876] $readmem data file 'crash-motion.mem' is read successfully [C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/rojobot-solution-files/ram_block.v:23]
-WARNING: [Synth 8-689] width (32) of port connection 'read_addr' does not match port width (15) of module 'ram_block' [C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/rojobot-solution-files/robot_icon_v2.v:68]
-INFO: [Synth 8-226] default block is never used [C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/rojobot-solution-files/robot_icon_v2.v:154]
+WARNING: [Synth 8-689] width (32) of port connection 'read_addr' does not match port width (15) of module 'ram_block' [C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/rojobot-solution-files/robot_icon_v2.v:69]
+INFO: [Synth 8-226] default block is never used [C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/rojobot-solution-files/robot_icon_v2.v:155]
 	Parameter COLOR_WIDTH bound to: 12 - type: integer 
 	Parameter SPRITE_BLACK bound to: 0 - type: integer 
 	Parameter SPRITE_WALL bound to: 0 - type: integer 
@@ -1957,7 +1957,7 @@ WARNING: [Synth 8-3331] design vga_colorizer has unconnected port icon[4]
 WARNING: [Synth 8-3331] design vga_colorizer has unconnected port icon[3]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1443.531 ; gain = 790.199
+Finished RTL Elaboration : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1442.207 ; gain = 788.125
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1970,12 +1970,12 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1443.531 ; gain = 790.199
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1442.207 ; gain = 788.125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1443.531 ; gain = 790.199
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1442.207 ; gain = 788.125
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1443.531 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1442.207 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 57 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -2008,7 +2008,7 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/rvfpga_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1709.246 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 1712.633 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 20 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 16 instances
@@ -2016,12 +2016,12 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 1 instance 
   PLLE2_BASE => PLLE2_ADV: 1 instance 
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.359 . Memory (MB): peak = 1709.246 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.370 . Memory (MB): peak = 1712.633 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'swervolf/rojobot_control/map_muxer/world_map' at clock pin 'clka' is different from the actual clock period '13.333', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'swervolf/rojobot_control/map_muxer/world_map_loop' at clock pin 'clka' is different from the actual clock period '13.333', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'swervolf/rojobot_control/map_muxer/world_map_lr' at clock pin 'clka' is different from the actual clock period '13.333', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:59 ; elapsed = 00:00:58 . Memory (MB): peak = 1709.246 ; gain = 1055.914
+Finished Constraint Validation : Time (s): cpu = 00:01:02 ; elapsed = 00:01:02 . Memory (MB): peak = 1712.633 ; gain = 1058.551
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
 ---------------------------------------------------------------------------------
@@ -2029,7 +2029,7 @@ Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:59 ; elapsed = 00:00:58 . Memory (MB): peak = 1709.246 ; gain = 1055.914
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:02 ; elapsed = 00:01:02 . Memory (MB): peak = 1712.633 ; gain = 1058.551
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -2042,7 +2042,7 @@ Applied set_property DONT_TOUCH = true for swervolf/rojobot_control/map_muxer/wo
 Applied set_property DONT_TOUCH = true for swervolf/rojobot_control/map_muxer/world_map_loop. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for swervolf/rojobot_control/robot. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:59 ; elapsed = 00:00:58 . Memory (MB): peak = 1709.246 ; gain = 1055.914
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:03 ; elapsed = 00:01:02 . Memory (MB): peak = 1712.633 ; gain = 1058.551
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/litedram_core.v:4591]
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/litedram_core.v:7071]
@@ -2179,7 +2179,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'tstate_reg' using encoding
 INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'sequential' in module 'uart_receiver'
 WARNING: [Synth 8-327] inferring latch for variable 'en_ff_reg' [C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/beh_lib.sv:94]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:28 ; elapsed = 00:01:29 . Memory (MB): peak = 1709.246 ; gain = 1055.914
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:37 ; elapsed = 00:01:39 . Memory (MB): peak = 1712.633 ; gain = 1058.551
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance 'swervolf/swerv_eh1/swerv/dbg/axi_bready_ff' (rvdffs) to 'swervolf/swerv_eh1/swerv/dbg/axi_rready_ff'
 INFO: [Synth 8-223] decloning instance 'swervolf/swerv_eh1/swerv/exu/div_e1/dividend_c' (rvtwoscomp) to 'swervolf/swerv_eh1/swerv/exu/div_e1/q_ff_c'
@@ -16032,7 +16032,7 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3936] Found unconnected internal register 'frame_colff_reg' and it is trimmed from '32' to '15' bits. [C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/rojobot-solution-files/robot_icon_v2.v:80]
+WARNING: [Synth 8-3936] Found unconnected internal register 'frame_colff_reg' and it is trimmed from '32' to '15' bits. [C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/rojobot-solution-files/robot_icon_v2.v:81]
 DSP Report: Generating DSP read_addr1, operation Mode is: A2*(B:0x66).
 DSP Report: register robot_yff_reg is absorbed into DSP read_addr1.
 DSP Report: operator read_addr1 is absorbed into DSP read_addr1.
@@ -16303,7 +16303,7 @@ WARNING: [Synth 8-3332] Sequential element (i_atop_filter/FSM_sequential_w_state
 WARNING: [Synth 8-3332] Sequential element (i_atop_filter/FSM_sequential_w_state_q_reg[1]) is unused and will be removed from module axi_err_slv__1.
 WARNING: [Synth 8-3332] Sequential element (i_atop_filter/FSM_sequential_w_state_q_reg[0]) is unused and will be removed from module axi_err_slv__1.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:05:01 ; elapsed = 00:05:17 . Memory (MB): peak = 1709.246 ; gain = 1055.914
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:06:19 ; elapsed = 00:06:42 . Memory (MB): peak = 1712.633 ; gain = 1058.551
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -16429,7 +16429,7 @@ Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-3321] set_false_path : Empty from list for constraint at line 8 of C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/rvfpga.xdc. [C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/rvfpga.xdc:8]
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:05:16 ; elapsed = 00:05:33 . Memory (MB): peak = 1709.246 ; gain = 1055.914
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:06:37 ; elapsed = 00:07:01 . Memory (MB): peak = 1712.633 ; gain = 1058.551
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
@@ -16437,7 +16437,7 @@ Start Timing Optimization
 WARNING: [Synth 8-3332] Sequential element (axi_clk/clkhdr/en_ff_reg) is unused and will be removed from module ifu_mem_ctl.
 WARNING: [Synth 8-3332] Sequential element (dma_bus_cgc/clkhdr/en_ff_reg) is unused and will be removed from module dma_ctrl.
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:06:27 ; elapsed = 00:06:44 . Memory (MB): peak = 1709.246 ; gain = 1055.914
+Finished Timing Optimization : Time (s): cpu = 00:08:09 ; elapsed = 00:08:35 . Memory (MB): peak = 1712.633 ; gain = 1058.551
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -16644,7 +16644,7 @@ INFO: [Synth 8-7053] The timing for the instance i_0/swervolf/rojobot_control/ro
 INFO: [Synth 8-7053] The timing for the instance i_0/swervolf/rojobot_control/robot_icon_v2/ram_pikachu/ram_reg_0_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Common 17-14] Message 'Synth 8-7053' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:06:52 ; elapsed = 00:07:21 . Memory (MB): peak = 1709.246 ; gain = 1055.914
+Finished Technology Mapping : Time (s): cpu = 00:08:51 ; elapsed = 00:09:35 . Memory (MB): peak = 1712.633 ; gain = 1058.551
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -16713,13 +16713,13 @@ WARNING: [Synth 8-3295] tying undriven pin i_38851:en to constant 0
 WARNING: [Synth 8-3295] tying undriven pin i_38852:a to constant 0
 WARNING: [Synth 8-3295] tying undriven pin i_38852:en to constant 0
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:07:04 ; elapsed = 00:07:34 . Memory (MB): peak = 1709.246 ; gain = 1055.914
+Finished IO Insertion : Time (s): cpu = 00:09:06 ; elapsed = 00:09:51 . Memory (MB): peak = 1712.633 ; gain = 1058.551
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:07:05 ; elapsed = 00:07:34 . Memory (MB): peak = 1709.246 ; gain = 1055.914
+Finished Renaming Generated Instances : Time (s): cpu = 00:09:06 ; elapsed = 00:09:51 . Memory (MB): peak = 1712.633 ; gain = 1058.551
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -16738,25 +16738,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:07:18 ; elapsed = 00:07:48 . Memory (MB): peak = 1709.246 ; gain = 1055.914
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:09:22 ; elapsed = 00:10:07 . Memory (MB): peak = 1712.633 ; gain = 1058.551
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:07:20 ; elapsed = 00:07:49 . Memory (MB): peak = 1709.246 ; gain = 1055.914
+Finished Renaming Generated Ports : Time (s): cpu = 00:09:24 ; elapsed = 00:10:09 . Memory (MB): peak = 1712.633 ; gain = 1058.551
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:07:21 ; elapsed = 00:07:51 . Memory (MB): peak = 1709.246 ; gain = 1055.914
+Finished Handling Custom Attributes : Time (s): cpu = 00:09:27 ; elapsed = 00:10:12 . Memory (MB): peak = 1712.633 ; gain = 1058.551
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:07:22 ; elapsed = 00:07:52 . Memory (MB): peak = 1709.246 ; gain = 1055.914
+Finished Renaming Generated Nets : Time (s): cpu = 00:09:27 ; elapsed = 00:10:12 . Memory (MB): peak = 1712.633 ; gain = 1058.551
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -20005,19 +20005,19 @@ Report Instance Areas:
 |3123  |  tap                                                                 |bscan_tap                           |   229|
 +------+----------------------------------------------------------------------+------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:07:22 ; elapsed = 00:07:52 . Memory (MB): peak = 1709.246 ; gain = 1055.914
+Finished Writing Synthesis Report : Time (s): cpu = 00:09:27 ; elapsed = 00:10:12 . Memory (MB): peak = 1712.633 ; gain = 1058.551
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 262 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:06:29 ; elapsed = 00:07:30 . Memory (MB): peak = 1709.246 ; gain = 790.199
-Synthesis Optimization Complete : Time (s): cpu = 00:07:22 ; elapsed = 00:07:53 . Memory (MB): peak = 1709.246 ; gain = 1055.914
+Synthesis Optimization Runtime : Time (s): cpu = 00:08:32 ; elapsed = 00:09:49 . Memory (MB): peak = 1712.633 ; gain = 788.125
+Synthesis Optimization Complete : Time (s): cpu = 00:09:28 ; elapsed = 00:10:14 . Memory (MB): peak = 1712.633 ; gain = 1058.551
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1709.246 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1712.633 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 1959 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 4 inverter(s) to 83 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 1709.246 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.064 . Memory (MB): peak = 1712.633 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 136 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 32 instances
@@ -20030,11 +20030,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 723 Infos, 440 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:07:49 ; elapsed = 00:08:19 . Memory (MB): peak = 1709.246 ; gain = 1346.090
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1709.246 ; gain = 0.000
+synth_design: Time (s): cpu = 00:10:00 ; elapsed = 00:10:46 . Memory (MB): peak = 1712.633 ; gain = 1350.211
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1712.633 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/synth_1/rvfpga.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 1709.246 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 1712.633 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file rvfpga_utilization_synth.rpt -pb rvfpga_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Nov 30 18:00:52 2020...
+INFO: [Common 17-206] Exiting Vivado at Thu Dec  3 19:53:28 2020...

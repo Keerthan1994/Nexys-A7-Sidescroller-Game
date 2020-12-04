@@ -1,0 +1,124 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Dec  2 13:50:21 2020
+# Process ID: 16536
+# Current directory: C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12348 C:\Users\ryanp\Documents\GitHub\Nexys-A7-Sidescroller-Game\project_1\project_1.xpr
+# Log file: C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/vivado.log
+# Journal file: C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+ipx::edit_ip_in_project -upgrade true -name rojobot31_v1_0_project -directory C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.tmp/rojobot31_v1_0_project c:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/ece540_ip_repo/rojobot31/component.xml
+update_compile_order -fileset sources_1
+close_project
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -srcset rojobot31_0 -vlnv ece.pdx.edu:user:rojobot31:1.0 [get_ips  rojobot31_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips rojobot31_0] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+ipx::edit_ip_in_project -upgrade true -name rojobot31_v1_0_project -directory C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.tmp/rojobot31_v1_0_project c:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/ece540_ip_repo/rojobot31/component.xml
+update_compile_order -fileset sources_1
+close_project
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -srcset rojobot31_0 -vlnv ece.pdx.edu:user:rojobot31:1.0 [get_ips  rojobot31_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips rojobot31_0] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+ipx::edit_ip_in_project -upgrade true -name rojobot31_v1_0_project -directory C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.tmp/rojobot31_v1_0_project c:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/ece540_ip_repo/rojobot31/component.xml
+update_compile_order -fileset sources_1
+close_project
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -srcset rojobot31_0 -vlnv ece.pdx.edu:user:rojobot31:1.0 [get_ips  rojobot31_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips rojobot31_0] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+ipx::edit_ip_in_project -upgrade true -name rojobot31_v1_0_project -directory C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.tmp/rojobot31_v1_0_project c:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/ece540_ip_repo/rojobot31/component.xml
+update_compile_order -fileset sources_1
+close_project
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -srcset rojobot31_0 -vlnv ece.pdx.edu:user:rojobot31:1.0 [get_ips  rojobot31_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips rojobot31_0] -no_script -sync -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+ipx::edit_ip_in_project -upgrade true -name rojobot31_v1_0_project -directory C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.tmp/rojobot31_v1_0_project c:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/ece540_ip_repo/rojobot31/component.xml
+update_compile_order -fileset sources_1
+close_project
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -srcset rojobot31_0 -vlnv ece.pdx.edu:user:rojobot31:1.0 [get_ips  rojobot31_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips rojobot31_0] -no_script -sync -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+ipx::edit_ip_in_project -upgrade true -name rojobot31_v1_0_project -directory C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.tmp/rojobot31_v1_0_project c:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/ece540_ip_repo/rojobot31/component.xml
+update_compile_order -fileset sources_1
+close_project
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -srcset rojobot31_0 -vlnv ece.pdx.edu:user:rojobot31:1.0 [get_ips  rojobot31_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips rojobot31_0] -no_script -sync -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+ipx::edit_ip_in_project -upgrade true -name rojobot31_v1_0_project -directory C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.tmp/rojobot31_v1_0_project c:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/ece540_ip_repo/rojobot31/component.xml
+update_compile_order -fileset sources_1
+close_project
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -srcset rojobot31_0 -vlnv ece.pdx.edu:user:rojobot31:1.0 [get_ips  rojobot31_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips rojobot31_0] -no_script -sync -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1

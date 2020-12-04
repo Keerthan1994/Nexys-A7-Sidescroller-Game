@@ -1,7 +1,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-// Date        : Mon Nov 30 17:52:13 2020
+// Date        : Thu Dec  3 19:42:19 2020
 // Host        : DESKTOP-NP6R9M2 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/rojobot31_0/rojobot31_0_sim_netlist.v
@@ -92,8 +92,8 @@ module rojobot31_0_bot31_if
     MotCtl_in,
     \LocX_int_reg[7]_0 ,
     D,
-    \LocY_int_reg[7]_0 ,
     \BotInfo_int_reg[7]_1 ,
+    \LocY_int_reg[7]_0 ,
     \Sensors_int_reg[7]_0 ,
     \DataOut_reg[7]_1 ,
     \MapX_reg[6]_0 ,
@@ -123,14 +123,13 @@ module rojobot31_0_bot31_if
   input [7:0]MotCtl_in;
   input [0:0]\LocX_int_reg[7]_0 ;
   input [7:0]D;
-  input [0:0]\LocY_int_reg[7]_0 ;
   input [0:0]\BotInfo_int_reg[7]_1 ;
+  input [0:0]\LocY_int_reg[7]_0 ;
   input [0:0]\Sensors_int_reg[7]_0 ;
   input [7:0]\DataOut_reg[7]_1 ;
   input [0:0]\MapX_reg[6]_0 ;
   input [0:0]\MapY_reg[6]_0 ;
 
-  wire [7:0]BotInfo_int;
   wire \BotInfo_int_reg[0]_0 ;
   wire \BotInfo_int_reg[1]_0 ;
   wire \BotInfo_int_reg[2]_0 ;
@@ -140,6 +139,14 @@ module rojobot31_0_bot31_if
   wire \BotInfo_int_reg[6]_0 ;
   wire \BotInfo_int_reg[7]_0 ;
   wire [0:0]\BotInfo_int_reg[7]_1 ;
+  wire \BotInfo_int_reg_n_0_[0] ;
+  wire \BotInfo_int_reg_n_0_[1] ;
+  wire \BotInfo_int_reg_n_0_[2] ;
+  wire \BotInfo_int_reg_n_0_[3] ;
+  wire \BotInfo_int_reg_n_0_[4] ;
+  wire \BotInfo_int_reg_n_0_[5] ;
+  wire \BotInfo_int_reg_n_0_[6] ;
+  wire \BotInfo_int_reg_n_0_[7] ;
   wire [7:0]BotInfo_reg;
   wire [7:0]D;
   wire [1:0]\DataOut_reg[0]_0 ;
@@ -150,10 +157,13 @@ module rojobot31_0_bot31_if
   wire \LocX[6]_i_3_n_0 ;
   wire \LocX[6]_i_4_n_0 ;
   wire \LocX[6]_i_5_n_0 ;
-  wire [7:0]LocX_int;
+  wire [6:0]LocX_int;
   wire [0:0]\LocX_int_reg[7]_0 ;
   wire [7:0]LocX_int_set;
   wire [7:0]LocX_reg;
+  wire \LocY[2]_i_1_n_0 ;
+  wire \LocY[2]_i_2_n_0 ;
+  wire \LocY[7]_i_1_n_0 ;
   wire [7:0]LocY_int;
   wire [0:0]\LocY_int_reg[7]_0 ;
   wire [7:0]LocY_reg;
@@ -163,114 +173,134 @@ module rojobot31_0_bot31_if
   wire [7:0]Q;
   wire [0:0]\Sensors_int_reg[7]_0 ;
   wire [7:0]Sensors_reg;
+  wire \_inferred__0/i__carry__0_n_3 ;
+  wire \_inferred__0/i__carry__0_n_6 ;
+  wire \_inferred__0/i__carry__0_n_7 ;
+  wire \_inferred__0/i__carry_n_0 ;
+  wire \_inferred__0/i__carry_n_1 ;
+  wire \_inferred__0/i__carry_n_2 ;
+  wire \_inferred__0/i__carry_n_3 ;
+  wire \_inferred__0/i__carry_n_4 ;
+  wire \_inferred__0/i__carry_n_5 ;
+  wire \_inferred__0/i__carry_n_6 ;
   wire clk_in;
+  wire i__carry__0_i_1_n_0;
+  wire i__carry__0_i_2_n_0;
+  wire i__carry_i_1_n_0;
+  wire i__carry_i_2_n_0;
+  wire i__carry_i_3_n_0;
+  wire i__carry_i_4_n_0;
+  wire i__carry_i_5_n_0;
   wire load_sys_regs_reg_0;
-  wire [6:0]p_0_in;
+  wire [7:0]p_0_in;
   wire reset;
   wire upd_sysregs;
   wire upd_sysregs_reg_0;
   wire [13:0]worldmap_addr;
+  wire [0:0]\NLW__inferred__0/i__carry_O_UNCONNECTED ;
+  wire [3:1]\NLW__inferred__0/i__carry__0_CO_UNCONNECTED ;
+  wire [3:2]\NLW__inferred__0/i__carry__0_O_UNCONNECTED ;
 
   FDCE \BotInfo_int_reg[0] 
        (.C(clk_in),
         .CE(\BotInfo_int_reg[7]_1 ),
         .CLR(reset),
         .D(D[0]),
-        .Q(BotInfo_int[0]));
+        .Q(\BotInfo_int_reg_n_0_[0] ));
   FDCE \BotInfo_int_reg[1] 
        (.C(clk_in),
         .CE(\BotInfo_int_reg[7]_1 ),
         .CLR(reset),
         .D(D[1]),
-        .Q(BotInfo_int[1]));
+        .Q(\BotInfo_int_reg_n_0_[1] ));
   FDCE \BotInfo_int_reg[2] 
        (.C(clk_in),
         .CE(\BotInfo_int_reg[7]_1 ),
         .CLR(reset),
         .D(D[2]),
-        .Q(BotInfo_int[2]));
+        .Q(\BotInfo_int_reg_n_0_[2] ));
   FDCE \BotInfo_int_reg[3] 
        (.C(clk_in),
         .CE(\BotInfo_int_reg[7]_1 ),
         .CLR(reset),
         .D(D[3]),
-        .Q(BotInfo_int[3]));
+        .Q(\BotInfo_int_reg_n_0_[3] ));
   FDCE \BotInfo_int_reg[4] 
        (.C(clk_in),
         .CE(\BotInfo_int_reg[7]_1 ),
         .CLR(reset),
         .D(D[4]),
-        .Q(BotInfo_int[4]));
+        .Q(\BotInfo_int_reg_n_0_[4] ));
   FDCE \BotInfo_int_reg[5] 
        (.C(clk_in),
         .CE(\BotInfo_int_reg[7]_1 ),
         .CLR(reset),
         .D(D[5]),
-        .Q(BotInfo_int[5]));
+        .Q(\BotInfo_int_reg_n_0_[5] ));
   FDCE \BotInfo_int_reg[6] 
        (.C(clk_in),
         .CE(\BotInfo_int_reg[7]_1 ),
         .CLR(reset),
         .D(D[6]),
-        .Q(BotInfo_int[6]));
+        .Q(\BotInfo_int_reg_n_0_[6] ));
   FDCE \BotInfo_int_reg[7] 
        (.C(clk_in),
         .CE(\BotInfo_int_reg[7]_1 ),
         .CLR(reset),
         .D(D[7]),
-        .Q(BotInfo_int[7]));
+        .Q(\BotInfo_int_reg_n_0_[7] ));
   FDCE \BotInfo_reg[0] 
        (.C(clk_in),
         .CE(E),
         .CLR(reset),
-        .D(BotInfo_int[0]),
+        .D(\BotInfo_int_reg_n_0_[0] ),
         .Q(BotInfo_reg[0]));
   FDCE \BotInfo_reg[1] 
        (.C(clk_in),
         .CE(E),
         .CLR(reset),
-        .D(BotInfo_int[1]),
+        .D(\BotInfo_int_reg_n_0_[1] ),
         .Q(BotInfo_reg[1]));
   FDCE \BotInfo_reg[2] 
        (.C(clk_in),
         .CE(E),
         .CLR(reset),
-        .D(BotInfo_int[2]),
+        .D(\BotInfo_int_reg_n_0_[2] ),
         .Q(BotInfo_reg[2]));
   FDCE \BotInfo_reg[3] 
        (.C(clk_in),
         .CE(E),
         .CLR(reset),
-        .D(BotInfo_int[3]),
+        .D(\BotInfo_int_reg_n_0_[3] ),
         .Q(BotInfo_reg[3]));
   FDCE \BotInfo_reg[4] 
        (.C(clk_in),
         .CE(E),
         .CLR(reset),
-        .D(BotInfo_int[4]),
+        .D(\BotInfo_int_reg_n_0_[4] ),
         .Q(BotInfo_reg[4]));
   FDCE \BotInfo_reg[5] 
        (.C(clk_in),
         .CE(E),
         .CLR(reset),
-        .D(BotInfo_int[5]),
+        .D(\BotInfo_int_reg_n_0_[5] ),
         .Q(BotInfo_reg[5]));
   FDCE \BotInfo_reg[6] 
        (.C(clk_in),
         .CE(E),
         .CLR(reset),
-        .D(BotInfo_int[6]),
+        .D(\BotInfo_int_reg_n_0_[6] ),
         .Q(BotInfo_reg[6]));
   FDCE \BotInfo_reg[7] 
        (.C(clk_in),
         .CE(E),
         .CLR(reset),
-        .D(BotInfo_int[7]),
+        .D(\BotInfo_int_reg_n_0_[7] ),
         .Q(BotInfo_reg[7]));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \DataOut[0]_i_4 
-       (.I0(BotInfo_int[0]),
+       (.I0(\BotInfo_int_reg_n_0_[0] ),
         .I1(LocY_int[0]),
         .I2(\DataOut_reg[0]_0 [1]),
         .I3(LocX_int_set[0]),
@@ -280,7 +310,7 @@ module rojobot31_0_bot31_if
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \DataOut[1]_i_4 
-       (.I0(BotInfo_int[1]),
+       (.I0(\BotInfo_int_reg_n_0_[1] ),
         .I1(LocY_int[1]),
         .I2(\DataOut_reg[0]_0 [1]),
         .I3(LocX_int_set[1]),
@@ -290,7 +320,7 @@ module rojobot31_0_bot31_if
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \DataOut[2]_i_2 
-       (.I0(BotInfo_int[2]),
+       (.I0(\BotInfo_int_reg_n_0_[2] ),
         .I1(LocY_int[2]),
         .I2(\DataOut_reg[0]_0 [1]),
         .I3(LocX_int_set[2]),
@@ -300,7 +330,7 @@ module rojobot31_0_bot31_if
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \DataOut[3]_i_3 
-       (.I0(BotInfo_int[3]),
+       (.I0(\BotInfo_int_reg_n_0_[3] ),
         .I1(LocY_int[3]),
         .I2(\DataOut_reg[0]_0 [1]),
         .I3(LocX_int_set[3]),
@@ -310,7 +340,7 @@ module rojobot31_0_bot31_if
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \DataOut[4]_i_3 
-       (.I0(BotInfo_int[4]),
+       (.I0(\BotInfo_int_reg_n_0_[4] ),
         .I1(LocY_int[4]),
         .I2(\DataOut_reg[0]_0 [1]),
         .I3(LocX_int_set[4]),
@@ -320,7 +350,7 @@ module rojobot31_0_bot31_if
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \DataOut[5]_i_3 
-       (.I0(BotInfo_int[5]),
+       (.I0(\BotInfo_int_reg_n_0_[5] ),
         .I1(LocY_int[5]),
         .I2(\DataOut_reg[0]_0 [1]),
         .I3(LocX_int_set[5]),
@@ -330,7 +360,7 @@ module rojobot31_0_bot31_if
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \DataOut[6]_i_2 
-       (.I0(BotInfo_int[6]),
+       (.I0(\BotInfo_int_reg_n_0_[6] ),
         .I1(LocY_int[6]),
         .I2(\DataOut_reg[0]_0 [1]),
         .I3(LocX_int_set[6]),
@@ -340,7 +370,7 @@ module rojobot31_0_bot31_if
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \DataOut[7]_i_3 
-       (.I0(BotInfo_int[7]),
+       (.I0(\BotInfo_int_reg_n_0_[7] ),
         .I1(LocY_int[7]),
         .I2(\DataOut_reg[0]_0 [1]),
         .I3(LocX_int_set[7]),
@@ -398,7 +428,7 @@ module rojobot31_0_bot31_if
   LUT6 #(
     .INIT(64'hCCCDCCCCCCCCCCCD)) 
     \LocX[0]_i_1 
-       (.I0(LocX_int[7]),
+       (.I0(p_0_in[7]),
         .I1(LocX_int[0]),
         .I2(\LocX[6]_i_3_n_0 ),
         .I3(LocX_int[1]),
@@ -408,7 +438,7 @@ module rojobot31_0_bot31_if
   LUT6 #(
     .INIT(64'hCCC8CCC8CCC8CCCD)) 
     \LocX[1]_i_1 
-       (.I0(LocX_int[7]),
+       (.I0(p_0_in[7]),
         .I1(LocX_int[1]),
         .I2(\LocX[6]_i_2_n_0 ),
         .I3(\LocX[6]_i_3_n_0 ),
@@ -418,7 +448,7 @@ module rojobot31_0_bot31_if
   LUT6 #(
     .INIT(64'hFEFFFFFE00000000)) 
     \LocX[2]_i_1 
-       (.I0(LocX_int[7]),
+       (.I0(p_0_in[7]),
         .I1(\LocX[6]_i_3_n_0 ),
         .I2(LocX_int[1]),
         .I3(LocX_int[5]),
@@ -428,7 +458,7 @@ module rojobot31_0_bot31_if
   LUT6 #(
     .INIT(64'hCCC8CCC8CCC8CCCD)) 
     \LocX[3]_i_1 
-       (.I0(LocX_int[7]),
+       (.I0(p_0_in[7]),
         .I1(LocX_int[3]),
         .I2(\LocX[6]_i_2_n_0 ),
         .I3(\LocX[6]_i_3_n_0 ),
@@ -438,7 +468,7 @@ module rojobot31_0_bot31_if
   LUT6 #(
     .INIT(64'hCCC8CCC8CCC8CCCD)) 
     \LocX[4]_i_1 
-       (.I0(LocX_int[7]),
+       (.I0(p_0_in[7]),
         .I1(LocX_int[4]),
         .I2(\LocX[6]_i_2_n_0 ),
         .I3(\LocX[6]_i_3_n_0 ),
@@ -448,7 +478,7 @@ module rojobot31_0_bot31_if
   LUT6 #(
     .INIT(64'hCCC8CCC8CCC8CCCD)) 
     \LocX[5]_i_1 
-       (.I0(LocX_int[7]),
+       (.I0(p_0_in[7]),
         .I1(LocX_int[5]),
         .I2(\LocX[6]_i_2_n_0 ),
         .I3(\LocX[6]_i_3_n_0 ),
@@ -458,7 +488,7 @@ module rojobot31_0_bot31_if
   LUT6 #(
     .INIT(64'hCCC8CCC8CCC8CCCD)) 
     \LocX[6]_i_1 
-       (.I0(LocX_int[7]),
+       (.I0(p_0_in[7]),
         .I1(LocX_int[6]),
         .I2(\LocX[6]_i_2_n_0 ),
         .I3(\LocX[6]_i_3_n_0 ),
@@ -546,7 +576,7 @@ module rojobot31_0_bot31_if
         .CE(\LocX_int_reg[7]_0 ),
         .CLR(reset),
         .D(D[7]),
-        .Q(LocX_int[7]));
+        .Q(p_0_in[7]));
   FDRE \LocX_int_set_reg[0] 
        (.C(clk_in),
         .CE(1'b1),
@@ -592,7 +622,7 @@ module rojobot31_0_bot31_if
   FDRE \LocX_int_set_reg[7] 
        (.C(clk_in),
         .CE(1'b1),
-        .D(LocX_int[7]),
+        .D(p_0_in[7]),
         .Q(LocX_int_set[7]),
         .R(1'b0));
   FDCE \LocX_reg[0] 
@@ -641,8 +671,36 @@ module rojobot31_0_bot31_if
        (.C(clk_in),
         .CE(E),
         .CLR(reset),
-        .D(LocX_int[7]),
+        .D(p_0_in[7]),
         .Q(LocX_reg[7]));
+  LUT6 #(
+    .INIT(64'hAAAAAAAAAAAAAAA9)) 
+    \LocY[2]_i_1 
+       (.I0(LocY_int[2]),
+        .I1(\LocY[2]_i_2_n_0 ),
+        .I2(\BotInfo_int_reg_n_0_[7] ),
+        .I3(\BotInfo_int_reg_n_0_[0] ),
+        .I4(\BotInfo_int_reg_n_0_[4] ),
+        .I5(\BotInfo_int_reg_n_0_[5] ),
+        .O(\LocY[2]_i_1_n_0 ));
+  LUT4 #(
+    .INIT(16'hFFEF)) 
+    \LocY[2]_i_2 
+       (.I0(\BotInfo_int_reg_n_0_[2] ),
+        .I1(\BotInfo_int_reg_n_0_[3] ),
+        .I2(\BotInfo_int_reg_n_0_[6] ),
+        .I3(\BotInfo_int_reg_n_0_[1] ),
+        .O(\LocY[2]_i_2_n_0 ));
+  LUT6 #(
+    .INIT(64'hAAAAAAAAAAAAAA28)) 
+    \LocY[7]_i_1 
+       (.I0(E),
+        .I1(LocX_int[4]),
+        .I2(LocX_int[5]),
+        .I3(LocX_int[1]),
+        .I4(\LocX[6]_i_3_n_0 ),
+        .I5(p_0_in[7]),
+        .O(\LocY[7]_i_1_n_0 ));
   FDCE \LocY_int_reg[0] 
        (.C(clk_in),
         .CE(\LocY_int_reg[7]_0 ),
@@ -693,51 +751,51 @@ module rojobot31_0_bot31_if
         .Q(LocY_int[7]));
   FDCE \LocY_reg[0] 
        (.C(clk_in),
-        .CE(E),
+        .CE(\LocY[7]_i_1_n_0 ),
         .CLR(reset),
         .D(LocY_int[0]),
         .Q(LocY_reg[0]));
   FDCE \LocY_reg[1] 
        (.C(clk_in),
-        .CE(E),
+        .CE(\LocY[7]_i_1_n_0 ),
         .CLR(reset),
         .D(LocY_int[1]),
         .Q(LocY_reg[1]));
   FDCE \LocY_reg[2] 
        (.C(clk_in),
-        .CE(E),
+        .CE(\LocY[7]_i_1_n_0 ),
         .CLR(reset),
-        .D(LocY_int[2]),
+        .D(\LocY[2]_i_1_n_0 ),
         .Q(LocY_reg[2]));
   FDCE \LocY_reg[3] 
        (.C(clk_in),
-        .CE(E),
+        .CE(\LocY[7]_i_1_n_0 ),
         .CLR(reset),
-        .D(LocY_int[3]),
+        .D(\_inferred__0/i__carry_n_6 ),
         .Q(LocY_reg[3]));
   FDCE \LocY_reg[4] 
        (.C(clk_in),
-        .CE(E),
+        .CE(\LocY[7]_i_1_n_0 ),
         .CLR(reset),
-        .D(LocY_int[4]),
+        .D(\_inferred__0/i__carry_n_5 ),
         .Q(LocY_reg[4]));
   FDCE \LocY_reg[5] 
        (.C(clk_in),
-        .CE(E),
+        .CE(\LocY[7]_i_1_n_0 ),
         .CLR(reset),
-        .D(LocY_int[5]),
+        .D(\_inferred__0/i__carry_n_4 ),
         .Q(LocY_reg[5]));
   FDCE \LocY_reg[6] 
        (.C(clk_in),
-        .CE(E),
+        .CE(\LocY[7]_i_1_n_0 ),
         .CLR(reset),
-        .D(LocY_int[6]),
+        .D(\_inferred__0/i__carry__0_n_7 ),
         .Q(LocY_reg[6]));
   FDCE \LocY_reg[7] 
        (.C(clk_in),
-        .CE(E),
+        .CE(\LocY[7]_i_1_n_0 ),
         .CLR(reset),
-        .D(LocY_int[7]),
+        .D(\_inferred__0/i__carry__0_n_6 ),
         .Q(LocY_reg[7]));
   FDCE \MapX_reg[0] 
        (.C(clk_in),
@@ -919,6 +977,65 @@ module rojobot31_0_bot31_if
         .CLR(reset),
         .D(Q[7]),
         .Q(Sensors_reg[7]));
+  CARRY4 \_inferred__0/i__carry 
+       (.CI(1'b0),
+        .CO({\_inferred__0/i__carry_n_0 ,\_inferred__0/i__carry_n_1 ,\_inferred__0/i__carry_n_2 ,\_inferred__0/i__carry_n_3 }),
+        .CYINIT(1'b0),
+        .DI({LocY_int[4:2],i__carry_i_1_n_0}),
+        .O({\_inferred__0/i__carry_n_4 ,\_inferred__0/i__carry_n_5 ,\_inferred__0/i__carry_n_6 ,\NLW__inferred__0/i__carry_O_UNCONNECTED [0]}),
+        .S({i__carry_i_2_n_0,i__carry_i_3_n_0,i__carry_i_4_n_0,i__carry_i_5_n_0}));
+  CARRY4 \_inferred__0/i__carry__0 
+       (.CI(\_inferred__0/i__carry_n_0 ),
+        .CO({\NLW__inferred__0/i__carry__0_CO_UNCONNECTED [3:1],\_inferred__0/i__carry__0_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,LocY_int[5]}),
+        .O({\NLW__inferred__0/i__carry__0_O_UNCONNECTED [3:2],\_inferred__0/i__carry__0_n_6 ,\_inferred__0/i__carry__0_n_7 }),
+        .S({1'b0,1'b0,i__carry__0_i_1_n_0,i__carry__0_i_2_n_0}));
+  LUT2 #(
+    .INIT(4'h9)) 
+    i__carry__0_i_1
+       (.I0(LocY_int[6]),
+        .I1(LocY_int[7]),
+        .O(i__carry__0_i_1_n_0));
+  LUT2 #(
+    .INIT(4'h9)) 
+    i__carry__0_i_2
+       (.I0(LocY_int[5]),
+        .I1(LocY_int[6]),
+        .O(i__carry__0_i_2_n_0));
+  LUT1 #(
+    .INIT(2'h1)) 
+    i__carry_i_1
+       (.I0(LocY_int[2]),
+        .O(i__carry_i_1_n_0));
+  LUT2 #(
+    .INIT(4'h9)) 
+    i__carry_i_2
+       (.I0(LocY_int[4]),
+        .I1(LocY_int[5]),
+        .O(i__carry_i_2_n_0));
+  LUT2 #(
+    .INIT(4'h9)) 
+    i__carry_i_3
+       (.I0(LocY_int[3]),
+        .I1(LocY_int[4]),
+        .O(i__carry_i_3_n_0));
+  LUT2 #(
+    .INIT(4'h9)) 
+    i__carry_i_4
+       (.I0(LocY_int[2]),
+        .I1(LocY_int[3]),
+        .O(i__carry_i_4_n_0));
+  LUT6 #(
+    .INIT(64'hAAAAAAAAAAAAAAA9)) 
+    i__carry_i_5
+       (.I0(LocY_int[2]),
+        .I1(\LocY[2]_i_2_n_0 ),
+        .I2(\BotInfo_int_reg_n_0_[7] ),
+        .I3(\BotInfo_int_reg_n_0_[0] ),
+        .I4(\BotInfo_int_reg_n_0_[4] ),
+        .I5(\BotInfo_int_reg_n_0_[5] ),
+        .O(i__carry_i_5_n_0));
   FDCE load_sys_regs_reg
        (.C(clk_in),
         .CE(1'b1),
@@ -3830,6 +3947,7 @@ module rojobot31_0_rojobot31
   wire BOTCPU_n_16;
   wire BOTCPU_n_17;
   wire BOTCPU_n_5;
+  wire BOTREGIF_n_0;
   wire BOTREGIF_n_2;
   wire BOTREGIF_n_3;
   wire BOTREGIF_n_4;
@@ -3855,7 +3973,6 @@ module rojobot31_0_rojobot31
   wire clk_in;
   wire [7:0]in_port;
   wire [17:0]instruction;
-  wire load_sys_regs;
   wire [7:0]out_port;
   wire [1:0]port_id;
   wire reset;
@@ -3881,7 +3998,7 @@ module rojobot31_0_rojobot31
         .clk_in(clk_in),
         .instruction(instruction),
         .kcpsm6_rom(port_id),
-        .load_sys_regs_reg(load_sys_regs),
+        .load_sys_regs_reg(BOTREGIF_n_0),
         .out_port(out_port),
         .reset(reset),
         .upd_sysregs(upd_sysregs),
@@ -3909,7 +4026,7 @@ module rojobot31_0_rojobot31
         .\DataOut_reg[0]_0 (port_id),
         .\DataOut_reg[7]_0 (in_port),
         .\DataOut_reg[7]_1 ({DataOut[7],BOTCPU_n_1,DataOut[5:3],BOTCPU_n_5,DataOut[1:0]}),
-        .E(load_sys_regs),
+        .E(BOTREGIF_n_0),
         .\LocX_int_reg[7]_0 (LocX_int),
         .LocX_reg(LocX_reg),
         .\LocY_int_reg[7]_0 (LocY_int),

@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Mon Nov 30 17:52:13 2020
+| Date         : Thu Dec  3 19:42:19 2020
 | Host         : DESKTOP-NP6R9M2 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file rojobot31_0_utilization_synth.rpt -pb rojobot31_0_utilization_synth.pb
 | Design       : rojobot31_0
@@ -30,8 +30,8 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                |  143 |     0 |     63400 |  0.23 |
-|   LUT as Logic             |  119 |     0 |     63400 |  0.19 |
+| Slice LUTs*                |  153 |     0 |     63400 |  0.24 |
+|   LUT as Logic             |  129 |     0 |     63400 |  0.20 |
 |   LUT as Memory            |   24 |     0 |     19000 |  0.13 |
 |     LUT as Distributed RAM |   24 |     0 |           |       |
 |     LUT as Shift Register  |    0 |     0 |           |       |
@@ -149,17 +149,19 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT6     |  100 |                 LUT |
+| LUT6     |  103 |                 LUT |
 | FDRE     |   93 |        Flop & Latch |
 | FDCE     |   80 |        Flop & Latch |
 | LUT5     |   59 |                 LUT |
 | RAMD32   |   24 |  Distributed Memory |
-| LUT4     |   13 |                 LUT |
-| CARRY4   |   10 |          CarryLogic |
+| LUT4     |   14 |                 LUT |
+| CARRY4   |   12 |          CarryLogic |
 | RAMS32   |    8 |  Distributed Memory |
 | RAMD64E  |    8 |  Distributed Memory |
+| LUT2     |    5 |                 LUT |
 | LUT3     |    2 |                 LUT |
 | RAMB18E1 |    1 |        Block Memory |
+| LUT1     |    1 |                 LUT |
 +----------+------+---------------------+
 
 
