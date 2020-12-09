@@ -157,7 +157,7 @@ module robot_icon_v2 #(
       3'h1: frame_row = 7;
       3'h2: frame_row = 3;
       3'h3: frame_row = 5;
-      3'h4: frame_row = 0;
+      3'h4: frame_row = 3;  // Was 0
       3'h5: frame_row = 4;
       3'h6: frame_row = 2;
       3'h7: frame_row = 6;

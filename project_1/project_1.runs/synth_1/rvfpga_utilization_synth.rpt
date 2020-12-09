@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Tue Dec  8 16:30:37 2020
+| Date         : Tue Dec  8 20:29:38 2020
 | Host         : Ragnorak running 64-bit major release  (build 9200)
 | Command      : report_utilization -file rvfpga_utilization_synth.rpt -pb rvfpga_utilization_synth.pb
 | Design       : rvfpga
@@ -30,8 +30,8 @@ Table of Contents
 +----------------------------+-------+-------+-----------+-------+
 |          Site Type         |  Used | Fixed | Available | Util% |
 +----------------------------+-------+-------+-----------+-------+
-| Slice LUTs*                | 35553 |     0 |     63400 | 56.08 |
-|   LUT as Logic             | 35346 |     0 |     63400 | 55.75 |
+| Slice LUTs*                | 35552 |     0 |     63400 | 56.08 |
+|   LUT as Logic             | 35345 |     0 |     63400 | 55.75 |
 |   LUT as Memory            |   207 |     0 |     19000 |  1.09 |
 |     LUT as Distributed RAM |   204 |     0 |           |       |
 |     LUT as Shift Register  |     3 |     0 |           |       |
@@ -154,15 +154,15 @@ Table of Contents
 +------------+-------+---------------------+
 |  Ref Name  |  Used | Functional Category |
 +------------+-------+---------------------+
-| LUT6       | 17432 |                 LUT |
+| LUT6       | 17435 |                 LUT |
 | FDCE       | 16088 |        Flop & Latch |
 | LUT5       |  7744 |                 LUT |
-| LUT4       |  6664 |                 LUT |
+| LUT4       |  6663 |                 LUT |
 | LUT3       |  4990 |                 LUT |
 | FDRE       |  3313 |        Flop & Latch |
-| LUT2       |  2585 |                 LUT |
+| LUT2       |  2583 |                 LUT |
 | CARRY4     |  1014 |          CarryLogic |
-| LUT1       |   663 |                 LUT |
+| LUT1       |   660 |                 LUT |
 | MUXF7      |   605 |               MuxFx |
 | RAMD32     |   306 |  Distributed Memory |
 | FDSE       |   144 |        Flop & Latch |

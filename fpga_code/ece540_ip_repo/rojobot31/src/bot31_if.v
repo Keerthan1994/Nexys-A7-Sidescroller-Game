@@ -50,6 +50,7 @@
 // THIS VERSION OF THE MODULE SUPPORTS THE BOT CONFIGURATION REGISTER (BOT 3.x)						
 //////////
 
+
 module bot31_if(
 	// interface to the picoblaze
 	input 					Wr_Strobe,		// Write strobe - asserted to write I/O data
