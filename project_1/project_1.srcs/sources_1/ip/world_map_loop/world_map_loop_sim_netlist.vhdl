@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Sat Nov 28 14:49:06 2020
+-- Date        : Sat Nov 28 14:49:05 2020
 -- Host        : DESKTOP-NP6R9M2 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/world_map_loop/world_map_loop_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top world_map_loop -prefix
+--               world_map_loop_ world_map_loop_sim_netlist.vhdl
 -- Design      : world_map_loop
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -23,8 +23,6 @@ entity world_map_loop_blk_mem_gen_prim_wrapper_init is
     addra : in STD_LOGIC_VECTOR ( 13 downto 0 );
     addrb : in STD_LOGIC_VECTOR ( 13 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of world_map_loop_blk_mem_gen_prim_wrapper_init : entity is "blk_mem_gen_prim_wrapper_init";
 end world_map_loop_blk_mem_gen_prim_wrapper_init;
 
 architecture STRUCTURE of world_map_loop_blk_mem_gen_prim_wrapper_init is
@@ -273,8 +271,6 @@ entity world_map_loop_blk_mem_gen_prim_width is
     addra : in STD_LOGIC_VECTOR ( 13 downto 0 );
     addrb : in STD_LOGIC_VECTOR ( 13 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of world_map_loop_blk_mem_gen_prim_width : entity is "blk_mem_gen_prim_width";
 end world_map_loop_blk_mem_gen_prim_width;
 
 architecture STRUCTURE of world_map_loop_blk_mem_gen_prim_width is
@@ -302,8 +298,6 @@ entity world_map_loop_blk_mem_gen_generic_cstr is
     addra : in STD_LOGIC_VECTOR ( 13 downto 0 );
     addrb : in STD_LOGIC_VECTOR ( 13 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of world_map_loop_blk_mem_gen_generic_cstr : entity is "blk_mem_gen_generic_cstr";
 end world_map_loop_blk_mem_gen_generic_cstr;
 
 architecture STRUCTURE of world_map_loop_blk_mem_gen_generic_cstr is
@@ -331,8 +325,6 @@ entity world_map_loop_blk_mem_gen_top is
     addra : in STD_LOGIC_VECTOR ( 13 downto 0 );
     addrb : in STD_LOGIC_VECTOR ( 13 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of world_map_loop_blk_mem_gen_top : entity is "blk_mem_gen_top";
 end world_map_loop_blk_mem_gen_top;
 
 architecture STRUCTURE of world_map_loop_blk_mem_gen_top is
@@ -360,8 +352,6 @@ entity world_map_loop_blk_mem_gen_v8_4_4_synth is
     addra : in STD_LOGIC_VECTOR ( 13 downto 0 );
     addrb : in STD_LOGIC_VECTOR ( 13 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of world_map_loop_blk_mem_gen_v8_4_4_synth : entity is "blk_mem_gen_v8_4_4_synth";
 end world_map_loop_blk_mem_gen_v8_4_4_synth;
 
 architecture STRUCTURE of world_map_loop_blk_mem_gen_v8_4_4_synth is
@@ -596,8 +586,6 @@ entity world_map_loop_blk_mem_gen_v8_4_4 is
   attribute C_WRITE_WIDTH_B of world_map_loop_blk_mem_gen_v8_4_4 : entity is 2;
   attribute C_XDEVICEFAMILY : string;
   attribute C_XDEVICEFAMILY of world_map_loop_blk_mem_gen_v8_4_4 : entity is "artix7";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of world_map_loop_blk_mem_gen_v8_4_4 : entity is "blk_mem_gen_v8_4_4";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of world_map_loop_blk_mem_gen_v8_4_4 : entity is "yes";
 end world_map_loop_blk_mem_gen_v8_4_4;

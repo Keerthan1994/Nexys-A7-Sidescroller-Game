@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="44" Path="C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.xpr">
+<Project Version="7" Minor="44" Path="C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="42868df666564a11a77e1976e3ab8e9e"/>

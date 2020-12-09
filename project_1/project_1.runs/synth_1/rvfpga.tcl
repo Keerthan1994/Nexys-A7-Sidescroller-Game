@@ -17,7 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param chipscope.maxJobs 3
 set_msg_config  -id {Common 17-1649}  -string {{CRITICAL WARNING: [Common 17-1649] The Vivado message database 'C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/synth_1/vivado.pb' contains 20125 messages. Restoring all messages from this message database will impact Vivado performance, so only WARNING, CRITICAL WARNING, and ERROR messages will be restored. To restore all messages from this file use the tcl command 'set_param messaging.loadPbLimit 20126' and re-open the project.}}  -suppress 
 set_msg_config  -id {Common 17-1649}  -string {{CRITICAL WARNING: [Common 17-1649] The Vivado message database 'C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/synth_1/vivado.pb' contains 20143 messages. Restoring all messages from this message database will impact Vivado performance, so only WARNING, CRITICAL WARNING, and ERROR messages will be restored. To restore all messages from this file use the tcl command 'set_param messaging.loadPbLimit 20144' and re-open the project.}}  -suppress 
 create_project -in_memory -part xc7a100tcsg324-1
@@ -26,172 +25,172 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.cache/wt [current_project]
-set_property parent.project_path C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.cache/wt [current_project]
+set_property parent.project_path C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:nexys-a7-100t:part0:1.0 [current_project]
-set_property ip_repo_paths c:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/ece540_ip_repo/rojobot31 [current_project]
+set_property ip_repo_paths c:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/ece540_ip_repo/rojobot31 [current_project]
 update_ip_catalog
-set_property ip_output_repo c:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.cache/ip [current_project]
+set_property ip_output_repo c:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-add_files C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/world_maps/bandicoot_maps/world_map_pt1.coe
-add_files C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/world_maps/bandicoot_maps/world_map_pt2.coe
-add_files C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/world_maps/bandicoot_maps/world_map_pt3.coe
+add_files C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/world_maps/bandicoot_maps/world_map_pt1.coe
+add_files C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/world_maps/bandicoot_maps/world_map_pt2.coe
+add_files C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/world_maps/bandicoot_maps/world_map_pt3.coe
 read_verilog {
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/OtherSources/swervolf-swerv_default_config_0.7/configs/snapshots/default/common_defines.vh
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/gpio/gpio_defines.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/ptc/ptc_defines.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_params.vh
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_intercon.vh
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Interconnect/AxiInterconnect/axi_intercon.vh
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/uart/uart_defines.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__axi_0.23.0-r1/include/axi/typedef.svh
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__axi_0.23.0-r1/include/axi/assign.svh
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/include/common_cells/common_cells/registers.svh
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/include/global.h
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/OtherSources/swervolf-swerv_default_config_0.7/configs/snapshots/default/pic_map_auto.h
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/include/build.h
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/OtherSources/swervolf-swerv_default_config_0.7/configs/snapshots/default/common_defines.vh
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/gpio/gpio_defines.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/ptc/ptc_defines.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_params.vh
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_intercon.vh
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Interconnect/AxiInterconnect/axi_intercon.vh
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/uart/uart_defines.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__axi_0.23.0-r1/include/axi/typedef.svh
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__axi_0.23.0-r1/include/axi/assign.svh
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/include/common_cells/common_cells/registers.svh
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/include/global.h
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/OtherSources/swervolf-swerv_default_config_0.7/configs/snapshots/default/pic_map_auto.h
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/include/build.h
 }
-set_property is_global_include true [get_files C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/OtherSources/swervolf-swerv_default_config_0.7/configs/snapshots/default/common_defines.vh]
-set_property file_type "Verilog Header" [get_files C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/gpio/gpio_defines.v]
-set_property file_type "Verilog Header" [get_files C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/ptc/ptc_defines.v]
-set_property file_type "Verilog Header" [get_files C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/uart/uart_defines.v]
-set_property file_type "Verilog Header" [get_files C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__axi_0.23.0-r1/include/axi/typedef.svh]
-set_property file_type "Verilog Header" [get_files C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__axi_0.23.0-r1/include/axi/assign.svh]
-set_property file_type "Verilog Header" [get_files C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/include/common_cells/common_cells/registers.svh]
-set_property file_type "Verilog Header" [get_files C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/include/global.h]
-set_property file_type "Verilog Header" [get_files C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/OtherSources/swervolf-swerv_default_config_0.7/configs/snapshots/default/pic_map_auto.h]
-set_property file_type "Verilog Header" [get_files C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/include/build.h]
+set_property is_global_include true [get_files C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/OtherSources/swervolf-swerv_default_config_0.7/configs/snapshots/default/common_defines.vh]
+set_property file_type "Verilog Header" [get_files C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/gpio/gpio_defines.v]
+set_property file_type "Verilog Header" [get_files C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/ptc/ptc_defines.v]
+set_property file_type "Verilog Header" [get_files C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/uart/uart_defines.v]
+set_property file_type "Verilog Header" [get_files C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__axi_0.23.0-r1/include/axi/typedef.svh]
+set_property file_type "Verilog Header" [get_files C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__axi_0.23.0-r1/include/axi/assign.svh]
+set_property file_type "Verilog Header" [get_files C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/include/common_cells/common_cells/registers.svh]
+set_property file_type "Verilog Header" [get_files C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/include/global.h]
+set_property file_type "Verilog Header" [get_files C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/OtherSources/swervolf-swerv_default_config_0.7/configs/snapshots/default/pic_map_auto.h]
+set_property file_type "Verilog Header" [get_files C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/include/build.h]
 read_verilog -library xil_defaultlib -sv {
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/addr_decode.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__axi_0.23.0-r1/src/axi_pkg.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__axi_0.23.0-r1/src/axi_atop_filter.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__axi_0.23.0-r1/src/axi_cdc.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__axi_0.23.0-r1/src/axi_demux.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__axi_0.23.0-r1/src/axi_err_slv.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__axi_0.23.0-r1/src/axi_id_prepend.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Interconnect/AxiInterconnect/axi_intercon.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__axi_0.23.0-r1/src/axi_intf.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__axi_0.23.0-r1/src/axi_mux.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__axi_0.23.0-r1/src/axi_xbar.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/beh_lib.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/bscanTAP/bscan_tap.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/cdc_fifo_gray.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/counter.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/dbg/dbg.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/include/swerv_types.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/dec/dec.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/dec/dec_decode_ctl.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/dec/dec_gpr_ctl.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/dec/dec_ib_ctl.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/dec/dec_tlu_ctl.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/dec/dec_trigger.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/delta_counter.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/dma_ctrl.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/exu/exu.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/exu/exu_alu_ctl.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/exu/exu_div_ctl.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/exu/exu_mul_ctl.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/deprecated/fifo_v2.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/fifo_v3.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/graycode.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/ifu/ifu.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/ifu/ifu_aln_ctl.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/ifu/ifu_bp_ctl.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/ifu/ifu_compress_ctl.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/ifu/ifu_ic_mem.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/ifu/ifu_ifc_ctl.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/ifu/ifu_mem_ctl.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_addrcheck.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_bus_buffer.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_bus_intf.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_clkdomain.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_dccm_ctl.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_dccm_mem.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_ecc.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_lsc_ctl.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_stbuf.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_trigger.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/rojobot-solution-files/map_colorizer.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/mem.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/mem_lib.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/pic_ctrl.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/rr_arb_tree.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/spill_register.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/Sidescroller/ss_map_muxer.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/stream_register.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/swerv.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/swerv_wrapper.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/sync.sv
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/rvfpga.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/addr_decode.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__axi_0.23.0-r1/src/axi_pkg.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__axi_0.23.0-r1/src/axi_atop_filter.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__axi_0.23.0-r1/src/axi_cdc.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__axi_0.23.0-r1/src/axi_demux.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__axi_0.23.0-r1/src/axi_err_slv.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__axi_0.23.0-r1/src/axi_id_prepend.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Interconnect/AxiInterconnect/axi_intercon.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__axi_0.23.0-r1/src/axi_intf.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__axi_0.23.0-r1/src/axi_mux.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__axi_0.23.0-r1/src/axi_xbar.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/beh_lib.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/bscanTAP/bscan_tap.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/cdc_fifo_gray.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/counter.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/dbg/dbg.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/include/swerv_types.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/dec/dec.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/dec/dec_decode_ctl.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/dec/dec_gpr_ctl.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/dec/dec_ib_ctl.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/dec/dec_tlu_ctl.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/dec/dec_trigger.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/delta_counter.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/dma_ctrl.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/exu/exu.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/exu/exu_alu_ctl.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/exu/exu_div_ctl.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/exu/exu_mul_ctl.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/deprecated/fifo_v2.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/fifo_v3.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/graycode.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/ifu/ifu.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/ifu/ifu_aln_ctl.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/ifu/ifu_bp_ctl.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/ifu/ifu_compress_ctl.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/ifu/ifu_ic_mem.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/ifu/ifu_ifc_ctl.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/ifu/ifu_mem_ctl.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_addrcheck.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_bus_buffer.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_bus_intf.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_clkdomain.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_dccm_ctl.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_dccm_mem.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_ecc.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_lsc_ctl.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_stbuf.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/lsu/lsu_trigger.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/rojobot-solution-files/map_colorizer.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/mem.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/lib/mem_lib.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/pic_ctrl.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/rr_arb_tree.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/spill_register.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/Sidescroller/ss_map_muxer.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/stream_register.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/swerv.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/swerv_wrapper.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/sync.sv
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/rvfpga.sv
 }
 read_verilog -library xil_defaultlib {
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Interconnect/AxiToWb/axi2wb.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/clk_gen_nexys.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/rojobot-solution-files/colorizer_v2.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/BootROM/dpram64.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/hdl_part2/dtg.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/spi/fifo4.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/rojobot-solution-files/gpio_debounce.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/gpio/gpio_top.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/litedram_core.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/litedram_top.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/ptc/ptc_top.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/rojobot-solution-files/ram_block.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/uart/raminfr.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/rojobot-solution-files/robot_icon_v2.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/rojobot-solution-files/rojobot_controller.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_alu.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_bufreg.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_csr.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_ctrl.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_decode.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_mem_if.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_rf_if.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_rf_ram.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_rf_ram_if.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_rf_top.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_shift.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_state.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_top.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/spi/simple_spi_top.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/swervolf_core.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/SystemController/swervolf_syscon.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/rojobot-solution-files/title_colorizer.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/uart/uart_receiver.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/uart/uart_regs.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/uart/uart_rfifo.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/uart/uart_sync_flops.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/uart/uart_tfifo.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/uart/uart_top.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/uart/uart_transmitter.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/uart/uart_wb.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/rojobot-solution-files/vga_colorizer.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/rojobot-solution-files/vga_control.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/rojobot-solution-files/vga_scaler_v2.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_intercon.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/BootROM/wb_mem_wrapper.v
-  C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_intercon_1.2.2/wb_mux.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Interconnect/AxiToWb/axi2wb.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/clk_gen_nexys.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/rojobot-solution-files/colorizer_v2.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/BootROM/dpram64.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/hdl_part2/dtg.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/spi/fifo4.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/rojobot-solution-files/gpio_debounce.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/gpio/gpio_top.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/litedram_core.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/litedram_top.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/ptc/ptc_top.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/rojobot-solution-files/ram_block.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/uart/raminfr.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/rojobot-solution-files/robot_icon_v2.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/rojobot-solution-files/rojobot_controller.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_alu.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_bufreg.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_csr.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_ctrl.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_decode.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_mem_if.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_rf_if.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_rf_ram.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_rf_ram_if.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_rf_top.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_shift.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_state.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_top.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/spi/simple_spi_top.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/swervolf_core.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/SystemController/swervolf_syscon.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/rojobot-solution-files/title_colorizer.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/uart/uart_receiver.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/uart/uart_regs.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/uart/uart_rfifo.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/uart/uart_sync_flops.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/uart/uart_tfifo.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/uart/uart_top.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/uart/uart_transmitter.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/uart/uart_wb.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/rojobot-solution-files/vga_colorizer.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/rojobot-solution-files/vga_control.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/rojobot-solution-files/vga_scaler_v2.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_intercon.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/BootROM/wb_mem_wrapper.v
+  C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_intercon_1.2.2/wb_mux.v
 }
-read_ip -quiet C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
-set_property used_in_implementation false [get_files -all c:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
+read_ip -quiet C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+set_property used_in_implementation false [get_files -all c:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
 
-read_ip -quiet C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/world_map/world_map.xci
-set_property used_in_implementation false [get_files -all c:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/world_map/world_map_ooc.xdc]
+read_ip -quiet C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/world_map/world_map.xci
+set_property used_in_implementation false [get_files -all c:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/world_map/world_map_ooc.xdc]
 
-read_ip -quiet C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/world_map_lr/world_map_lr.xci
-set_property used_in_implementation false [get_files -all c:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/world_map_lr/world_map_lr_ooc.xdc]
+read_ip -quiet C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/world_map_lr/world_map_lr.xci
+set_property used_in_implementation false [get_files -all c:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/world_map_lr/world_map_lr_ooc.xdc]
 
-read_ip -quiet C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/world_map_loop/world_map_loop.xci
-set_property used_in_implementation false [get_files -all c:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/world_map_loop/world_map_loop_ooc.xdc]
+read_ip -quiet C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/world_map_loop/world_map_loop.xci
+set_property used_in_implementation false [get_files -all c:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/world_map_loop/world_map_loop_ooc.xdc]
 
-read_ip -quiet C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/rojobot31_0/rojobot31_0.xci
-set_property is_enabled true [get_files -all C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/rojobot31_0/src/bot31_if.v]
+read_ip -quiet C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/rojobot31_0/rojobot31_0.xci
+set_property is_enabled true [get_files -all C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/rojobot31_0/src/bot31_if.v]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -201,11 +200,11 @@ set_property is_enabled true [get_files -all C:/Users/ryanp/Documents/GitHub/Nex
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/liteDRAM.xdc
-set_property used_in_implementation false [get_files C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/liteDRAM.xdc]
+read_xdc C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/liteDRAM.xdc
+set_property used_in_implementation false [get_files C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/liteDRAM.xdc]
 
-read_xdc C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/rvfpga.xdc
-set_property used_in_implementation false [get_files C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/rvfpga.xdc]
+read_xdc C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/rvfpga.xdc
+set_property used_in_implementation false [get_files C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/rvfpga.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
