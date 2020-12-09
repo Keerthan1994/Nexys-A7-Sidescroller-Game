@@ -89,9 +89,10 @@ module rojobot_controller(
   
     // World map
     wire [13:0] worldmap_addr;
-    wire [1:0]  worldmap_data, worldmap_data_part_1, worldmap_data_lr, worldmap_data_loop;
+    //wire [1:0]  worldmap_data, worldmap_data_part_1, worldmap_data_lr, worldmap_data_loop;
     wire [13:0] vid_addr;
-    wire [1:0]  world_pixel, world_pixel_part_1, world_pixel_lr, world_pixel_loop;
+    //wire [1:0]  world_pixel_part_1, world_pixel_lr, world_pixel_loop;
+    wire [1:0]  world_pixel;
     wire [11:0] map_color;
     
     // Title
@@ -131,39 +132,18 @@ module rojobot_controller(
         end
     end
     
-    // world map part 1
-    world_map world_map(
-        .clka(clk_75),
-        .addra(worldmap_addr),
-        .douta(worldmap_data_part_1),
-        .clkb(clk_75),
-        .addrb(vid_addr),
-        .doutb(world_pixel_part_1)
+    // Sidescroller Map Muxer:
+    ss_map_muxer map_muxer(
+        .clk(clk),
+        .clk_75(clk_75),
+        .reset(~rstn_75), //changed from rstn_75 to ~rstn_75
+        .debounced_SW_75(debounced_SW_75),
+        .LocX(LocX_reg),
+        .vid_addr(vid_addr),
+        .worldmap_addr(worldmap_addr),
+        .worldmap_data(worldmap_data),
+        .world_pixel(world_pixel)
     );
-    
-    // world map lr
-    world_map_lr world_map_lr(
-        .clka(clk_75),
-        .addra(worldmap_addr),
-        .douta(worldmap_data_lr),
-        .clkb(clk_75),
-        .addrb(vid_addr),
-        .doutb(world_pixel_lr)
-    );
-    
-    // world map loop
-    world_map_loop world_map_loop(
-        .clka(clk_75),
-        .addra(worldmap_addr),
-        .douta(worldmap_data_loop),
-        .clkb(clk_75),
-        .addrb(vid_addr),
-        .doutb(world_pixel_loop)
-    );
-    
-    // mux to select map based on the SW
-    assign {worldmap_data, world_pixel} =
-        LocX_reg == 12'h07D ? {worldmap_data_lr, world_pixel_lr} : {worldmap_data_part_1, world_pixel_part_1};
     
     // scaler
     vga_scaler_v2 vga_scaler_v2(
@@ -288,7 +268,9 @@ module rojobot_controller(
             endcase
         end
     end
-    
+   
+
+  
 endmodule
 
 

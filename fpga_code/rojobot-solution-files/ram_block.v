@@ -7,7 +7,7 @@ module ram_block
 #(
   parameter DATA_WIDTH=12, 
   parameter ADDR_WIDTH=15,
-  parameter INIT_FILE="crash_bandicoot.mem"
+  parameter INIT_FILE="pikachu_02.mem"
 )(
 	input [(DATA_WIDTH-1):0] data,
 	input [(ADDR_WIDTH-1):0] read_addr, write_addr,
