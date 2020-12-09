@@ -54,6 +54,9 @@
  *      
  */
 
+# Gravity Counter
+GRAVITY_COUNT       = 0x5
+
 # Masks for Pushbuttons
 BTN_R_MASK              = 0x2
 BTN_C_MASK              = 0x10
@@ -1028,6 +1031,40 @@ next_step_manual:
                 nop
                 li      x25,    PORT_BOTCTRL
                 sw      t3,     0(x25)              # tell Rojobot what to do
+
+# ==================================================
+# Gravity
+# ==================================================
+                lb      t3, (GRAVITY_C)        
+
+                lb      x25,    (BOTINF_REG)        # x25[2:0] = BOTINF_REG[2:0] = orientation
+                and     x25,    x25,    MSKORIENT   #
+                la      t1, OR_S
+                bne     x25, t1, grav_01
+                beq     t3, zero, ret_next_step  
+                sb      zero, 0(t3)              
+
+                lb      t3, (SENSOR_REG)                   # read prox-sensor to check for obstacle
+                and     t3, t3, 0x18                      # mask out all except bits [4, 3]
+                li      t1, 0x18                           # compare with 00011000 (0x18) for checking obstacle
+                beq     t3, t1, nsa_stop                    # stop if obstacle detected
+
+                lb      t3, (SENSOR_REG)                   # read prox-sensor to check for obstacle
+                and     t3, t3, 0x07                      # mask out all except bits [4, 3]
+                li      t1, 0x07                           # compare with 00011000 (0x18) for checking obstacle
+                beq     t3, t1, nsa_stop                    # stop if obstacle detected
+
+                li      t3, 0x33                           # send command "forward"
+                la      x25, PORT_BOTCTRL
+                sb      t3, 0(x25)
+                beq     zero, zero, ret_next_step
+                nop
+
+grav_01:        lb      t3, (GRAVITY_C)
+                li      t1, 0x01
+                sb      t1, 0(t3)
+
+# ==================================================
                 beq     zero, zero, ret_next_step
                 nop
 
@@ -1188,6 +1225,9 @@ LOCy_REG:   .byte   0
 SENSOR_REG: .byte   0
 #Botinfo variable
 BOTINF_REG: .byte   0
+
+# Gravity var
+GRAVITY_C:   .byte   0
 
 # Intermediate variables can be used for implementing the algorithm
 SP_SEM:     .byte   0
