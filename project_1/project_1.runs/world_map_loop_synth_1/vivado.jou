@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Dec  8 13:34:57 2020
+# Process ID: 27124
+# Current directory: C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/world_map_loop_synth_1
+# Command line: vivado.exe -log world_map_loop.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source world_map_loop.tcl
+# Log file: C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/world_map_loop_synth_1/world_map_loop.vds
+# Journal file: C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/world_map_loop_synth_1\vivado.jou
+#-----------------------------------------------------------
+source world_map_loop.tcl -notrace

@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="world_map_lr_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1605584797">
+<GenRun Id="world_map_lr_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1607463293">
   <File Type="PA-TCL" Name="world_map_lr.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="world_map_lr_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="world_map_lr_reports.tcl"/>
   <File Type="RDS-RDS" Name="world_map_lr.vds"/>
   <File Type="RDS-UTIL" Name="world_map_lr_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="world_map_lr_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="world_map_lr.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="world_map_lr_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="world_map_lr_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/world_map_lr">
     <File Path="$PSRCDIR/sources_1/ip/world_map_lr/world_map_lr.xci">
       <FileInfo>

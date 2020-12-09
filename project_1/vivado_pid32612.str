@@ -1,0 +1,2273 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:40:23 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 32612
+License: Customer
+
+Current time: 	Tue Dec 08 12:17:46 PST 2020
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 3
+Available disk space: 190 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	rromano
+User home directory: C:/Users/rromano
+User working directory: C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2019.2
+RDI_DATADIR: C:/Xilinx/Vivado/2019.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2019.2/bin
+
+Vivado preferences file location: C:/Users/rromano/AppData/Roaming/Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: C:/Users/rromano/AppData/Roaming/Xilinx/Vivado/2019.2/
+Vivado layouts directory: C:/Users/rromano/AppData/Roaming/Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/vivado.log
+Vivado journal file location: 	C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/vivado.jou
+Engine tmp dir: 	C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/.Xil/Vivado-32612-Ragnorak
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2019.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2019.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2019.2
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 707 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bB (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\rromano\Documents\GitHub\Nexys-A7-Sidescroller-Game\project_1\project_1.xpr. Version: Vivado v2019.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 728 MB. GUI used memory: 56 MB. Current time: 12/8/20, 12:17:48 PM PST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 72 MB (+73537kb) [00:00:13]
+// [Engine Memory]: 834 MB (+723327kb) [00:00:13]
+// [GUI Memory]: 78 MB (+2464kb) [00:00:13]
+// [GUI Memory]: 98 MB (+16523kb) [00:00:14]
+// [GUI Memory]: 107 MB (+3679kb) [00:00:14]
+// [GUI Memory]: 118 MB (+6443kb) [00:00:14]
+// [Engine Memory]: 883 MB (+7073kb) [00:00:15]
+// WARNING: HEventQueue.dispatchEvent() is taking  2711 ms.
+// Tcl Message: open_project C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/ryanp/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/ece540_ip_repo/rojobot31'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'. 
+// [GUI Memory]: 138 MB (+14904kb) [00:00:16]
+// [Engine Memory]: 965 MB (+39957kb) [00:00:16]
+// Tcl Message: open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 941.523 ; gain = 262.980 
+// Project name: project_1; location: C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1; part: xc7a100tcsg324-1
+// [Engine Memory]: 1,125 MB (+117080kb) [00:00:17]
+dismissDialog("Open Project"); // bB (cr)
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,148 MB. GUI used memory: 83 MB. Current time: 12/8/20, 12:18:08 PM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,148 MB. GUI used memory: 84 MB. Current time: 12/8/20, 12:48:08 PM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,148 MB. GUI used memory: 79 MB. Current time: 12/8/20, 1:18:08 PM PST
+// Elapsed time: 4340 seconds
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // i (N, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, rojobot31_0]", 2); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, rojobot31_0]", 2, true, false, false, false, true, false); // B (F, cr) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
+// k (cr): Edit in IP Packager: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (k)
+// bB (cr):  Edit in IP Packager : addNotify
+selectButton("OptionPane.button", "OK"); // JButton (A, H)
+// TclEventType: LOAD_FEATURE
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name rojobot31_v1_0_project -directory C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.tmp/rojobot31_v1_0_project c:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/ece540_ip_repo/rojobot31/component.xml 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'c:/users/rromano/documents/github/nexys-a7-sidescroller-game/project_1/project_1.tmp/rojobot31_v1_0_project' 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 1,187 MB (+6144kb) [01:12:49]
+// WARNING: HEventQueue.dispatchEvent() is taking  1617 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,192 MB. GUI used memory: 103 MB. Current time: 12/8/20, 1:30:29 PM PST
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LOAD_FEATURE
+// Tcl Message: create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1220.316 ; gain = 0.000 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/ece540_ip_repo/rojobot31'. INFO: [IP_Flow 19-795] Syncing license key meta-data 
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// [GUI Memory]: 148 MB (+2466kb) [01:12:52]
+// [Engine Memory]: 1,267 MB (+21146kb) [01:12:52]
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::edit_ip_in_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1290.672 ; gain = 70.355 
+// [GUI Memory]: 162 MB (+7512kb) [01:12:53]
+// 'i' command handler elapsed time: 11 seconds
+dismissDialog("Edit in IP Packager"); // bB (cr)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rojobot31 (bot31_top.v)]", 1); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rojobot31 (bot31_top.v), BOTSIMPGM : bot31_pgm (bot31_pgm.v)]", 3, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rojobot31 (bot31_top.v), BOTSIMPGM : bot31_pgm (bot31_pgm.v)]", 3, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rojobot31 (bot31_top.v), BOTSIMPGM : bot31_pgm (bot31_pgm.v)]", 3, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rojobot31 (bot31_top.v), BOTSIMPGM : bot31_pgm (bot31_pgm.v)]", 3, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rojobot31 (bot31_top.v), BOTSIMPGM : bot31_pgm (bot31_pgm.v)]", 3, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rojobot31 (bot31_top.v), BOTSIMPGM : bot31_pgm (bot31_pgm.v)]", 3, false, false, false, false, false, true); // B (F, cr) - Double Click
+// Elapsed time: 30 seconds
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ai (ao, cr)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 22 seconds
+selectCodeEditor("bot31_pgm.v", 321, 97); // ch (w, cr)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("bot31_pgm.v", 175, 115); // ch (w, cr)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rojobot31 (bot31_top.v), BOTSIMPGM : xil_defaultlib.bot31_pgm]", 3, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rojobot31 (bot31_top.v), BOTSIMPGM : xil_defaultlib.bot31_pgm]", 3, false, false, false, false, false, true); // B (F, cr) - Double Click
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bot31_pgm_SS (bot31_pgm.v)]", 5, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bot31_pgm_SS (bot31_pgm.v)]", 5, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bot31_pgm_SS (bot31_pgm.v)]", 5, false); // B (F, cr)
+// [GUI Memory]: 170 MB (+109kb) [01:14:40]
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 113 seconds
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // h (ds, cr)
+// Elapsed time: 12 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cr)
+closeTask("Project Manager", "Project Manager", "DesignTask.PROJECT_MANAGER");
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// bB (cr):  Close Project : addNotify
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,271 MB. GUI used memory: 106 MB. Current time: 12/8/20, 1:34:25 PM PST
+// Tcl Message: close_project 
+dismissDialog("Close Project"); // bB (cr)
+selectButton(PAResourceOtoP.PlanAheadTab_REFRESH_IP_CATALOG, "Refresh IP Catalog"); // h (ds, cr)
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild -scan_changes 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/ece540_ip_repo/rojobot31'. 
+// bB (cr):  Refresh IP Catalog : addNotify
+// TclEventType: IP_SUMMARY_RESULTS
+// [Engine Memory]: 1,424 MB (+98863kb) [01:16:53]
+// Tcl Message: report_ip_status -name ip_status 
+dismissDialog("Refresh IP Catalog"); // bB (cr)
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a (g, cr)
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// af (cr): Enable Core Container: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (af)
+// TclEventType: RUN_MODIFY
+dismissDialog("Enable Core Container"); // af (cr)
+// TclEventType: RUN_RESET
+// [Engine Memory]: 1,501 MB (+5921kb) [01:16:58]
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// Tcl Message: upgrade_ip -srcset rojobot31_0 -vlnv ece.pdx.edu:user:rojobot31:1.0 [get_ips  rojobot31_0] -log ip_upgrade.log 
+// Tcl Message: Upgrading 'rojobot31_0' 
+// TclEventType: RUN_DELETE
+// bB (cr):  Upgrade IP : addNotify
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// Tcl Message: INFO: [Project 1-386] Moving file 'C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/rojobot31_0/rojobot31_0.xci' from fileset 'rojobot31_0' to fileset 'sources_1'. 
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [IP_Flow 19-1972] Upgraded rojobot31_0 from rojobot31_v1_0 1.0 to rojobot31_v1_0 1.0 INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'rojobot31_0'... INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/ip_upgrade.log'. 
+// Tcl Message: export_ip_user_files -of_objects [get_ips rojobot31_0] -no_script -sync -force -quiet 
+dismissDialog("Upgrade IP"); // bB (cr)
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // h (ds, cr)
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 193 MB (+14926kb) [01:17:05]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run world_map_synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run world_map_lr_synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run world_map_loop_synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bB (cr):  Starting Design Runs : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'rojobot31_0'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'world_map'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'world_map_lr'... 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'world_map_loop'... 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Dec  8 13:34:56 2020] Launched impl_1... Run output will be captured here: C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1689.277 ; gain = 1.176 
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,527 MB. GUI used memory: 121 MB. Current time: 12/8/20, 1:35:09 PM PST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Implementation Completed: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 1,527 MB. GUI used memory: 116 MB. Current time: 12/8/20, 2:05:09 PM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,527 MB. GUI used memory: 113 MB. Current time: 12/8/20, 2:35:09 PM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,527 MB. GUI used memory: 112 MB. Current time: 12/8/20, 3:05:10 PM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,527 MB. GUI used memory: 112 MB. Current time: 12/8/20, 3:35:10 PM PST
+// Elapsed time: 7958 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, aj)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+dismissDialog("Implementation Completed"); // aj (cr)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bB (cr):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Tue Dec  8 15:47:36 2020] Launched impl_1... Run output will be captured here: C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 206 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (O, cr) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bB (cr):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_hw_manager 
+dismissDialog("Open Hardware Manager"); // bB (cr)
+// Elapsed time: 13 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (ds, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bB (cr):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2019.2   **** Build date : Nov  6 2019 at 22:12:23     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 
+// Tcl Message: INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ****** Xilinx cs_server v2019.2.0   **** Build date : Nov 06 2019-21:28:22     ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.    
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1689.277 ; gain = 0.000 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  4279 ms.
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AE38EAA 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,550 MB. GUI used memory: 118 MB. Current time: 12/8/20, 3:51:33 PM PST
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/impl_1/RVfpga.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// [Engine Memory]: 2,551 MB (+1021696kb) [03:33:54]
+// Elapsed time: 14 seconds
+dismissDialog("Auto Connect"); // bB (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cr)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/impl_1/RVfpga.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bB (cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,566 MB. GUI used memory: 118 MB. Current time: 12/8/20, 3:53:00 PM PST
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292AE38EAA 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 1744 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cr)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// bB (cr):  Close Hardware Manager : addNotify
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw_manager 
+dismissDialog("Close Hardware Manager"); // bB (cr)
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, rojobot31_0]", 2, true, false, false, false, true, false); // B (F, cr) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
+// k (cr): Edit in IP Packager: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (k)
+// bB (cr):  Edit in IP Packager : addNotify
+// Elapsed time: 19 seconds
+selectButton("OptionPane.button", "OK"); // JButton (A, H)
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name rojobot31_v1_0_project -directory C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.tmp/rojobot31_v1_0_project c:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/ece540_ip_repo/rojobot31/component.xml 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'c:/users/rromano/documents/github/nexys-a7-sidescroller-game/project_1/project_1.tmp/rojobot31_v1_0_project' 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,611 MB. GUI used memory: 119 MB. Current time: 12/8/20, 4:21:35 PM PST
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 2,695 MB (+17787kb) [04:03:59]
+// WARNING: HEventQueue.dispatchEvent() is taking  1489 ms.
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// Tcl Message: create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2765.750 ; gain = 130.008 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/ece540_ip_repo/rojobot31'. INFO: [IP_Flow 19-795] Syncing license key meta-data 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::edit_ip_in_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2783.051 ; gain = 147.309 
+// 'i' command handler elapsed time: 26 seconds
+dismissDialog("Edit in IP Packager"); // bB (cr)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 22 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rojobot31 (bot31_top.v)]", 1); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rojobot31 (bot31_top.v), BOTSIMPGM : bot31_pgm (bot31_pgm.v)]", 3, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rojobot31 (bot31_top.v), BOTSIMPGM : bot31_pgm (bot31_pgm.v)]", 3, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ai (ao, cr)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 21 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cr)
+closeTask("Project Manager", "Project Manager", "DesignTask.PROJECT_MANAGER");
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// bB (cr):  Close Project : addNotify
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,697 MB. GUI used memory: 127 MB. Current time: 12/8/20, 4:22:33 PM PST
+// Tcl Message: close_project 
+dismissDialog("Close Project"); // bB (cr)
+selectButton(PAResourceOtoP.PlanAheadTab_REFRESH_IP_CATALOG, "Refresh IP Catalog"); // h (ds, cr)
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild -scan_changes 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/ece540_ip_repo/rojobot31'. 
+// bB (cr):  Refresh IP Catalog : addNotify
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status 
+dismissDialog("Refresh IP Catalog"); // bB (cr)
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a (g, cr)
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// af (cr): Enable Core Container: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (af)
+// TclEventType: RUN_MODIFY
+dismissDialog("Enable Core Container"); // af (cr)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// bB (cr):  Upgrade IP : addNotify
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// Tcl Message: upgrade_ip -srcset rojobot31_0 -vlnv ece.pdx.edu:user:rojobot31:1.0 [get_ips  rojobot31_0] -log ip_upgrade.log 
+// Tcl Message: Upgrading 'rojobot31_0' 
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [Project 1-386] Moving file 'C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/rojobot31_0/rojobot31_0.xci' from fileset 'rojobot31_0' to fileset 'sources_1'. INFO: [IP_Flow 19-1972] Upgraded rojobot31_0 from rojobot31_v1_0 1.0 to rojobot31_v1_0 1.0 INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'rojobot31_0'... INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/ip_upgrade.log'. 
+// Tcl Message: export_ip_user_files -of_objects [get_ips rojobot31_0] -no_script -sync -force -quiet 
+dismissDialog("Upgrade IP"); // bB (cr)
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 2,832 MB (+1924kb) [04:05:07]
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // h (ds, cr)
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bB (cr):  Starting Design Runs : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'rojobot31_0'... 
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Dec  8 16:22:53 2020] Launched rojobot31_0_synth_1, synth_1... Run output will be captured here: rojobot31_0_synth_1: C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/rojobot31_0_synth_1/runme.log synth_1: C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/synth_1/runme.log [Tue Dec  8 16:22:53 2020] Launched impl_1... Run output will be captured here: C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// [GUI Memory]: 224 MB (+21836kb) [04:05:50]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,853 MB. GUI used memory: 129 MB. Current time: 12/8/20, 4:23:30 PM PST
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Implementation Completed: addNotify
+// Elapsed time: 1193 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+dismissDialog("Implementation Completed"); // aj (cr)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bB (cr):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Tue Dec  8 16:42:47 2020] Launched impl_1... Run output will be captured here: C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 117 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bB (cr):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_hw_manager 
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+dismissDialog("Open Hardware Manager"); // bB (cr)
+// bB (cr):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2019.2   **** Build date : Nov  6 2019 at 22:12:23     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 
+// Tcl Message: INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ****** Xilinx cs_server v2019.2.0   **** Build date : Nov 06 2019-21:28:22     ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.    
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 2969.195 ; gain = 0.000 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AE38EAA 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/impl_1/RVfpga.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// Elapsed time: 13 seconds
+dismissDialog("Auto Connect"); // bB (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cr)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/impl_1/RVfpga.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bB (cr)
+// Elapsed time: 19 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cr)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// bB (cr):  Close Hardware Manager : addNotify
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw_manager 
+dismissDialog("Close Hardware Manager"); // bB (cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,853 MB. GUI used memory: 130 MB. Current time: 12/8/20, 4:53:31 PM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,853 MB. GUI used memory: 129 MB. Current time: 12/8/20, 5:23:31 PM PST
+// Elapsed time: 3668 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, rojobot31_0, Synthesis]", 4); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, rojobot31_0, Synthesis, bot31_if.v]", 6, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, rojobot31_0, Synthesis, bot31_if.v]", 6, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, rojobot31_0, Synthesis, bot31_if.v]", 6, false, false, false, false, false, true); // B (F, cr) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 2,853 MB. GUI used memory: 129 MB. Current time: 12/8/20, 5:53:31 PM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,853 MB. GUI used memory: 129 MB. Current time: 12/8/20, 6:23:31 PM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,853 MB. GUI used memory: 129 MB. Current time: 12/8/20, 6:53:31 PM PST
+// Elapsed time: 5667 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, rojobot31_0]", 2); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, world_map]", 3); // B (F, cr)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, world_map]", 3); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, world_map_loop]", 4); // B (F, cr)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, world_map_loop]", 4); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, world_map_lr]", 5); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, world_map_lr]", 5, true, false, false, false, true, false); // B (F, cr) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, world_map_lr]", 5, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, world_map_lr]", 5, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// r (cr): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // r (cr)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // i (N, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files]", 110); // B (F, cr)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files]", 110); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv)]", 4); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), swervolf : swervolf_core (swervolf_core.v)]", 9); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), swervolf : swervolf_core (swervolf_core.v), rojobot_control : rojobot_controller (rojobot_controller.v)]", 61); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), swervolf : swervolf_core (swervolf_core.v), rojobot_control : rojobot_controller (rojobot_controller.v), robot_icon_v2 : robot_icon_v2 (robot_icon_v2.v)]", 65, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv), swervolf : swervolf_core (swervolf_core.v), rojobot_control : rojobot_controller (rojobot_controller.v), robot_icon_v2 : robot_icon_v2 (robot_icon_v2.v)]", 65, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectCodeEditor("robot_icon_v2.v", 175, 378); // ch (w, cr)
+// Elapsed time: 45 seconds
+selectCodeEditor("robot_icon_v2.v", 164, 435); // ch (w, cr)
+selectCodeEditor("robot_icon_v2.v", 164, 435, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("robot_icon_v2.v", 156, 436); // ch (w, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,853 MB. GUI used memory: 133 MB. Current time: 12/8/20, 7:23:32 PM PST
+// Elapsed time: 538 seconds
+selectCodeEditor("robot_icon_v2.v", 256, 389); // ch (w, cr)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (f, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpga (rvfpga.sv)]", 4); // B (F, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bB (cr):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Dec  8 19:32:10 2020] Launched synth_1... Run output will be captured here: C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/synth_1/runme.log [Tue Dec  8 19:32:10 2020] Launched impl_1... Run output will be captured here: C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Starting Design Runs"); // bB (cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // i (h, cr)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 944 seconds
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // i (N, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, rojobot31_0]", 2, true, false, false, false, true, false); // B (F, cr) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE, "Re-customize IP..."); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// r (cr): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // r (cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, rojobot31_0]", 2, true, false, false, false, true, false); // B (F, cr) - Popup Trigger - Node
+// Elapsed time: 28 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, rojobot31_0]", 2); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, rojobot31_0, Synthesis]", 4); // B (F, cr)
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, rojobot31_0, Synthesis, bot31_top.v]", 9, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, rojobot31_0, Synthesis, bot31_top.v]", 9, false, false, false, false, false, true); // B (F, cr) - Double Click
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Implementation Completed: addNotify
+// Elapsed time: 163 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+dismissDialog("Implementation Completed"); // aj (cr)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bB (cr):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Tue Dec  8 19:51:35 2020] Launched impl_1... Run output will be captured here: C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 46 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, rojobot31_0, Synthesis, rojobot31_0.v]", 10, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, rojobot31_0, Synthesis, rojobot31_0.v]", 10, false, false, false, false, false, true); // B (F, cr) - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bot31_top.v", 2); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rojobot31_0.v", 3); // i (h, cr)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,853 MB. GUI used memory: 142 MB. Current time: 12/8/20, 7:53:32 PM PST
+// Elapsed time: 77 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, rojobot31_0, Instantiation Template]", 3); // B (F, cr)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, rojobot31_0, Instantiation Template]", 3); // B (F, cr)
+// Elapsed time: 76 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bot31_top.v", 2); // i (h, cr)
+// Elapsed time: 207 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, rojobot31_0, Synthesis, kcpsm6.v]", 8, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, rojobot31_0, Synthesis, kcpsm6.v]", 8, false, false, false, false, false, true); // B (F, cr) - Double Click
+// Elapsed time: 104 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, rojobot31_0]", 2, true, false, false, false, true, false); // B (F, cr) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (O, cr) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// bB (cr):  Open Elaborated Design : addNotify
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a100tcsg324-1 Top: rvfpga 
+// HMemoryUtils.trashcanNow. Engine heap size: 3,547 MB. GUI used memory: 139 MB. Current time: 12/8/20, 8:00:43 PM PST
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1036 ms. Increasing delay to 3000 ms.
+// TclEventType: ELABORATE_START
+// [Engine Memory]: 3,547 MB (+601686kb) [07:43:09]
+// HMemoryUtils.trashcanNow. Engine heap size: 3,663 MB. GUI used memory: 139 MB. Current time: 12/8/20, 8:01:02 PM PST
+// TclEventType: ELABORATE_FINISH
+// HMemoryUtils.trashcanNow. Engine heap size: 3,854 MB. GUI used memory: 139 MB. Current time: 12/8/20, 8:01:27 PM PST
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// [Engine Memory]: 3,959 MB (+245320kb) [07:43:53]
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 3,969 MB. GUI used memory: 140 MB. Current time: 12/8/20, 8:01:35 PM PST
+// TclEventType: DESIGN_NEW
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1193 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a100tcsg324-1 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 3329.281 ; gain = 237.504 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'rvfpga' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/rvfpga.sv:25] 
+// Tcl Message: 	Parameter bootrom_file bound to: (null) - type: string  	Parameter RAM_SIZE bound to: 65536 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'clk_gen_nexys' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/clk_gen_nexys.v:24] INFO: [Synth 8-6157] synthesizing module 'PLLE2_BASE' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:61495] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'PLLE2_BASE' (1#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:61495] INFO: [Synth 8-6155] done synthesizing module 'clk_gen_nexys' (2#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/clk_gen_nexys.v:24] INFO: [Synth 8-6157] synthesizing module 'AXI_BUS' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__axi_0.23.0-r1/src/axi_intf.sv:19] 
+// Tcl Message: 	Parameter AXI_ADDR_WIDTH bound to: 32 - type: integer  	Parameter AXI_DATA_WIDTH bound to: 64 - type: integer  	Parameter AXI_ID_WIDTH bound to: 6 - type: integer  	Parameter AXI_USER_WIDTH bound to: 1 - type: integer  	Parameter AXI_STRB_WIDTH bound to: 8 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'AXI_BUS' (2#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__axi_0.23.0-r1/src/axi_intf.sv:19] INFO: [Synth 8-6157] synthesizing module 'AXI_BUS' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__axi_0.23.0-r1/src/axi_intf.sv:19] 
+// Tcl Message: 	Parameter AXI_ADDR_WIDTH bound to: 32 - type: integer  	Parameter AXI_DATA_WIDTH bound to: 64 - type: integer  	Parameter AXI_ID_WIDTH bound to: 6 - type: integer  	Parameter AXI_USER_WIDTH bound to: 1 - type: integer  	Parameter AXI_STRB_WIDTH bound to: 8 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'AXI_BUS' (2#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__axi_0.23.0-r1/src/axi_intf.sv:19] INFO: [Synth 8-6157] synthesizing module 'axi_cdc_intf' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__axi_0.23.0-r1/src/axi_cdc.sv:133] 
+// Tcl Message: 	Parameter AXI_ID_WIDTH bound to: 32'b00000000000000000000000000000110  	Parameter AXI_ADDR_WIDTH bound to: 32'b00000000000000000000000000100000  	Parameter AXI_DATA_WIDTH bound to: 32'b00000000000000000000000001000000  	Parameter AXI_USER_WIDTH bound to: 32'b00000000000000000000000000000001  	Parameter LOG_DEPTH bound to: 32'b00000000000000000000000000000001  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'axi_cdc' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__axi_0.23.0-r1/src/axi_cdc.sv:23] 
+// Tcl Message: 	Parameter LogDepth bound to: 32'b00000000000000000000000000000001  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'cdc_fifo_gray' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/cdc_fifo_gray.sv:80] 
+// Tcl Message: 	Parameter WIDTH bound to: 74 - type: integer  	Parameter LOG_DEPTH bound to: 32'sb00000000000000000000000000000001  	Parameter SYNC_STAGES bound to: 32'sb00000000000000000000000000000010  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'cdc_fifo_gray_src' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/cdc_fifo_gray.sv:150] 
+// Tcl Message: 	Parameter LOG_DEPTH bound to: 32'sb00000000000000000000000000000001  	Parameter SYNC_STAGES bound to: 32'sb00000000000000000000000000000010  	Parameter PTR_WIDTH bound to: 32'sb00000000000000000000000000000010  	Parameter PTR_FULL bound to: 2'b10  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'sync' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/sync.sv:15] 
+// Tcl Message: 	Parameter STAGES bound to: 32'b00000000000000000000000000000010  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'sync' (3#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/sync.sv:15] INFO: [Synth 8-6157] synthesizing module 'gray_to_binary' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/graycode.sv:25] 
+// Tcl Message: 	Parameter N bound to: 32'sb00000000000000000000000000000010  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'gray_to_binary' (4#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/graycode.sv:25] INFO: [Synth 8-6157] synthesizing module 'binary_to_gray' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/graycode.sv:15] 
+// Tcl Message: 	Parameter N bound to: 32'sb00000000000000000000000000000010  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'binary_to_gray' (5#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/graycode.sv:15] INFO: [Synth 8-6155] done synthesizing module 'cdc_fifo_gray_src' (6#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/cdc_fifo_gray.sv:150] INFO: [Synth 8-6157] synthesizing module 'cdc_fifo_gray_dst' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/cdc_fifo_gray.sv:207] 
+// Tcl Message: 	Parameter LOG_DEPTH bound to: 32'sb00000000000000000000000000000001  	Parameter SYNC_STAGES bound to: 32'sb00000000000000000000000000000010  	Parameter PTR_WIDTH bound to: 32'sb00000000000000000000000000000010  	Parameter PTR_EMPTY bound to: 2'b00  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'spill_register' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/spill_register.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b0  
+// Tcl Message: 	Parameter WIDTH bound to: 9 - type: integer  	Parameter LOG_DEPTH bound to: 32'sb00000000000000000000000000000001  	Parameter SYNC_STAGES bound to: 32'sb00000000000000000000000000000010  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'cdc_fifo_gray_src__parameterized0' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/cdc_fifo_gray.sv:150] 
+// Tcl Message: 	Parameter LOG_DEPTH bound to: 32'sb00000000000000000000000000000001  	Parameter SYNC_STAGES bound to: 32'sb00000000000000000000000000000010  	Parameter PTR_WIDTH bound to: 32'sb00000000000000000000000000000010  	Parameter PTR_FULL bound to: 2'b10  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'cdc_fifo_gray_src__parameterized0' (9#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/cdc_fifo_gray.sv:150] INFO: [Synth 8-6157] synthesizing module 'cdc_fifo_gray_dst__parameterized0' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/cdc_fifo_gray.sv:207] 
+// Tcl Message: 	Parameter LOG_DEPTH bound to: 32'sb00000000000000000000000000000001  	Parameter SYNC_STAGES bound to: 32'sb00000000000000000000000000000010  	Parameter PTR_WIDTH bound to: 32'sb00000000000000000000000000000010  	Parameter PTR_EMPTY bound to: 2'b00  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized0' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/spill_register.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b0  
+// Tcl Message: 	Parameter WIDTH bound to: 68 - type: integer  	Parameter LOG_DEPTH bound to: 32'sb00000000000000000000000000000001  	Parameter SYNC_STAGES bound to: 32'sb00000000000000000000000000000010  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'cdc_fifo_gray_src__parameterized1' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/cdc_fifo_gray.sv:150] 
+// Tcl Message: 	Parameter LOG_DEPTH bound to: 32'sb00000000000000000000000000000001  	Parameter SYNC_STAGES bound to: 32'sb00000000000000000000000000000010  	Parameter PTR_WIDTH bound to: 32'sb00000000000000000000000000000010  	Parameter PTR_FULL bound to: 2'b10  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'cdc_fifo_gray_src__parameterized1' (9#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/cdc_fifo_gray.sv:150] INFO: [Synth 8-6157] synthesizing module 'cdc_fifo_gray_dst__parameterized1' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/cdc_fifo_gray.sv:207] 
+// Tcl Message: 	Parameter LOG_DEPTH bound to: 32'sb00000000000000000000000000000001  	Parameter SYNC_STAGES bound to: 32'sb00000000000000000000000000000010  	Parameter PTR_WIDTH bound to: 32'sb00000000000000000000000000000010  	Parameter PTR_EMPTY bound to: 2'b00  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized1' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/spill_register.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b0  
+// Tcl Message: 	Parameter ID_WIDTH bound to: 6 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'IDELAYCTRL' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:35014] 
+// Tcl Message: 	Parameter SIM_DEVICE bound to: 7SERIES - type: string  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'IDELAYCTRL' (13#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:35014] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'OSERDESE2' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:50288] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2' (14#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:50288] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:46225] 
+// Tcl Message: 	Parameter CAPACITANCE bound to: DONT_CARE - type: string  	Parameter IOSTANDARD bound to: DEFAULT - type: string  	Parameter SLEW bound to: SLOW - type: string  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (15#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:46225] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'IDELAYE2' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:35027] 
+// Tcl Message: 	Parameter CINVCTRL_SEL bound to: FALSE - type: string  	Parameter DELAY_SRC bound to: IDATAIN - type: string  	Parameter HIGH_PERFORMANCE_MODE bound to: TRUE - type: string  	Parameter IDELAY_TYPE bound to: FIXED - type: string  	Parameter IDELAY_VALUE bound to: 16 - type: integer  	Parameter IS_C_INVERTED bound to: 1'b0  	Parameter IS_DATAIN_INVERTED bound to: 1'b0  	Parameter IS_IDATAIN_INVERTED bound to: 1'b0  	Parameter PIPE_SEL bound to: FALSE - type: string  	Parameter REFCLK_FREQUENCY bound to: 200.000000 - type: double  	Parameter SIGNAL_PATTERN bound to: DATA - type: string  	Parameter SIM_DELAY_D bound to: 0 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'IDELAYE2' (16#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:35027] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'IOBUFDS' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:36213] 
+// Tcl Message: 	Parameter DIFF_TERM bound to: FALSE - type: string  	Parameter DQS_BIAS bound to: FALSE - type: string  	Parameter IBUF_LOW_PWR bound to: TRUE - type: string  	Parameter IOSTANDARD bound to: DEFAULT - type: string  	Parameter SLEW bound to: SLOW - type: string  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'IOBUFDS' (17#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:36213] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'ISERDESE2' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:38572] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'ISERDESE2' (18#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:38572] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'IDELAYE2__parameterized0' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:35027] 
+// Tcl Message: 	Parameter CINVCTRL_SEL bound to: FALSE - type: string  	Parameter DELAY_SRC bound to: IDATAIN - type: string  	Parameter HIGH_PERFORMANCE_MODE bound to: TRUE - type: string  	Parameter IDELAY_TYPE bound to: VARIABLE - type: string  	Parameter IDELAY_VALUE bound to: 0 - type: integer  	Parameter IS_C_INVERTED bound to: 1'b0  	Parameter IS_DATAIN_INVERTED bound to: 1'b0  	Parameter IS_IDATAIN_INVERTED bound to: 1'b0  	Parameter PIPE_SEL bound to: FALSE - type: string  	Parameter REFCLK_FREQUENCY bound to: 200.000000 - type: double  	Parameter SIGNAL_PATTERN bound to: DATA - type: string  	Parameter SIM_DELAY_D bound to: 0 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'IDELAYE2__parameterized0' (18#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:35027] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:36196] 
+// Tcl Message: 	Parameter DRIVE bound to: 12 - type: integer  	Parameter IBUF_LOW_PWR bound to: TRUE - type: string  	Parameter IOSTANDARD bound to: DEFAULT - type: string  	Parameter SLEW bound to: SLOW - type: string  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (19#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:36196] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'serv_rf_top' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_rf_top.v:3] 
+// Tcl Message: 	Parameter RESET_PC bound to: 1'b0  	Parameter WITH_CSR bound to: 1 - type: integer  	Parameter RF_WIDTH bound to: 2 - type: integer  	Parameter RF_L2D bound to: 10 - type: integer  	Parameter CSR_REGS bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'serv_rf_ram_if' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_rf_ram_if.v:2] 
+// Tcl Message: 	Parameter width bound to: 2 - type: integer  	Parameter csr_regs bound to: 4 - type: integer  	Parameter depth bound to: 576 - type: integer  	Parameter l2w bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'serv_rf_ram_if' (20#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_rf_ram_if.v:2] INFO: [Synth 8-6157] synthesizing module 'serv_rf_ram' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_rf_ram.v:1] 
+// Tcl Message: 	Parameter width bound to: 2 - type: integer  	Parameter csr_regs bound to: 4 - type: integer  	Parameter depth bound to: 576 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'serv_rf_ram' (21#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_rf_ram.v:1] INFO: [Synth 8-6157] synthesizing module 'serv_top' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_top.v:3] 
+// Tcl Message: 	Parameter WITH_CSR bound to: 1 - type: integer  	Parameter RESET_PC bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'serv_csr' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_csr.v:2] 
+// Tcl Message: 	Parameter CSR_SOURCE_CSR bound to: 2'b00  	Parameter CSR_SOURCE_EXT bound to: 2'b01  	Parameter CSR_SOURCE_SET bound to: 2'b10  	Parameter CSR_SOURCE_CLR bound to: 2'b11  	Parameter CSR_MSCRATCH bound to: 2'b00  	Parameter CSR_MTVEC bound to: 2'b01  	Parameter CSR_MEPC bound to: 2'b10  	Parameter CSR_MTVAL bound to: 2'b11  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'serv_csr' (22#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_csr.v:2] INFO: [Synth 8-6157] synthesizing module 'serv_state' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_state.v:1] 
+// Tcl Message: 	Parameter WITH_CSR bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'serv_state' (23#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_state.v:1] INFO: [Synth 8-6157] synthesizing module 'serv_decode' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_decode.v:2] 
+// Tcl Message: 	Parameter CSR_SOURCE_CSR bound to: 2'b00  	Parameter CSR_SOURCE_EXT bound to: 2'b01  	Parameter CSR_SOURCE_SET bound to: 2'b10  	Parameter CSR_SOURCE_CLR bound to: 2'b11  	Parameter CSR_MSCRATCH bound to: 2'b00  	Parameter CSR_MTVEC bound to: 2'b01  	Parameter CSR_MEPC bound to: 2'b10  	Parameter CSR_MTVAL bound to: 2'b11  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'serv_decode' (24#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_decode.v:2] INFO: [Synth 8-6157] synthesizing module 'serv_bufreg' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_bufreg.v:1] INFO: [Synth 8-6155] done synthesizing module 'serv_bufreg' (25#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_bufreg.v:1] INFO: [Synth 8-6157] synthesizing module 'serv_ctrl' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_ctrl.v:2] 
+// Tcl Message: 	Parameter RESET_PC bound to: 1'b0  	Parameter WITH_CSR bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'serv_ctrl' (26#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_ctrl.v:2] INFO: [Synth 8-6157] synthesizing module 'serv_alu' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_alu.v:2] 
+// Tcl Message: 	Parameter BOOL_LUT bound to: 16'b1000111010010110  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'serv_shift' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_shift.v:2] INFO: [Synth 8-6155] done synthesizing module 'serv_shift' (27#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_shift.v:2] INFO: [Synth 8-6155] done synthesizing module 'serv_alu' (28#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_alu.v:2] INFO: [Synth 8-6157] synthesizing module 'serv_rf_if' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_rf_if.v:2] 
+// Tcl Message: 	Parameter WITH_CSR bound to: 1 - type: integer  	Parameter CSR_SOURCE_CSR bound to: 2'b00  	Parameter CSR_SOURCE_EXT bound to: 2'b01  	Parameter CSR_SOURCE_SET bound to: 2'b10  	Parameter CSR_SOURCE_CLR bound to: 2'b11  	Parameter CSR_MSCRATCH bound to: 2'b00  	Parameter CSR_MTVEC bound to: 2'b01  	Parameter CSR_MEPC bound to: 2'b10  	Parameter CSR_MTVAL bound to: 2'b11  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'serv_rf_if' (29#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_rf_if.v:2] INFO: [Synth 8-6157] synthesizing module 'serv_mem_if' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_mem_if.v:2] 
+// Tcl Message: 	Parameter WITH_CSR bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'serv_mem_if' (30#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_mem_if.v:2] INFO: [Synth 8-6155] done synthesizing module 'serv_top' (31#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_top.v:3] INFO: [Synth 8-6155] done synthesizing module 'serv_rf_top' (32#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/serv_1.0.2/serv_rf_top.v:3] INFO: [Synth 8-6157] synthesizing module 'PLLE2_ADV' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:61416] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'PLLE2_ADV' (33#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:61416] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'PLLE2_ADV__parameterized0' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:61416] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'PLLE2_ADV__parameterized0' (33#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:61416] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'FDPE' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:13648] 
+// Tcl Message: 	Parameter INIT bound to: 1'b1  	Parameter IS_C_INVERTED bound to: 1'b0  	Parameter IS_D_INVERTED bound to: 1'b0  	Parameter IS_PRE_INVERTED bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'FDPE' (34#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:13648] 
+// Tcl Message: INFO: [Synth 8-4471] merging register 'soc_a7ddrphy_dfi_p1_rddata_valid_reg' into 'soc_a7ddrphy_dfi_p0_rddata_valid_reg' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/litedram_core.v:3645] INFO: [Synth 8-4471] merging register 'soc_sdram_dfi_p1_cs_n_reg' into 'soc_sdram_dfi_p0_cs_n_reg' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/litedram_core.v:3665] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'litedram_core' (35#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/litedram_core.v:4] INFO: [Synth 8-6155] done synthesizing module 'litedram_top' (36#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/LiteDRAM/litedram_top.v:27] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'STARTUPE2' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:78135] 
+// Tcl Message: 	Parameter PROG_USR bound to: FALSE - type: string  	Parameter SIM_CCLK_FREQ bound to: 0.000000 - type: double  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'STARTUPE2' (37#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:78135] INFO: [Synth 8-6157] synthesizing module 'bscan_tap' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/bscanTAP/bscan_tap.sv:16] 
+// Tcl Message: 	Parameter AWIDTH bound to: 7 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'BSCANE2' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:876] 
+// Tcl Message: 	Parameter DISABLE_JTAG bound to: FALSE - type: string  	Parameter JTAG_CHAIN bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'BSCANE2' (38#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:876] INFO: [Synth 8-6157] synthesizing module 'BSCANE2__parameterized0' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:876] 
+// Tcl Message: 	Parameter DISABLE_JTAG bound to: FALSE - type: string  	Parameter JTAG_CHAIN bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'BSCANE2__parameterized0' (38#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:876] INFO: [Synth 8-6157] synthesizing module 'BSCANE2__parameterized1' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:876] 
+// Tcl Message: 	Parameter DISABLE_JTAG bound to: FALSE - type: string  	Parameter JTAG_CHAIN bound to: 3 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'BSCANE2__parameterized1' (38#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:876] INFO: [Synth 8-6155] done synthesizing module 'bscan_tap' (39#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/bscanTAP/bscan_tap.sv:16] INFO: [Synth 8-6157] synthesizing module 'swervolf_core' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/swervolf_core.v:25] 
+// Tcl Message: 	Parameter bootrom_file bound to: (null) - type: string  	Parameter BOOTROM_SIZE bound to: 4096 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'axi_intercon' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Interconnect/AxiInterconnect/axi_intercon.sv:4] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'axi_xbar' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__axi_0.23.0-r1/src/axi_xbar.sv:15] 
+// Tcl Message: 	Parameter Cfg[NoSlvPorts] bound to: 3 - type: integer  	Parameter Cfg[NoMstPorts] bound to: 2 - type: integer  	Parameter Cfg[MaxMstTrans] bound to: 10 - type: integer  	Parameter Cfg[MaxSlvTrans] bound to: 6 - type: integer  	Parameter Cfg[FallThrough] bound to: 1'b0  	Parameter Cfg[LatencyMode] bound to: 10'b1001010010  	Parameter Cfg[AxiIdWidthSlvPorts] bound to: 4 - type: integer  	Parameter Cfg[AxiIdUsedSlvPorts] bound to: 4 - type: integer  	Parameter Cfg[AxiAddrWidth] bound to: 32 - type: integer  	Parameter Cfg[AxiDataWidth] bound to: 64 - type: integer  	Parameter Cfg[NoAddrRules] bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'addr_decode' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/addr_decode.sv:43] 
+// Tcl Message: 	Parameter NoIndices bound to: 2 - type: integer  	Parameter NoRules bound to: 2 - type: integer  	Parameter IdxWidth bound to: 32'b00000000000000000000000000000001  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'addr_decode' (40#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/addr_decode.sv:43] INFO: [Synth 8-6157] synthesizing module 'axi_demux' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__axi_0.23.0-r1/src/axi_demux.sv:17] 
+// Tcl Message: 	Parameter AxiIdWidth bound to: 4 - type: integer  	Parameter NoMstPorts bound to: 32'b00000000000000000000000000000011  	Parameter MaxTrans bound to: 10 - type: integer  	Parameter AxiLookBits bound to: 4 - type: integer  	Parameter FallThrough bound to: 1'b0  	Parameter SpillAw bound to: 1'b1  	Parameter SpillW bound to: 1'b0  	Parameter SpillB bound to: 1'b0  	Parameter SpillAr bound to: 1'b1  	Parameter SpillR bound to: 1'b0  	Parameter SelectWidth bound to: 32'b00000000000000000000000000000010  	Parameter IdCounterWidth bound to: 32'b00000000000000000000000000000100  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized2' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/spill_register.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized2' (40#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/spill_register.sv:17] INFO: [Synth 8-6157] synthesizing module 'axi_demux_id_counters' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__axi_0.23.0-r1/src/axi_demux.sv:531] 
+// Tcl Message: 	Parameter AxiIdBits bound to: 4 - type: integer  	Parameter CounterWidth bound to: 32'b00000000000000000000000000000100  	Parameter NoCounters bound to: 32'b00000000000000000000000000010000  
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__axi_0.23.0-r1/src/axi_demux.sv:581] INFO: [Synth 8-6157] synthesizing module 'delta_counter' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/delta_counter.sv:13] 
+// Tcl Message: 	Parameter WIDTH bound to: 32'b00000000000000000000000000000100  	Parameter STICKY_OVERFLOW bound to: 1'b0  
+// Tcl Message: 	Parameter FALL_THROUGH bound to: 1'b0  	Parameter DATA_WIDTH bound to: 32'b00000000000000000000000000100000  	Parameter DEPTH bound to: 10 - type: integer  	Parameter ADDR_DEPTH bound to: 32'b00000000000000000000000000000100  	Parameter FIFO_DEPTH bound to: 10 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'fifo_v3' (43#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/fifo_v3.sv:13] INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized3' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/spill_register.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b1  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized3' (43#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/spill_register.sv:17] INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized4' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/spill_register.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b1  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized4' (43#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/spill_register.sv:17] INFO: [Synth 8-6157] synthesizing module 'rr_arb_tree' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/rr_arb_tree.sv:34] 
+// Tcl Message: 	Parameter NumIn bound to: 32'b00000000000000000000000000000011  	Parameter DataWidth bound to: 32'b00000000000000000000000000100000  	Parameter ExtPrio bound to: 1'b0  	Parameter AxiVldRdy bound to: 1'b1  	Parameter LockIn bound to: 1'b1  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'rr_arb_tree' (44#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/rr_arb_tree.sv:34] INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized5' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/spill_register.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized5' (44#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/spill_register.sv:17] INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized6' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/spill_register.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b1  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized6' (44#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/spill_register.sv:17] INFO: [Synth 8-6157] synthesizing module 'rr_arb_tree__parameterized0' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/rr_arb_tree.sv:34] 
+// Tcl Message: 	Parameter NumIn bound to: 32'b00000000000000000000000000000011  	Parameter DataWidth bound to: 32'b00000000000000000000000000100000  	Parameter ExtPrio bound to: 1'b0  	Parameter AxiVldRdy bound to: 1'b1  	Parameter LockIn bound to: 1'b1  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'rr_arb_tree__parameterized0' (44#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/rr_arb_tree.sv:34] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'axi_demux' (45#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__axi_0.23.0-r1/src/axi_demux.sv:17] INFO: [Synth 8-6157] synthesizing module 'axi_err_slv' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__axi_0.23.0-r1/src/axi_err_slv.sv:16] 
+// Tcl Message: 	Parameter AxiIdWidth bound to: 4 - type: integer  	Parameter Resp bound to: 2'b11  	Parameter RespWidth bound to: 64 - type: integer  	Parameter RespData bound to: 64'b1100101000010001101010110001111010111010110111001010101100011110  	Parameter ATOPs bound to: 1'b1  	Parameter MaxTrans bound to: 32'b00000000000000000000000000000100  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'axi_atop_filter' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__axi_0.23.0-r1/src/axi_atop_filter.sv:36] 
+// Tcl Message: 	Parameter AxiIdWidth bound to: 4 - type: integer  	Parameter AxiMaxWriteTxns bound to: 32'b00000000000000000000000000000100  	Parameter COUNTER_WIDTH bound to: 32'b00000000000000000000000000000011  
+// Tcl Message: 	Parameter FALL_THROUGH bound to: 1'b0  	Parameter DATA_WIDTH bound to: 32'b00000000000000000000000000001000  	Parameter DEPTH bound to: 32'b00000000000000000000000000000001  	Parameter ALM_EMPTY_TH bound to: 32'b00000000000000000000000000000001  	Parameter ALM_FULL_TH bound to: 32'b00000000000000000000000000000001  	Parameter ADDR_DEPTH bound to: 32'b00000000000000000000000000000001  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'fifo_v3__parameterized0' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/fifo_v3.sv:13] 
+// Tcl Message: 	Parameter FALL_THROUGH bound to: 1'b0  	Parameter DATA_WIDTH bound to: 32'b00000000000000000000000000001000  	Parameter DEPTH bound to: 32'b00000000000000000000000000000001  	Parameter ADDR_DEPTH bound to: 32'b00000000000000000000000000000001  	Parameter FIFO_DEPTH bound to: 32'b00000000000000000000000000000001  
+// Tcl Message: 	Parameter FALL_THROUGH bound to: 1'b1  	Parameter DATA_WIDTH bound to: 32'b00000000000000000000000000100000  	Parameter DEPTH bound to: 32'b00000000000000000000000000000100  	Parameter ADDR_DEPTH bound to: 32'b00000000000000000000000000000010  	Parameter FIFO_DEPTH bound to: 32'b00000000000000000000000000000100  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'fifo_v3__parameterized1' (48#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/fifo_v3.sv:13] INFO: [Synth 8-6157] synthesizing module 'fifo_v3__parameterized2' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/fifo_v3.sv:13] 
+// Tcl Message: 	Parameter FALL_THROUGH bound to: 1'b0  	Parameter DATA_WIDTH bound to: 32'b00000000000000000000000000100000  	Parameter DEPTH bound to: 32'b00000000000000000000000000000010  	Parameter ADDR_DEPTH bound to: 32'b00000000000000000000000000000001  	Parameter FIFO_DEPTH bound to: 32'b00000000000000000000000000000010  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'fifo_v3__parameterized2' (48#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/fifo_v3.sv:13] INFO: [Synth 8-6157] synthesizing module 'fifo_v3__parameterized3' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/fifo_v3.sv:13] 
+// Tcl Message: 	Parameter FALL_THROUGH bound to: 1'b0  	Parameter DATA_WIDTH bound to: 32'b00000000000000000000000000100000  	Parameter DEPTH bound to: 32'b00000000000000000000000000000100  	Parameter ADDR_DEPTH bound to: 32'b00000000000000000000000000000010  	Parameter FIFO_DEPTH bound to: 32'b00000000000000000000000000000100  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'fifo_v3__parameterized3' (48#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/fifo_v3.sv:13] INFO: [Synth 8-6157] synthesizing module 'counter' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/counter.sv:14] 
+// Tcl Message: 	Parameter WIDTH bound to: 32'b00000000000000000000000000001000  	Parameter STICKY_OVERFLOW bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'delta_counter__parameterized0' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/delta_counter.sv:13] 
+// Tcl Message: 	Parameter WIDTH bound to: 32'b00000000000000000000000000001000  	Parameter STICKY_OVERFLOW bound to: 1'b0  
+// Tcl Message: 	Parameter SlvAxiIDWidth bound to: 4 - type: integer  	Parameter NoSlvPorts bound to: 3 - type: integer  	Parameter MaxWTrans bound to: 6 - type: integer  	Parameter FallThrough bound to: 1'b0  	Parameter SpillAw bound to: 1'b1  	Parameter SpillW bound to: 1'b0  	Parameter SpillB bound to: 1'b0  	Parameter SpillAr bound to: 1'b1  	Parameter SpillR bound to: 1'b0  	Parameter MstIdxBits bound to: 32'b00000000000000000000000000000010  	Parameter MstAxiIDWidth bound to: 32'b00000000000000000000000000000110  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'axi_id_prepend' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__axi_0.23.0-r1/src/axi_id_prepend.sv:16] 
+// Tcl Message: 	Parameter NoBus bound to: 1 - type: integer  	Parameter AxiIdWidthSlvPort bound to: 4 - type: integer  	Parameter AxiIdWidthMstPort bound to: 32'b00000000000000000000000000000110  	Parameter PreIdWidth bound to: 32'b00000000000000000000000000000010  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'axi_id_prepend' (51#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__axi_0.23.0-r1/src/axi_id_prepend.sv:16] INFO: [Synth 8-6157] synthesizing module 'rr_arb_tree__parameterized1' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/rr_arb_tree.sv:34] 
+// Tcl Message: 	Parameter NumIn bound to: 3 - type: integer  	Parameter DataWidth bound to: 32'b00000000000000000000000000100000  	Parameter ExtPrio bound to: 1'b0  	Parameter AxiVldRdy bound to: 1'b1  	Parameter LockIn bound to: 1'b1  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'rr_arb_tree__parameterized1' (51#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/rr_arb_tree.sv:34] INFO: [Synth 8-6157] synthesizing module 'fifo_v3__parameterized4' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/fifo_v3.sv:13] 
+// Tcl Message: 	Parameter FALL_THROUGH bound to: 1'b0  	Parameter DATA_WIDTH bound to: 32'b00000000000000000000000000100000  	Parameter DEPTH bound to: 6 - type: integer  	Parameter ADDR_DEPTH bound to: 32'b00000000000000000000000000000011  	Parameter FIFO_DEPTH bound to: 6 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'fifo_v3__parameterized4' (51#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/fifo_v3.sv:13] INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized7' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/spill_register.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized7' (51#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/spill_register.sv:17] INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized8' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/spill_register.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b1  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized8' (51#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/spill_register.sv:17] INFO: [Synth 8-6157] synthesizing module 'rr_arb_tree__parameterized2' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/rr_arb_tree.sv:34] 
+// Tcl Message: 	Parameter NumIn bound to: 3 - type: integer  	Parameter DataWidth bound to: 32'b00000000000000000000000000100000  	Parameter ExtPrio bound to: 1'b0  	Parameter AxiVldRdy bound to: 1'b1  	Parameter LockIn bound to: 1'b1  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'rr_arb_tree__parameterized2' (51#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/rr_arb_tree.sv:34] INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized9' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/spill_register.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized9' (51#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/spill_register.sv:17] INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized10' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/spill_register.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b1  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized10' (51#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/spill_register.sv:17] INFO: [Synth 8-6155] done synthesizing module 'axi_mux' (52#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__axi_0.23.0-r1/src/axi_mux.sv:25] INFO: [Synth 8-6155] done synthesizing module 'axi_xbar' (53#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__axi_0.23.0-r1/src/axi_xbar.sv:15] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'axi_intercon' (54#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Interconnect/AxiInterconnect/axi_intercon.sv:4] INFO: [Synth 8-6157] synthesizing module 'wb_intercon' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_intercon.v:1] INFO: [Synth 8-6157] synthesizing module 'wb_mux' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_intercon_1.2.2/wb_mux.v:45] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'wb_mux' (55#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_intercon_1.2.2/wb_mux.v:45] INFO: [Synth 8-6155] done synthesizing module 'wb_intercon' (56#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_intercon.v:1] INFO: [Synth 8-6157] synthesizing module 'axi2wb' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Interconnect/AxiToWb/axi2wb.v:25] 
+// Tcl Message: 	Parameter AW bound to: 16 - type: integer  	Parameter STATESIZE bound to: 4 - type: integer  	Parameter IDLE bound to: 4'b0000  	Parameter AWACK bound to: 4'b0001  	Parameter WBWACK bound to: 4'b0010  	Parameter WBRACK1 bound to: 4'b0011  	Parameter WBR2 bound to: 4'b0100  	Parameter WBRACK2 bound to: 4'b0101  	Parameter BAXI bound to: 4'b0110  	Parameter RRAXI bound to: 4'b0111  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'axi2wb' (57#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Interconnect/AxiToWb/axi2wb.v:25] INFO: [Synth 8-6157] synthesizing module 'wb_mem_wrapper' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/BootROM/wb_mem_wrapper.v:25] 
+// Tcl Message: 	Parameter MEM_SIZE bound to: 4096 - type: integer  	Parameter mem_clear bound to: 0 - type: integer  	Parameter INIT_FILE bound to: (null) - type: string  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'dpram64' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/BootROM/dpram64.v:24] 
+// Tcl Message: 	Parameter SIZE bound to: 4096 - type: integer  	Parameter mem_clear bound to: 0 - type: integer  	Parameter memfile bound to: (null) - type: string  	Parameter AW bound to: 12 - type: integer  
+// Tcl Message: 	Parameter WIDTH bound to: 32'b00000000000000000000000000010100  	Parameter STICKY_OVERFLOW bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'delta_counter__parameterized1' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/delta_counter.sv:13] 
+// Tcl Message: 	Parameter WIDTH bound to: 32'b00000000000000000000000000010100  	Parameter STICKY_OVERFLOW bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'delta_counter__parameterized1' (60#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/delta_counter.sv:13] INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized0' (60#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/OtherSources/PulpPlatform/pulp-platform.org__common_cells_1.16.4/src/counter.sv:14] INFO: [Synth 8-6157] synthesizing module 'SevSegMux' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/SystemController/swervolf_syscon.v:371] 
+// Tcl Message: 	Parameter DATA_WIDTH bound to: 8 - type: integer  	Parameter N_IN bound to: 8 - type: integer  	Parameter SEL_WIDTH bound to: 3 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'SevSegMux' (61#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/SystemController/swervolf_syscon.v:371] INFO: [Synth 8-6157] synthesizing module 'SevSegMux__parameterized0' [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/SystemController/swervolf_syscon.v:371] INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. 
+// Tcl Message: 	Parameter DATA_WIDTH bound to: 4 - type: integer  	Parameter N_IN bound to: 8 - type: integer  	Parameter SEL_WIDTH bound to: 3 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'SevSegMux__parameterized0' (61#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/SystemController/swervolf_syscon.v:371] INFO: [Synth 8-6155] done synthesizing module 'SevSegDisplays_Controller' (62#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/SystemController/swervolf_syscon.v:270] INFO: [Synth 8-6155] done synthesizing module 'swervolf_syscon' (63#1) [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/SystemController/swervolf_syscon.v:26] 
+// Tcl Message: 	Parameter SS_WIDTH bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/spi/simple_spi_top.v:147] INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/spi/simple_spi_top.v:147] 
+// Tcl Message: 	Parameter dw bound to: 8 - type: integer  
+// Tcl Message: INFO: [Common 17-14] Message 'Synth 8-7023' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. 
+// Tcl Message: 	Parameter CLK_FREQUENCY_HZ bound to: 100000000 - type: integer  	Parameter DEBOUNCE_FREQUENCY_HZ bound to: 250 - type: integer  	Parameter RESET_POLARITY_LOW bound to: 1 - type: integer  	Parameter CNTR_WIDTH bound to: 32 - type: integer  	Parameter SIMULATE bound to: 0 - type: integer  	Parameter SIMULATE_FREQUENCY_CNT bound to: 5 - type: integer  	Parameter pb0_in bound to: 4'b0001  
+// Tcl Message: 	Parameter dw bound to: 32 - type: integer  	Parameter aw bound to: 8 - type: integer  	Parameter gw bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/gpio/gpio_top.v:987] INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/gpio/gpio_top.v:987] 
+// Tcl Message: 	Parameter dw bound to: 32 - type: integer  	Parameter aw bound to: 16 - type: integer  	Parameter cw bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/ptc/ptc_top.v:311] INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/Peripherals/ptc/ptc_top.v:311] 
+// Tcl Message: INFO: [Synth 8-226] default block is never used [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/SweRVolfSoC/SweRVEh1CoreComplex/ifu/ifu_bp_ctl.sv:1075] 
+// Tcl Message: INFO: [Synth 8-3876] $readmem data file 'crash-motion.mem' is read successfully [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/rojobot-solution-files/ram_block.v:23] 
+// Tcl Message: INFO: [Synth 8-226] default block is never used [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/rojobot-solution-files/robot_icon_v2.v:155] 
+// Tcl Message: INFO: [Synth 8-3876] $readmem data file 'crash-title-with-names.mem' is read successfully [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/rojobot-solution-files/ram_block.v:23] 
+// Tcl Message: INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/rojobot-solution-files/rojobot_controller.v:246] INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/rojobot-solution-files/rojobot_controller.v:262] 
+// Tcl Message: INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 3853.520 ; gain = 761.742 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 3872.211 ; gain = 780.434 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 3872.211 ; gain = 780.434 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3895.781 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 130 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2019.2 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers. INFO: [Opt 31-141] Inserted 25 OBUFs to IO ports without IO buffers. 
+// Tcl Message: INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/rvfpga_propImpl.xdc]. Resolution: To avoid this warning, move constraints listed in [.Xil/rvfpga_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis. INFO: [Timing 38-2] Deriving generated clocks 
+// Tcl Message: Parsing XDC File [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/liteDRAM.xdc] Finished Parsing XDC File [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/liteDRAM.xdc] 
+// Tcl Message: INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/liteDRAM.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/rvfpga_propImpl.xdc]. Resolution: To avoid this warning, move constraints listed in [.Xil/rvfpga_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis. 
+// Tcl Message: Parsing XDC File [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/rvfpga.xdc] 
+// Tcl Message: INFO: [Timing 38-2] Deriving generated clocks [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/rvfpga.xdc:113] 
+// Tcl Message: Finished Parsing XDC File [C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/src/rvfpga.xdc] Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 4144.680 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 76 instances were transformed.   IOBUF => IOBUF (IBUF, OBUFT): 16 instances   IOBUFDS => IOBUFDS (IBUFDS, INV, OBUFTDS(x2)): 2 instances   LUT6_2 => LUT6_2 (LUT5, LUT6): 50 instances   OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 1 instance    PLLE2_BASE => PLLE2_ADV: 1 instance    RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 4 instances   RAM64M => RAM64M (RAMD64E(x4)): 2 instances  
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 2.2s
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:01:03 ; elapsed = 00:00:51 . Memory (MB): peak = 4170.418 ; gain = 1078.641 
+// Tcl Message: 322 Infos, 373 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:01:13 ; elapsed = 00:01:03 . Memory (MB): peak = 4170.418 ; gain = 1201.223 
+// 'dQ' command handler elapsed time: 62 seconds
+// Elapsed time: 63 seconds
+dismissDialog("Open Elaborated Design"); // bB (cr)
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[rvfpga, swervolf (swervolf_core)]", 7); // bD (O, cr)
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[rvfpga, swervolf (swervolf_core), rojobot_control (rojobot_controller)]", 53); // bD (O, cr)
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[rvfpga, swervolf (swervolf_core), rojobot_control (rojobot_controller), robot (rojobot31_0)]", 59, false); // bD (O, cr)
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[rvfpga, swervolf (swervolf_core), rojobot_control (rojobot_controller), robot (rojobot31_0)]", 59, false, false, false, false, true, false); // bD (O, cr) - Popup Trigger
+selectMenu(PAResourceItoN.InstanceMenu_FLOORPLANNING, "Floorplanning"); // af (ao, cr)
+selectMenu(PAResourceOtoP.PrimitivesMenu_HIGHLIGHT_LEAF_CELLS, "Highlight Leaf Cells"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // af (ao, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_SCHEMATIC, "Schematic"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+selectView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic", 907, 268, 1856, 999, false, false, false, true, false); // f (i, cr) - Popup Trigger
+selectMenu(PAResourceItoN.InstanceMenu_FLOORPLANNING, "Floorplanning"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SchMenuAndMouse_EXPAND_CONE, "Expand Cone"); // af (ao, cr)
+selectMenu(PAResourceItoN.NetlistSchMenuAndMouse_EXPAND_COLLAPSE, "Expand/Collapse"); // af (ao, cr)
+selectMenu(PAResourceItoN.NetlistSchMenuAndMouse_EXPAND_COLLAPSE, "Expand/Collapse"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SchMenuAndMouse_EXPAND_CONE, "Expand Cone"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // af (ao, cr)
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[rvfpga, swervolf (swervolf_core), rojobot_control (rojobot_controller), robot (rojobot31_0)]", 59); // bD (O, cr)
+// [GUI Memory]: 237 MB (+2336kb) [07:45:04]
+// Elapsed time: 60 seconds
+selectView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic", 844, 180, 1856, 999, false, false, false, true, false); // f (i, cr) - Popup Trigger
+selectMenu(PAResourceItoN.InstanceMenu_FLOORPLANNING, "Floorplanning"); // af (ao, cr)
+selectMenu(PAResourceOtoP.PrimitivesMenu_HIGHLIGHT_LEAF_CELLS, "Highlight Leaf Cells"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SchMenuAndMouse_EXPAND_CONE, "Expand Cone"); // af (ao, cr)
+selectMenuItem(PAResourceQtoS.SchMenuAndMouse_REMOVE_SELECTED_ITEMS_FROM_SCHEMATIC, "Remove Selected Items from Schematic"); // ai (ao, cr)
+selectButton(PAResourceQtoS.SchematicView_PREVIOUS, "Schematic_previousview"); // E (f, cr)
+selectView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic", 845, 179, 1856, 999, false, false, false, true, false); // f (i, cr) - Popup Trigger
+selectView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic", 753, 353, 1856, 999, false, false, false, true, false); // f (i, cr) - Popup Trigger
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[rvfpga, swervolf (swervolf_core), rojobot_control (rojobot_controller), robot (rojobot31_0), inst (rojobot31_0_rojobot31), BOTCPU (rojobot31_0_kcpsm6)]", 63, false, false, false, false, true, false); // bD (O, cr) - Popup Trigger
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[rvfpga, swervolf (swervolf_core), rojobot_control (rojobot_controller), robot (rojobot31_0), inst (rojobot31_0_rojobot31)]", 61, true, false, false, false, true, false); // bD (O, cr) - Popup Trigger - Node
+selectMenu(PAResourceItoN.InstanceMenu_FLOORPLANNING, "Floorplanning"); // af (ao, cr)
+selectMenu(PAResourceOtoP.PrimitivesMenu_HIGHLIGHT_LEAF_CELLS, "Highlight Leaf Cells"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // af (ao, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_SCHEMATIC, "Schematic"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[rvfpga, swervolf (swervolf_core), rojobot_control (rojobot_controller), robot (rojobot31_0), inst (rojobot31_0_rojobot31), BOTCPU (rojobot31_0_kcpsm6)]", 63, false, false, false, false, true, false); // bD (O, cr) - Popup Trigger
+selectMenu(PAResourceItoN.InstanceMenu_FLOORPLANNING, "Floorplanning"); // af (ao, cr)
+selectMenu(PAResourceOtoP.PrimitivesMenu_HIGHLIGHT_LEAF_CELLS, "Highlight Leaf Cells"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // af (ao, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_SCHEMATIC, "Schematic"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+// Elapsed time: 125 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aL (aI, cr)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cr)
+closeTask("RTL Analysis", "Elaborated Design", "DesignTask.RTL_PLANNING");
+// bB (cr):  Close : addNotify
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 4,066 MB. GUI used memory: 167 MB. Current time: 12/8/20, 8:05:51 PM PST
+// Engine heap size: 4,066 MB. GUI used memory: 168 MB. Current time: 12/8/20, 8:05:51 PM PST
+// WARNING: HEventQueue.dispatchEvent() is taking  1232 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Close"); // bB (cr)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, rojobot31_0]", 2); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, rojobot31_0]", 2, true, false, false, false, true, false); // B (F, cr) - Popup Trigger - Node
+// Elapsed time: 65 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, rojobot31_0]", 2); // B (F, cr)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, rojobot31_0]", 2); // B (F, cr)
+// Elapsed time: 76 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, rojobot31_0]", 2, true, false, false, false, true, false); // B (F, cr) - Popup Trigger - Node
+// Elapsed time: 45 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, rojobot31_0]", 2, true, false, false, false, true, false); // B (F, cr) - Popup Trigger - Node
+// Elapsed time: 62 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, rojobot31_0]", 2, true, false, false, false, true, false); // B (F, cr) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
+// k (cr): Edit in IP Packager: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (k)
+// bB (cr):  Edit in IP Packager : addNotify
+selectButton("OptionPane.button", "OK"); // JButton (A, H)
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name rojobot31_v1_0_project -directory C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.tmp/rojobot31_v1_0_project c:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/ece540_ip_repo/rojobot31/component.xml 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'c:/users/rromano/documents/github/nexys-a7-sidescroller-game/project_1/project_1.tmp/rojobot31_v1_0_project' 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  1455 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// Tcl Message: create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 4176.379 ; gain = 0.000 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/ece540_ip_repo/rojobot31'. INFO: [IP_Flow 19-795] Syncing license key meta-data 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::edit_ip_in_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 4176.379 ; gain = 0.000 
+// 'i' command handler elapsed time: 11 seconds
+dismissDialog("Edit in IP Packager"); // bB (cr)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 46 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rojobot31 (bot31_top.v)]", 1); // B (F, cr)
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rojobot31 (bot31_top.v), BOTREGIF : bot31_if (bot31_if.v)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rojobot31 (bot31_top.v), BOTREGIF : bot31_if (bot31_if.v)]", 4, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rojobot31 (bot31_top.v)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rojobot31 (bot31_top.v)]", 1, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+// Elapsed time: 80 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bot31_if.v", 2); // i (h, cr)
+// Elapsed time: 331 seconds
+selectCodeEditor("bot31_if.v", 35, 158); // ch (w, cr)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (f, cr)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+closeMainWindow("rojobot31_v1_0_project - [c:/users/rromano/documents/github/nexys-a7-sidescroller-game/project_1/project_1.tmp/rojobot31_v1_0_project/rojobot31_v1_0_project.xpr] - Vivado 2019.2"); // cr
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// bB (cr):  Close Project : addNotify
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 4,066 MB. GUI used memory: 163 MB. Current time: 12/8/20, 8:18:31 PM PST
+// Tcl Message: close_project 
+dismissDialog("Close Project"); // bB (cr)
+// Elapsed time: 42 seconds
+selectButton(PAResourceOtoP.PlanAheadTab_REFRESH_IP_CATALOG, "Refresh IP Catalog"); // h (ds, cr)
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild -scan_changes 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/ece540_ip_repo/rojobot31'. 
+// bB (cr):  Refresh IP Catalog : addNotify
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status 
+dismissDialog("Refresh IP Catalog"); // bB (cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 162 MB. Current time: 12/8/20, 8:19:17 PM PST
+// Elapsed time: 85 seconds
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a (g, cr)
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// af (cr): Enable Core Container: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (af)
+// TclEventType: RUN_MODIFY
+dismissDialog("Enable Core Container"); // af (cr)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// bB (cr):  Upgrade IP : addNotify
+// Tcl Message: upgrade_ip -srcset rojobot31_0 -vlnv ece.pdx.edu:user:rojobot31:1.0 [get_ips  rojobot31_0] -log ip_upgrade.log 
+// Tcl Message: Upgrading 'rojobot31_0' 
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [Project 1-386] Moving file 'C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/rojobot31_0/rojobot31_0.xci' from fileset 'rojobot31_0' to fileset 'sources_1'. INFO: [IP_Flow 19-1972] Upgraded rojobot31_0 from rojobot31_v1_0 1.0 to rojobot31_v1_0 1.0 INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'rojobot31_0'... INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/ip_upgrade.log'. 
+// Tcl Message: export_ip_user_files -of_objects [get_ips rojobot31_0] -no_script -sync -force -quiet 
+dismissDialog("Upgrade IP"); // bB (cr)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 16 seconds
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // h (ds, cr)
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+// Elapsed time: 32 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, rojobot31_0]", 2, true, false, false, false, true, false); // B (F, cr) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_GENERATE_COMPOSITE_FILE, "Generate Output Products..."); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_GENERATE_COMPOSITE_FILE
+// aI (cr): Generate Output Products: addNotify
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_CLOSE_DIALOG_UNSAVED_CHANGES_WILL, "Cancel"); // a (aI)
+// 'bq' command handler elapsed time: 3 seconds
+dismissDialog("Generate Output Products"); // aI (cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bB (cr):  Starting Design Runs : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'rojobot31_0'... 
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Dec  8 20:21:45 2020] Launched rojobot31_0_synth_1... Run output will be captured here: C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/rojobot31_0_synth_1/runme.log [Tue Dec  8 20:21:45 2020] Launched synth_1... Run output will be captured here: C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // h (ds, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // i (h, cr)
+closeFrame(PAResourceOtoP.PAViews_REPORTS, "Reports"); // aA (aL, cr)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// [GUI Memory]: 249 MB (+146kb) [08:05:08]
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// [GUI Memory]: 265 MB (+3228kb) [08:12:02]
+// Elapsed time: 888 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, rojobot31_0]", 2); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, rojobot31_0]", 2, true, false, false, false, true, false); // B (F, cr) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
+// k (cr): Edit in IP Packager: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (k)
+// bB (cr):  Edit in IP Packager : addNotify
+selectButton("OptionPane.button", "OK"); // JButton (A, H)
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name rojobot31_v1_0_project -directory C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.tmp/rojobot31_v1_0_project c:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/ece540_ip_repo/rojobot31/component.xml 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'c:/users/rromano/documents/github/nexys-a7-sidescroller-game/project_1/project_1.tmp/rojobot31_v1_0_project' 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  1437 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// Tcl Message: create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 4332.883 ; gain = 0.000 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/ece540_ip_repo/rojobot31'. INFO: [IP_Flow 19-795] Syncing license key meta-data 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::edit_ip_in_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 4332.883 ; gain = 0.000 
+// 'i' command handler elapsed time: 8 seconds
+dismissDialog("Edit in IP Packager"); // bB (cr)
+// [GUI Memory]: 282 MB (+4037kb) [08:19:28]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rojobot31 (bot31_top.v)]", 1); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rojobot31 (bot31_top.v), BOTSIMPGM : bot31_pgm (bot31_pgm.v)]", 3, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_REPLACE_FILE, "Replace File..."); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_SRC_REPLACE_FILE
+dismissFileChooser();
+// 'dI' command handler elapsed time: 7 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rojobot31 (bot31_top.v), BOTSIMPGM : bot31_pgm (bot31_pgm.v)]", 3, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "Source Node Properties..."); // ai (ao, cr)
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+// Elapsed time: 26 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rojobot31 (bot31_top.v), BOTSIMPGM : bot31_pgm (bot31_pgm.v)]", 3, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 174 MB. Current time: 12/8/20, 8:49:18 PM PST
+// Elapsed time: 814 seconds
+closeMainWindow("rojobot31_v1_0_project - [c:/users/rromano/documents/github/nexys-a7-sidescroller-game/project_1/project_1.tmp/rojobot31_v1_0_project/rojobot31_v1_0_project.xpr] - Vivado 2019.2"); // cr
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// bB (cr):  Close Project : addNotify
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 162 MB. Current time: 12/8/20, 8:51:34 PM PST
+// Tcl Message: close_project 
+dismissDialog("Close Project"); // bB (cr)
+// Elapsed time: 29 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 24, true); // u (O, cr) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bB (cr):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_hw_manager 
+dismissDialog("Open Hardware Manager"); // bB (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (ds, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bB (cr):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2019.2   **** Build date : Nov  6 2019 at 22:12:23     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 
+// Tcl Message: INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ****** Xilinx cs_server v2019.2.0   **** Build date : Nov 06 2019-21:28:22     ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.    
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 4332.883 ; gain = 0.000 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AE38EAA 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// Elapsed time: 13 seconds
+dismissDialog("Auto Connect"); // bB (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, (String) null); // t (an, bC)
+// Elapsed time: 30 seconds
+selectComboBox(RDIResource.HJFileChooserRecentListPreview_RECENT_DIRECTORIES, "C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/impl_1", 1); // ak (ag, JDialog)
+selectComboBox(RDIResource.HJFileChooserRecentListPreview_RECENT_DIRECTORIES, "C:/Users/rromano/Documents/GitHub/proj2-rojobot-keerthan1994/fpga_code/rojobot/rojobot.srcs/sources_1/new", 3); // ak (ag, JDialog)
+// Elapsed time: 234 seconds
+dismissFileChooser();
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (bC)
+// 'I' command handler elapsed time: 280 seconds
+dismissDialog("Program Device"); // bC (cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 23, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bB (cr):  Resetting Runs : addNotify
+dismissDialog("Resetting Runs"); // bB (cr)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// bB (cr):  Generate Bitstream : addNotify
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Tue Dec  8 20:57:11 2020] Launched impl_1... Run output will be captured here: C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 165 MB. Current time: 12/8/20, 9:21:38 PM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/8/20, 9:51:38 PM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/8/20, 10:21:38 PM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/8/20, 10:51:39 PM PST
+// Elapsed time: 8324 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cr)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/impl_1/rvfpga.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 6 seconds
+dismissDialog("Program Device"); // bB (cr)
+// Elapsed time: 14 seconds
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // h (ds, cr)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292AE38EAA 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/8/20, 11:21:39 PM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/8/20, 11:51:39 PM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/9/20, 12:21:39 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/9/20, 12:51:40 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/9/20, 1:21:40 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/9/20, 1:51:40 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/9/20, 2:21:41 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/9/20, 2:51:41 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/9/20, 3:21:41 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/9/20, 3:51:41 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/9/20, 4:21:42 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/9/20, 4:51:44 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/9/20, 5:21:44 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/9/20, 5:51:44 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/9/20, 6:21:44 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/9/20, 6:51:45 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/9/20, 7:21:45 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/9/20, 7:51:45 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/9/20, 8:21:46 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/9/20, 8:51:46 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/9/20, 9:21:46 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/9/20, 9:51:46 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/9/20, 10:21:47 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/9/20, 10:51:47 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/9/20, 11:21:47 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 136 MB. Current time: 12/9/20, 11:51:48 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 136 MB. Current time: 12/9/20, 12:21:48 PM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 136 MB. Current time: 12/9/20, 12:51:48 PM PST
+// Elapsed time: 49023 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cr)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// bB (cr):  Close Hardware Manager : addNotify
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SESSION_CLOSE
+// WARNING: HEventQueue.dispatchEvent() is taking  1008 ms.
+// Tcl Message: close_hw_manager 
+dismissDialog("Close Hardware Manager"); // bB (cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, rojobot31_0]", 2, true, false, false, false, true, false); // B (F, cr) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
+// k (cr): Edit in IP Packager: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (k)
+// bB (cr):  Edit in IP Packager : addNotify
+selectButton("OptionPane.button", "OK"); // JButton (A, H)
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name rojobot31_v1_0_project -directory C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.tmp/rojobot31_v1_0_project c:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/ece540_ip_repo/rojobot31/component.xml 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'c:/users/rromano/documents/github/nexys-a7-sidescroller-game/project_1/project_1.tmp/rojobot31_v1_0_project' 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  1397 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// Tcl Message: create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 4332.883 ; gain = 0.000 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/ece540_ip_repo/rojobot31'. INFO: [IP_Flow 19-795] Syncing license key meta-data 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::edit_ip_in_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 4332.883 ; gain = 0.000 
+// 'i' command handler elapsed time: 11 seconds
+dismissDialog("Edit in IP Packager"); // bB (cr)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rojobot31 (bot31_top.v)]", 1); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rojobot31 (bot31_top.v), BOTSIMPGM : bot31_pgm (bot31_pgm.v)]", 3, false); // B (F, cr)
+setText(PAResourceQtoS.SrcFilePropPanels_LOCATION, "c:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/ece540_ip_repo/rojobot31/src"); // ac (Q, cr)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 20 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cr)
+closeTask("Project Manager", "Project Manager", "DesignTask.PROJECT_MANAGER");
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// bB (cr):  Close Project : addNotify
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 173 MB. Current time: 12/9/20, 12:54:16 PM PST
+// Tcl Message: close_project 
+dismissDialog("Close Project"); // bB (cr)
+selectButton(PAResourceOtoP.PlanAheadTab_REFRESH_IP_CATALOG, "Refresh IP Catalog"); // h (ds, cr)
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild -scan_changes 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/ece540_ip_repo/rojobot31'. 
+// bB (cr):  Refresh IP Catalog : addNotify
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status 
+dismissDialog("Refresh IP Catalog"); // bB (cr)
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a (g, cr)
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// af (cr): Enable Core Container: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (af)
+// TclEventType: RUN_MODIFY
+dismissDialog("Enable Core Container"); // af (cr)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// Tcl Message: upgrade_ip -srcset rojobot31_0 -vlnv ece.pdx.edu:user:rojobot31:1.0 [get_ips  rojobot31_0] -log ip_upgrade.log 
+// Tcl Message: Upgrading 'rojobot31_0' 
+// TclEventType: RUN_DELETE
+// bB (cr):  Upgrade IP : addNotify
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [Project 1-386] Moving file 'C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/rojobot31_0/rojobot31_0.xci' from fileset 'rojobot31_0' to fileset 'sources_1'. INFO: [IP_Flow 19-1972] Upgraded rojobot31_0 from rojobot31_v1_0 1.0 to rojobot31_v1_0 1.0 INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'rojobot31_0'... INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/ip_upgrade.log'. 
+// Tcl Message: export_ip_user_files -of_objects [get_ips rojobot31_0] -no_script -sync -force -quiet 
+dismissDialog("Upgrade IP"); // bB (cr)
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // h (ds, cr)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // h (ds, cr)
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bB (cr):  Starting Design Runs : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'rojobot31_0'... 
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Wed Dec  9 12:54:34 2020] Launched rojobot31_0_synth_1, synth_1... Run output will be captured here: rojobot31_0_synth_1: C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/rojobot31_0_synth_1/runme.log synth_1: C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/synth_1/runme.log [Wed Dec  9 12:54:34 2020] Launched impl_1... Run output will be captured here: C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 4,151 MB. GUI used memory: 174 MB. Current time: 12/9/20, 12:55:18 PM PST
+// Elapsed time: 130 seconds
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, cr)
+// bB (cr):  Resetting Runs : addNotify
+selectButton("OptionPane.button", "Cancel Process"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bB (cr)
+// Elapsed time: 56 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, rojobot31_0]", 2, true, false, false, false, true, false); // B (F, cr) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
+// k (cr): Edit in IP Packager: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (k)
+// bB (cr):  Edit in IP Packager : addNotify
+selectButton("OptionPane.button", "OK"); // JButton (A, H)
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name rojobot31_v1_0_project -directory C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.tmp/rojobot31_v1_0_project c:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/ece540_ip_repo/rojobot31/component.xml 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'c:/users/rromano/documents/github/nexys-a7-sidescroller-game/project_1/project_1.tmp/rojobot31_v1_0_project' 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  1349 ms.
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// Tcl Message: create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 4443.016 ; gain = 0.000 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/ece540_ip_repo/rojobot31'. INFO: [IP_Flow 19-795] Syncing license key meta-data 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::edit_ip_in_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 4443.016 ; gain = 0.000 
+// 'i' command handler elapsed time: 7 seconds
+dismissDialog("Edit in IP Packager"); // bB (cr)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rojobot31 (bot31_top.v)]", 1); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rojobot31 (bot31_top.v), BOTREGIF : bot31_if (bot31_if.v)]", 4, false); // B (F, cr)
+setText(PAResourceQtoS.SrcFilePropPanels_LOCATION, "c:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/ece540_ip_repo/rojobot31/src"); // ac (Q, cr)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 20 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cr)
+closeTask("Project Manager", "Project Manager", "DesignTask.PROJECT_MANAGER");
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// bB (cr):  Close Project : addNotify
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 4,151 MB. GUI used memory: 172 MB. Current time: 12/9/20, 12:58:26 PM PST
+// Tcl Message: close_project 
+dismissDialog("Close Project"); // bB (cr)
+selectButton(PAResourceOtoP.PlanAheadTab_REFRESH_IP_CATALOG, "Refresh IP Catalog"); // h (ds, cr)
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild -scan_changes 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/ece540_ip_repo/rojobot31'. 
+// TclEventType: IP_SUMMARY_RESULTS
+// bB (cr):  Refresh IP Catalog : addNotify
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status 
+dismissDialog("Refresh IP Catalog"); // bB (cr)
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a (g, cr)
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// af (cr): Enable Core Container: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (af)
+// TclEventType: RUN_MODIFY
+dismissDialog("Enable Core Container"); // af (cr)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// bB (cr):  Upgrade IP : addNotify
+// TclEventType: RUN_DELETE
+// Tcl Message: upgrade_ip -srcset rojobot31_0 -vlnv ece.pdx.edu:user:rojobot31:1.0 [get_ips  rojobot31_0] -log ip_upgrade.log 
+// Tcl Message: Upgrading 'rojobot31_0' 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [Project 1-386] Moving file 'C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/rojobot31_0/rojobot31_0.xci' from fileset 'rojobot31_0' to fileset 'sources_1'. INFO: [IP_Flow 19-1972] Upgraded rojobot31_0 from rojobot31_v1_0 1.0 to rojobot31_v1_0 1.0 INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'rojobot31_0'... INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/ip_upgrade.log'. 
+// Tcl Message: export_ip_user_files -of_objects [get_ips rojobot31_0] -no_script -sync -force -quiet 
+dismissDialog("Upgrade IP"); // bB (cr)
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // h (ds, cr)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // h (ds, cr)
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bB (cr):  Starting Design Runs : addNotify
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'rojobot31_0'... 
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Dec  9 12:58:47 2020] Launched rojobot31_0_synth_1, synth_1... Run output will be captured here: rojobot31_0_synth_1: C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/rojobot31_0_synth_1/runme.log synth_1: C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/synth_1/runme.log [Wed Dec  9 12:58:48 2020] Launched impl_1... Run output will be captured here: C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 6 seconds
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Implementation Completed: addNotify
+// Elapsed time: 1126 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+dismissDialog("Implementation Completed"); // aj (cr)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bB (cr):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Wed Dec  9 13:17:35 2020] Launched impl_1... Run output will be captured here: C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 288 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 25, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bB (cr):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_hw_manager 
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+dismissDialog("Open Hardware Manager"); // bB (cr)
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// bB (cr):  Auto Connect : addNotify
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2019.2   **** Build date : Nov  6 2019 at 22:12:23     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 
+// Tcl Message: INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ****** Xilinx cs_server v2019.2.0   **** Build date : Nov 06 2019-21:28:22     ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.    
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 4443.016 ; gain = 0.000 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AE38EAA 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/impl_1/rvfpga.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bB (cr)
+// Elapsed time: 10 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cr)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/impl_1/rvfpga.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bB (cr)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292AE38EAA 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// HMemoryUtils.trashcanNow. Engine heap size: 4,151 MB. GUI used memory: 184 MB. Current time: 12/9/20, 1:28:29 PM PST

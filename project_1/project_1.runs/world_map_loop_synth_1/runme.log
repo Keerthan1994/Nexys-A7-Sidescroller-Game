@@ -1,0 +1,4 @@
+
+*** Running vivado
+    with args -log world_map_loop.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source world_map_loop.tcl
+
