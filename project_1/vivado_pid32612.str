@@ -1835,3 +1835,439 @@ selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // h (ds, cr)
 // Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292AE38EAA 
 // TclEventType: HW_TARGET_NEEDS_CLOSE
 // TclEventType: HW_SERVER_UPDATE
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/8/20, 11:21:39 PM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/8/20, 11:51:39 PM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/9/20, 12:21:39 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/9/20, 12:51:40 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/9/20, 1:21:40 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/9/20, 1:51:40 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/9/20, 2:21:41 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/9/20, 2:51:41 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/9/20, 3:21:41 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/9/20, 3:51:41 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/9/20, 4:21:42 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/9/20, 4:51:44 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/9/20, 5:21:44 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/9/20, 5:51:44 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/9/20, 6:21:44 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/9/20, 6:51:45 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/9/20, 7:21:45 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/9/20, 7:51:45 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/9/20, 8:21:46 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/9/20, 8:51:46 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/9/20, 9:21:46 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/9/20, 9:51:46 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/9/20, 10:21:47 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/9/20, 10:51:47 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 164 MB. Current time: 12/9/20, 11:21:47 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 136 MB. Current time: 12/9/20, 11:51:48 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 136 MB. Current time: 12/9/20, 12:21:48 PM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 136 MB. Current time: 12/9/20, 12:51:48 PM PST
+// Elapsed time: 49023 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cr)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// bB (cr):  Close Hardware Manager : addNotify
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SESSION_CLOSE
+// WARNING: HEventQueue.dispatchEvent() is taking  1008 ms.
+// Tcl Message: close_hw_manager 
+dismissDialog("Close Hardware Manager"); // bB (cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, rojobot31_0]", 2, true, false, false, false, true, false); // B (F, cr) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
+// k (cr): Edit in IP Packager: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (k)
+// bB (cr):  Edit in IP Packager : addNotify
+selectButton("OptionPane.button", "OK"); // JButton (A, H)
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name rojobot31_v1_0_project -directory C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.tmp/rojobot31_v1_0_project c:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/ece540_ip_repo/rojobot31/component.xml 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'c:/users/rromano/documents/github/nexys-a7-sidescroller-game/project_1/project_1.tmp/rojobot31_v1_0_project' 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  1397 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// Tcl Message: create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 4332.883 ; gain = 0.000 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/ece540_ip_repo/rojobot31'. INFO: [IP_Flow 19-795] Syncing license key meta-data 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::edit_ip_in_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 4332.883 ; gain = 0.000 
+// 'i' command handler elapsed time: 11 seconds
+dismissDialog("Edit in IP Packager"); // bB (cr)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rojobot31 (bot31_top.v)]", 1); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rojobot31 (bot31_top.v), BOTSIMPGM : bot31_pgm (bot31_pgm.v)]", 3, false); // B (F, cr)
+setText(PAResourceQtoS.SrcFilePropPanels_LOCATION, "c:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/ece540_ip_repo/rojobot31/src"); // ac (Q, cr)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 20 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cr)
+closeTask("Project Manager", "Project Manager", "DesignTask.PROJECT_MANAGER");
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// bB (cr):  Close Project : addNotify
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 4,095 MB. GUI used memory: 173 MB. Current time: 12/9/20, 12:54:16 PM PST
+// Tcl Message: close_project 
+dismissDialog("Close Project"); // bB (cr)
+selectButton(PAResourceOtoP.PlanAheadTab_REFRESH_IP_CATALOG, "Refresh IP Catalog"); // h (ds, cr)
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild -scan_changes 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/ece540_ip_repo/rojobot31'. 
+// bB (cr):  Refresh IP Catalog : addNotify
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status 
+dismissDialog("Refresh IP Catalog"); // bB (cr)
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a (g, cr)
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// af (cr): Enable Core Container: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (af)
+// TclEventType: RUN_MODIFY
+dismissDialog("Enable Core Container"); // af (cr)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// Tcl Message: upgrade_ip -srcset rojobot31_0 -vlnv ece.pdx.edu:user:rojobot31:1.0 [get_ips  rojobot31_0] -log ip_upgrade.log 
+// Tcl Message: Upgrading 'rojobot31_0' 
+// TclEventType: RUN_DELETE
+// bB (cr):  Upgrade IP : addNotify
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [Project 1-386] Moving file 'C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/rojobot31_0/rojobot31_0.xci' from fileset 'rojobot31_0' to fileset 'sources_1'. INFO: [IP_Flow 19-1972] Upgraded rojobot31_0 from rojobot31_v1_0 1.0 to rojobot31_v1_0 1.0 INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'rojobot31_0'... INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/ip_upgrade.log'. 
+// Tcl Message: export_ip_user_files -of_objects [get_ips rojobot31_0] -no_script -sync -force -quiet 
+dismissDialog("Upgrade IP"); // bB (cr)
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // h (ds, cr)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // h (ds, cr)
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bB (cr):  Starting Design Runs : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'rojobot31_0'... 
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Wed Dec  9 12:54:34 2020] Launched rojobot31_0_synth_1, synth_1... Run output will be captured here: rojobot31_0_synth_1: C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/rojobot31_0_synth_1/runme.log synth_1: C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/synth_1/runme.log [Wed Dec  9 12:54:34 2020] Launched impl_1... Run output will be captured here: C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 4,151 MB. GUI used memory: 174 MB. Current time: 12/9/20, 12:55:18 PM PST
+// Elapsed time: 130 seconds
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, cr)
+// bB (cr):  Resetting Runs : addNotify
+selectButton("OptionPane.button", "Cancel Process"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bB (cr)
+// Elapsed time: 56 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, rojobot31_0]", 2, true, false, false, false, true, false); // B (F, cr) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
+// k (cr): Edit in IP Packager: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (k)
+// bB (cr):  Edit in IP Packager : addNotify
+selectButton("OptionPane.button", "OK"); // JButton (A, H)
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name rojobot31_v1_0_project -directory C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.tmp/rojobot31_v1_0_project c:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/ece540_ip_repo/rojobot31/component.xml 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'c:/users/rromano/documents/github/nexys-a7-sidescroller-game/project_1/project_1.tmp/rojobot31_v1_0_project' 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  1349 ms.
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// Tcl Message: create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 4443.016 ; gain = 0.000 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/ece540_ip_repo/rojobot31'. INFO: [IP_Flow 19-795] Syncing license key meta-data 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::edit_ip_in_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 4443.016 ; gain = 0.000 
+// 'i' command handler elapsed time: 7 seconds
+dismissDialog("Edit in IP Packager"); // bB (cr)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rojobot31 (bot31_top.v)]", 1); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rojobot31 (bot31_top.v), BOTREGIF : bot31_if (bot31_if.v)]", 4, false); // B (F, cr)
+setText(PAResourceQtoS.SrcFilePropPanels_LOCATION, "c:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/ece540_ip_repo/rojobot31/src"); // ac (Q, cr)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 20 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cr)
+closeTask("Project Manager", "Project Manager", "DesignTask.PROJECT_MANAGER");
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// bB (cr):  Close Project : addNotify
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 4,151 MB. GUI used memory: 172 MB. Current time: 12/9/20, 12:58:26 PM PST
+// Tcl Message: close_project 
+dismissDialog("Close Project"); // bB (cr)
+selectButton(PAResourceOtoP.PlanAheadTab_REFRESH_IP_CATALOG, "Refresh IP Catalog"); // h (ds, cr)
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild -scan_changes 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/fpga_code/ece540_ip_repo/rojobot31'. 
+// TclEventType: IP_SUMMARY_RESULTS
+// bB (cr):  Refresh IP Catalog : addNotify
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status 
+dismissDialog("Refresh IP Catalog"); // bB (cr)
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a (g, cr)
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// af (cr): Enable Core Container: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (af)
+// TclEventType: RUN_MODIFY
+dismissDialog("Enable Core Container"); // af (cr)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// bB (cr):  Upgrade IP : addNotify
+// TclEventType: RUN_DELETE
+// Tcl Message: upgrade_ip -srcset rojobot31_0 -vlnv ece.pdx.edu:user:rojobot31:1.0 [get_ips  rojobot31_0] -log ip_upgrade.log 
+// Tcl Message: Upgrading 'rojobot31_0' 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [Project 1-386] Moving file 'C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/rojobot31_0/rojobot31_0.xci' from fileset 'rojobot31_0' to fileset 'sources_1'. INFO: [IP_Flow 19-1972] Upgraded rojobot31_0 from rojobot31_v1_0 1.0 to rojobot31_v1_0 1.0 INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'rojobot31_0'... INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/ip_upgrade.log'. 
+// Tcl Message: export_ip_user_files -of_objects [get_ips rojobot31_0] -no_script -sync -force -quiet 
+dismissDialog("Upgrade IP"); // bB (cr)
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // h (ds, cr)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // h (ds, cr)
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bB (cr):  Starting Design Runs : addNotify
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'rojobot31_0'... 
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Dec  9 12:58:47 2020] Launched rojobot31_0_synth_1, synth_1... Run output will be captured here: rojobot31_0_synth_1: C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/rojobot31_0_synth_1/runme.log synth_1: C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/synth_1/runme.log [Wed Dec  9 12:58:48 2020] Launched impl_1... Run output will be captured here: C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 6 seconds
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Implementation Completed: addNotify
+// Elapsed time: 1126 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+dismissDialog("Implementation Completed"); // aj (cr)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bB (cr):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Wed Dec  9 13:17:35 2020] Launched impl_1... Run output will be captured here: C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 288 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 25, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bB (cr):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_hw_manager 
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+dismissDialog("Open Hardware Manager"); // bB (cr)
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// bB (cr):  Auto Connect : addNotify
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2019.2   **** Build date : Nov  6 2019 at 22:12:23     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 
+// Tcl Message: INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ****** Xilinx cs_server v2019.2.0   **** Build date : Nov 06 2019-21:28:22     ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.    
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 4443.016 ; gain = 0.000 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AE38EAA 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/impl_1/rvfpga.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bB (cr)
+// Elapsed time: 10 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cr)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/impl_1/rvfpga.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bB (cr)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292AE38EAA 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// HMemoryUtils.trashcanNow. Engine heap size: 4,151 MB. GUI used memory: 184 MB. Current time: 12/9/20, 1:28:29 PM PST

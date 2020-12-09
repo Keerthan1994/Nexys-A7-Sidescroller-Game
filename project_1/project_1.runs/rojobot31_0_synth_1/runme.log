@@ -20,9 +20,9 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 28080 
+INFO: Helper process launched with PID 30696 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 862.770 ; gain = 235.164
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 863.574 ; gain = 235.402
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'rojobot31_0' [c:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/rojobot31_0/synth/rojobot31_0.v:57]
 INFO: [Synth 8-6157] synthesizing module 'rojobot31' [c:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/rojobot31_0/src/bot31_top.v:29]
@@ -174,7 +174,7 @@ INFO: [Synth 8-6157] synthesizing module 'RAMB18E1' [C:/Xilinx/Vivado/2019.2/scr
 	Parameter DOA_REG bound to: 0 - type: integer 
 	Parameter DOB_REG bound to: 0 - type: integer 
 	Parameter INITP_00 bound to: 256'b0001100001100001100001100001100001100000101000000010100001100001100001100001100001100001100001100000100001100010010101011101000101001010101010101010101010101010001000100000101000000000100000001000001011010111010010100010100010001010100000000010101010101010 
-	Parameter INITP_01 bound to: 256'b1001110111011101110111011001100111010110011101110110000000000000100101010100001000101000011000011000011000011000011000011000011000001000100010000010000011011000100000110110001000001000001101100010000011011000001101100011011000001101000010100001011010000110 
+	Parameter INITP_01 bound to: 256'b1001110111011101110111011001100111010110011101110110000000000000100101010100001000101000011000011000011000011000011000011000011000001000100010000010000011011000100000110110001000001000001101100010000011011000001101100000110110001101000010100001011010000110 
 	Parameter INITP_02 bound to: 256'b0110100010010010010010010111011010001001001001001001011101101000100100100100100101110110100010010010010010010111011010001001001001001001011101101000100100100100100101110100100000100000101010000010000011011000001000001001100111010110011101110110011001110101 
 	Parameter INITP_03 bound to: 256'b1011011000101101001001010101000100110111010001001101110100000001010101010101010101000000100010000000101010000010001000110110001000100010001000000001010101001000110100110100110100110100010101010101001000101000100100100100100101110110100010010010010010010111 
 	Parameter INITP_04 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000101101000010110110001011011000101101100010110110001011011000 
@@ -189,8 +189,8 @@ INFO: [Synth 8-6157] synthesizing module 'RAMB18E1' [C:/Xilinx/Vivado/2019.2/scr
 	Parameter INIT_05 bound to: 256'b1110000100000000000100011110111000010000000000011110000100000000000100011100110000010000000000011110000100000000000100011100111000010000000000011110000100000000000100011100111000010000000000011110000100000000000100010000000000010000000000011110000100000000 
 	Parameter INIT_06 bound to: 256'b0001000000000001111000010000000000010001000101110001000000000000010100000000000000000000001111100001001000100000001100010000111100000001000000000101000000000000111000010000000000010001010011110001000000000001111000010000000000010001110110000001000000000001 
 	Parameter INIT_07 bound to: 256'b0001000101110101000100000000000111100001000000000001000101100100000100000000000111100001000000000001000101010011000100000000000111100001000000000001000101000010000100000000000111100001000000000001000100110001000100000000000111100001000000000001000100100000 
-	Parameter INIT_08 bound to: 256'b0001000000000100000000000100000001100000100100011101010100000000000001010010000000000100000100000101000000000000000000000011111000010010000000000000000100110000010000010000011001010000000000001110000100000000000100010000011000010000000000011110000100000000 
-	Parameter INIT_09 bound to: 256'b0001000000000010000000001000010100010011000000000000000101000000011000001010000111010101000011000010000010111101000100000000010000000000010000000110000010011010110101010000100000100000101111010000000001000000011000001001010111010101000001000010000010111101 
+	Parameter INIT_08 bound to: 256'b0010000010111101000000000100000001100000100100001101010100000000000001010010000000000100000100000101000000000000000000000011111000010010000000000000000100110000010000010000011001010000000000001110000100000000000100010000011000010000000000011110000100000000 
+	Parameter INIT_09 bound to: 256'b0001000000000010000000001000010100010011000000000000000101000000011000001010000111010101000011000010000010111101000100000000000000000000010000000110000010011010110101010000100000100000101111010001000000000000000000000100000001100000100101011101010100000100 
 	Parameter INIT_0A bound to: 256'b0000000010000101000100110000000100000001010000000110000010110010110101010000111000100000101111010001000000000010000000001000010100010011000000000000000100000000000000001000010100010011000000000000000101000000011000001010101111010101000011010010000010111101 
 	Parameter INIT_0B bound to: 256'b0001000100001111000100000001000001010000000000000000000001000000001000001011110100010000000001100000000010000101000100110000000100000001000000000000000010000101000100110000000100000001010000000110000010111100110101010000111100100000101111010001000000000110 
 	Parameter INIT_0C bound to: 256'b1110000100000000000100011111000100010000000000011110000100000000000100010000000100010000000000011110000100000000000100010001000100010000000000011110000100000000000100010001000000010000000000011110000100000000000100010001111100010000000000011110000100000000 
@@ -282,7 +282,7 @@ WARNING: [Synth 8-3331] design bot31_if has unconnected port AddrIn[6]
 WARNING: [Synth 8-3331] design bot31_if has unconnected port AddrIn[5]
 WARNING: [Synth 8-3331] design bot31_if has unconnected port AddrIn[4]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 939.008 ; gain = 311.402
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 939.836 ; gain = 311.664
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -295,12 +295,12 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 939.008 ; gain = 311.402
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 939.836 ; gain = 311.664
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 939.008 ; gain = 311.402
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 939.836 ; gain = 311.664
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 939.008 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 947.352 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 181 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -309,7 +309,7 @@ Processing XDC Constraints
 Initializing timing engine
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1020.969 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1051.645 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 124 instances were transformed.
   FD => FDRE: 48 instances
@@ -320,25 +320,25 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 1021.957 ; gain = 0.988
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 1051.707 ; gain = 0.063
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1021.957 ; gain = 394.352
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1051.707 ; gain = 423.535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1021.957 ; gain = 394.352
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1051.707 ; gain = 423.535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1021.957 ; gain = 394.352
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1051.707 ; gain = 423.535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1021.957 ; gain = 394.352
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1051.707 ; gain = 423.535
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -501,7 +501,7 @@ CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin '
 CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/rojobot31_0/src/bot31_if.v:198]
 CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.srcs/sources_1/ip/rojobot31_0/src/bot31_if.v:198]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1021.957 ; gain = 394.352
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1051.707 ; gain = 423.535
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -513,13 +513,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1021.957 ; gain = 394.352
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1051.707 ; gain = 423.535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1021.957 ; gain = 394.352
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1051.707 ; gain = 423.535
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -531,7 +531,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1021.957 ; gain = 394.352
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1051.707 ; gain = 423.535
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -555,13 +555,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1034.449 ; gain = 406.844
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1051.707 ; gain = 423.535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1034.449 ; gain = 406.844
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1051.707 ; gain = 423.535
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -580,25 +580,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1034.449 ; gain = 406.844
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1051.707 ; gain = 423.535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1034.449 ; gain = 406.844
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1051.707 ; gain = 423.535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1034.449 ; gain = 406.844
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1051.707 ; gain = 423.535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1034.449 ; gain = 406.844
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1051.707 ; gain = 423.535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -644,18 +644,18 @@ Report Instance Areas:
 |5     |    BOTSIMPGM |bot31_pgm |     1|
 +------+--------------+----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1034.449 ; gain = 406.844
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1051.707 ; gain = 423.535
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 90 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 1034.449 ; gain = 323.895
-Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1034.449 ; gain = 406.844
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 1051.707 ; gain = 311.664
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1051.707 ; gain = 423.535
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1034.449 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1051.707 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 178 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1055.766 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1051.707 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 129 instances were transformed.
   (MUXCY,XORCY) => CARRY4: 10 instances
@@ -668,11 +668,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 121 Infos, 7 Warnings, 90 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1055.766 ; gain = 717.410
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1051.707 ; gain = 713.523
 INFO: [Coretcl 2-1174] Renamed 4 cell refs.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1055.766 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1051.707 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/rromano/Documents/GitHub/Nexys-A7-Sidescroller-Game/project_1/project_1.runs/rojobot31_0_synth_1/rojobot31_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file rojobot31_0_utilization_synth.rpt -pb rojobot31_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Dec  8 20:22:18 2020...
+INFO: [Common 17-206] Exiting Vivado at Wed Dec  9 12:59:20 2020...
