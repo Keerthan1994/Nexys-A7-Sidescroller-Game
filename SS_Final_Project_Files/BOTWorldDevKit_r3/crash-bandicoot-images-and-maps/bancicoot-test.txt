@@ -1,0 +1,87 @@
+    reg [3:0] current_map;
+    reg [3:0] prev_state;   //stores previous map state 
+    
+    always @(posedge clk_75 or negedge reset) begin
+        if (reset) begin
+            current_map <= 0;
+        end
+        //FORWARD MAP SWITCHING
+        //switches into second map and stores that value in previous state
+        else if (LocX == 8'h7C && worldmap_data == worldmap_data_part_1) begin
+            current_map <= 1;
+            prev_state = current_map;
+        end
+        //sustains map 2 when teleporting back to loc 00 on switch from map 1 to 2
+        else if (LocX == 8'h00 && prev_state == 1) begin
+            current_map <= 1;
+        end
+        //switches into third map and stores that value in previous state
+        else if (LocX == 8'h7C && worldmap_data == worldmap_data_lr) begin
+            current_map <= 2;
+            prev_state = current_map;
+        end
+        //sustains map 3 value when teleporting back to loc 00 on switch from map 2 to 3
+        else if (LocX == 8'h00 && prev_state == 2) begin
+            current_map <= 2;
+        end
+        //sets current map to map 1 when starting game or when traversing back to the starting point
+        else if (LocX == 8'h01 && worldmap_data == worldmap_data_part_1) begin
+            current_map <= 0;
+        end   
+        else begin //added this "do nothing" else state to prevent "invisible" latch 
+        end 
+    end
+    
+    // mux to select map based on the SW (Will need to be updated once we have more maps.)
+    assign {worldmap_data, world_pixel} =
+        current_map < 1 ? {worldmap_data_part_1, world_pixel_part_1} : 
+        (current_map < 2 ? {worldmap_data_lr, world_pixel_lr} : {worldmap_data_loop, world_pixel_loop});
+
+starts at 01 -> loads in values for switching to next map when reaching 7C as well as sustaining the map switch at 01 
+7C -> loads in next map value 
+7D -> teleports to 01 
+-> 01 sustains map value and loads in next state value 
+
+00 -> teleports to previous map location at 7B 
+in order to get to 00 the bot must walk through 01 which will put all values into registers 
+need to come up with a way to set / reset values at an address location so the bot can have correct information for teleport from 00 to 7B
+
+returning from map 3 to map 2
+current = 3 
+prev = 3 
+next = 3 
+
+7B->7A
+current = 2
+next = 3 
+79 -> prev = 0
+
+return from map 2 to 1 
+01-> 
+current map = 2 
+next state = 3 
+prev state = 2 
+
+1st map 7A 
+current map = 0 
+next state = 2 
+
+
+
+
+	LocX		current map		next state	Teleport Location
+	FORWARD
+	01 			0			2		
+	7C			2			2		
+	7D			2			2		01
+	01			2			3
+	7C			3			3
+	7D			3			3		01
+	REVERSE
+	01			3			3
+	00			3			3		7B
+Going from MAP 1 and turn around
+	FROM MAP 2
+	01			2			3					
+	00			2			3		7B
+	
