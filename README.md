@@ -3,6 +3,10 @@
 by Keerthan Nayak, Ryan Fallis, Richard 
 <br/>
 <br/>
+
+<b>SS_Final_Project_Files Folder</b><br/>
+Contains a dump of all the important files we modified.<br/>
+
 Project Modified Files Listing:<br/>
 <br/>
 <b>Hardware:</b><br/>
@@ -32,11 +36,9 @@ bot31_pgm.psm - Modified core to take LocX and LocY as input ports.<br/>
 ..\assembly_code\RVfpga_RojoBot_SW\src:<br/>
 Main.S        - Modified to work with pushbuttons or accelerometer controls.<br/>
               - Modified to assist in falling mechanism<br/>
-<br/>
-..\assembly_code\<br/>
-Main - accel.S - Partially working version with accelerometer.<br/>
+..\assembly_code\Main-accel.S - Partially working version with accelerometer.<br/>
 <br/>
 <b>Project Files:</b><br/>
 Report<br/>
 Powerpoint<br/>
-.bit and firmware.elf file<br/>
+.bit and firmware.elf file located in SS_Final_Project_Files Folder<br/>
