@@ -33,6 +33,9 @@ bot31_pgm.psm - Modified core to take LocX and LocY as input ports.<br/>
 Main.S        - Modified to work with pushbuttons or accelerometer controls.<br/>
               - Modified to assist in falling mechanism<br/>
 <br/>
+..\assembly_code\<br/>
+Main - accel.S - Partially working version with accelerometer.<br/>
+<br/>
 <b>Project Files:</b><br/>
 Report<br/>
 Powerpoint<br/>

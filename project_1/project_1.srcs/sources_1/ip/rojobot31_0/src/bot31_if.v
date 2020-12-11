@@ -51,7 +51,7 @@
 //////////
 
 
-module bot31_if(
+module bot31_if (
 	// interface to the picoblaze
 	input 					Wr_Strobe,		// Write strobe - asserted to write I/O data
 							Rd_Strobe,		// Read strobe - asserted to read I/O data
@@ -95,28 +95,91 @@ reg [7:0]	LocX_int,			// X-coordinate of rojobot's location
 			BotInfo_int,		// Rojobot orientation and movement
 			Sensors_int;		// Sensor readings
 
-// Sidescroller Edit (If LocX has reached the end reset it):
+// Sidescroller Registers:
 reg [7:0]   LocX_int_set;
-					
-// read registers and store in the internal BOT state registers
+reg [7:0]   LocY_int_set;	
+reg [7:0]   MotCtl_set;
+
+reg [31:0] falling_timer;                   //timer for falling 
+reg [7:0] falling_count;                    //count for how many times the timer has reached zero
+reg     falling_flag = 1'b0;                //flag for if falling is still in effect 
+reg [31:0] timer_val = 800_000_000;				
+
 always @(posedge clk) begin
-    if (LocX_int == 8'h7D) begin    // Sidescroller teleport to beginning.
+	if (reset) begin
+		MotCtl_set <= 0;
+		LocX_int_set <= 5;		
+		LocY_int_set <= 40;
+		
+		falling_timer <= timer_val;
+        falling_flag <= 0;
+        falling_count <= 0;
+    end
+    
+    // Teleport for map muxing:
+    else if (LocX_int == 8'h7D) begin    // Sidescroller teleport to beginning.
         LocX_int_set <= 8'h01;
     end
     else if (LocX_int == 8'h00) begin   // Sidescroller teleport to ending.
         LocX_int_set <= 8'h7B;
     end
-    else begin
+    
+    // Movement Control:
+    // else if (MotCtl[4] == 0 && MotCtl[0] == 0 && MapVal == 1) begin // Disable "down" movement if on line.
+    //    MotCtl_set <= 8'h00;
+    // end
+    else if (MotCtl[4] == 1 && MotCtl[0] == 1 && MapVal == 0 && falling_count > 1) begin // Disable "up" movement if in the sky
+        MotCtl_set <= 8'h00;
+    end
+    
+    // Falling Mechanism:
+    else if (falling_count == 5) begin                          // checks if falling count has reached 5 falling cycles 
+      falling_flag <= 0;
+      falling_timer <= timer_val;
+      falling_count <= 0;
+      LocY_int_set <= LocY_int + 1;                             // shifts bot in -Y direciton by one - should set it back to origin point of jump
+      LocX_int_set <= LocX_int;                                 // maintains X coordinates 
+    end 
+    else if (falling_flag == 1) begin                           // while the falling flag is set, the falling timer decrements by 1 
+       falling_timer <= falling_timer - 1;
+    end
+    else if (BotInfo_int == 8'h40 && falling_flag == 0) begin   // checks if bot is oriented north and if falling flag is 0 
+        LocY_int_set <= LocY_int - 4;                           // jumps up 4 pixels
+        LocX_int_set <= LocX_int;                               // mantains position in X coordinates
+        falling_timer <= timer_val - 1;                         // starts falling timer
+        falling_flag <= 1;                                      // sets falling flag 
+    end
+    
+    else if (falling_timer == 0 && falling_count < 5) begin     // checks if timer has counted down and if the total falling count is less than 5
+        LocY_int_set <= LocY_int + 1;                           // shifts bot in -Y directions by 1
+        LocX_int_set <= LocX_int;                               // maintains position in X direction
+        falling_timer <= timer_val - 1;                         // restarts falling timer
+        falling_count <= falling_count + 1;                     // adds a count to total falling count reg
+    end
+    else if (MapVal != 2'b01) begin                             // check if not on a black line 
+        LocY_int_set <= LocY_int + 1;                           // shifts bot in -Y direction by one 
+        LocX_int_set <= LocX_int;                               // maintains X coordinates 
+    end
+    else if (MapVal == 2'b01) begin                             // check if not on a black line 
+        falling_timer <= timer_val;                             // restarts falling timer
+        falling_count <= 0;                                     // reset count
+    end
+    
+    // ELSE Feed through values:
+    else begin                                                  
         LocX_int_set <= LocX_int;
+        LocY_int_set <= LocY_int;
+        falling_timer <= timer_val;
+        MotCtl_set <= MotCtl;
     end
 
 	case (AddrIn[3:0])
 		// I/O registers BOT hardware interface
 		// Picoblaze should only read MotCtl and MapVal but
 		// this code returns internal register values if asked
-		4'b0000 :	DataOut = MotCtl;
+		4'b0000 :	DataOut = MotCtl_set;       // Modified for Sidescroller (Disable south on line)
 		4'b0001 :	DataOut = LocX_int_set;     // Modified for Sidescroller
-		4'b0010 :	DataOut = LocY_int;
+		4'b0010 :	DataOut = LocY_int_set;     // Modified for Sidescroller
 		4'b0011 :	DataOut = BotInfo_int;
 		4'b0100 :	DataOut = Sensors_int;
 		4'b0101 :	DataOut = 8'b01010101;		// shouldn't be read - reserved
@@ -142,8 +205,8 @@ end // always - read registers
 // write the internal registers with the current state of the BOT
 always @(posedge clk or posedge reset) begin
 	if (reset) begin
-		LocX_int <= 0;		
-		LocY_int <= 0;
+		LocX_int <= 5;		
+		LocY_int <= 40;
 		BotInfo_int <= 0;
 		Sensors_int <= 0;
 		
@@ -180,47 +243,16 @@ always @(posedge clk or posedge reset) begin
 			endcase
 		end
 	end
-end // always - write registers
- 
- //Registers used for bot jumping/falling 
-  reg [31:0] falling_timer; //timer for falling 
-  reg [7:0] falling_count;  //count for how many times the timer has reached zero
-  reg [1:0] falling_flag = 0; //flag for if falling is still in effect 
-  reg [31:0] timer_val = 800_000_000;
-  reg [7:0] LocY_int_set;
-
- 
-            //-------------------------------------------------------
-            //          Bot Jumping
-            //-------------------------------------------------------
-          always @ (posedge clk) begin
-            if (falling_count == 5) begin
-                falling_flag <= 0;
-                falling_timer <= timer_val;
-                falling_count <= 0;
-            end 
-            //while the falling flag is set, the falling timer decrements by 1 
-            else if (falling_flag == 1) begin
-               falling_timer <= falling_timer - 1;
-             end
-             else begin
-               falling_timer <= timer_val;
-             end
-          end
-
-	
+end // always - write registers	
 	
 // synchronized system register interface
 // creates the user visible BOT state registers
 always @(posedge clk or posedge reset) begin
 	if (reset) begin
-		LocX <= 0;
-		LocY <= 0;
+		LocX <= 5;
+		LocY <= 40;
 		Sensors <= 0;
 		BotInfo <= 0;
-		falling_timer <= timer_val;
-        falling_flag <= 0;
-        falling_count <= 0;
 	end
 	else if (load_sys_regs) begin  // copy holding registers to system interface registers
             if (LocX_int == 8'h7D) begin   // Sidescroller teleport to beginning.
@@ -229,28 +261,13 @@ always @(posedge clk or posedge reset) begin
             else if (LocX_int == 8'h00) begin   // Sidescroller teleport to ending.
                 LocX <= 8'h7B;
             end
-            else if (BotInfo_int == 8'h40 && falling_flag == 0) begin
-                LocY <= LocY_int - 4;
-                LocX <= LocX_int;
-                falling_timer <= timer_val - 1;  //starts falling timer
-                falling_flag <= 1; //sets falling flag 
-            end
-            else if (falling_timer == 0 && falling_count < 5) begin
-                LocY <= LocY_int + 1;
-                LocX <= LocX_int;
-                falling_timer <= timer_val - 1;
-                falling_count <= falling_count + 1;
-            end
-            else if (falling_count == 5) begin
-                LocY <= LocY_int + 1;
-                LocX <= LocX_int;
-            end
+
             else begin   
-               LocX <= LocX_int;   
-               LocY <= LocY_int;
+               LocX <= LocX_int; 
+                
             end
-			 
-			Sensors <= Sensors_int;
+            LocY <= LocY_int;  
+            Sensors <= Sensors_int;
 			BotInfo <= BotInfo_int;
 	end
 	else begin // refresh registers
