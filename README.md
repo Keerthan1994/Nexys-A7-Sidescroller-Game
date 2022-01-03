@@ -4,6 +4,9 @@ by Keerthan Nayak, Ryan Fallis, Richard
 <br/>
 <br/>
 
+![image](https://user-images.githubusercontent.com/61081801/147900674-5b2fe928-56d1-4919-80c6-bea997246803.png)
+
+
 <b>SS_Final_Project_Files Folder</b><br/>
 Contains a dump of all the important files we modified.<br/>
 
